@@ -1,0 +1,694 @@
+﻿[{
+    "$TypeId": 4,
+    "Id": "3e42318444ca4417a68c7d41c5765fcd",
+    "Name": "TutorialEntityGroup",
+    "ExportFlags": 0,
+    "SerializedVersion": 0,
+    "Entities": [
+        { "$TypeId": 9, "Id": "da64eb7128bf4a3e81fc273779f7efda", "Name": "Tutorial" },
+        { "$TypeId": 9, "Id": "82ed0bf2eadf45d392f38b84e8100f3a", "Name": "1" },
+        { "$TypeId": 9, "Id": "8617821647bb4236b7aedd9c1cbe384e", "Name": "Coin" },
+        { "$TypeId": 9, "Id": "dd20ce0783c84b22bde575d2f2736722", "Name": "Text" },
+        { "$TypeId": 9, "Id": "6b7961f342be447282f463591ccb9092", "Name": "2" },
+        { "$TypeId": 9, "Id": "98612551266d4b4c8229390b9ea2dbc6", "Name": "BallBlinking" },
+        { "$TypeId": 9, "Id": "b90b0c5487f646fa90a31f2ba041db96", "Name": "Text2" },
+        { "$TypeId": 9, "Id": "fd1e6e7fd8da457581e7b8c241108bab", "Name": "CoinPng" },
+        { "$TypeId": 9, "Id": "33bf9f81fb364ca7841572303a843a97", "Name": "3" },
+        { "$TypeId": 9, "Id": "254a622fa9524211b051e60485b1ea14", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "69ffc058532c424cb44a78b1832b2358", "Name": "Coin2" },
+        { "$TypeId": 9, "Id": "fb0af61fcdb74be7aea6c95c5d7c28e1", "Name": "Text2" },
+        { "$TypeId": 9, "Id": "f564c00033fb44b39d3cf021f6776a55", "Name": "Coin3" },
+        { "$TypeId": 9, "Id": "24617b8ef79c4b23be767f1b4f4b06cc", "Name": "4" },
+        { "$TypeId": 9, "Id": "e0171033d6404daa9e1b3e764c1e2c61", "Name": "Text2" },
+        { "$TypeId": 9, "Id": "7c218f6582cb48429def8a18d66dd191", "Name": "5" },
+        { "$TypeId": 9, "Id": "f28fe34dcf8846cfb14c4194921ff199", "Name": "Text3" }
+    ],
+    "PrefabInstances": [
+        { "$TypeId": 13, "Id": "65979f3bcb484c3ab6d758aef5cce9ab", "Name": "Coin" },
+        { "$TypeId": 13, "Id": "a4a1d273bfb94c41adab19e42724bb65", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "48f6aefd70984ae2aa8e4549beda314a", "Name": "Coin" },
+        { "$TypeId": 13, "Id": "989e81b6e4cc4486aeee7106ab9988de", "Name": "Coin2" }
+    ]
+},
+{
+    "$TypeId": 12,
+    "Id": "65979f3bcb484c3ab6d758aef5cce9ab",
+    "Name": "Coin",
+    "Source": { "Id": "ad2d1a479de3450f8f6fd43869d03803", "Name": "Coin" },
+    "Entities": [
+        { "$TypeId": 9, "Id": "8617821647bb4236b7aedd9c1cbe384e", "Name": "Coin" }
+    ]
+},
+{
+    "$TypeId": 12,
+    "Id": "a4a1d273bfb94c41adab19e42724bb65",
+    "Name": "Obstacle",
+    "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
+    "Entities": [
+        { "$TypeId": 9, "Id": "254a622fa9524211b051e60485b1ea14", "Name": "Obstacle" }
+    ]
+},
+{
+    "$TypeId": 12,
+    "Id": "48f6aefd70984ae2aa8e4549beda314a",
+    "Name": "Coin",
+    "Source": { "Id": "ad2d1a479de3450f8f6fd43869d03803", "Name": "Coin" },
+    "Entities": [
+        { "$TypeId": 9, "Id": "69ffc058532c424cb44a78b1832b2358", "Name": "Coin" }
+    ]
+},
+{
+    "$TypeId": 12,
+    "Id": "989e81b6e4cc4486aeee7106ab9988de",
+    "Name": "Coin2",
+    "Source": { "Id": "ad2d1a479de3450f8f6fd43869d03803", "Name": "Coin" },
+    "Entities": [
+        { "$TypeId": 9, "Id": "f564c00033fb44b39d3cf021f6776a55", "Name": "Coin2" }
+    ]
+},
+{
+    "$TypeId": 5,
+    "Id": "da64eb7128bf4a3e81fc273779f7efda",
+    "Name": "Tutorial",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "82ed0bf2eadf45d392f38b84e8100f3a",
+    "Name": "1",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "da64eb7128bf4a3e81fc273779f7efda", "Name": "Tutorial" }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "y": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
+    }, {
+        "Type": { "Id": "f462430e35694a82946fa7138ed57a0a", "Name": "Tutorial" },
+        "Properties": {
+            "Index": 0,
+            "Tries": 1,
+            "ChildEntities": {
+                "Type": { "Id": "5a182d9d039d4dfd8fa96132d05f9ee7", "Name": "EntityReference" },
+                "Items": [
+                    { "$TypeId": 9, "Id": "8617821647bb4236b7aedd9c1cbe384e", "Name": "Coin" },
+                    { "$TypeId": 9, "Id": "dd20ce0783c84b22bde575d2f2736722", "Name": "Text" }
+                ]
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "8617821647bb4236b7aedd9c1cbe384e",
+    "Name": "Coin",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "0cfcad526cc74c89ad57dde9766ae77c", "Name": "Coin" },
+        "EntityModificationFlags": 0,
+        "Modifications": [{
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.y",
+            "TypeCode": 13,
+            "Value": 33.9
+        }, {
+            "Target": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+            "Path": "parent",
+            "TypeCode": -2,
+            "Value": {
+                "Id": "82ed0bf2eadf45d392f38b84e8100f3a",
+                "Name": "1"
+            }
+        }]
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "dd20ce0783c84b22bde575d2f2736722",
+    "Name": "Text",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "82ed0bf2eadf45d392f38b84e8100f3a", "Name": "1" }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "d7b5a771670423742957199560ce249d", "FileId": 21300000, "Type": 3 }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "6b7961f342be447282f463591ccb9092",
+    "Name": "2",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "da64eb7128bf4a3e81fc273779f7efda", "Name": "Tutorial" }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "y": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
+    }, {
+        "Type": { "Id": "f462430e35694a82946fa7138ed57a0a", "Name": "Tutorial" },
+        "Properties": {
+            "Index": 1,
+            "Tries": -1,
+            "ChildEntities": {
+                "Type": { "Id": "5a182d9d039d4dfd8fa96132d05f9ee7", "Name": "EntityReference" },
+                "Items": [
+                    { "$TypeId": 9, "Id": "b90b0c5487f646fa90a31f2ba041db96", "Name": "Entity" },
+                    { "$TypeId": 9, "Id": "98612551266d4b4c8229390b9ea2dbc6", "Name": "BallBlinking" },
+                    { "$TypeId": 9, "Id": "fd1e6e7fd8da457581e7b8c241108bab", "Name": "Entity" }
+                ]
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "98612551266d4b4c8229390b9ea2dbc6",
+    "Name": "BallBlinking",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "6b7961f342be447282f463591ccb9092", "Name": "2" }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0,
+                    "y": -6.1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 5,
+                    "y": 5,
+                    "z": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "432ebf0e89cf5b74e9ccbd5606cde427", "FileId": 21300000, "Type": 3 },
+            "color": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+        "Properties": {
+            "size": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 1,
+                    "y": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "order": 3
+        }
+    }, {
+        "Type": { "Id": "95eba163dce5bfff5420a5a8c2845523", "Name": "Sprite2DSequence" },
+        "Properties": {
+            "sprites": {
+                "Type": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
+                "Items": [
+                    { "$TypeId": 10, "Guid": "432ebf0e89cf5b74e9ccbd5606cde427", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "8641ac16a303abd4180f2fe2d7bd9711", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "68fcfa9057d2dc941ab15ee7f6c1ec73", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "a1817d3141eb7a849a2be6a39a314c61", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "8043e9be8b361bc4997f848186bb4d74", "FileId": 21300000, "Type": 3 }
+                ]
+            },
+            "frameRate": 12
+        }
+    }, {
+        "Type": { "Id": "d2cfd18aa4facc33b1da7ae05205691b", "Name": "Sprite2DSequencePlayer" },
+        "Properties": {
+            "sequence": { "$TypeId": 9, "Id": "98612551266d4b4c8229390b9ea2dbc6", "Name": "Ball" },
+            "paused": false,
+            "loop": {
+                "$TypeId": 8,
+                "Type": { "Id": "ea25cda1bca15e4c9fb023eca636eb06", "Name": "LoopMode" },
+                "Id": "22c5bb55d215c1f95f4a4e5938017b82",
+                "Name": "PingPong",
+                "Value": 2
+            },
+            "speed": 1
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "b90b0c5487f646fa90a31f2ba041db96",
+    "Name": "Text2",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "6b7961f342be447282f463591ccb9092", "Name": "2" }
+        }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "5559368a1bac58f42b46572b97fc809f", "FileId": 21300000, "Type": 3 }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "y": -6.2
+                }
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "fd1e6e7fd8da457581e7b8c241108bab",
+    "Name": "CoinPng",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "6b7961f342be447282f463591ccb9092", "Name": "2" }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "y": 10.8
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 4,
+                    "y": 4
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "33b38470f19474b4fa68c1f31f88eb09", "FileId": 21300000, "Type": 3 }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "33bf9f81fb364ca7841572303a843a97",
+    "Name": "3",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "da64eb7128bf4a3e81fc273779f7efda", "Name": "Tutorial" }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "y": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
+    }, {
+        "Type": { "Id": "f462430e35694a82946fa7138ed57a0a", "Name": "Tutorial" },
+        "Properties": {
+            "Index": 2,
+            "Tries": 3,
+            "ChildEntities": {
+                "Type": { "Id": "5a182d9d039d4dfd8fa96132d05f9ee7", "Name": "EntityReference" },
+                "Items": [
+                    { "$TypeId": 9, "Id": "69ffc058532c424cb44a78b1832b2358", "Name": "Coin" },
+                    { "$TypeId": 9, "Id": "fb0af61fcdb74be7aea6c95c5d7c28e1", "Name": "Text" },
+                    { "$TypeId": 9, "Id": "f564c00033fb44b39d3cf021f6776a55", "Name": "Coin3" },
+                    { "$TypeId": 9, "Id": "254a622fa9524211b051e60485b1ea14", "Name": "Obstacle" }
+                ]
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "254a622fa9524211b051e60485b1ea14",
+    "Name": "Obstacle",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "2dc98cfdaac64110bef975c8cefe53f5", "Name": "Obstacle" },
+        "EntityModificationFlags": 0,
+        "Modifications": [{
+            "Target": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+            "Path": "parent",
+            "TypeCode": -2,
+            "Value": {
+                "Id": "33bf9f81fb364ca7841572303a843a97",
+                "Name": "3"
+            }
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.x",
+            "TypeCode": 13,
+            "Value": 45
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.y",
+            "TypeCode": 13,
+            "Value": 7.5
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.y",
+            "TypeCode": 13,
+            "Value": 19.9
+        }]
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "69ffc058532c424cb44a78b1832b2358",
+    "Name": "Coin2",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "0cfcad526cc74c89ad57dde9766ae77c", "Name": "Coin" },
+        "EntityModificationFlags": 2,
+        "Modifications": [{
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.y",
+            "TypeCode": 13,
+            "Value": 33.9
+        }, {
+            "Target": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+            "Path": "parent",
+            "TypeCode": -2,
+            "Value": {
+                "Id": "33bf9f81fb364ca7841572303a843a97",
+                "Name": "3"
+            }
+        }]
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "fb0af61fcdb74be7aea6c95c5d7c28e1",
+    "Name": "Text2",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "33bf9f81fb364ca7841572303a843a97", "Name": "3" }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "y": 0.2
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "cdad264083459314cb1ccde26ba16e81", "FileId": 21300000, "Type": 3 }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "f564c00033fb44b39d3cf021f6776a55",
+    "Name": "Coin3",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "0cfcad526cc74c89ad57dde9766ae77c", "Name": "Coin" },
+        "EntityModificationFlags": 2,
+        "Modifications": [{
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.y",
+            "TypeCode": 13,
+            "Value": -31.9
+        }, {
+            "Target": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+            "Path": "parent",
+            "TypeCode": -2,
+            "Value": {
+                "Id": "33bf9f81fb364ca7841572303a843a97",
+                "Name": "3"
+            }
+        }]
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "24617b8ef79c4b23be767f1b4f4b06cc",
+    "Name": "4",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "da64eb7128bf4a3e81fc273779f7efda", "Name": "Tutorial" }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "y": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
+    }, {
+        "Type": { "Id": "f462430e35694a82946fa7138ed57a0a", "Name": "Tutorial" },
+        "Properties": {
+            "Index": 3,
+            "Tries": -1,
+            "ChildEntities": {
+                "Type": { "Id": "5a182d9d039d4dfd8fa96132d05f9ee7", "Name": "EntityReference" },
+                "Items": [
+                    { "$TypeId": 9, "Id": "e0171033d6404daa9e1b3e764c1e2c61", "Name": "Text2" }
+                ]
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "e0171033d6404daa9e1b3e764c1e2c61",
+    "Name": "Text2",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "24617b8ef79c4b23be767f1b4f4b06cc", "Name": "2" }
+        }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "505f39c114d206a44b031366b3ee1f55", "FileId": 21300000, "Type": 3 }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "y": -6.2
+                }
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "7c218f6582cb48429def8a18d66dd191",
+    "Name": "5",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "da64eb7128bf4a3e81fc273779f7efda", "Name": "Tutorial" }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "y": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
+    }, {
+        "Type": { "Id": "f462430e35694a82946fa7138ed57a0a", "Name": "Tutorial" },
+        "Properties": {
+            "Index": 4,
+            "Tries": -1,
+            "ChildEntities": {
+                "Type": { "Id": "5a182d9d039d4dfd8fa96132d05f9ee7", "Name": "EntityReference" },
+                "Items": [
+                    { "$TypeId": 9, "Id": "f28fe34dcf8846cfb14c4194921ff199", "Name": "Text2" }
+                ]
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "f28fe34dcf8846cfb14c4194921ff199",
+    "Name": "Text3",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "7c218f6582cb48429def8a18d66dd191", "Name": "4" }
+        }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "d71d1a1b2636da74e9e7bef2204f0267", "FileId": 21300000, "Type": 3 }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "y": -6.2
+                }
+            }
+        }
+    }]
+}]

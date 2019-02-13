@@ -1,0 +1,261 @@
+{
+    "Success": true,
+    "Diagnostics": [],
+    "Systems": [
+        {
+            "Name": "CollisionAudioSystem",
+            "QualifiedName": "game.CollisionAudioSystem",
+            "Description": "",
+            "Source": {
+                "File": "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Audio/CollisionAudioSystem.ts",
+                "Line": 6,
+                "Character": 17
+            },
+            "ExecuteAfter": [
+                "ut.Shared.UserCodeStart"
+            ],
+            "ExecuteBefore": [
+                "ut.Shared.UserCodeEnd"
+            ],
+            "RequiredComponents": [
+                "ut.Physics2D.ColliderContacts",
+                "ut.Core2D.Sprite2DRenderer"
+            ]
+        },
+        {
+            "Name": "DirectionalPowerSystem",
+            "QualifiedName": "game.DirectionalPowerSystem",
+            "Description": "New System",
+            "Source": {
+                "File": "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Deprecated/DirectionalPowerSystem.ts",
+                "Line": 7,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "ObstacleSpawnSystem",
+            "QualifiedName": "game.ObstacleSpawnSystem",
+            "Description": "New System",
+            "Source": {
+                "File": "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Deprecated/RandomObstacleSpawnSystem.ts",
+                "Line": 5,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "TimeLethalitySystem",
+            "QualifiedName": "game.TimeLethalitySystem",
+            "Description": "New System",
+            "Source": {
+                "File": "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Deprecated/TimeLethalitySystem.ts",
+                "Line": 5,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "DirectionInputSystem",
+            "QualifiedName": "game.DirectionInputSystem",
+            "Description": "InputHandlingSystem",
+            "Source": {
+                "File": "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Directional input/DirectionInputSystem.ts",
+                "Line": 6,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "BallSystem",
+            "QualifiedName": "game.BallSystem",
+            "Description": "New System",
+            "Source": {
+                "File": "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/BallSystem.ts",
+                "Line": 6,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "BorderSystem",
+            "QualifiedName": "game.BorderSystem",
+            "Description": "New System",
+            "Source": {
+                "File": "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/BorderSystem.ts",
+                "Line": 4,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "CoinSpawnSystem",
+            "QualifiedName": "game.CoinSpawnSystem",
+            "Description": "New System",
+            "Source": {
+                "File": "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/CoinSpawnSystem.ts",
+                "Line": 5,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "GameSystem",
+            "QualifiedName": "game.GameSystem",
+            "Description": "New System",
+            "Source": {
+                "File": "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/GameSystem.ts",
+                "Line": 5,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "HoleSystem",
+            "QualifiedName": "game.HoleSystem",
+            "Description": "New System",
+            "Source": {
+                "File": "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/HoleSystem.ts",
+                "Line": 5,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "JsonObstacleSpawner",
+            "QualifiedName": "game.JsonObstacleSpawner",
+            "Description": "New System",
+            "Source": {
+                "File": "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/JsonObstacleSpawner.ts",
+                "Line": 4,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "LethalObstaclesSystem",
+            "QualifiedName": "game.LethalObstaclesSystem",
+            "Description": "New System",
+            "Source": {
+                "File": "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/LethalObstaclesSystem.ts",
+                "Line": 5,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "NextLevelSystem",
+            "QualifiedName": "game.NextLevelSystem",
+            "Description": "",
+            "Source": {
+                "File": "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/NextLevelSystem.ts",
+                "Line": 5,
+                "Character": 17
+            },
+            "ExecuteAfter": [
+                "game.CoinSpawnSystem"
+            ]
+        },
+        {
+            "Name": "SpeedLethalitySystem",
+            "QualifiedName": "game.SpeedLethalitySystem",
+            "Description": "New System",
+            "Source": {
+                "File": "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/SpeedLethalitySystem.ts",
+                "Line": 5,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "TutorialSystem",
+            "QualifiedName": "game.TutorialSystem",
+            "Description": "",
+            "Source": {
+                "File": "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/TutorialSystem.ts",
+                "Line": 6,
+                "Character": 17
+            },
+            "ExecuteBefore": [
+                "game.GameSystem"
+            ]
+        },
+        {
+            "Name": "GameOverScreenSystem",
+            "QualifiedName": "game.GameOverScreenSystem",
+            "Description": "New System",
+            "Source": {
+                "File": "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/UI/GameOverScreenSystem.ts",
+                "Line": 5,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "LineRenderingSystem",
+            "QualifiedName": "game.LineRenderingSystem",
+            "Description": "New System",
+            "Source": {
+                "File": "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/UI/LineRenderingSystem.ts",
+                "Line": 5,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "ShotsUISystem",
+            "QualifiedName": "game.ShotsUISystem",
+            "Description": "New System",
+            "Source": {
+                "File": "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/UI/ShotsUISystem.ts",
+                "Line": 5,
+                "Character": 17
+            }
+        }
+    ],
+    "Filters": [],
+    "Behaviours": [],
+    "Performance": [
+        {
+            "Key": "tsconfig",
+            "Description": "Time taken to read and parse the given tsconfig.json file",
+            "Duration": 170,
+            "Steps": 1
+        },
+        {
+            "Key": "checksum",
+            "Description": "Time taken to compute the MD5 of all inputs",
+            "Duration": 206,
+            "Steps": 1
+        },
+        {
+            "Key": "compile",
+            "Description": "Time taken to compile the TypeScript program",
+            "Duration": 1185,
+            "Steps": 28
+        },
+        {
+            "Key": "emit",
+            "Description": "Time taken to generate and write the JavaScript output",
+            "Duration": 240,
+            "Steps": 2
+        },
+        {
+            "Key": "metadata",
+            "Description": "Time taken to reflect Tiny metadata from the compiled program",
+            "Duration": 9,
+            "Steps": 18
+        }
+    ],
+    "SourceFiles": [
+        "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Audio/CollisionAudioSystem.ts",
+        "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Deprecated/DirectionalPowerSystem.ts",
+        "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Deprecated/RandomObstacleSpawnSystem.ts",
+        "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Deprecated/TimeLethalitySystem.ts",
+        "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Directional input/DirectionInputSystem.ts",
+        "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/BallSystem.ts",
+        "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/BorderSystem.ts",
+        "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/CoinSpawnSystem.ts",
+        "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/GameSystem.ts",
+        "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/HoleSystem.ts",
+        "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/JsonObstacleSpawner.ts",
+        "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/LethalObstaclesSystem.ts",
+        "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/NextLevelSystem.ts",
+        "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/SpeedLethalitySystem.ts",
+        "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/TutorialSystem.ts",
+        "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/UI/GameOverScreenSystem.ts",
+        "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/UI/LineRenderingSystem.ts",
+        "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/UI/ShotsUISystem.ts",
+        "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Utils/JsonUtils.ts",
+        "F:/2019/TinyProyect/TinyBallGame/Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.EntityGroup/Scripts/EntityGroup.ts",
+        "F:/2019/TinyProyect/TinyBallGame/Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.EntityGroup/Scripts/EntityLookupCache.ts"
+    ],
+    "InputHash": "3272be84ca93c4219166c661134cfd56",
+    "GeneratedAt": "Wed Feb 13 2019 10:27:03 GMT-0500 (Hora est. Pacífico, Sudamérica)"
+}

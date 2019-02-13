@@ -1,0 +1,56 @@
+﻿[{
+    "$TypeId": 4,
+    "Id": "d8854eeefd2745b5ab62a921bdaaf644",
+    "Name": "GameplayEntityGroup",
+    "ExportFlags": 0,
+    "SerializedVersion": 0,
+    "Entities": [
+        { "$TypeId": 9, "Id": "1f2a8409bc5b4c9793fd0f9e5e3f5bf7", "Name": "Systems" },
+        { "$TypeId": 9, "Id": "d562f25fd4754928b37e1c756e0d8f5e", "Name": "Spawners" }
+    ]
+},
+{
+    "$TypeId": 5,
+    "Id": "1f2a8409bc5b4c9793fd0f9e5e3f5bf7",
+    "Name": "Systems",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "d562f25fd4754928b37e1c756e0d8f5e",
+    "Name": "Spawners",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "929ba5ca25074f5c9c8fbba9fa52aa6d", "Name": "ObstacleSpawnerHelper" },
+        "Properties": {
+            "AreaPercentage": 0,
+            "XScaleValues": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 5,
+                    "y": 25
+                }
+            },
+            "YScaleValues": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 10,
+                    "y": 50
+                }
+            },
+            "BorderOffset": 10
+        }
+    }, {
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "1f2a8409bc5b4c9793fd0f9e5e3f5bf7", "Name": "Objects" }
+        }
+    }]
+}]

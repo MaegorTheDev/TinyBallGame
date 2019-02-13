@@ -1,0 +1,42 @@
+{
+  "Groups": [
+    {
+      "RoomGroup":[ 
+        {"BPosX" : 0, "BPosY" : 0, "HPosX" : 25, "HPosY" : 31.9, "HSclX" :5 ,"HSclY" :5, "Room":[
+            {"X":0 , "Y":18.8, "Rotation":0,"ScaleX":50, "ScaleY":2, "Type":"N" }
+          ]},
+          {"BPosX" : 0, "BPosY" : 0, "HPosX" : -19.4, "HPosY" : -24.1, "HSclX" :5 ,"HSclY" :5, "Room":[
+            {"X":7.1 , "Y":9.9, "Rotation":-45,"ScaleX":40, "ScaleY":2, "Type":"N" }
+          ]},
+          {"BPosX" : 24.5, "BPosY" : -37.4, "HPosX" : 16.6, "HPosY" : 33.5, "HSclX" :5 ,"HSclY" :5, "Room":[
+            {"X":-20 , "Y":0, "Rotation":90,"ScaleX":40, "ScaleY":2, "Type":"N" }
+          ]},
+          {"BPosX" : 0, "BPosY" : -35.5, "HPosX" : 0, "HPosY" : 32.5, "HSclX" :5 ,"HSclY" :5, "Room":[
+            {"X":0 , "Y":-2.9, "Rotation":90,"ScaleX":40, "ScaleY":2, "Type":"N" }
+          ]}
+        ]    
+    } ,
+    {
+      "RoomGroup":[ 
+        {"BPosX" : 18.4, "BPosY" : -40, "HPosX" : -19.6, "HPosY" : 35.5, "HSclX" :5 ,"HSclY" :5, "Room":[
+            {"X":20 , "Y":2, "Rotation":-45,"ScaleX":30, "ScaleY":2, "Type":"N" },
+            {"X":-20 , "Y":0, "Rotation":-45,"ScaleX":30, "ScaleY":2, "Type":"N" }
+          ]},
+          {"BPosX" : 26.5, "BPosY" : 0, "HPosX" : -26.4, "HPosY" : 0, "HSclX" :5 ,"HSclY" :5, "Room":[
+            {"X":10 , "Y":0, "Rotation":90,"ScaleX":30, "ScaleY":2, "Type":"N" },
+            {"X":-10 , "Y":0, "Rotation":90,"ScaleX":30, "ScaleY":2, "Type":"N" }
+          ]},
+          {"BPosX" : -26.1, "BPosY" : -28.1, "HPosX" : 22.6, "HPosY" : 26.5, "HSclX" :5 ,"HSclY" :5, "Room":[
+            {"X":25.2 , "Y":-30.1, "Rotation":45,"ScaleX":15, "ScaleY":2, "Type":"N" },
+            {"X":0 , "Y":0, "Rotation":-45,"ScaleX":35, "ScaleY":2, "Type":"N" }
+          ]}, 
+          {"BPosX" : -20.1, "BPosY" : -29.8, "HPosX" : 19.9, "HPosY" : -29.9, "HSclX" :5 ,"HSclY" :5, "Room":[
+            {"X":-21, "Y":30.9, "Rotation":45,"ScaleX":30, "ScaleY":2, "Type":"N" },
+            {"X":20.4 , "Y":31.1, "Rotation":-45,"ScaleX":30, "ScaleY":2, "Type":"N" },
+            {"X":0 , "Y":-25.3, "Rotation":90,"ScaleX":50, "ScaleY":2, "Type":"N" }
+          ]}
+        ]    
+    }
+  ]
+}
+

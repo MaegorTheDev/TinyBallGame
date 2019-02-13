@@ -1,0 +1,589 @@
+﻿{
+    "Item": {
+        "Name": "Project",
+        "Size": 0,
+        "CompressedSize": 0
+    },
+    "Children": [{
+        "Item": {
+            "Name": "Runtime",
+            "Size": 0,
+            "CompressedSize": 0
+        },
+        "Children": [{
+            "Item": {
+                "Name": "TinyExport/ZenBall/html5/development/build/runtime.js",
+                "Size": 6196610,
+                "CompressedSize": 784949
+            }
+        }]
+    }, {
+        "Item": {
+            "Name": "Assets",
+            "Size": 0,
+            "CompressedSize": 0
+        },
+        "Children": [{
+            "Item": {
+                "Name": "JavaScript",
+                "Size": 31922,
+                "CompressedSize": 0
+            }
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/levels.json",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "7f135fd2a0d196a448e48f7ca246e7cf", "FileId": 4900000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/levels.json",
+                    "Size": 2940,
+                    "CompressedSize": 758,
+                    "Object": { "$TypeId": 10, "Guid": "7f135fd2a0d196a448e48f7ca246e7cf", "FileId": 4900000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Textures/Monedas.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "33b38470f19474b4fa68c1f31f88eb09", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Monedas.png",
+                    "Size": 1456,
+                    "CompressedSize": 1134,
+                    "Object": { "$TypeId": 10, "Guid": "33b38470f19474b4fa68c1f31f88eb09", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Textures/PhysicsDemo.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "892392a92dd8841bd814c19af3368e28", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/PhysicsDemo.png",
+                    "Size": 5076,
+                    "CompressedSize": 3677,
+                    "Object": { "$TypeId": 10, "Guid": "892392a92dd8841bd814c19af3368e28", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Textures/Obstáculo.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "bbcfaa7b82778f64191f9c20d7ca7cd7", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Obstáculo.png",
+                    "Size": 3388,
+                    "CompressedSize": 1007,
+                    "Object": { "$TypeId": 10, "Guid": "bbcfaa7b82778f64191f9c20d7ca7cd7", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Textures/Shots/Vida.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "1f33500db3512634bb3f4425796a240a", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Vida.png",
+                    "Size": 424,
+                    "CompressedSize": 182,
+                    "Object": { "$TypeId": 10, "Guid": "1f33500db3512634bb3f4425796a240a", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Textures/Shots/Vida en uso.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "cf6b358497a155a47801a0583348bebb", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Vida en uso.png",
+                    "Size": 520,
+                    "CompressedSize": 423,
+                    "Object": { "$TypeId": 10, "Guid": "cf6b358497a155a47801a0583348bebb", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Textures/Shots/Vida usada.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "58c920aea4a2cf3448c48dec26efeeda", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Vida usada.png",
+                    "Size": 432,
+                    "CompressedSize": 188,
+                    "Object": { "$TypeId": 10, "Guid": "58c920aea4a2cf3448c48dec26efeeda", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Textures/linea Punteada.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "e5fce83cf52364e408f6c6a412060d9b", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/linea Punteada.png",
+                    "Size": 244,
+                    "CompressedSize": 215,
+                    "Object": { "$TypeId": 10, "Guid": "e5fce83cf52364e408f6c6a412060d9b", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Textures/Circulo Punteado.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "cfdb1286acf90614f84e960d097a8974", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Circulo Punteado.png",
+                    "Size": 5004,
+                    "CompressedSize": 3693,
+                    "Object": { "$TypeId": 10, "Guid": "cfdb1286acf90614f84e960d097a8974", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Textures/Ball/Frame 1.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "432ebf0e89cf5b74e9ccbd5606cde427", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Frame 1.png",
+                    "Size": 2384,
+                    "CompressedSize": 1836,
+                    "Object": { "$TypeId": 10, "Guid": "432ebf0e89cf5b74e9ccbd5606cde427", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Textures/Ball/Frame 2.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "8641ac16a303abd4180f2fe2d7bd9711", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Frame 2.png",
+                    "Size": 2420,
+                    "CompressedSize": 1860,
+                    "Object": { "$TypeId": 10, "Guid": "8641ac16a303abd4180f2fe2d7bd9711", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Textures/Ball/Frame 3.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "68fcfa9057d2dc941ab15ee7f6c1ec73", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Frame 3.png",
+                    "Size": 2412,
+                    "CompressedSize": 1856,
+                    "Object": { "$TypeId": 10, "Guid": "68fcfa9057d2dc941ab15ee7f6c1ec73", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Textures/Ball/Frame 4.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "a1817d3141eb7a849a2be6a39a314c61", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Frame 4.png",
+                    "Size": 2396,
+                    "CompressedSize": 1844,
+                    "Object": { "$TypeId": 10, "Guid": "a1817d3141eb7a849a2be6a39a314c61", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Textures/Ball/Frame 5.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "8043e9be8b361bc4997f848186bb4d74", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Frame 5.png",
+                    "Size": 2384,
+                    "CompressedSize": 1833,
+                    "Object": { "$TypeId": 10, "Guid": "8043e9be8b361bc4997f848186bb4d74", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Audio/V0.4/Background Music Short.mp3",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "e858840878b6fa94b9690bd2250f86ba", "FileId": 8300000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Background Music Short.mp3",
+                    "Size": 8405344,
+                    "CompressedSize": 6340849,
+                    "Object": { "$TypeId": 10, "Guid": "e858840878b6fa94b9690bd2250f86ba", "FileId": 8300000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Audio/V0.4/BallBounce.mp3",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "c3fad33d05040794ebb6bed2faa2631d", "FileId": 8300000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/BallBounce.mp3",
+                    "Size": 14092,
+                    "CompressedSize": 9823,
+                    "Object": { "$TypeId": 10, "Guid": "c3fad33d05040794ebb6bed2faa2631d", "FileId": 8300000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Audio/V0.4/BallBounce2.mp3",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "4732996eddaff284a8e37d89e6e27449", "FileId": 8300000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/BallBounce2.mp3",
+                    "Size": 10936,
+                    "CompressedSize": 7331,
+                    "Object": { "$TypeId": 10, "Guid": "4732996eddaff284a8e37d89e6e27449", "FileId": 8300000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Audio/V0.4/Coin.mp3",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "391a3044afbc3db439a58626eabdaa35", "FileId": 8300000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Coin.mp3",
+                    "Size": 8764,
+                    "CompressedSize": 5887,
+                    "Object": { "$TypeId": 10, "Guid": "391a3044afbc3db439a58626eabdaa35", "FileId": 8300000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Audio/V0.4/Lose.mp3",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "87066f7da79892e409640ba588790018", "FileId": 8300000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Lose.mp3",
+                    "Size": 20724,
+                    "CompressedSize": 14839,
+                    "Object": { "$TypeId": 10, "Guid": "87066f7da79892e409640ba588790018", "FileId": 8300000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Audio/V0.4/NoShots.mp3",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "b245e73a87b0f3c48afdd123cc7d9064", "FileId": 8300000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/NoShots.mp3",
+                    "Size": 19376,
+                    "CompressedSize": 13863,
+                    "Object": { "$TypeId": 10, "Guid": "b245e73a87b0f3c48afdd123cc7d9064", "FileId": 8300000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Audio/V0.4/BallBlinkingShort.mp3",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "1511f53956c029a4290a48b396c0f4b3", "FileId": 8300000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/BallBlinkingShort.mp3",
+                    "Size": 11212,
+                    "CompressedSize": 7645,
+                    "Object": { "$TypeId": 10, "Guid": "1511f53956c029a4290a48b396c0f4b3", "FileId": 8300000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Textures/Fondo.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "49357d1d3299fe84baa7180e61bf4c1c", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Fondo.png",
+                    "Size": 31680,
+                    "CompressedSize": 1705,
+                    "Object": { "$TypeId": 10, "Guid": "49357d1d3299fe84baa7180e61bf4c1c", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Textures/Fondo (1).png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "a7f7cd2dd929bb94ebaf67f26bf2bdb4", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Fondo (1).png",
+                    "Size": 31764,
+                    "CompressedSize": 1486,
+                    "Object": { "$TypeId": 10, "Guid": "a7f7cd2dd929bb94ebaf67f26bf2bdb4", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Textures/Tutorial/Pantalla Final.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "a75641ce0851f71499ade03c77ef44d4", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Pantalla Final.png",
+                    "Size": 23316,
+                    "CompressedSize": 12329,
+                    "Object": { "$TypeId": 10, "Guid": "a75641ce0851f71499ade03c77ef44d4", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Textures/Tutorial/Pantalla Inicial.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "f4708916ce892034aba6c4852e66b96d", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Pantalla Inicial.png",
+                    "Size": 7052,
+                    "CompressedSize": 5236,
+                    "Object": { "$TypeId": 10, "Guid": "f4708916ce892034aba6c4852e66b96d", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Textures/Tutorial/Pantalla 1.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "d7b5a771670423742957199560ce249d", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Pantalla 1.png",
+                    "Size": 10716,
+                    "CompressedSize": 7815,
+                    "Object": { "$TypeId": 10, "Guid": "d7b5a771670423742957199560ce249d", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Textures/Tutorial/Pantalla 2.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "5559368a1bac58f42b46572b97fc809f", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Pantalla 2.png",
+                    "Size": 45824,
+                    "CompressedSize": 26275,
+                    "Object": { "$TypeId": 10, "Guid": "5559368a1bac58f42b46572b97fc809f", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Textures/Tutorial/Pantalla 3.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "cdad264083459314cb1ccde26ba16e81", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Pantalla 3.png",
+                    "Size": 17404,
+                    "CompressedSize": 12576,
+                    "Object": { "$TypeId": 10, "Guid": "cdad264083459314cb1ccde26ba16e81", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Textures/Tutorial/Pantalla 4.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "505f39c114d206a44b031366b3ee1f55", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Pantalla 4.png",
+                    "Size": 39300,
+                    "CompressedSize": 24123,
+                    "Object": { "$TypeId": 10, "Guid": "505f39c114d206a44b031366b3ee1f55", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Textures/Tutorial/Pantalla 5.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "d71d1a1b2636da74e9e7bef2204f0267", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Pantalla 5.png",
+                    "Size": 41820,
+                    "CompressedSize": 25451,
+                    "Object": { "$TypeId": 10, "Guid": "d71d1a1b2636da74e9e7bef2204f0267", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }]
+    }, {
+        "Item": {
+            "Name": "Code",
+            "Size": 0,
+            "CompressedSize": 0
+        },
+        "Children": [{
+            "Item": {
+                "Name": "TinyExport/ZenBall/html5/development/build/entities.js",
+                "Size": 57321,
+                "CompressedSize": 7158
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "Coin",
+                    "Size": 2010,
+                    "CompressedSize": 639
+                }
+            }, {
+                "Item": {
+                    "Name": "Hole",
+                    "Size": 1878,
+                    "CompressedSize": 602
+                }
+            }, {
+                "Item": {
+                    "Name": "Obstacle",
+                    "Size": 2462,
+                    "CompressedSize": 747
+                }
+            }, {
+                "Item": {
+                    "Name": "ShotPeg",
+                    "Size": 2000,
+                    "CompressedSize": 603
+                }
+            }, {
+                "Item": {
+                    "Name": "BallGroup",
+                    "Size": 6956,
+                    "CompressedSize": 1481
+                }
+            }, {
+                "Item": {
+                    "Name": "Bootstraper",
+                    "Size": 15650,
+                    "CompressedSize": 2784
+                }
+            }, {
+                "Item": {
+                    "Name": "GameOver",
+                    "Size": 1316,
+                    "CompressedSize": 490
+                }
+            }, {
+                "Item": {
+                    "Name": "GameplayEntityGroup",
+                    "Size": 1055,
+                    "CompressedSize": 399
+                }
+            }, {
+                "Item": {
+                    "Name": "GameStart",
+                    "Size": 1090,
+                    "CompressedSize": 449
+                }
+            }, {
+                "Item": {
+                    "Name": "TutorialEntityGroup",
+                    "Size": 22841,
+                    "CompressedSize": 3628
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "TinyExport/ZenBall/html5/development/build/bindings.js",
+                "Size": 158223,
+                "CompressedSize": 13701
+            }
+        }, {
+            "Item": {
+                "Name": "Linked Code Files",
+                "Size": 0,
+                "CompressedSize": 0
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/scripts/tsc-emit.js",
+                    "Size": 77502,
+                    "CompressedSize": 11647
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "TinyExport/ZenBall/html5/development/build/main.js",
+                "Size": 5723,
+                "CompressedSize": 1289
+            }
+        }, {
+            "Item": {
+                "Name": "TinyExport/ZenBall/html5/development/build/wsclient.js",
+                "Size": 9651,
+                "CompressedSize": 2635
+            }
+        }]
+    }]
+}

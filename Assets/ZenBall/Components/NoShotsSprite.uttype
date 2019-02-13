@@ -1,0 +1,25 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "db33c54caf724bed81c04d3b9fe4afe3",
+    "Name": "NoShotsSprite",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "e5a48e4b9978428885eed7b78b7bad93",
+        "Name": "DefaultSprite",
+        "FieldType": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
+        "Array": false,
+        "Visibility": 0
+    }, {
+        "Id": "3470771a4fcd4aaab64c74119a644be7",
+        "Name": "NoShots",
+        "FieldType": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
+        "Array": false,
+        "Visibility": 0
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "db33c54caf724bed81c04d3b9fe4afe3", "Name": "NoShotsSprite" }
+    }
+}]

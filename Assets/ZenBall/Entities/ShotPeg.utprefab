@@ -1,0 +1,45 @@
+﻿[{
+    "$TypeId": 4,
+    "Id": "b4cb21805e7a40e4bf39b35c7e917558",
+    "Name": "ShotPeg",
+    "ExportFlags": 0,
+    "SerializedVersion": 0,
+    "Entities": [
+        { "$TypeId": 9, "Id": "c5be31ff40dc4b4790c7014fdc6c8988", "Name": "ShotPeg" }
+    ]
+},
+{
+    "$TypeId": 5,
+    "Id": "c5be31ff40dc4b4790c7014fdc6c8988",
+    "Name": "ShotPeg",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "1f33500db3512634bb3f4425796a240a", "FileId": 21300000, "Type": 3 }
+        }
+    }, {
+        "Type": { "Id": "80904f0096e74ed7a2c9b54aaaffc099", "Name": "ShotPeg" }
+    }, {
+        "Type": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+        "Properties": {
+            "size": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 10.72,
+                    "y": 2.6
+                }
+            }
+        }
+    }]
+}]

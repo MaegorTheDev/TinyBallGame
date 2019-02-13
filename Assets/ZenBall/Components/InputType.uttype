@@ -1,0 +1,29 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "c8fb1c8e68ec43b9b267d8aa62812ab4",
+    "Name": "InputType",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Enum",
+    "BaseType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+    "Fields": [{
+        "Id": "947bf03e56bd4fcaa74f66ebb1f074c2",
+        "Name": "Direction",
+        "FieldType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+        "Array": false,
+        "Visibility": 0
+    }, {
+        "Id": "7b853ab2b6a34db995d7d2df283998d7",
+        "Name": "Power",
+        "FieldType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+        "Array": false,
+        "Visibility": 0
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "c8fb1c8e68ec43b9b267d8aa62812ab4", "Name": "InputType" },
+        "Properties": {
+            "Power": 1
+        }
+    }
+}]

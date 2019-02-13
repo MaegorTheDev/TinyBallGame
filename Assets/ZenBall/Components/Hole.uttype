@@ -1,0 +1,12 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "efbb00c5e27a4b1893759158f53c4736",
+    "Name": "Hole",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "DefaultValue": {
+        "Type": { "Id": "efbb00c5e27a4b1893759158f53c4736", "Name": "Hole" }
+    }
+}]

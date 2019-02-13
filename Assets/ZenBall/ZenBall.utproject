@@ -1,0 +1,105 @@
+﻿[{
+    "$TypeId": 1,
+    "Id": "bd3bec50aeda4f09995b49d83094aed8",
+    "Name": "ZenBall",
+    "ExportFlags": 0,
+    "SerializedVersion": 7,
+    "Settings": {
+        "CanvasWidth": 1080,
+        "CanvasHeight": 1920,
+        "EmbedAssets": true,
+        "CanvasAutoResize": true,
+        "RenderMode": 0,
+        "DefaultTextureSettings": {
+            "$TypeId": 2,
+            "Embedded": true,
+            "FormatType": 0,
+            "JpgCompressionQuality": 75,
+            "WebPCompressionQuality": 60
+        },
+        "DefaultAudioClipSettings": {
+            "$TypeId": 3,
+            "Embedded": true
+        },
+        "DefaultAnimationClipSettings": {
+            "$TypeId": 4,
+            "Embedded": false
+        },
+        "LocalWSServerPort": 17700,
+        "LocalHTTPServerPort": 19050,
+        "SingleFileHtml": false,
+        "MemorySize": 16,
+        "IncludeWebPDecompressor": false,
+        "RunBabel": false,
+        "MinifyJavaScript": true,
+        "LinkToSource": true,
+        "SymbolsInReleaseBuild": false
+    },
+    "Module": { "Id": "baff4faf51c54338821d673b770e02a1", "Name": "Main" },
+    "Configuration": { "$TypeId": 9, "Id": "25d84148b63d4e5ba34686b58a214cb1", "Name": "Configuration" }
+},
+{
+    "$TypeId": 2,
+    "Id": "baff4faf51c54338821d673b770e02a1",
+    "Name": "Main",
+    "SerializedVersion": 1,
+    "ExportFlags": 0,
+    "Namespace": "game",
+    "Options": 4,
+    "Dependencies": [
+        { "Id": "30097418841f56d73400bf82ee859ac9", "Name": "UTiny.Core2D" },
+        { "Id": "eae58004250dcd15a6c834b07677ca28", "Name": "UTiny.HTML" },
+        { "Id": "a1b50987659c653138795a8f4079fc10", "Name": "UTiny.Math" },
+        { "Id": "2af0cd3b47a732bf738688ceab312689", "Name": "UTiny.Core" },
+        { "Id": "ce3f1bd7050540b70d450a606e226ea2", "Name": "UTiny.Shared" },
+        { "Id": "259902b84b3ed0f7213a1b5e37040709", "Name": "UTiny.Physics2D" },
+        { "Id": "baff4faf51c54338821d673b770e02a1", "Name": "Main" },
+        { "Id": "77db3a3f0ecf4c26a7ba12a90a61e639", "Name": "UTiny.TextJS" },
+        { "Id": "229e8d5fce9cf6b511ca82c89f1b58eb", "Name": "UTiny.Sprite2D" },
+        { "Id": "8f3245ba92302e53e51e43514424d568", "Name": "UTiny.ImageLoadingHTML" },
+        { "Id": "494f9eba840c1f117459611e605884b0", "Name": "UTiny.Core2DTypes" },
+        { "Id": "49644c1065ebcfd98885bfe5e77c8fc1", "Name": "UTiny.Image2D" },
+        { "Id": "0b0e260844fa6632977aa15579b42291", "Name": "UTiny.Text" },
+        { "Id": "e6d4e4660e226bf8de8d111b4ef61f3d", "Name": "UTiny.TextHTML" },
+        { "Id": "404877ed746affa8a6081ad8161dd8de", "Name": "UTiny.EditorExtensions" },
+        { "Id": "29e5e02a3a0442beb9e6828c78a7ff91", "Name": "UTiny.EntityGroup" },
+        { "Id": "36f73ad23c8a63c53fa510f0621474f5", "Name": "UTiny.HitBox2D" },
+        { "Id": "e46c24fb4d9a01e79b109bbcf6d24260", "Name": "UTiny.UILayout" },
+        { "Id": "251df5ef6819533f94e1cbf3181f722e", "Name": "UTiny.Audio" },
+        { "Id": "91f1133fa9293ef9b61da0f1e6cbceeb", "Name": "UTiny.Animation" }
+    ],
+    "Assets": [{
+        "Object": { "$TypeId": 10, "Guid": "7f135fd2a0d196a448e48f7ca246e7cf", "FileId": 4900000, "Type": 3 }
+    }],
+    "StartupEntityGroup": { "Id": "4bf13ed264834a059678ba56f3f94814", "Name": "Bootstraper" }
+},
+{
+    "$TypeId": 5,
+    "Id": "25d84148b63d4e5ba34686b58a214cb1",
+    "Name": "Configuration",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "575fe161bc06950c954480d04c70c9ab", "Name": "DisplayInfo" },
+        "Properties": {
+            "width": 1080,
+            "height": 1920,
+            "autoSizeToFrame": true
+        }
+    }, {
+        "Type": { "Id": "38283a6cef9faa790b5c9936163d59e3", "Name": "Physics2DConfig" },
+        "Properties": {
+            "gravity": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "y": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "e816e7b93a13b9e5ddf993486ca79278", "Name": "AudioConfig" }
+    }, {
+        "Type": { "Id": "f7ac240d356e44dc9709dc85b5cef8b5", "Name": "ObjectSpawnerConfig" }
+    }]
+}]

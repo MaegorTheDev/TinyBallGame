@@ -1,0 +1,36 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "80904f0096e74ed7a2c9b54aaaffc099",
+    "Name": "ShotPeg",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "0f69f20a3863446aa2b7c7f9f666017d",
+        "Name": "InitialSprite",
+        "FieldType": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
+        "Array": false,
+        "Visibility": 1
+    }, {
+        "Id": "ba4deae6f40141ba8c2dae7f9c48912d",
+        "Name": "CurrentSprite",
+        "FieldType": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
+        "Array": false,
+        "Visibility": 1
+    }, {
+        "Id": "290b74cd33154e6d8a23cdc3d9c637ad",
+        "Name": "UsedSprite",
+        "FieldType": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
+        "Array": false,
+        "Visibility": 1
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "80904f0096e74ed7a2c9b54aaaffc099", "Name": "ShotPeg" },
+        "Properties": {
+            "InitialSprite": { "$TypeId": 10, "Guid": "1f33500db3512634bb3f4425796a240a", "FileId": 21300000, "Type": 3 },
+            "CurrentSprite": { "$TypeId": 10, "Guid": "cf6b358497a155a47801a0583348bebb", "FileId": 21300000, "Type": 3 },
+            "UsedSprite": { "$TypeId": 10, "Guid": "58c920aea4a2cf3448c48dec26efeeda", "FileId": 21300000, "Type": 3 }
+        }
+    }
+}]

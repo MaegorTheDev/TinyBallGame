@@ -1,0 +1,57 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "477a8680849d4b1eb76e16ddbfc6139f",
+    "Name": "GameState",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Enum",
+    "BaseType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+    "Fields": [{
+        "Id": "8d7b2181dc6244d78a7dbb171ef8cf52",
+        "Name": "Waiting",
+        "FieldType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+        "Array": false,
+        "Visibility": 0
+    }, {
+        "Id": "d8b2a1f9ca704dca8d5908038496d5e6",
+        "Name": "Playing",
+        "FieldType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+        "Array": false,
+        "Visibility": 0
+    }, {
+        "Id": "8a9809e7ca3c410fb19db3e0581e88de",
+        "Name": "Aiming",
+        "FieldType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+        "Array": false,
+        "Visibility": 0
+    }, {
+        "Id": "f4ef5d1d67044940a3d1b21cca264146",
+        "Name": "Tutorial",
+        "FieldType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+        "Array": false,
+        "Visibility": 0
+    }, {
+        "Id": "70a91429af7a4b05b4765b50c519b73d",
+        "Name": "GameStart",
+        "FieldType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+        "Array": false,
+        "Visibility": 0
+    }, {
+        "Id": "0f8da637613b4d7f89d1b33a1f2fd258",
+        "Name": "GameEnd",
+        "FieldType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+        "Array": false,
+        "Visibility": 0
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "477a8680849d4b1eb76e16ddbfc6139f", "Name": "GameState" },
+        "Properties": {
+            "Playing": 1,
+            "Aiming": 2,
+            "Tutorial": 3,
+            "GameStart": 4,
+            "GameEnd": 5
+        }
+    }
+}]

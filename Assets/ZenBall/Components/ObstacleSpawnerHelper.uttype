@@ -1,0 +1,53 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "929ba5ca25074f5c9c8fbba9fa52aa6d",
+    "Name": "ObstacleSpawnerHelper",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "073746378cd14375a0c0a6fc648be5d6",
+        "Name": "AreaPercentage",
+        "FieldType": { "Id": "67325dccf2f047c19c7ef4a045354e67", "Name": "Float32" },
+        "Array": false,
+        "Visibility": 0
+    }, {
+        "Id": "801bfefd731f47a888c758eac7e3ce46",
+        "Name": "XScaleValues",
+        "FieldType": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+        "Array": false,
+        "Visibility": 0
+    }, {
+        "Id": "f9d1e7da10e243bb94b80bd69a4c4d0b",
+        "Name": "YScaleValues",
+        "FieldType": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+        "Array": false,
+        "Visibility": 0
+    }, {
+        "Id": "886483d168744e1589c8eed6f5967c89",
+        "Name": "BorderOffset",
+        "FieldType": { "Id": "67325dccf2f047c19c7ef4a045354e67", "Name": "Float32" },
+        "Array": false,
+        "Visibility": 0
+    }, {
+        "Id": "bcb4d557fcfc45bfa7ed9cd61003e378",
+        "Name": "SpawnMode",
+        "FieldType": { "Id": "c7c81bbc6f764be4a2a670fef202ed81", "Name": "ObstacleSpawnerMode" },
+        "Array": false,
+        "Visibility": 0
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "929ba5ca25074f5c9c8fbba9fa52aa6d", "Name": "ObstacleSpawnerHelper" },
+        "Properties": {
+            "AreaPercentage": 0,
+            "SpawnMode": {
+                "$TypeId": 8,
+                "Type": { "Id": "c7c81bbc6f764be4a2a670fef202ed81", "Name": "ObstacleSpawnerMode" },
+                "Id": "446c75f91a4045a8b7f3d5520405725d",
+                "Name": "Json",
+                "Value": 1
+            }
+        }
+    }
+}]
