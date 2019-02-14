@@ -67,10 +67,12 @@ namespace game {
                         }    
                         ShotsUISystem.UpdateShotsPeg(world);                 
                     }
-                });           
+                });      
+                
+                GameSystem.SetScore(0, world);     
         }
 
-        public NextTutorial(){               
+        public NextTutorial(){        
             TutorialSystem.index++;          
             //Iterate Over tutorials and change            
             TutorialSystem.nextTutorial = false;   
@@ -98,31 +100,26 @@ namespace game {
             });        
 
             //Start new tutorial
-            if(tries > 0){                           
-                GameSystem.currentPlays = tries;                     
-                ut.EntityGroup.instantiate(this.world, 'game.BallGroup');   
+            if(tries > 0){              
+                BallSystem.SetBallPosition(new Vector3(0,-20), this.world);
+                GameSystem.currentPlays = tries;                      
                 TutorialSystem.waitForClick = false;                
-                ShotsUISystem.UpdateShotsPeg(this.world);                                   
-                NextLevelSystem.checkNextLevel = true;      
+                ShotsUISystem.UpdateShotsPeg(this.world);            
+                
+                GameSystem.AddScore(0, this.world);
             } else {                
                 GameSystem.CurrentGameMode = GameState.Tutorial;
                 TutorialSystem.waitForClick = true;
-                ut.EntityGroup.destroyAll(this.world, "game.BallGroup");
+                //ut.EntityGroup.destroyAll(this.world, "game.BallGroup");                
+                BallSystem.SetBallPosition(new Vector3(-75,-75), this.world);
+                ScoreSystem.CleanScore(this.world);
             }          
             
             //Set Active the current tutorial objects
             for(let i = 0; i < tutorialObjectList.length; i++){    
                 TutorialSystem.setEntityEnabled(this.world, tutorialObjectList[i], true);
-            }          
-
-            //Reset The ball
-            let entityBall = this.world.getEntityByName("Ball");
-            if(!entityBall.isNone()){
-                if(!this.world.hasComponent(entityBall, ut.Disabled)){
-                    GameSystem.CurrentGameMode = GameState.Waiting;
-                }                
-                BallSystem.ChangeBallSpeedAndPosition(new Vector2(0,0), new Vector3(0,-20), entityBall, this.world);
-            }
+            }                  
+            //HoleSystem.CheckNewLevel = true; 
         }
         
         public CheckTutorialObjectsStatus(){

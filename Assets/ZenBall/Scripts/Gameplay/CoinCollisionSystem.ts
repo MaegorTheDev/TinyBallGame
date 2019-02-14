@@ -1,39 +1,16 @@
 
 namespace game {    
-    @ut.executeAfter(game.CoinSpawnSystem)
     /** New System */
-    export class NextLevelSystem extends ut.ComponentSystem {
-        static checkNextLevel = false;
+    export class CoinCollisionSystem extends ut.ComponentSystem {
         static actualCoins = 0;
         
         OnUpdate():void {
             //We just need to start the new level when hitting the hole
-                 
-
-            if(!NextLevelSystem.checkNextLevel){
-                return;
-            }
-            this.CheckCollisions();
-            
-            return;
-            if(GameSystem.isInTutorial ){                
-                if(GameSystem.CurrentGameMode != GameState.Tutorial && !TutorialSystem.waitForClick){
-                    this.CheckTutorial();  
-                }   
-               return;           
-            }     
-            if(NextLevelSystem.actualCoins >= CoinSpawnSystem.spawnedCoins && CoinSpawnSystem.spawnedCoins != 0){   
-                           
-               // NextLevelSystem.checkNextLevel = false;
-               // NextLevelSystem.actualCoins = 0 ;
-               // GameSystem.NewLevel(this.world);
-            }
-           
+            this.CheckCollisions();          
         }
 
         static NextLevel(world:ut.World){
-            NextLevelSystem.checkNextLevel = false;
-            NextLevelSystem.actualCoins = 0 ;
+            CoinCollisionSystem.actualCoins = 0 ;
             GameSystem.NewLevel(world);
         }
 
@@ -61,7 +38,8 @@ namespace game {
                                 ut.Core2D.TransformService.destroyTree(this.world, entity);     
                                 TimeLethalitySystem.ResetTimer();   
                                 CollisionAudioSystem.PlayCoinSound(this.world);               
-                                NextLevelSystem.actualCoins++;
+                                CoinCollisionSystem.actualCoins++;                                
+                                GameSystem.AddScore(5, this.world);
                             }                 
                         }
                         

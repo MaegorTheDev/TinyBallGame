@@ -674,6 +674,12 @@
 
 @system
 @memberof game
+@name CoinCollisionSystemJS
+*/
+/**
+
+@system
+@memberof game
 @name CoinSpawnSystemJS
 */
 /**
@@ -704,12 +710,6 @@
 
 @system
 @memberof game
-@name NextLevelSystemJS
-*/
-/**
-
-@system
-@memberof game
 @name SpeedLethalitySystemJS
 */
 /**
@@ -729,6 +729,12 @@
 @system
 @memberof game
 @name LineRenderingSystemJS
+*/
+/**
+
+@system
+@memberof game
+@name ScoreSystemJS
 */
 /**
 

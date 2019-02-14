@@ -26,7 +26,7 @@
         "Children": [{
             "Item": {
                 "Name": "JavaScript",
-                "Size": 31922,
+                "Size": 29871,
                 "CompressedSize": 0
             }
         }, {
@@ -61,17 +61,17 @@
             }]
         }, {
             "Item": {
-                "Name": "Assets/ZenBall/Textures/PhysicsDemo.png",
+                "Name": "Assets/ZenBall/Textures/Hoyo Negro.png",
                 "Size": 0,
                 "CompressedSize": 0,
-                "Object": { "$TypeId": 10, "Guid": "892392a92dd8841bd814c19af3368e28", "FileId": 2800000, "Type": 3 }
+                "Object": { "$TypeId": 10, "Guid": "dd8043cb073da1b46acce5fa47b5a949", "FileId": 2800000, "Type": 3 }
             },
             "Children": [{
                 "Item": {
-                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/PhysicsDemo.png",
-                    "Size": 5076,
-                    "CompressedSize": 3677,
-                    "Object": { "$TypeId": 10, "Guid": "892392a92dd8841bd814c19af3368e28", "FileId": 2800000, "Type": 3 }
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Hoyo Negro.png",
+                    "Size": 14576,
+                    "CompressedSize": 11018,
+                    "Object": { "$TypeId": 10, "Guid": "dd8043cb073da1b46acce5fa47b5a949", "FileId": 2800000, "Type": 3 }
                 }
             }]
         }, {
@@ -132,36 +132,6 @@
                     "Size": 432,
                     "CompressedSize": 188,
                     "Object": { "$TypeId": 10, "Guid": "58c920aea4a2cf3448c48dec26efeeda", "FileId": 2800000, "Type": 3 }
-                }
-            }]
-        }, {
-            "Item": {
-                "Name": "Assets/ZenBall/Textures/linea Punteada.png",
-                "Size": 0,
-                "CompressedSize": 0,
-                "Object": { "$TypeId": 10, "Guid": "e5fce83cf52364e408f6c6a412060d9b", "FileId": 2800000, "Type": 3 }
-            },
-            "Children": [{
-                "Item": {
-                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/linea Punteada.png",
-                    "Size": 244,
-                    "CompressedSize": 215,
-                    "Object": { "$TypeId": 10, "Guid": "e5fce83cf52364e408f6c6a412060d9b", "FileId": 2800000, "Type": 3 }
-                }
-            }]
-        }, {
-            "Item": {
-                "Name": "Assets/ZenBall/Textures/Circulo Punteado.png",
-                "Size": 0,
-                "CompressedSize": 0,
-                "Object": { "$TypeId": 10, "Guid": "cfdb1286acf90614f84e960d097a8974", "FileId": 2800000, "Type": 3 }
-            },
-            "Children": [{
-                "Item": {
-                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Circulo Punteado.png",
-                    "Size": 5004,
-                    "CompressedSize": 3693,
-                    "Object": { "$TypeId": 10, "Guid": "cfdb1286acf90614f84e960d097a8974", "FileId": 2800000, "Type": 3 }
                 }
             }]
         }, {
@@ -237,6 +207,36 @@
                     "Size": 2384,
                     "CompressedSize": 1833,
                     "Object": { "$TypeId": 10, "Guid": "8043e9be8b361bc4997f848186bb4d74", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Textures/linea Punteada.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "e5fce83cf52364e408f6c6a412060d9b", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/linea Punteada.png",
+                    "Size": 244,
+                    "CompressedSize": 215,
+                    "Object": { "$TypeId": 10, "Guid": "e5fce83cf52364e408f6c6a412060d9b", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/ZenBall/Textures/Circulo Punteado.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "cfdb1286acf90614f84e960d097a8974", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Circulo Punteado.png",
+                    "Size": 5004,
+                    "CompressedSize": 3693,
+                    "Object": { "$TypeId": 10, "Guid": "cfdb1286acf90614f84e960d097a8974", "FileId": 2800000, "Type": 3 }
                 }
             }]
         }, {
@@ -346,6 +346,21 @@
             }]
         }, {
             "Item": {
+                "Name": "Assets/ZenBall/Audio/V0.4/Hole.mp3",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "220c39712ad6d47499fc0fc5ab1c0881", "FileId": 8300000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Hole.mp3",
+                    "Size": 15404,
+                    "CompressedSize": 10832,
+                    "Object": { "$TypeId": 10, "Guid": "220c39712ad6d47499fc0fc5ab1c0881", "FileId": 8300000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
                 "Name": "Assets/ZenBall/Textures/Fondo.png",
                 "Size": 0,
                 "CompressedSize": 0,
@@ -376,7 +391,7 @@
             }]
         }, {
             "Item": {
-                "Name": "Assets/ZenBall/Textures/Tutorial/Pantalla Final.png",
+                "Name": "Assets/ZenBall/Textures/Tutorial/Old/Pantalla Final.png",
                 "Size": 0,
                 "CompressedSize": 0,
                 "Object": { "$TypeId": 10, "Guid": "a75641ce0851f71499ade03c77ef44d4", "FileId": 2800000, "Type": 3 }
@@ -391,7 +406,7 @@
             }]
         }, {
             "Item": {
-                "Name": "Assets/ZenBall/Textures/Tutorial/Pantalla Inicial.png",
+                "Name": "Assets/ZenBall/Textures/Tutorial/Old/Pantalla Inicial.png",
                 "Size": 0,
                 "CompressedSize": 0,
                 "Object": { "$TypeId": 10, "Guid": "f4708916ce892034aba6c4852e66b96d", "FileId": 2800000, "Type": 3 }
@@ -406,77 +421,47 @@
             }]
         }, {
             "Item": {
-                "Name": "Assets/ZenBall/Textures/Tutorial/Pantalla 1.png",
+                "Name": "Assets/ZenBall/Textures/Tutorial/Texto Pantalla 1.png",
                 "Size": 0,
                 "CompressedSize": 0,
-                "Object": { "$TypeId": 10, "Guid": "d7b5a771670423742957199560ce249d", "FileId": 2800000, "Type": 3 }
+                "Object": { "$TypeId": 10, "Guid": "7d4978c16628ac042b92c12b876748d9", "FileId": 2800000, "Type": 3 }
             },
             "Children": [{
                 "Item": {
-                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Pantalla 1.png",
-                    "Size": 10716,
-                    "CompressedSize": 7815,
-                    "Object": { "$TypeId": 10, "Guid": "d7b5a771670423742957199560ce249d", "FileId": 2800000, "Type": 3 }
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Texto Pantalla 1.png",
+                    "Size": 13484,
+                    "CompressedSize": 9961,
+                    "Object": { "$TypeId": 10, "Guid": "7d4978c16628ac042b92c12b876748d9", "FileId": 2800000, "Type": 3 }
                 }
             }]
         }, {
             "Item": {
-                "Name": "Assets/ZenBall/Textures/Tutorial/Pantalla 2.png",
+                "Name": "Assets/ZenBall/Textures/Tutorial/Texto Pantalla 2.png",
                 "Size": 0,
                 "CompressedSize": 0,
-                "Object": { "$TypeId": 10, "Guid": "5559368a1bac58f42b46572b97fc809f", "FileId": 2800000, "Type": 3 }
+                "Object": { "$TypeId": 10, "Guid": "9412a1199f7e98e46a2b8f3ccab22876", "FileId": 2800000, "Type": 3 }
             },
             "Children": [{
                 "Item": {
-                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Pantalla 2.png",
-                    "Size": 45824,
-                    "CompressedSize": 26275,
-                    "Object": { "$TypeId": 10, "Guid": "5559368a1bac58f42b46572b97fc809f", "FileId": 2800000, "Type": 3 }
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Texto Pantalla 2.png",
+                    "Size": 9308,
+                    "CompressedSize": 6935,
+                    "Object": { "$TypeId": 10, "Guid": "9412a1199f7e98e46a2b8f3ccab22876", "FileId": 2800000, "Type": 3 }
                 }
             }]
         }, {
             "Item": {
-                "Name": "Assets/ZenBall/Textures/Tutorial/Pantalla 3.png",
+                "Name": "Assets/ZenBall/Textures/Tutorial/Texto Pantalla 3.png",
                 "Size": 0,
                 "CompressedSize": 0,
-                "Object": { "$TypeId": 10, "Guid": "cdad264083459314cb1ccde26ba16e81", "FileId": 2800000, "Type": 3 }
+                "Object": { "$TypeId": 10, "Guid": "0138842e5d6d9d74fa058380ba16fdc5", "FileId": 2800000, "Type": 3 }
             },
             "Children": [{
                 "Item": {
-                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Pantalla 3.png",
-                    "Size": 17404,
-                    "CompressedSize": 12576,
-                    "Object": { "$TypeId": 10, "Guid": "cdad264083459314cb1ccde26ba16e81", "FileId": 2800000, "Type": 3 }
-                }
-            }]
-        }, {
-            "Item": {
-                "Name": "Assets/ZenBall/Textures/Tutorial/Pantalla 4.png",
-                "Size": 0,
-                "CompressedSize": 0,
-                "Object": { "$TypeId": 10, "Guid": "505f39c114d206a44b031366b3ee1f55", "FileId": 2800000, "Type": 3 }
-            },
-            "Children": [{
-                "Item": {
-                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Pantalla 4.png",
-                    "Size": 39300,
-                    "CompressedSize": 24123,
-                    "Object": { "$TypeId": 10, "Guid": "505f39c114d206a44b031366b3ee1f55", "FileId": 2800000, "Type": 3 }
-                }
-            }]
-        }, {
-            "Item": {
-                "Name": "Assets/ZenBall/Textures/Tutorial/Pantalla 5.png",
-                "Size": 0,
-                "CompressedSize": 0,
-                "Object": { "$TypeId": 10, "Guid": "d71d1a1b2636da74e9e7bef2204f0267", "FileId": 2800000, "Type": 3 }
-            },
-            "Children": [{
-                "Item": {
-                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Pantalla 5.png",
-                    "Size": 41820,
-                    "CompressedSize": 25451,
-                    "Object": { "$TypeId": 10, "Guid": "d71d1a1b2636da74e9e7bef2204f0267", "FileId": 2800000, "Type": 3 }
+                    "Name": "TinyExport/ZenBall/html5/development/artifacts/assets/Texto Pantalla 3.png",
+                    "Size": 12404,
+                    "CompressedSize": 9040,
+                    "Object": { "$TypeId": 10, "Guid": "0138842e5d6d9d74fa058380ba16fdc5", "FileId": 2800000, "Type": 3 }
                 }
             }]
         }]
@@ -489,26 +474,26 @@
         "Children": [{
             "Item": {
                 "Name": "TinyExport/ZenBall/html5/development/build/entities.js",
-                "Size": 57321,
-                "CompressedSize": 7158
+                "Size": 57950,
+                "CompressedSize": 7469
             },
             "Children": [{
                 "Item": {
                     "Name": "Coin",
-                    "Size": 2010,
-                    "CompressedSize": 639
+                    "Size": 2029,
+                    "CompressedSize": 645
                 }
             }, {
                 "Item": {
                     "Name": "Hole",
-                    "Size": 1878,
-                    "CompressedSize": 602
+                    "Size": 2029,
+                    "CompressedSize": 648
                 }
             }, {
                 "Item": {
                     "Name": "Obstacle",
-                    "Size": 2462,
-                    "CompressedSize": 747
+                    "Size": 2481,
+                    "CompressedSize": 752
                 }
             }, {
                 "Item": {
@@ -519,20 +504,20 @@
             }, {
                 "Item": {
                     "Name": "BallGroup",
-                    "Size": 6956,
-                    "CompressedSize": 1481
+                    "Size": 7018,
+                    "CompressedSize": 1517
                 }
             }, {
                 "Item": {
                     "Name": "Bootstraper",
-                    "Size": 15650,
-                    "CompressedSize": 2784
+                    "Size": 22307,
+                    "CompressedSize": 3900
                 }
             }, {
                 "Item": {
                     "Name": "GameOver",
-                    "Size": 1316,
-                    "CompressedSize": 490
+                    "Size": 1315,
+                    "CompressedSize": 488
                 }
             }, {
                 "Item": {
@@ -543,21 +528,21 @@
             }, {
                 "Item": {
                     "Name": "GameStart",
-                    "Size": 1090,
-                    "CompressedSize": 449
+                    "Size": 1108,
+                    "CompressedSize": 454
                 }
             }, {
                 "Item": {
                     "Name": "TutorialEntityGroup",
-                    "Size": 22841,
-                    "CompressedSize": 3628
+                    "Size": 16545,
+                    "CompressedSize": 2777
                 }
             }]
         }, {
             "Item": {
                 "Name": "TinyExport/ZenBall/html5/development/build/bindings.js",
-                "Size": 158223,
-                "CompressedSize": 13701
+                "Size": 158261,
+                "CompressedSize": 13697
             }
         }, {
             "Item": {
@@ -568,15 +553,15 @@
             "Children": [{
                 "Item": {
                     "Name": "TinyExport/ZenBall/html5/development/artifacts/scripts/tsc-emit.js",
-                    "Size": 77502,
-                    "CompressedSize": 11647
+                    "Size": 79027,
+                    "CompressedSize": 11821
                 }
             }]
         }, {
             "Item": {
                 "Name": "TinyExport/ZenBall/html5/development/build/main.js",
-                "Size": 5723,
-                "CompressedSize": 1289
+                "Size": 5853,
+                "CompressedSize": 1297
             }
         }, {
             "Item": {

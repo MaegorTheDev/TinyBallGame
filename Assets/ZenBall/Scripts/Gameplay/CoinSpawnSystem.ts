@@ -23,7 +23,6 @@ namespace game {
             //Spawning Coins
 
             if(GameSystem.spawnCoins){        
-                NextLevelSystem.checkNextLevel = false;    
                 CoinSpawnSystem.maxCoins = GameSystem.randomIntFromInterval(CoinSpawnSystem.randomInterval.x, CoinSpawnSystem.randomInterval.y);  
                 CoinSpawnSystem.spawnedCoins = 0;
                 for(let i = 0; i<CoinSpawnSystem.maxCoins; i++){
@@ -45,7 +44,6 @@ namespace game {
                 }    
                     
                 GameSystem.spawnCoins = false;  
-                NextLevelSystem.checkNextLevel = true;
             }
           
         }

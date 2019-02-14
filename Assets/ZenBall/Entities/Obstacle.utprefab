@@ -96,7 +96,8 @@
     }, {
         "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
         "Properties": {
-            "order": 2
+            "layer": 1587474927,
+            "order": 1
         }
     }]
 }]

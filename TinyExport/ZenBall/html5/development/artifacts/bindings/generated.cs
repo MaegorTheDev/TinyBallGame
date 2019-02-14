@@ -385,6 +385,12 @@ namespace game
 }
 namespace game
 {
+    public class CoinCollisionSystemJS : IComponentSystem
+    {
+    }
+}
+namespace game
+{
     public class CoinSpawnSystemJS : IComponentSystem
     {
     }
@@ -415,13 +421,6 @@ namespace game
 }
 namespace game
 {
-    [UpdateAfter(typeof(game.CoinSpawnSystemJS))]
-    public class NextLevelSystemJS : IComponentSystem
-    {
-    }
-}
-namespace game
-{
     public class SpeedLethalitySystemJS : IComponentSystem
     {
     }
@@ -442,6 +441,12 @@ namespace game
 namespace game
 {
     public class LineRenderingSystemJS : IComponentSystem
+    {
+    }
+}
+namespace game
+{
+    public class ScoreSystemJS : IComponentSystem
     {
     }
 }

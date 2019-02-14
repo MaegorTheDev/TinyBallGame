@@ -814,6 +814,9 @@ declare namespace game {
 var BorderSystemJS: ut.SystemJS;
 }
 declare namespace game {
+var CoinCollisionSystemJS: ut.SystemJS;
+}
+declare namespace game {
 var CoinSpawnSystemJS: ut.SystemJS;
 }
 declare namespace game {
@@ -829,9 +832,6 @@ declare namespace game {
 var LethalObstaclesSystemJS: ut.SystemJS;
 }
 declare namespace game {
-var NextLevelSystemJS: ut.SystemJS;
-}
-declare namespace game {
 var SpeedLethalitySystemJS: ut.SystemJS;
 }
 declare namespace game {
@@ -842,6 +842,9 @@ var GameOverScreenSystemJS: ut.SystemJS;
 }
 declare namespace game {
 var LineRenderingSystemJS: ut.SystemJS;
+}
+declare namespace game {
+var ScoreSystemJS: ut.SystemJS;
 }
 declare namespace game {
 var ShotsUISystemJS: ut.SystemJS;

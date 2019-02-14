@@ -25,6 +25,7 @@ namespace game {
                         //Don't delete this
                         //It doesn't work without this
                         //¯\_(ツ)_/¯ 
+                        //console.log("Empty velocity");
                         return;
                     }       
                     else if(SpeedLethalitySystem.CurrentTime <=  SpeedLethalitySystem.decayTime)
@@ -37,7 +38,7 @@ namespace game {
     
                         let newVelocity = new Vector2(currentDirection.x * speedMagnitude, currentDirection.y * speedMagnitude);  
                         
-                        
+                        //console.log("Lowering " + percentage);
                         let setVelocity = new ut.Physics2D.SetVelocity2D;
                         setVelocity.velocity = newVelocity;                            
                         if (this.world.hasComponent(entity, ut.Physics2D.SetVelocity2D))
@@ -46,6 +47,8 @@ namespace game {
                             this.world.addComponentData(entity, setVelocity);
                     }                     
                     else if(SpeedLethalitySystem.CurrentTime > SpeedLethalitySystem.decayTime){
+                        
+                        //console.log("EndGame");
                         SpeedLethalitySystem.CurrentTime = 0;
                         SpeedLethalitySystem.EndGame(this.world);
                     }          

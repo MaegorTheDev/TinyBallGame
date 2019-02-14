@@ -452,11 +452,11 @@ var game;
         }
         BallSystem.prototype.OnUpdate = function () {
             var _this = this;
-            var ballEntity = this.world.getEntityByName("Ball");
-            if (ballEntity.isNone()) {
+            if (BallSystem.BallEntity == undefined || BallSystem.BallEntity.isNone()) {
+                BallSystem.BallEntity = this.world.getEntityByName("Ball");
                 return;
             }
-            this.world.usingComponentData(ballEntity, [ut.Entity, game.Ball, game.InputHelper, ut.Physics2D.Velocity2D], function (entity, ball, inputHelper, velocity) {
+            this.world.usingComponentData(BallSystem.BallEntity, [ut.Entity, game.Ball, game.InputHelper, ut.Physics2D.Velocity2D], function (entity, ball, inputHelper, velocity) {
                 if (game.GameSystem.CurrentGameMode != game.GameState.Aiming) {
                     return;
                 }
@@ -471,24 +471,27 @@ var game;
                 //Shoot!
                 else if (ball.Shoot && game.GameSystem.currentPlays > 0) {
                     var velocity_1 = new Vector2(ball.MoveDirection.x * ball.MaxPower, ball.MoveDirection.y * ball.MaxPower);
-                    BallSystem.ChangeBallSpeed(velocity_1, ballEntity, _this.world);
+                    BallSystem.ChangeBallSpeed(velocity_1, BallSystem.BallEntity, _this.world);
                     BallSystem.ResetBallInput(ball);
                     BallSystem.lastVelocity = new Vector2(0, 0);
                     game.SpeedLethalitySystem.SetStartingVelocity(velocity_1);
                     game.GameSystem.Play(_this.world);
                     game.GameSystem.CurrentGameMode = game.GameState.Playing;
                 }
-                //Continue the movement
-                /**
-                else{
-                    let newVelocity = BallSystem.lastVelocity;
-                    BallSystem.ChangeBallSpeed(newVelocity, ballEntity, this.world);
-                    BallSystem.ResetBallInput(ball);
-                    BallSystem.lastVelocity = new Vector2(0,0);
-                    
-                    GameSystem.NoShotsSound(this.world);
-                    GameSystem.CurrentGameMode = game.GameState.Playing;
-                }*/
+            });
+        };
+        BallSystem.SetBallPosition = function (spawnPosition, world) {
+            if (BallSystem.BallEntity.isNone()) {
+                BallSystem.BallEntity = ut.EntityGroup.instantiate(world, 'game.BallGroup')[0];
+            }
+            world.usingComponentData(BallSystem.BallEntity, [ut.Entity, ut.Core2D.TransformLocalPosition, ut.Physics2D.Velocity2D], function (entity, position, velocity) {
+                position.position = spawnPosition;
+                var setVelocity = new ut.Physics2D.SetVelocity2D;
+                setVelocity.velocity = new Vector2(0, 0);
+                if (world.hasComponent(entity, ut.Physics2D.SetVelocity2D))
+                    world.setComponentData(entity, setVelocity);
+                else
+                    world.addComponentData(entity, setVelocity);
             });
         };
         BallSystem.ChangeBallSpeed = function (newSpeed, entity, world) {
@@ -583,6 +586,56 @@ var game;
 var game;
 (function (game) {
     /** New System */
+    var CoinCollisionSystem = /** @class */ (function (_super) {
+        __extends(CoinCollisionSystem, _super);
+        function CoinCollisionSystem() {
+            return _super !== null && _super.apply(this, arguments) || this;
+        }
+        CoinCollisionSystem.prototype.OnUpdate = function () {
+            //We just need to start the new level when hitting the hole
+            this.CheckCollisions();
+        };
+        CoinCollisionSystem.NextLevel = function (world) {
+            CoinCollisionSystem.actualCoins = 0;
+            game.GameSystem.NewLevel(world);
+        };
+        CoinCollisionSystem.prototype.CheckTutorial = function () {
+            var _this = this;
+            var currentCoins = 0;
+            this.world.forEach([ut.Entity, game.Coin], function (entity, coin) {
+                if (!_this.world.hasComponent(entity, ut.Disabled)) {
+                    currentCoins++;
+                }
+            });
+            if (currentCoins == 0) {
+                game.GameSystem.NewLevel(this.world);
+            }
+        };
+        CoinCollisionSystem.prototype.CheckCollisions = function () {
+            var _this = this;
+            this.world.forEach([ut.Entity, ut.HitBox2D.HitBoxOverlapResults, game.Coin], function (entity, hitboxoverlapresults, coin) {
+                for (var i = 0; i < hitboxoverlapresults.overlaps.length; i++) {
+                    var otherEntity = hitboxoverlapresults.overlaps[i].otherEntity;
+                    if (!_this.world.exists(otherEntity) || _this.world.hasComponent(otherEntity, game.Ball)) {
+                        if (_this.world.exists(entity) && _this.world.hasComponent(entity, ut.Core2D.TransformLocalPosition)) {
+                            ut.Core2D.TransformService.destroyTree(_this.world, entity);
+                            game.TimeLethalitySystem.ResetTimer();
+                            game.CollisionAudioSystem.PlayCoinSound(_this.world);
+                            CoinCollisionSystem.actualCoins++;
+                            game.GameSystem.AddScore(5, _this.world);
+                        }
+                    }
+                }
+            });
+        };
+        CoinCollisionSystem.actualCoins = 0;
+        return CoinCollisionSystem;
+    }(ut.ComponentSystem));
+    game.CoinCollisionSystem = CoinCollisionSystem;
+})(game || (game = {}));
+var game;
+(function (game) {
+    /** New System */
     var CoinSpawnSystem = /** @class */ (function (_super) {
         __extends(CoinSpawnSystem, _super);
         function CoinSpawnSystem() {
@@ -598,7 +651,6 @@ var game;
             });
             //Spawning Coins
             if (game.GameSystem.spawnCoins) {
-                game.NextLevelSystem.checkNextLevel = false;
                 CoinSpawnSystem.maxCoins = game.GameSystem.randomIntFromInterval(CoinSpawnSystem.randomInterval.x, CoinSpawnSystem.randomInterval.y);
                 CoinSpawnSystem.spawnedCoins = 0;
                 for (var i = 0; i < CoinSpawnSystem.maxCoins; i++) {
@@ -619,7 +671,6 @@ var game;
                     }
                 }
                 game.GameSystem.spawnCoins = false;
-                game.NextLevelSystem.checkNextLevel = true;
             }
         };
         CoinSpawnSystem.spawnCoins = function (world, entityGroup, minX, maxX, minY, maxY) {
@@ -718,24 +769,31 @@ var game;
             GameSystem.isInTutorial = false;
             //GameSystem.RestartWorld(world);
         };
+        GameSystem.AddScore = function (score, world) {
+            GameSystem.score += score;
+            game.ScoreSystem.UpdateScore(world);
+        };
+        GameSystem.SetScore = function (score, world) {
+            GameSystem.score = score;
+            game.ScoreSystem.UpdateScore(world);
+        };
         GameSystem.RestartWorld = function (world) {
             if (GameSystem.isInTutorial) {
                 game.TutorialSystem.ResetTutorial(world);
                 return;
             }
-            game.NextLevelSystem.checkNextLevel = false;
             GameSystem.StartBall(world);
             //CoinSpawnSystem.resetRandomInterval();    
             GameSystem.CurrentGameMode = game.GameState.Waiting;
             GameSystem.currentPlays = GameSystem.initialPlays;
             game.JsonObstacleSpawner.currentGroup = 0;
-            game.NextLevelSystem.actualCoins = 0;
+            game.CoinCollisionSystem.actualCoins = 0;
             GameSystem.spawnObstacles = true;
+            GameSystem.SetScore(0, world);
             GameSystem.ShowMainScreen(world);
             game.ShotsUISystem.UpdateShotsPeg(world);
         };
         GameSystem.NewLevel = function (world) {
-            game.NextLevelSystem.checkNextLevel = false;
             if (GameSystem.BallRadius == 0) {
                 var ball = world.getEntityByName("Ball");
                 world.usingComponentData(ball, [game.Ball, ut.Core2D.TransformLocalScale], function (ball, scale) {
@@ -750,7 +808,7 @@ var game;
             //CoinSpawnSystem.increaseRandomInterval();
             GameSystem.currentPlays += GameSystem.playsPerLevel;
             game.ShotsUISystem.UpdateShotsPeg(world);
-            game.NextLevelSystem.actualCoins = 0;
+            game.CoinCollisionSystem.actualCoins = 0;
             GameSystem.spawnObstacles = true;
         };
         GameSystem.Play = function (world) {
@@ -817,11 +875,10 @@ var game;
         };
         GameSystem.BallRadius = 0;
         GameSystem.spawnObstacles = false;
-        //static MaxPlays = 3;
-        //TODO Might Change
         GameSystem.playsPerLevel = 1;
         GameSystem.currentPlays = 0;
         GameSystem.initialPlays = 1;
+        GameSystem.score = 0;
         GameSystem.StartFirstLevel = true;
         GameSystem.isInTutorial = false;
         return GameSystem;
@@ -838,11 +895,21 @@ var game;
         }
         HoleSystem.prototype.OnUpdate = function () {
             var _this = this;
+            //console.log ("Checking " + HoleSystem.CheckNewLevel);
+            if (game.GameSystem.CurrentGameMode != game.GameState.Playing) {
+                return;
+            }
+            var HoleAudioSource = this.world.getEntityByName("HoleAudioSource");
             this.world.forEach([ut.Entity, ut.HitBox2D.HitBoxOverlapResults, game.Hole], function (entity, hitboxoverlapresults, coin) {
                 for (var i = 0; i < hitboxoverlapresults.overlaps.length; i++) {
                     var otherEntity = hitboxoverlapresults.overlaps[i].otherEntity;
                     if (!_this.world.exists(otherEntity) || _this.world.hasComponent(otherEntity, game.Ball)) {
                         HoleSystem.NextLevel(_this.world);
+                        if (!HoleAudioSource.isNone()) {
+                            if (!_this.world.hasComponent(HoleAudioSource, ut.Audio.AudioSourceStart)) {
+                                _this.world.addComponent(HoleAudioSource, ut.Audio.AudioSourceStart);
+                            }
+                        }
                     }
                 }
             });
@@ -850,6 +917,7 @@ var game;
         HoleSystem.NextLevel = function (world) {
             game.GameSystem.CurrentGameMode = game.GameState.Waiting;
             game.GameSystem.NewLevel(world);
+            game.GameSystem.AddScore(10, world);
         };
         return HoleSystem;
     }(ut.ComponentSystem));
@@ -969,7 +1037,7 @@ var game;
             this.initialBallPos = BallPos;
             this.HolePos = HolePos;
             this.HoleScale = HoleScale;
-            console.log(this);
+            //console.log(this);
         }
         return Room;
     }());
@@ -1021,78 +1089,6 @@ var game;
 })(game || (game = {}));
 var game;
 (function (game) {
-    var NextLevelSystem = /** @class */ (function (_super) {
-        __extends(NextLevelSystem, _super);
-        /** New System */
-        function NextLevelSystem() {
-            return _super !== null && _super.apply(this, arguments) || this;
-        }
-        NextLevelSystem_1 = NextLevelSystem;
-        NextLevelSystem.prototype.OnUpdate = function () {
-            //We just need to start the new level when hitting the hole
-            if (!NextLevelSystem_1.checkNextLevel) {
-                return;
-            }
-            this.CheckCollisions();
-            return;
-            if (game.GameSystem.isInTutorial) {
-                if (game.GameSystem.CurrentGameMode != game.GameState.Tutorial && !game.TutorialSystem.waitForClick) {
-                    this.CheckTutorial();
-                }
-                return;
-            }
-            if (NextLevelSystem_1.actualCoins >= game.CoinSpawnSystem.spawnedCoins && game.CoinSpawnSystem.spawnedCoins != 0) {
-                // NextLevelSystem.checkNextLevel = false;
-                // NextLevelSystem.actualCoins = 0 ;
-                // GameSystem.NewLevel(this.world);
-            }
-        };
-        NextLevelSystem.NextLevel = function (world) {
-            NextLevelSystem_1.checkNextLevel = false;
-            NextLevelSystem_1.actualCoins = 0;
-            game.GameSystem.NewLevel(world);
-        };
-        NextLevelSystem.prototype.CheckTutorial = function () {
-            var _this = this;
-            var currentCoins = 0;
-            this.world.forEach([ut.Entity, game.Coin], function (entity, coin) {
-                if (!_this.world.hasComponent(entity, ut.Disabled)) {
-                    currentCoins++;
-                }
-            });
-            if (currentCoins == 0) {
-                game.GameSystem.NewLevel(this.world);
-            }
-        };
-        NextLevelSystem.prototype.CheckCollisions = function () {
-            var _this = this;
-            this.world.forEach([ut.Entity, ut.HitBox2D.HitBoxOverlapResults, game.Coin], function (entity, hitboxoverlapresults, coin) {
-                for (var i = 0; i < hitboxoverlapresults.overlaps.length; i++) {
-                    var otherEntity = hitboxoverlapresults.overlaps[i].otherEntity;
-                    if (!_this.world.exists(otherEntity) || _this.world.hasComponent(otherEntity, game.Ball)) {
-                        if (_this.world.exists(entity) && _this.world.hasComponent(entity, ut.Core2D.TransformLocalPosition)) {
-                            ut.Core2D.TransformService.destroyTree(_this.world, entity);
-                            game.TimeLethalitySystem.ResetTimer();
-                            game.CollisionAudioSystem.PlayCoinSound(_this.world);
-                            NextLevelSystem_1.actualCoins++;
-                        }
-                    }
-                }
-            });
-        };
-        var NextLevelSystem_1;
-        NextLevelSystem.checkNextLevel = false;
-        NextLevelSystem.actualCoins = 0;
-        NextLevelSystem = NextLevelSystem_1 = __decorate([
-            ut.executeAfter(game.CoinSpawnSystem)
-            /** New System */
-        ], NextLevelSystem);
-        return NextLevelSystem;
-    }(ut.ComponentSystem));
-    game.NextLevelSystem = NextLevelSystem;
-})(game || (game = {}));
-var game;
-(function (game) {
     /** New System */
     var SpeedLethalitySystem = /** @class */ (function (_super) {
         __extends(SpeedLethalitySystem, _super);
@@ -1113,6 +1109,7 @@ var game;
                     //Don't delete this
                     //It doesn't work without this
                     //¯\_(ツ)_/¯ 
+                    //console.log("Empty velocity");
                     return;
                 }
                 else if (SpeedLethalitySystem.CurrentTime <= SpeedLethalitySystem.decayTime) {
@@ -1121,6 +1118,7 @@ var game;
                     var percentage = 1 - SpeedLethalitySystem.CurrentTime / SpeedLethalitySystem.decayTime;
                     var speedMagnitude = StartingVelocityMagnitude * percentage;
                     var newVelocity = new Vector2(currentDirection.x * speedMagnitude, currentDirection.y * speedMagnitude);
+                    //console.log("Lowering " + percentage);
                     var setVelocity = new ut.Physics2D.SetVelocity2D;
                     setVelocity.velocity = newVelocity;
                     if (_this.world.hasComponent(entity, ut.Physics2D.SetVelocity2D))
@@ -1129,6 +1127,7 @@ var game;
                         _this.world.addComponentData(entity, setVelocity);
                 }
                 else if (SpeedLethalitySystem.CurrentTime > SpeedLethalitySystem.decayTime) {
+                    //console.log("EndGame");
                     SpeedLethalitySystem.CurrentTime = 0;
                     SpeedLethalitySystem.EndGame(_this.world);
                 }
@@ -1211,6 +1210,7 @@ var game;
                     game.ShotsUISystem.UpdateShotsPeg(world);
                 }
             });
+            game.GameSystem.SetScore(0, world);
         };
         TutorialSystem.prototype.NextTutorial = function () {
             TutorialSystem_1.index++;
@@ -1238,29 +1238,24 @@ var game;
             });
             //Start new tutorial
             if (tries > 0) {
+                game.BallSystem.SetBallPosition(new Vector3(0, -20), this.world);
                 game.GameSystem.currentPlays = tries;
-                ut.EntityGroup.instantiate(this.world, 'game.BallGroup');
                 TutorialSystem_1.waitForClick = false;
                 game.ShotsUISystem.UpdateShotsPeg(this.world);
-                game.NextLevelSystem.checkNextLevel = true;
+                game.GameSystem.AddScore(0, this.world);
             }
             else {
                 game.GameSystem.CurrentGameMode = game.GameState.Tutorial;
                 TutorialSystem_1.waitForClick = true;
-                ut.EntityGroup.destroyAll(this.world, "game.BallGroup");
+                //ut.EntityGroup.destroyAll(this.world, "game.BallGroup");                
+                game.BallSystem.SetBallPosition(new Vector3(-75, -75), this.world);
+                game.ScoreSystem.CleanScore(this.world);
             }
             //Set Active the current tutorial objects
             for (var i = 0; i < tutorialObjectList.length; i++) {
                 TutorialSystem_1.setEntityEnabled(this.world, tutorialObjectList[i], true);
             }
-            //Reset The ball
-            var entityBall = this.world.getEntityByName("Ball");
-            if (!entityBall.isNone()) {
-                if (!this.world.hasComponent(entityBall, ut.Disabled)) {
-                    game.GameSystem.CurrentGameMode = game.GameState.Waiting;
-                }
-                game.BallSystem.ChangeBallSpeedAndPosition(new Vector2(0, 0), new Vector3(0, -20), entityBall, this.world);
-            }
+            //HoleSystem.CheckNewLevel = true; 
         };
         TutorialSystem.prototype.CheckTutorialObjectsStatus = function () {
             var _this = this;
@@ -1427,6 +1422,36 @@ var game;
         return LineRenderingSystem;
     }(ut.ComponentSystem));
     game.LineRenderingSystem = LineRenderingSystem;
+})(game || (game = {}));
+var game;
+(function (game) {
+    /** New System */
+    var ScoreSystem = /** @class */ (function (_super) {
+        __extends(ScoreSystem, _super);
+        function ScoreSystem() {
+            return _super !== null && _super.apply(this, arguments) || this;
+        }
+        ScoreSystem.prototype.OnUpdate = function () {
+        };
+        ScoreSystem.UpdateScore = function (world) {
+            if (ScoreSystem.textEntity == undefined || ScoreSystem.textEntity.isNone()) {
+                ScoreSystem.textEntity = world.getEntityByName("ScoreText");
+            }
+            world.usingComponentData(ScoreSystem.textEntity, [ut.Entity, ut.Text.Text2DRenderer], function (entity, text) {
+                text.text = game.GameSystem.score + "";
+            });
+        };
+        ScoreSystem.CleanScore = function (world) {
+            if (ScoreSystem.textEntity == undefined || ScoreSystem.textEntity.isNone()) {
+                ScoreSystem.textEntity = world.getEntityByName("ScoreText");
+            }
+            world.usingComponentData(ScoreSystem.textEntity, [ut.Entity, ut.Text.Text2DRenderer], function (entity, text) {
+                text.text = "";
+            });
+        };
+        return ScoreSystem;
+    }(ut.ComponentSystem));
+    game.ScoreSystem = ScoreSystem;
 })(game || (game = {}));
 var game;
 (function (game) {

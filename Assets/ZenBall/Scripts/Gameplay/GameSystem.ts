@@ -3,19 +3,16 @@ namespace game {
 
     /** New System */
     export class GameSystem extends ut.ComponentSystem {
-        static BallRadius = 0;
- 
+        static BallRadius = 0; 
         static spawnCoins;
         static spawnObstacles = false;
 
-
-        //static MaxPlays = 3;
-
-        //TODO Might Change
         static playsPerLevel = 1;
         static currentPlays  = 0;
         static initialPlays = 1;
 
+        static score = 0;
+ 
         static CurrentGameMode;
         static StartFirstLevel = true;
         static isInTutorial = false;
@@ -35,29 +32,37 @@ namespace game {
             //GameSystem.RestartWorld(world);
         }      
 
+        static AddScore(score:number, world:ut.World){
+            GameSystem.score += score;
+            ScoreSystem.UpdateScore(world);
+        }
 
-        static RestartWorld(world: ut.World){
+        static SetScore(score:number, world:ut.World){
+            GameSystem.score = score;
+            ScoreSystem.UpdateScore(world);
+        }
+
+
+        static RestartWorld(world: ut.World){            
             if(GameSystem.isInTutorial){
                 TutorialSystem.ResetTutorial(world);
                 return;
             }
-            NextLevelSystem.checkNextLevel = false; 
             GameSystem.StartBall(world);            
             //CoinSpawnSystem.resetRandomInterval();    
           
             GameSystem.CurrentGameMode = game.GameState.Waiting;
             GameSystem.currentPlays =  GameSystem.initialPlays;
             JsonObstacleSpawner.currentGroup = 0;            
-            NextLevelSystem.actualCoins = 0 ;               
+            CoinCollisionSystem.actualCoins = 0 ;               
 
             GameSystem.spawnObstacles = true;     
-
+            GameSystem.SetScore(0, world);
             GameSystem.ShowMainScreen(world);      
             ShotsUISystem.UpdateShotsPeg(world);
         }
 
         static NewLevel(world: ut.World){
-            NextLevelSystem.checkNextLevel = false;
             if(GameSystem.BallRadius == 0){
                 const ball = world.getEntityByName("Ball");	  
                 world.usingComponentData(ball,[game.Ball, ut.Core2D.TransformLocalScale], (ball, scale) => {
@@ -72,7 +77,7 @@ namespace game {
             //CoinSpawnSystem.increaseRandomInterval();
             GameSystem.currentPlays +=  GameSystem.playsPerLevel;
             ShotsUISystem.UpdateShotsPeg(world);            
-            NextLevelSystem.actualCoins = 0 ;  
+            CoinCollisionSystem.actualCoins = 0 ;  
             GameSystem.spawnObstacles = true;                  
         }
 

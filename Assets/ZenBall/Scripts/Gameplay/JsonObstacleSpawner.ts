@@ -127,7 +127,7 @@ namespace game {
             this.initialBallPos = BallPos;
             this.HolePos = HolePos;
             this.HoleScale = HoleScale;
-            console.log(this);
+            //console.log(this);
         }        
         public ObstacleData;
         public initialBallPos:Vector3;

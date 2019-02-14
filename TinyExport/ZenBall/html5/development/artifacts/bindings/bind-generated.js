@@ -2705,6 +2705,9 @@ game.BallSystemJS = ut.System.define({
 game.BorderSystemJS = ut.System.define({
   name: "game.BorderSystemJS"
 });
+game.CoinCollisionSystemJS = ut.System.define({
+  name: "game.CoinCollisionSystemJS"
+});
 game.CoinSpawnSystemJS = ut.System.define({
   name: "game.CoinSpawnSystemJS"
 });
@@ -2720,10 +2723,6 @@ game.JsonObstacleSpawnerJS = ut.System.define({
 game.LethalObstaclesSystemJS = ut.System.define({
   name: "game.LethalObstaclesSystemJS"
 });
-game.NextLevelSystemJS = ut.System.define({
-  name: "game.NextLevelSystemJS"
- ,updatesAfter: ["game.CoinSpawnSystemJS"]
-});
 game.SpeedLethalitySystemJS = ut.System.define({
   name: "game.SpeedLethalitySystemJS"
 });
@@ -2736,6 +2735,9 @@ game.GameOverScreenSystemJS = ut.System.define({
 });
 game.LineRenderingSystemJS = ut.System.define({
   name: "game.LineRenderingSystemJS"
+});
+game.ScoreSystemJS = ut.System.define({
+  name: "game.ScoreSystemJS"
 });
 game.ShotsUISystemJS = ut.System.define({
   name: "game.ShotsUISystemJS"
