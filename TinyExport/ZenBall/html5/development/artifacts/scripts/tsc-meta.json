@@ -212,25 +212,25 @@
         {
             "Key": "tsconfig",
             "Description": "Time taken to read and parse the given tsconfig.json file",
-            "Duration": 173,
+            "Duration": 138,
             "Steps": 1
         },
         {
             "Key": "checksum",
             "Description": "Time taken to compute the MD5 of all inputs",
-            "Duration": 206,
+            "Duration": 218,
             "Steps": 1
         },
         {
             "Key": "compile",
             "Description": "Time taken to compile the TypeScript program",
-            "Duration": 1198,
+            "Duration": 1316,
             "Steps": 29
         },
         {
             "Key": "emit",
             "Description": "Time taken to generate and write the JavaScript output",
-            "Duration": 250,
+            "Duration": 255,
             "Steps": 2
         },
         {
@@ -264,6 +264,6 @@
         "F:/2019/TinyProyect/TinyBallGame/Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.EntityGroup/Scripts/EntityGroup.ts",
         "F:/2019/TinyProyect/TinyBallGame/Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.EntityGroup/Scripts/EntityLookupCache.ts"
     ],
-    "InputHash": "931cb445696a6aa43ba81493d34542f7",
-    "GeneratedAt": "Thu Feb 14 2019 15:19:07 GMT-0500 (Hora est. Pacífico, Sudamérica)"
+    "InputHash": "57c0250481d63dc153d8574622d56fb0",
+    "GeneratedAt": "Fri Feb 15 2019 17:07:35 GMT-0500 (Hora est. Pacífico, Sudamérica)"
 }

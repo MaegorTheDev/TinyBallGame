@@ -336,7 +336,7 @@ var game;
                 if (inputHelper.InputType == game.InputType.Power) {
                     return;
                 }
-                if (game.GameSystem.CurrentGameMode == game.GameState.GameEnd) {
+                if (game.GameSystem.CurrentGameMode == game.GameState.GameEnd || game.GameSystem.currentPlays <= 0) {
                     return;
                 }
                 if (!ut.Core2D.Input.isTouchSupported()) {
@@ -654,45 +654,36 @@ var game;
                 CoinSpawnSystem.maxCoins = game.GameSystem.randomIntFromInterval(CoinSpawnSystem.randomInterval.x, CoinSpawnSystem.randomInterval.y);
                 CoinSpawnSystem.spawnedCoins = 0;
                 for (var i = 0; i < CoinSpawnSystem.maxCoins; i++) {
-                    if (i % 4 == 0) {
-                        CoinSpawnSystem.spawnCoins(this.world, "game.Coin", 0, width / 2 - 3, 0, height / 2 - 5);
-                    }
-                    else if (i % 4 == 1) {
-                        CoinSpawnSystem.spawnCoins(this.world, "game.Coin", 0, width / 2 - 3, -height / 2 + 3, 0);
-                    }
-                    else if (i % 4 == 2) {
-                        CoinSpawnSystem.spawnCoins(this.world, "game.Coin", -width / 2 + 3, 0, 0, height / 2 - 5);
-                    }
-                    else if (i % 4 == 3) {
-                        CoinSpawnSystem.spawnCoins(this.world, "game.Coin", -width / 2 + 3, 0, -height / 2 + 3, 0);
-                    }
-                    else if (i % 4 == 4) {
-                        CoinSpawnSystem.spawnCoins(this.world, "game.Coin", -width / 4 + 2, width / 4 - 2, -height / 4 + 2, height / 4 - 2);
-                    }
+                    CoinSpawnSystem.spawnCoins(this.world, "game.Coin", -width / 2 + 10, width / 2 - 10, -height / 2 + 10, height / 2 - 10);
                 }
                 game.GameSystem.spawnCoins = false;
             }
         };
         CoinSpawnSystem.spawnCoins = function (world, entityGroup, minX, maxX, minY, maxY) {
-            //console.log("Spawn coin");
             var findLocation = false;
             var index = 0;
             var randomPos;
             var _loop_2 = function () {
                 randomPos = new Vector3(game.GameSystem.randomIntFromInterval(minX, maxX), game.GameSystem.randomIntFromInterval(minY, maxY));
-                var coinInside = false;
+                var imposibleCoin = false;
                 if (CoinSpawnSystem.DoesHitObstacle(world, randomPos)) {
-                    coinInside = true;
+                    imposibleCoin = true;
+                }
+                else if (!CoinSpawnSystem.IsVisibleFromBall(world, randomPos) && CoinSpawnSystem.spawnedCoins == 0) {
+                    imposibleCoin = true;
+                }
+                else if (CoinSpawnSystem.spawnedCoins > 0 && !CoinSpawnSystem.IsVisibleFromOtherCoins(world, randomPos)) {
+                    imposibleCoin = true;
                 }
                 world.forEach([game.Coin, ut.Core2D.TransformLocalPosition], function (coin, transform) {
                     var deltaX = transform.position.x - randomPos.x;
                     var deltaY = transform.position.y - randomPos.y;
                     var magnitude = deltaX * deltaX + deltaY * deltaY;
-                    if (magnitude < 100) {
-                        coinInside = true;
+                    if (magnitude < 500) {
+                        imposibleCoin = true;
                     }
                 });
-                if (!coinInside) {
+                if (!imposibleCoin) {
                     findLocation = true;
                 }
                 index++;
@@ -741,8 +732,40 @@ var game;
             }
             return false;
         };
+        CoinSpawnSystem.IsVisibleFromBall = function (world, positionToSpawn) {
+            var ballEntity = world.getEntityByName("Ball");
+            var result;
+            var camera = world.getEntityByName("Camera");
+            if (ballEntity.isNone()) {
+                return false;
+            }
+            world.usingComponentData(ballEntity, [ut.Core2D.TransformLocalPosition], function (position) {
+                var hit = ut.HitBox2D.HitBox2DService.rayCast(world, positionToSpawn, position.position, camera);
+                if (!hit.entityHit.isNone() && !world.hasComponent(hit.entityHit, game.Ball)) {
+                    result = false;
+                }
+                else {
+                    result = true;
+                }
+            });
+            return result;
+        };
+        CoinSpawnSystem.IsVisibleFromOtherCoins = function (world, positionToSpawn) {
+            var camera = world.getEntityByName("Camera");
+            var result = false;
+            world.forEach([ut.Entity, game.Coin, ut.Core2D.TransformLocalPosition], function (entity, coin, position) {
+                var hit = ut.HitBox2D.HitBox2DService.rayCast(world, positionToSpawn, position.position, camera);
+                if (!hit.entityHit.isNone() && !world.hasComponent(hit.entityHit, game.Coin)) {
+                    result = result || false;
+                }
+                else {
+                    result = result || true;
+                }
+            });
+            return result;
+        };
         CoinSpawnSystem.spawnedCoins = 0;
-        CoinSpawnSystem.randomInterval = new Vector2(2, 4);
+        CoinSpawnSystem.randomInterval = new Vector2(1, 3);
         return CoinSpawnSystem;
     }(ut.ComponentSystem));
     game.CoinSpawnSystem = CoinSpawnSystem;

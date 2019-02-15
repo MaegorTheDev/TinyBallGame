@@ -83,6 +83,16 @@
             }
         },
         {
+            "Name": "CoinCollisionSystem",
+            "QualifiedName": "game.CoinCollisionSystem",
+            "Description": "New System",
+            "Source": {
+                "File": "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/CoinCollisionSystem.ts",
+                "Line": 4,
+                "Character": 17
+            }
+        },
+        {
             "Name": "CoinSpawnSystem",
             "QualifiedName": "game.CoinSpawnSystem",
             "Description": "New System",
@@ -133,19 +143,6 @@
             }
         },
         {
-            "Name": "NextLevelSystem",
-            "QualifiedName": "game.NextLevelSystem",
-            "Description": "",
-            "Source": {
-                "File": "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/NextLevelSystem.ts",
-                "Line": 5,
-                "Character": 17
-            },
-            "ExecuteAfter": [
-                "game.CoinSpawnSystem"
-            ]
-        },
-        {
             "Name": "SpeedLethalitySystem",
             "QualifiedName": "game.SpeedLethalitySystem",
             "Description": "New System",
@@ -189,6 +186,16 @@
             }
         },
         {
+            "Name": "ScoreSystem",
+            "QualifiedName": "game.ScoreSystem",
+            "Description": "New System",
+            "Source": {
+                "File": "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/UI/ScoreSystem.ts",
+                "Line": 5,
+                "Character": 17
+            }
+        },
+        {
             "Name": "ShotsUISystem",
             "QualifiedName": "game.ShotsUISystem",
             "Description": "New System",
@@ -205,32 +212,32 @@
         {
             "Key": "tsconfig",
             "Description": "Time taken to read and parse the given tsconfig.json file",
-            "Duration": 170,
+            "Duration": 176,
             "Steps": 1
         },
         {
             "Key": "checksum",
             "Description": "Time taken to compute the MD5 of all inputs",
-            "Duration": 291,
+            "Duration": 227,
             "Steps": 1
         },
         {
             "Key": "compile",
             "Description": "Time taken to compile the TypeScript program",
-            "Duration": 1117,
-            "Steps": 28
+            "Duration": 1188,
+            "Steps": 29
         },
         {
             "Key": "emit",
             "Description": "Time taken to generate and write the JavaScript output",
-            "Duration": 233,
+            "Duration": 243,
             "Steps": 2
         },
         {
             "Key": "metadata",
             "Description": "Time taken to reflect Tiny metadata from the compiled program",
-            "Duration": 9,
-            "Steps": 18
+            "Duration": 8,
+            "Steps": 19
         }
     ],
     "SourceFiles": [
@@ -241,21 +248,22 @@
         "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Directional input/DirectionInputSystem.ts",
         "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/BallSystem.ts",
         "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/BorderSystem.ts",
+        "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/CoinCollisionSystem.ts",
         "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/CoinSpawnSystem.ts",
         "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/GameSystem.ts",
         "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/HoleSystem.ts",
         "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/JsonObstacleSpawner.ts",
         "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/LethalObstaclesSystem.ts",
-        "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/NextLevelSystem.ts",
         "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/SpeedLethalitySystem.ts",
         "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Gameplay/TutorialSystem.ts",
         "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/UI/GameOverScreenSystem.ts",
         "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/UI/LineRenderingSystem.ts",
+        "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/UI/ScoreSystem.ts",
         "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/UI/ShotsUISystem.ts",
         "F:/2019/TinyProyect/TinyBallGame/Assets/ZenBall/Scripts/Utils/JsonUtils.ts",
         "F:/2019/TinyProyect/TinyBallGame/Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.EntityGroup/Scripts/EntityGroup.ts",
         "F:/2019/TinyProyect/TinyBallGame/Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.EntityGroup/Scripts/EntityLookupCache.ts"
     ],
-    "InputHash": "c8c850bcbb11ff5064e1fd41625f4d9b",
-    "GeneratedAt": "Wed Feb 13 2019 10:32:31 GMT-0500 (Hora est. Pacífico, Sudamérica)"
+    "InputHash": "e35105fe953cd17c9f5cac5cf628bbd1",
+    "GeneratedAt": "Thu Feb 14 2019 17:16:10 GMT-0500 (Hora est. Pacífico, Sudamérica)"
 }

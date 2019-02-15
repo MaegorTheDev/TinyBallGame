@@ -6,7 +6,7 @@ namespace game {
         static maxCoins;
         static spawnedCoins = 0;
 
-        static randomInterval = new Vector2(2,4);
+        static randomInterval = new Vector2(1,3);
 
         OnUpdate():void {
 
@@ -25,23 +25,8 @@ namespace game {
             if(GameSystem.spawnCoins){        
                 CoinSpawnSystem.maxCoins = GameSystem.randomIntFromInterval(CoinSpawnSystem.randomInterval.x, CoinSpawnSystem.randomInterval.y);  
                 CoinSpawnSystem.spawnedCoins = 0;
-                for(let i = 0; i<CoinSpawnSystem.maxCoins; i++){
-                    if(i % 4 ==0){
-                        CoinSpawnSystem.spawnCoins(this.world, "game.Coin", 0, width/2 - 3, 0, height/2 - 5);
-                    }
-                    else if(i % 4 == 1){
-                        CoinSpawnSystem.spawnCoins(this.world, "game.Coin", 0, width/2 - 3, -height/2 + 3 , 0);
-                    }
-                    else if(i % 4 == 2){
-                        CoinSpawnSystem.spawnCoins(this.world, "game.Coin", -width/2 + 3 , 0, 0, height/2 - 5);
-                    }
-                    else if(i % 4 == 3){
-                        CoinSpawnSystem.spawnCoins(this.world, "game.Coin", -width/2 + 3 , 0, -height/2 + 3, 0);
-                    }
-                    else if(i % 4 == 4){
-                        CoinSpawnSystem.spawnCoins(this.world, "game.Coin", -width/4 + 2, width/4 - 2, -height/4 + 2, height/4 - 2);
-                    }
-                }    
+                for(let i = 0; i<CoinSpawnSystem.maxCoins; i++){                    
+                    CoinSpawnSystem.spawnCoins(this.world, "game.Coin", -width/2 + 10, width/2 - 10, -height/2 + 10, height/2 - 10);                }    
                     
                 GameSystem.spawnCoins = false;  
             }
@@ -49,7 +34,6 @@ namespace game {
         }
 
         static spawnCoins(world: ut.World, entityGroup: string, minX, maxX, minY, maxY):ut.Entity{  
-            //console.log("Spawn coin");
             let findLocation = false;
             let index = 0;
             let randomPos:Vector3;
@@ -57,23 +41,33 @@ namespace game {
             while (!findLocation && index < 250){                    
                 randomPos = new Vector3(GameSystem.randomIntFromInterval(minX,maxX),
                         GameSystem.randomIntFromInterval(minY, maxY));
-                let coinInside = false;
-                if(CoinSpawnSystem.DoesHitObstacle(world, randomPos)){
-                    coinInside = true;
+                let imposibleCoin = false;
+                
+               if(CoinSpawnSystem.DoesHitObstacle(world, randomPos)){
+                   imposibleCoin = true;
                 }             
+                else if(!CoinSpawnSystem.IsVisibleFromBall(world, randomPos) && CoinSpawnSystem.spawnedCoins==0){
+                   
+                   imposibleCoin = true;
+                }
+                else if(CoinSpawnSystem.spawnedCoins > 0 && !CoinSpawnSystem.IsVisibleFromOtherCoins(world, randomPos)){
+                    imposibleCoin = true;
+                }
+
                 world.forEach([game.Coin, ut.Core2D.TransformLocalPosition],
                     (coin, transform) => { 
                        let deltaX = transform.position.x - randomPos.x;
                        let deltaY = transform.position.y - randomPos.y;
                        let magnitude = deltaX * deltaX + deltaY  * deltaY ;
-                       if(magnitude < 100) {
-                            coinInside = true;
+                      
+                       if(magnitude < 500) {
+                            imposibleCoin = true;
                        }
           
                 });     
                 
                
-                if(!coinInside){
+                if(!imposibleCoin){
                     findLocation = true;
                 }
 
@@ -82,7 +76,7 @@ namespace game {
             
             let coin;
             if(findLocation){  
-                coin = ut.EntityGroup.instantiate(world, entityGroup)[0];        
+                coin = ut.EntityGroup.instantiate(world, entityGroup)[0];                    
                 world.usingComponentData(coin, [ut.Core2D.TransformLocalPosition], (transformLocalPosition)=>{
                     transformLocalPosition.position = randomPos;
                 });              
@@ -128,6 +122,43 @@ namespace game {
             }
 
             return false;
+            
+        }
+
+        static IsVisibleFromBall(world:ut.World, positionToSpawn:Vector3):boolean{
+            let ballEntity = world.getEntityByName("Ball"); 
+            let result:boolean;           
+            const camera = world.getEntityByName("Camera");
+            if(ballEntity.isNone()){
+                return false;
+            }
+            world.usingComponentData(ballEntity,[ut.Core2D.TransformLocalPosition],(position) => {
+                let hit = ut.HitBox2D.HitBox2DService.rayCast(world, positionToSpawn, position.position, camera);              
+                if(!hit.entityHit.isNone() && !world.hasComponent(hit.entityHit, game.Ball)){
+                    result = false;                    
+                }else {
+                    result = true;
+                }
+            });
+            return result;
+        }
+
+        static IsVisibleFromOtherCoins(world:ut.World, positionToSpawn:Vector3):boolean{
+                  
+            const camera = world.getEntityByName("Camera");
+            let result:boolean = false;
+            world.forEach([ut.Entity, game.Coin, ut.Core2D.TransformLocalPosition],
+                (entity,  coin, position) => {         
+                           
+                    let hit = ut.HitBox2D.HitBox2DService.rayCast(world, positionToSpawn, position.position, camera);
+                     if(!hit.entityHit.isNone() && !world.hasComponent(hit.entityHit, game.Coin)){
+                       result = result || false;
+                        }
+                    else{
+                        result = result || true;
+                        }
+            });
+            return result;
             
         }
 

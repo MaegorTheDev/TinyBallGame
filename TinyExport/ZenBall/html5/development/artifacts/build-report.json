@@ -474,8 +474,8 @@
         "Children": [{
             "Item": {
                 "Name": "TinyExport/ZenBall/html5/development/build/entities.js",
-                "Size": 57950,
-                "CompressedSize": 7469
+                "Size": 57920,
+                "CompressedSize": 7458
             },
             "Children": [{
                 "Item": {
@@ -510,8 +510,8 @@
             }, {
                 "Item": {
                     "Name": "Bootstraper",
-                    "Size": 22307,
-                    "CompressedSize": 3900
+                    "Size": 22277,
+                    "CompressedSize": 3889
                 }
             }, {
                 "Item": {
@@ -553,8 +553,8 @@
             "Children": [{
                 "Item": {
                     "Name": "TinyExport/ZenBall/html5/development/artifacts/scripts/tsc-emit.js",
-                    "Size": 79027,
-                    "CompressedSize": 11821
+                    "Size": 80155,
+                    "CompressedSize": 11954
                 }
             }]
         }, {

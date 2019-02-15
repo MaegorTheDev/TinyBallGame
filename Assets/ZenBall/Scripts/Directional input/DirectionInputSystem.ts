@@ -16,7 +16,7 @@ namespace game {
 				if(inputHelper.InputType == game.InputType.Power){
 					return;
 				}
-				if(GameSystem.CurrentGameMode == GameState.GameEnd){
+				if(GameSystem.CurrentGameMode == GameState.GameEnd || GameSystem.currentPlays <= 0){
 					return;
 				}
 				if(!ut.Core2D.Input.isTouchSupported()){
