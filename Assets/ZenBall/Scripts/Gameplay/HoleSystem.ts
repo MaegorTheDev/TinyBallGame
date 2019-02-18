@@ -33,6 +33,16 @@ namespace game {
             GameSystem.CurrentGameMode = GameState.Waiting;
             GameSystem.NewLevel(world);      
             
+            const winAudioObject = world.getEntityByName("WinLevel");    
+
+            world.usingComponentData(winAudioObject,
+                [ut.Entity, ut.Audio.AudioSource], 
+                (entity, audiosource) => {    
+                    if (!world.hasComponent(entity, ut.Audio.AudioSourceStart)) {
+                        world.addComponent(entity, ut.Audio.AudioSourceStart);
+                    }                    
+            });        
+
             GameSystem.AddScore(10, world);
         }
        

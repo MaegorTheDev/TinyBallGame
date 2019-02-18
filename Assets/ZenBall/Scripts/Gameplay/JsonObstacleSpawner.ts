@@ -62,9 +62,16 @@ namespace game {
             JsonObstacleSpawner.loaded = true; 
         }
 
-        static SpawnRoom(room:Room, world:ut.World){            
-            let ballEntity =  world.getEntityByName("Ball");	  
-            BallSystem.ChangeBallSpeedAndPosition(new Vector2(0,0), room.initialBallPos, ballEntity, world);
+        static SpawnRoom(room:Room, world:ut.World){            	  
+            BallSystem.SetBallPosition(room.initialBallPos, world);
+
+            let putt = world.getEntityByName("Putt");
+            if(!putt.isNone()){
+                world.usingComponentData(putt,  [ut.Core2D.TransformLocalPosition], 
+                    (position,)=>{   
+                        position.position = room.initialBallPos;
+                    });
+            }
 
             let hole = ut.EntityGroup.instantiate(world, "game.Hole")[0];
             world.usingComponentData(hole,  [ut.Core2D.TransformLocalPosition, ut.Core2D.TransformLocalScale], 
@@ -75,11 +82,19 @@ namespace game {
             for(let i = 0; i<room.ObstacleData.length; i++){
                 let obstacle = ut.EntityGroup.instantiate(world, "game.Obstacle")[0];      
                 world.usingComponentData(obstacle, 
-                    [ut.Core2D.TransformLocalPosition, ut.Core2D.TransformLocalRotation, ut.Core2D.TransformLocalScale, ut.Core2D.Sprite2DRenderer], 
-                    (positionObstacle, rotation, obstacleScale, renderer)=>{     
+                    [ut.Core2D.TransformLocalPosition, ut.Core2D.TransformLocalRotation, ut.Core2D.Sprite2DRenderer, ut.Core2D.Sprite2DRendererOptions, ut.HitBox2D.RectHitBox2D, ut.Physics2D.BoxCollider2D], 
+                    (positionObstacle, rotation,  renderer, rendererOptions, hitbox, boxCollider)=>{     
                     positionObstacle.position = new Vector3(room.ObstacleData[i].X, room.ObstacleData[i].Y)
                     rotation.rotation.setFromAxisAngle(new Vector3(0,0,1),room.ObstacleData[i].Rotation * Math.PI / 180);
-                    obstacleScale.scale = new Vector3(room.ObstacleData[i].ScaleX, room.ObstacleData[i].ScaleY);
+                    
+                    //Scaleing 
+                    rendererOptions.size = new Vector2(room.ObstacleData[i].ScaleX,room.ObstacleData[i].ScaleY);
+                    boxCollider.size = new Vector2(room.ObstacleData[i].ScaleX,room.ObstacleData[i].ScaleY);
+                    hitbox.box.x = room.ObstacleData[i].ScaleX;
+                    hitbox.box.y = room.ObstacleData[i].ScaleY;
+                    hitbox.box.width = -1*(room.ObstacleData[i].ScaleX/2);                    
+                    hitbox.box.heighta = -1*(room.ObstacleData[i].ScaleY/2);
+
 
                     if(room.ObstacleData[i].Type == "L"){
                         renderer.color = new ut.Core2D.Color(212/255, 108/255, 75/255, 1);

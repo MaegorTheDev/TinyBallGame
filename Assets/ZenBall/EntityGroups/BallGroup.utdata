@@ -7,7 +7,8 @@
     "Entities": [
         { "$TypeId": 9, "Id": "5ea39af94f8b468999ae123950d203c8", "Name": "Ball" },
         { "$TypeId": 9, "Id": "19ed41b198024426a1998a52aeda8f90", "Name": "Guideline" },
-        { "$TypeId": 9, "Id": "a859bc77079a4a90b1ed74992d484ec9", "Name": "DottedGuide" }
+        { "$TypeId": 9, "Id": "a859bc77079a4a90b1ed74992d484ec9", "Name": "DottedGuide" },
+        { "$TypeId": 9, "Id": "10a7253b0db5405d962330b47abaab78", "Name": "Putt" }
     ]
 },
 {
@@ -47,7 +48,7 @@
     }, {
         "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
         "Properties": {
-            "sprite": { "$TypeId": 10, "Guid": "432ebf0e89cf5b74e9ccbd5606cde427", "FileId": 21300000, "Type": 3 },
+            "sprite": { "$TypeId": 10, "Guid": "0fa21d6da6bc6bf469462ddd558c92a0", "FileId": 21300000, "Type": 3 },
             "color": {
                 "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
                 "Properties": {
@@ -61,7 +62,13 @@
     }, {
         "Type": { "Id": "efb8f1bb8e61304f4854daecbaeb2747", "Name": "CircleCollider2D" },
         "Properties": {
-            "radius": 0.5
+            "radius": 0.5,
+            "pivot": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "y": 0.3
+                }
+            }
         }
     }, {
         "Type": { "Id": "dad15a16473d1a6264af416ae1e47833", "Name": "RigidBody2D" },
@@ -84,7 +91,7 @@
                 "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
                 "Properties": {
                     "x": 1,
-                    "y": 1
+                    "y": 1.2
                 }
             }
         }
@@ -105,7 +112,7 @@
                 "Type": { "Id": "f216da154c4054842adb590807e977ba", "Name": "Rect" },
                 "Properties": {
                     "x": -0.5,
-                    "y": -0.5,
+                    "y": -0.4,
                     "width": 1,
                     "height": 1
                 }
@@ -125,36 +132,7 @@
         "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
         "Properties": {
             "layer": 1587474927,
-            "order": 1
-        }
-    }, {
-        "Type": { "Id": "95eba163dce5bfff5420a5a8c2845523", "Name": "Sprite2DSequence" },
-        "Properties": {
-            "sprites": {
-                "Type": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
-                "Items": [
-                    { "$TypeId": 10, "Guid": "432ebf0e89cf5b74e9ccbd5606cde427", "FileId": 21300000, "Type": 3 },
-                    { "$TypeId": 10, "Guid": "8641ac16a303abd4180f2fe2d7bd9711", "FileId": 21300000, "Type": 3 },
-                    { "$TypeId": 10, "Guid": "68fcfa9057d2dc941ab15ee7f6c1ec73", "FileId": 21300000, "Type": 3 },
-                    { "$TypeId": 10, "Guid": "a1817d3141eb7a849a2be6a39a314c61", "FileId": 21300000, "Type": 3 },
-                    { "$TypeId": 10, "Guid": "8043e9be8b361bc4997f848186bb4d74", "FileId": 21300000, "Type": 3 }
-                ]
-            },
-            "frameRate": 12
-        }
-    }, {
-        "Type": { "Id": "d2cfd18aa4facc33b1da7ae05205691b", "Name": "Sprite2DSequencePlayer" },
-        "Properties": {
-            "sequence": { "$TypeId": 9, "Id": "5ea39af94f8b468999ae123950d203c8", "Name": "Ball" },
-            "paused": true,
-            "loop": {
-                "$TypeId": 8,
-                "Type": { "Id": "ea25cda1bca15e4c9fb023eca636eb06", "Name": "LoopMode" },
-                "Id": "22c5bb55d215c1f95f4a4e5938017b82",
-                "Name": "PingPong",
-                "Value": 2
-            },
-            "speed": 1
+            "order": 2
         }
     }]
 },
@@ -168,7 +146,16 @@
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
     }, {
-        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 3.7,
+                    "y": -6.9
+                }
+            }
+        }
     }, {
         "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
     }, {
@@ -176,7 +163,7 @@
     }, {
         "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
         "Properties": {
-            "sprite": { "$TypeId": 10, "Guid": "e5fce83cf52364e408f6c6a412060d9b", "FileId": 21300000, "Type": 3 },
+            "sprite": { "$TypeId": 10, "Guid": "efe5675b72940c94492faee00b13192a", "FileId": 21300000, "Type": 3 },
             "color": {
                 "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
                 "Properties": {
@@ -190,7 +177,7 @@
     }, {
         "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
         "Properties": {
-            "layer": -1784358549,
+            "layer": 1587474927,
             "order": 1
         }
     }, {
@@ -199,16 +186,9 @@
             "size": {
                 "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
                 "Properties": {
-                    "x": 15.42857,
-                    "y": 0.5
+                    "x": 40,
+                    "y": 3.5
                 }
-            },
-            "drawMode": {
-                "$TypeId": 8,
-                "Type": { "Id": "a7ae2ef1f120627af99607cbecca330e", "Name": "DrawMode" },
-                "Id": "0334e5a91225cf998b678224025cf40c",
-                "Name": "ContinuousTiling",
-                "Value": 0
             }
         }
     }]
@@ -265,6 +245,41 @@
         "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
         "Properties": {
             "layer": -1784358549,
+            "order": 1
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "10a7253b0db5405d962330b47abaab78",
+    "Name": "Putt",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 50,
+                    "y": -100
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "4f75983f2564f1242bf190cf197a2451", "FileId": 21300000, "Type": 3 }
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "layer": 1587474927,
             "order": 1
         }
     }]

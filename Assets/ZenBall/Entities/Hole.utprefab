@@ -1,16 +1,16 @@
 ﻿[{
     "$TypeId": 4,
-    "Id": "45e867f5d35b41cba63a97643829b8da",
+    "Id": "75a003f986aa4e5dae3d053a8fbbcc0d",
     "Name": "Hole",
     "ExportFlags": 0,
     "SerializedVersion": 0,
     "Entities": [
-        { "$TypeId": 9, "Id": "3f5ecae146134143b496f07372d038ad", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "321296760a9346d195f38a1d0d9bf0ec", "Name": "Hole" }
     ]
 },
 {
     "$TypeId": 5,
-    "Id": "3f5ecae146134143b496f07372d038ad",
+    "Id": "321296760a9346d195f38a1d0d9bf0ec",
     "Name": "Hole",
     "Enabled": true,
     "Static": false,
@@ -18,7 +18,15 @@
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
     }, {
-        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -3.73
+                }
+            }
+        }
     }, {
         "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
     }, {
@@ -27,15 +35,15 @@
             "scale": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
-                    "x": 5,
-                    "y": 5
+                    "x": 1,
+                    "y": 1
                 }
             }
         }
     }, {
         "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
         "Properties": {
-            "sprite": { "$TypeId": 10, "Guid": "dd8043cb073da1b46acce5fa47b5a949", "FileId": 21300000, "Type": 3 },
+            "sprite": { "$TypeId": 10, "Guid": "eeadcdd14904f1b4ebbf15b5d85b7b58", "FileId": 21300000, "Type": 3 },
             "color": {
                 "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
                 "Properties": {
@@ -52,8 +60,8 @@
             "size": {
                 "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
                 "Properties": {
-                    "x": 1.9,
-                    "y": 1.9
+                    "x": 3.5,
+                    "y": 3.5
                 }
             }
         }

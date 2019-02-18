@@ -30,7 +30,9 @@
         "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.EntityGroup/**/*.ts",
         "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.HitBox2D/**/*.ts",
         "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.Audio/**/*.ts",
-        "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.Animation/**/*.ts"
+        "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.Animation/**/*.ts",
+        "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.UIControls/**/*.ts",
+        "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.UIControlsExtensions/**/*.ts"
     ],
     "exclude": [],
     "files": [

@@ -5,7 +5,8 @@
     "ExportFlags": 0,
     "SerializedVersion": 0,
     "Entities": [
-        { "$TypeId": 9, "Id": "aca3cbc552354b9a85bca3c758d2cb0f", "Name": "GameStartSprite" }
+        { "$TypeId": 9, "Id": "aca3cbc552354b9a85bca3c758d2cb0f", "Name": "GameStartSprite" },
+        { "$TypeId": 9, "Id": "49e9f80a77314aedb5db6062bcf6ab36", "Name": "GameStartButton" }
     ]
 },
 {
@@ -18,7 +19,7 @@
     "Components": [{
         "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
         "Properties": {
-            "sprite": { "$TypeId": 10, "Guid": "f4708916ce892034aba6c4852e66b96d", "FileId": 21300000, "Type": 3 }
+            "sprite": { "$TypeId": 10, "Guid": "afc3f6a33da6108458f5a9c12c855d99", "FileId": 21300000, "Type": 3 }
         }
     }, {
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
@@ -29,7 +30,7 @@
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
                     "x": 0,
-                    "y": -20
+                    "y": 27.6
                 }
             }
         }
@@ -39,5 +40,45 @@
             "layer": -1784358549,
             "order": 3
         }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "49e9f80a77314aedb5db6062bcf6ab36",
+    "Name": "GameStartButton",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "21644470e4eabdd439e5ebdc97e09285", "FileId": 21300000, "Type": 3 }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0,
+                    "y": -19.8
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "layer": -1784358549,
+            "order": 3
+        }
+    }, {
+        "Type": { "Id": "95ff57ed0598446933927bc634433a47", "Name": "Button" },
+        "Properties": {
+            "sprite2DRenderer": { "$TypeId": 9, "Id": "49e9f80a77314aedb5db6062bcf6ab36", "Name": "GameStartButton" }
+        }
+    }, {
+        "Type": { "Id": "5a68c59783d93e60c704f63111bcb0ad", "Name": "Sprite2DRendererHitBox2D" }
     }]
 }]

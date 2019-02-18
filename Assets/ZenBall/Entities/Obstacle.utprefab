@@ -36,7 +36,7 @@
     }, {
         "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
         "Properties": {
-            "sprite": { "$TypeId": 10, "Guid": "bbcfaa7b82778f64191f9c20d7ca7cd7", "FileId": 21300000, "Type": 3 },
+            "sprite": { "$TypeId": 10, "Guid": "9b51e4402d2b2064eaec94f23201f360", "FileId": 21300000, "Type": 3 },
             "color": {
                 "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
                 "Properties": {

@@ -19,7 +19,7 @@ namespace game {
 
         OnUpdate():void {                   
             if(GameSystem.StartFirstLevel && !GameSystem.isInTutorial){
-                GameSystem.RestartWorld(this.world);
+                GameSystem.ShowMainScreen(this.world);
                 GameSystem.StartFirstLevel = false;
             }     
         }
@@ -43,7 +43,7 @@ namespace game {
         }
 
 
-        static RestartWorld(world: ut.World){            
+        static RestartWorld(world: ut.World){        
             if(GameSystem.isInTutorial){
                 TutorialSystem.ResetTutorial(world);
                 return;
@@ -57,12 +57,12 @@ namespace game {
             CoinCollisionSystem.actualCoins = 0 ;               
 
             GameSystem.spawnObstacles = true;     
-            GameSystem.SetScore(0, world);
-            GameSystem.ShowMainScreen(world);      
+            GameSystem.SetScore(0, world); 
             ShotsUISystem.UpdateShotsPeg(world);
         }
 
         static NewLevel(world: ut.World){
+            
             if(GameSystem.BallRadius == 0){
                 const ball = world.getEntityByName("Ball");	  
                 world.usingComponentData(ball,[game.Ball, ut.Core2D.TransformLocalScale], (ball, scale) => {
@@ -70,7 +70,7 @@ namespace game {
                 });   
             }                       
             if(GameSystem.isInTutorial){
-                TutorialSystem.nextTutorial = true;
+                TutorialSystem.ShowTutorialWinScreen(world);
                 return;
             }
             GameSystem.DestroyObjects(world);
@@ -85,41 +85,48 @@ namespace game {
         static Play(world){
             if(GameSystem.currentPlays != 0){
                 this.currentPlays --;                
-                ShotsUISystem.UpdateShotsPeg(world);                
-                GameSystem.DestroyMainScreen(world);
-            }
-            
-            GameSystem.DestroyMainScreen(world);
+                ShotsUISystem.UpdateShotsPeg(world);       
+            }            
         }
-        
-        static NoShotsSound(world: ut.World){            
-            const source = world.getEntityByName("NoShots");	  
-            if (!world.hasComponent(source, ut.Audio.AudioSourceStart))
-                world.addComponent(source, ut.Audio.AudioSourceStart);
-       
-        }
-
-        static ShowMainScreen(world:ut.World){
-            ut.EntityGroup.instantiate(world, 'game.GameStart'); 
-        }
-
-        static DestroyMainScreen(world:ut.World){
-            ut.EntityGroup.destroyAll(world, 'game.GameStart');
-        }
-
+        static GameOverScreen:ut.Entity[];
         static EndGame(world:ut.World){
             if(!GameSystem.isInTutorial){
-                ut.EntityGroup.instantiate(world, 'game.GameOver'); 
+                //HideThePutt
+                let putt = world.getEntityByName("Putt");
+                if(!putt.isNone()){
+                    world.usingComponentData(putt,  [ut.Core2D.TransformLocalPosition], 
+                        (position,)=>{   
+                            position.position = new Vector3(0, -100);
+                        });
+                }
+                GameSystem.GameOverScreen = ut.EntityGroup.instantiate(world, 'game.GameOver'); 
                 GameSystem.CurrentGameMode = GameState.GameEnd;
                 GameSystem.DestroyObjects(world);
             } else {
-                GameSystem.RestartWorld(world);
+                TutorialSystem.ShowTutorialFailScreen(world);
             }
         }
 
-        static DestroyEndScreen(world:ut.World){
-            ut.EntityGroup.destroyAll(world, 'game.GameOver');
+        static MainScreen:ut.Entity[];
+        static ShowMainScreen(world:ut.World){
+            GameSystem.MainScreen = ut.EntityGroup.instantiate(world, 'game.GameStart'); 
+            GameSystem.CurrentGameMode = GameState.GameStart;
+        }
+
+        static DestroyMainScreen(world:ut.World){
+            GameSystem.MainScreen.forEach(element => {                        
+                ut.Core2D.TransformService.destroyTree(world, element);
+            });
+            GameSystem.CurrentGameMode = GameState.Waiting;
             GameSystem.RestartWorld(world);
+        }
+
+        
+        static DestroyEndScreen(world:ut.World){
+            GameSystem.GameOverScreen.forEach(element => {                
+                ut.Core2D.TransformService.destroyTree(world, element);
+            });
+            GameSystem.ShowMainScreen(world);
         }
 
         static StartBall(world: ut.World){
@@ -141,11 +148,19 @@ namespace game {
                     ball.MoveDirection = new Vector2(0,0);
                     ball.Shoot = false;
                     position.position = new Vector3(0,0);
-                    renderer.size = new Vector2(1,1);
+                    //renderer.size = new Vector2(1,1.2);
             
              });
             }          
            
+        }
+        
+        
+        static NoShotsSound(world: ut.World){            
+            const source = world.getEntityByName("NoShots");	  
+            if (!world.hasComponent(source, ut.Audio.AudioSourceStart))
+                world.addComponent(source, ut.Audio.AudioSourceStart);
+       
         }
 
         static DestroyObjects(world: ut.World){

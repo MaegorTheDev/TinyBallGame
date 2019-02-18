@@ -55,7 +55,7 @@ namespace game {
 
                  //Finish this
                 ShotsUISystem.Initialize(this.world);
-                GameSystem.spawnObstacles = true;
+                //GameSystem.spawnObstacles = true;
                 BorderSystem.calculateOnce = false;
             }
         }

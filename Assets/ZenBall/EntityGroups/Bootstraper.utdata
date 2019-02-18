@@ -14,6 +14,7 @@
         { "$TypeId": 9, "Id": "a379ff7481f1437cadc2cd9fbab97983", "Name": "NoShots" },
         { "$TypeId": 9, "Id": "206947d2ab684ce599eb66b47913a5d6", "Name": "LowLive" },
         { "$TypeId": 9, "Id": "0d4a175bd7414225bb7ee114f6a772ae", "Name": "HoleAudioSource" },
+        { "$TypeId": 9, "Id": "64225779d47b4efbb754ed8dd45d31bc", "Name": "WinLevel" },
         { "$TypeId": 9, "Id": "0114581e263c4d49a5d4046eef6f979d", "Name": "Borders" },
         { "$TypeId": 9, "Id": "76b3ba21971e46d4a27fac2cf6976d12", "Name": "Ground" },
         { "$TypeId": 9, "Id": "8d229b3f147d49d7be713241775dd8ed", "Name": "Roof" },
@@ -55,9 +56,9 @@
             "backgroundColor": {
                 "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
                 "Properties": {
-                    "r": 0.3690815,
-                    "g": 0.3735338,
-                    "b": 0.5471698,
+                    "r": 0.3410911,
+                    "g": 0.6886792,
+                    "b": 0.4622687,
                     "a": 1
                 }
             },
@@ -112,7 +113,7 @@
         "Type": { "Id": "a60aa1b9ad84a83eefb0d5382a4d5967", "Name": "AudioSource" },
         "Properties": {
             "clip": { "$TypeId": 10, "Guid": "e858840878b6fa94b9690bd2250f86ba", "FileId": 8300000, "Type": 3 },
-            "volume": 0.5,
+            "volume": 0.35,
             "loop": true
         }
     }, {
@@ -164,8 +165,8 @@
     }, {
         "Type": { "Id": "a60aa1b9ad84a83eefb0d5382a4d5967", "Name": "AudioSource" },
         "Properties": {
-            "clip": { "$TypeId": 10, "Guid": "391a3044afbc3db439a58626eabdaa35", "FileId": 8300000, "Type": 3 },
-            "volume": 0.75
+            "clip": { "$TypeId": 10, "Guid": "21ea1bb939ff9134da72688d179773d6", "FileId": 8300000, "Type": 3 },
+            "volume": 0.7
         }
     }]
 },
@@ -184,7 +185,7 @@
     }, {
         "Type": { "Id": "a60aa1b9ad84a83eefb0d5382a4d5967", "Name": "AudioSource" },
         "Properties": {
-            "clip": { "$TypeId": 10, "Guid": "87066f7da79892e409640ba588790018", "FileId": 8300000, "Type": 3 },
+            "clip": { "$TypeId": 10, "Guid": "02dcfc38244b3474c80ab398f6c3d86c", "FileId": 8300000, "Type": 3 },
             "volume": 0.75
         }
     }]
@@ -252,6 +253,27 @@
 },
 {
     "$TypeId": 5,
+    "Id": "64225779d47b4efbb754ed8dd45d31bc",
+    "Name": "WinLevel",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "e7d6b50f8f9946d9a33c10e6b4e7a74b", "Name": "Sounds" }
+        }
+    }, {
+        "Type": { "Id": "a60aa1b9ad84a83eefb0d5382a4d5967", "Name": "AudioSource" },
+        "Properties": {
+            "clip": { "$TypeId": 10, "Guid": "b577340a62a40fd41920ec172e278374", "FileId": 8300000, "Type": 3 },
+            "volume": 0.75,
+            "loop": false
+        }
+    }]
+},
+{
+    "$TypeId": 5,
     "Id": "0114581e263c4d49a5d4046eef6f979d",
     "Name": "Borders",
     "Enabled": true,
@@ -264,7 +286,7 @@
     }, {
         "Type": { "Id": "5adcc98dfb94447d865db4f14ea7dbff", "Name": "TutorialHelper" },
         "Properties": {
-            "PlayTutorial": false
+            "PlayTutorial": true
         }
     }]
 },
@@ -308,7 +330,7 @@
     }, {
         "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
         "Properties": {
-            "sprite": { "$TypeId": 10, "Guid": "49357d1d3299fe84baa7180e61bf4c1c", "FileId": 21300000, "Type": 3 },
+            "sprite": { "$TypeId": 10 },
             "color": {
                 "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
                 "Properties": {
@@ -392,7 +414,7 @@
     }, {
         "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
         "Properties": {
-            "sprite": { "$TypeId": 10, "Guid": "49357d1d3299fe84baa7180e61bf4c1c", "FileId": 21300000, "Type": 3 },
+            "sprite": { "$TypeId": 10 },
             "color": {
                 "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
                 "Properties": {
@@ -487,7 +509,7 @@
     }, {
         "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
         "Properties": {
-            "sprite": { "$TypeId": 10, "Guid": "49357d1d3299fe84baa7180e61bf4c1c", "FileId": 21300000, "Type": 3 },
+            "sprite": { "$TypeId": 10 },
             "color": {
                 "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
                 "Properties": {
@@ -591,7 +613,7 @@
     }, {
         "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
         "Properties": {
-            "sprite": { "$TypeId": 10, "Guid": "49357d1d3299fe84baa7180e61bf4c1c", "FileId": 21300000, "Type": 3 },
+            "sprite": { "$TypeId": 10 },
             "color": {
                 "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
                 "Properties": {
@@ -685,7 +707,7 @@
     }, {
         "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
         "Properties": {
-            "sprite": { "$TypeId": 10, "Guid": "a7f7cd2dd929bb94ebaf67f26bf2bdb4", "FileId": 21300000, "Type": 3 },
+            "sprite": { "$TypeId": 10, "Guid": "1b4986d4ce0628144aee5da6e8fcf1f3", "FileId": 21300000, "Type": 3 },
             "color": {
                 "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
                 "Properties": {
@@ -793,8 +815,8 @@
             "size": {
                 "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
                 "Properties": {
-                    "x": 0,
-                    "y": 0
+                    "x": 526.0001,
+                    "y": 718.0001
                 }
             }
         }
