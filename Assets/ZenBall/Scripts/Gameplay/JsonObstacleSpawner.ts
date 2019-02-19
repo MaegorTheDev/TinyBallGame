@@ -90,10 +90,10 @@ namespace game {
                     //Scaleing 
                     rendererOptions.size = new Vector2(room.ObstacleData[i].ScaleX,room.ObstacleData[i].ScaleY);
                     boxCollider.size = new Vector2(room.ObstacleData[i].ScaleX,room.ObstacleData[i].ScaleY);
-                    hitbox.box.x = room.ObstacleData[i].ScaleX;
-                    hitbox.box.y = room.ObstacleData[i].ScaleY;
-                    hitbox.box.width = -1*(room.ObstacleData[i].ScaleX/2);                    
-                    hitbox.box.heighta = -1*(room.ObstacleData[i].ScaleY/2);
+                    hitbox.box.x =  -1*(room.ObstacleData[i].ScaleX/2);
+                    hitbox.box.y = -1*(room.ObstacleData[i].ScaleY/2);     
+                    hitbox.box.width = room.ObstacleData[i].ScaleX;     
+                    hitbox.box.height = room.ObstacleData[i].ScaleY;
 
 
                     if(room.ObstacleData[i].Type == "L"){

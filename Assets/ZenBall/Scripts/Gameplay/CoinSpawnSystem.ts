@@ -22,7 +22,8 @@ namespace game {
 
             //Spawning Coins
 
-            if(GameSystem.spawnCoins){        
+            if(GameSystem.spawnCoins){       
+                console.log("spawn Coins"); 
                 CoinSpawnSystem.maxCoins = GameSystem.randomIntFromInterval(CoinSpawnSystem.randomInterval.x, CoinSpawnSystem.randomInterval.y);  
                 CoinSpawnSystem.spawnedCoins = 0;
                 for(let i = 0; i<CoinSpawnSystem.maxCoins; i++){                    
@@ -38,21 +39,21 @@ namespace game {
             let index = 0;
             let randomPos:Vector3;
         
-            while (!findLocation && index < 250){                    
+            while (!findLocation && index < 1250){                    
                 randomPos = new Vector3(GameSystem.randomIntFromInterval(minX,maxX),
                         GameSystem.randomIntFromInterval(minY, maxY));
-                let imposibleCoin = false;
+                let imposibleCoin = false;               
                 
-               if(CoinSpawnSystem.DoesHitObstacle(world, randomPos)){
+                if(CoinSpawnSystem.DoesHitObstacle(world, randomPos)){
                    imposibleCoin = true;
                 }             
-                else if(!CoinSpawnSystem.IsVisibleFromBall(world, randomPos) && CoinSpawnSystem.spawnedCoins==0){
-                   
+                else if(!CoinSpawnSystem.IsVisibleFromBall(world, randomPos) && CoinSpawnSystem.spawnedCoins==0){                   
                    imposibleCoin = true;
                 }
-                else if(CoinSpawnSystem.spawnedCoins > 0 && !CoinSpawnSystem.IsVisibleFromOtherCoins(world, randomPos)){
+                else if(CoinSpawnSystem.spawnedCoins > 0 && !CoinSpawnSystem.IsVisibleFromOtherCoins(world, randomPos)){                    
                     imposibleCoin = true;
                 }
+
 
                 world.forEach([game.Coin, ut.Core2D.TransformLocalPosition],
                     (coin, transform) => { 
@@ -133,7 +134,7 @@ namespace game {
                 return false;
             }
             world.usingComponentData(ballEntity,[ut.Core2D.TransformLocalPosition],(position) => {
-                let hit = ut.HitBox2D.HitBox2DService.rayCast(world, positionToSpawn, position.position, camera);              
+                let hit = ut.HitBox2D.HitBox2DService.rayCast(world, positionToSpawn, position.position, camera);
                 if(!hit.entityHit.isNone() && !world.hasComponent(hit.entityHit, game.Ball)){
                     result = false;                    
                 }else {

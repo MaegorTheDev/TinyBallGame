@@ -116,8 +116,6 @@
             "volume": 0.35,
             "loop": true
         }
-    }, {
-        "Type": { "Id": "fb67fae37e3e484fa554012ae4edd7c6", "Name": "AudioSourceStart" }
     }]
 },
 {
@@ -815,8 +813,8 @@
             "size": {
                 "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
                 "Properties": {
-                    "x": 526.0001,
-                    "y": 718.0001
+                    "x": 458,
+                    "y": 805
                 }
             }
         }

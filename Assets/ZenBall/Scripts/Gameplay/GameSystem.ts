@@ -126,7 +126,8 @@ namespace game {
             GameSystem.GameOverScreen.forEach(element => {                
                 ut.Core2D.TransformService.destroyTree(world, element);
             });
-            GameSystem.ShowMainScreen(world);
+            GameSystem.CurrentGameMode = GameState.Waiting;
+            GameSystem.RestartWorld(world);
         }
 
         static StartBall(world: ut.World){

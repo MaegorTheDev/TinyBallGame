@@ -98,10 +98,7 @@
     }, {
         "Type": { "Id": "4ca2ce637ae940118b5952682078805e", "Name": "Ball" },
         "Properties": {
-            "MaxPower": 200,
-            "MoveDirection": {
-                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" }
-            }
+            "MaxPower": 200
         }
     }, {
         "Type": { "Id": "4877aebd4079748a17f940cbbee5d2e6", "Name": "Velocity2D" }
@@ -132,7 +129,7 @@
         "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
         "Properties": {
             "layer": 1587474927,
-            "order": 2
+            "order": 3
         }
     }]
 },
@@ -178,7 +175,7 @@
         "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
         "Properties": {
             "layer": 1587474927,
-            "order": 1
+            "order": 2
         }
     }, {
         "Type": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
@@ -186,7 +183,7 @@
             "size": {
                 "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
                 "Properties": {
-                    "x": 40,
+                    "x": 50,
                     "y": 3.5
                 }
             }
@@ -197,7 +194,7 @@
     "$TypeId": 5,
     "Id": "a859bc77079a4a90b1ed74992d484ec9",
     "Name": "DottedGuide",
-    "Enabled": true,
+    "Enabled": false,
     "Static": false,
     "Layer": 0,
     "Components": [{

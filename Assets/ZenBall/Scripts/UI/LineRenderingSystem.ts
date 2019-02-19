@@ -51,17 +51,15 @@ namespace game {
 
             let linePosition;
             let lineRotation;
-            //let lineMagnitude;
+            let lineMagnitude;
 
             this.world.usingComponentData(ball, [ut.Core2D.TransformLocalPosition], 
                 (position) => {      
                     let diference = new Vector2(coordinates.x - position.position.x, coordinates.y -  position.position.y);   
-                    //lineMagnitude= Math.sqrt(diference.x*diference.x + diference.y * diference.y);
+                    lineMagnitude= Math.sqrt(diference.x*diference.x + diference.y * diference.y);
                    
                     let normalized = diference.normalize();
-                    lineRotation = Math.atan2(normalized.y, normalized.x);
-                    
-                    let radiusOffset = normalized.multiplyScalar(GameSystem.BallRadius);
+                    lineRotation = Math.atan2(normalized.y, normalized.x);                    
                     linePosition = new Vector3 (position.position.x, position.position.y);
                    
                 });              
@@ -76,7 +74,7 @@ namespace game {
             
                     position.position = linePosition;   
                     rotation.rotation.setFromAxisAngle(new Vector3(0,0,1), lineRotation);
-                    //options.size = new Vector2(lineMagnitude - (GameSystem.BallRadius * 2), 0.25);
+                    options.size = new Vector2(lineMagnitude, 3.3);
                 });               
                 /**
                 let dotedBall = this.world.getEntityByName("DottedGuide");  
