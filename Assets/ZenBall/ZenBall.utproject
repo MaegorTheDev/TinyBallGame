@@ -68,9 +68,6 @@
         { "Id": "251df5ef6819533f94e1cbf3181f722e", "Name": "UTiny.Audio" },
         { "Id": "91f1133fa9293ef9b61da0f1e6cbceeb", "Name": "UTiny.Animation" }
     ],
-    "Assets": [{
-        "Object": { "$TypeId": 10, "Guid": "7f135fd2a0d196a448e48f7ca246e7cf", "FileId": 4900000, "Type": 3 }
-    }],
     "StartupEntityGroup": { "Id": "4bf13ed264834a059678ba56f3f94814", "Name": "Bootstraper" }
 },
 {

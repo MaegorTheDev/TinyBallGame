@@ -98,7 +98,10 @@
     }, {
         "Type": { "Id": "4ca2ce637ae940118b5952682078805e", "Name": "Ball" },
         "Properties": {
-            "MaxPower": 200
+            "MaxPower": 200,
+            "MoveDirection": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" }
+            }
         }
     }, {
         "Type": { "Id": "4877aebd4079748a17f940cbbee5d2e6", "Name": "Velocity2D" }

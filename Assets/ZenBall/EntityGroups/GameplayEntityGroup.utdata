@@ -5,20 +5,8 @@
     "ExportFlags": 0,
     "SerializedVersion": 0,
     "Entities": [
-        { "$TypeId": 9, "Id": "1f2a8409bc5b4c9793fd0f9e5e3f5bf7", "Name": "Systems" },
         { "$TypeId": 9, "Id": "d562f25fd4754928b37e1c756e0d8f5e", "Name": "Spawners" }
     ]
-},
-{
-    "$TypeId": 5,
-    "Id": "1f2a8409bc5b4c9793fd0f9e5e3f5bf7",
-    "Name": "Systems",
-    "Enabled": true,
-    "Static": false,
-    "Layer": 0,
-    "Components": [{
-        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
-    }]
 },
 {
     "$TypeId": 5,
@@ -45,12 +33,21 @@
                     "y": 50
                 }
             },
-            "BorderOffset": 10
+            "BorderOffset": 10,
+            "SpawnMode": {
+                "$TypeId": 8,
+                "Type": { "Id": "c7c81bbc6f764be4a2a670fef202ed81", "Name": "ObstacleSpawnerMode" },
+                "Id": "92b71ee0c9434717820c7a4218d15a06",
+                "Name": "Pool",
+                "Value": 2
+            },
+            "Pools": 3,
+            "LevelsPerPool": 3
         }
     }, {
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
-        "Properties": {
-            "parent": { "$TypeId": 9, "Id": "1f2a8409bc5b4c9793fd0f9e5e3f5bf7", "Name": "Objects" }
-        }
+        "Properties": {}
+    }, {
+        "Type": { "Id": "0a489aeee0ae467c85d8820422160db3", "Name": "CoinSpawnerHelper" }
     }]
 }]

@@ -3,11 +3,7 @@ namespace game {
     //@ut.executeBefore(game.BallShootingSystem)
     /** New System */
     export class ShotsUISystem extends ut.ComponentSystem {
-        OnUpdate():void {  
-            if(GameSystem.spawnCoins){
-                ShotsUISystem.UpdateShotsPeg(this.world);
-            }        
-         
+        OnUpdate():void {           
         }
 
         static UpdateShotsPeg(world){

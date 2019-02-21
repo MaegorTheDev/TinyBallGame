@@ -34,7 +34,7 @@ namespace game {
             if(spawnMode != ObstacleSpawnerMode.Random){
                 return;
             } 
-
+/** 
             if(GameSystem.spawnObstacles){  
                 const borders = this.world.getEntityByName("Borders");	                            
                 this.world.usingComponentData(borders, [game.Borders], 
@@ -58,9 +58,9 @@ namespace game {
                     index ++;
                 }               
 
-                GameSystem.spawnCoins = true;
-                GameSystem.spawnObstacles = false;
-            }
+               // GameSystem.spawnCoins = true;
+                //GameSystem.spawnObstacles = false;
+            }*/
         }
 
         static spawnObstacle(world: ut.World, entityGroup: string, xScale, yScale, offset, borders):boolean{   

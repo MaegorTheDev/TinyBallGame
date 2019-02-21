@@ -30,7 +30,7 @@ namespace game {
 
             if(spawnMode != ObstacleSpawnerMode.Json){
                 return;
-            } 
+            } /** 
 
             if(JsonObstacleSpawner.load){                  
                 JsonObstacleSpawner.load= false; 
@@ -54,7 +54,7 @@ namespace game {
 
                 GameSystem.spawnCoins = true;
                 GameSystem.spawnObstacles = false;
-            }
+            }*/
         }
 
         static loadLevels(data){

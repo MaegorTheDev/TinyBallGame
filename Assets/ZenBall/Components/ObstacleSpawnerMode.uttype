@@ -12,18 +12,31 @@
         "Name": "Random",
         "FieldType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
         "Array": false,
-        "Visibility": 0
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
     }, {
         "Id": "446c75f91a4045a8b7f3d5520405725d",
         "Name": "Json",
         "FieldType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
         "Array": false,
-        "Visibility": 0
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "92b71ee0c9434717820c7a4218d15a06",
+        "Name": "Pool",
+        "FieldType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
     }],
     "DefaultValue": {
         "Type": { "Id": "c7c81bbc6f764be4a2a670fef202ed81", "Name": "ObstacleSpawnerMode" },
         "Properties": {
-            "Json": 1
+            "Json": 1,
+            "Pool": 2
         }
     }
 }]

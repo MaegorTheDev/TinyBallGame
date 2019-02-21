@@ -284,7 +284,7 @@
     }, {
         "Type": { "Id": "5adcc98dfb94447d865db4f14ea7dbff", "Name": "TutorialHelper" },
         "Properties": {
-            "PlayTutorial": true
+            "PlayTutorial": false
         }
     }]
 },
@@ -813,8 +813,8 @@
             "size": {
                 "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
                 "Properties": {
-                    "x": 458,
-                    "y": 805
+                    "x": 0,
+                    "y": 0
                 }
             }
         }

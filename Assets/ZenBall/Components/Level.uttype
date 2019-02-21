@@ -1,0 +1,21 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "06dd4e24da1d4f809e519f9e4dcaacf8",
+    "Name": "Level",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "5ffaefaa630b42cea105b221014c8120",
+        "Name": "StartingPosition",
+        "FieldType": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "06dd4e24da1d4f809e519f9e4dcaacf8", "Name": "Level" }
+    }
+}]

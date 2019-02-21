@@ -34,14 +34,17 @@ namespace game {
             GameSystem.NewLevel(world);      
             
             const winAudioObject = world.getEntityByName("WinLevel");    
+            if(!winAudioObject.isNone()){
+                world.usingComponentData(winAudioObject,
+                    [ut.Entity, ut.Audio.AudioSource], 
+                    (entity, audiosource) => {    
+                        if (!world.hasComponent(entity, ut.Audio.AudioSourceStart)) {
+                            world.addComponent(entity, ut.Audio.AudioSourceStart);
+                        }                    
+                });    
+            }
 
-            world.usingComponentData(winAudioObject,
-                [ut.Entity, ut.Audio.AudioSource], 
-                (entity, audiosource) => {    
-                    if (!world.hasComponent(entity, ut.Audio.AudioSourceStart)) {
-                        world.addComponent(entity, ut.Audio.AudioSourceStart);
-                    }                    
-            });        
+              
 
             GameSystem.AddScore(10, world);
         }
