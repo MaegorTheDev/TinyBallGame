@@ -45,8 +45,7 @@
             "LevelsPerPool": 3
         }
     }, {
-        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
-        "Properties": {}
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
     }, {
         "Type": { "Id": "0a489aeee0ae467c85d8820422160db3", "Name": "CoinSpawnerHelper" }
     }]

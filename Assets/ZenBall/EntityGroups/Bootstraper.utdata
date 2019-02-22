@@ -23,7 +23,8 @@
         { "$TypeId": 9, "Id": "9e716a4568ed4ffea1e07dc84655cc40", "Name": "Background" },
         { "$TypeId": 9, "Id": "5a033e5cfedb41b080545d960c0bddc2", "Name": "Canvas" },
         { "$TypeId": 9, "Id": "3306d9b41e264a0e859266a018fbb7da", "Name": "Panel" },
-        { "$TypeId": 9, "Id": "33fb87c5b94f48ce85b76f7b5631536e", "Name": "ScoreText" }
+        { "$TypeId": 9, "Id": "33fb87c5b94f48ce85b76f7b5631536e", "Name": "ScoreText" },
+        { "$TypeId": 9, "Id": "a983d25029094dceb4f549ee9daeb668", "Name": "CoinsRender" }
     ]
 },
 {
@@ -901,5 +902,60 @@
         }
     }, {
         "Type": { "Id": "6f5ed9937f81d1780663edc21a6f0da2", "Name": "NativeFont" }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "a983d25029094dceb4f549ee9daeb668",
+    "Name": "CoinsRender",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -28,
+                    "y": 40
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 1,
+                    "y": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "0976708f4e814322ba32028adfe7c57c", "Name": "NumberObject" },
+        "Properties": {
+            "Digits": {
+                "Type": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
+                "Items": [
+                    { "$TypeId": 10, "Guid": "24861f212bc3e70419b27bb018980e3b", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "4e044891a636edd48893696c1109a5ed", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "a06dc390a1b326a419690012495b1617", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "d860544010c8e924eb606f94a055c7fc", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "82c373bdcebd8df48963281fb82f3391", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "5450eb7b5bf373642865e49d87a160ba", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "95115c8ef669efe4eaca67dc76fd85e7", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "e7fe8af6c4b59c448b611266a28fdc4a", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "de7e1361897b0574ca5329a66c714358", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "a4189b41edb585546923f98a601a6da0", "FileId": 21300000, "Type": 3 }
+                ]
+            },
+            "Spacing": 4
+        }
     }]
 }]

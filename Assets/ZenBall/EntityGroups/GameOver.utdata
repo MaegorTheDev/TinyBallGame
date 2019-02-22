@@ -6,7 +6,9 @@
     "SerializedVersion": 0,
     "Entities": [
         { "$TypeId": 9, "Id": "356248200f974f968b3c3483293e6807", "Name": "GameOverSprite" },
-        { "$TypeId": 9, "Id": "4a85a5dae3a14ed0b3e8efefd39d9a41", "Name": "GameRestartButton" }
+        { "$TypeId": 9, "Id": "4a85a5dae3a14ed0b3e8efefd39d9a41", "Name": "RestartGameButton" },
+        { "$TypeId": 9, "Id": "82295abf21d14ad6b8201ea2c8126a3f", "Name": "RespawnGameButton" },
+        { "$TypeId": 9, "Id": "7274dc2d805942fab14269e271998b3f", "Name": "RespawnCoinNumberRender" }
     ]
 },
 {
@@ -57,7 +59,7 @@
 {
     "$TypeId": 5,
     "Id": "4a85a5dae3a14ed0b3e8efefd39d9a41",
-    "Name": "GameRestartButton",
+    "Name": "RestartGameButton",
     "Enabled": true,
     "Static": false,
     "Layer": 0,
@@ -83,7 +85,7 @@
             "position": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
-                    "x": 0,
+                    "x": 13.7,
                     "y": -19.8
                 }
             }
@@ -95,11 +97,105 @@
             "order": 3
         }
     }, {
-        "Type": { "Id": "95ff57ed0598446933927bc634433a47", "Name": "Button" },
+        "Type": { "Id": "5a68c59783d93e60c704f63111bcb0ad", "Name": "Sprite2DRendererHitBox2D" }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "82295abf21d14ad6b8201ea2c8126a3f",
+    "Name": "RespawnGameButton",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
         "Properties": {
-            "sprite2DRenderer": { "$TypeId": 9, "Id": "4a85a5dae3a14ed0b3e8efefd39d9a41", "Name": "GameStartButton" }
+            "sprite": { "$TypeId": 10, "Guid": "fef134a843143bb43a5f44d51ed8a906", "FileId": 21300000, "Type": 3 },
+            "color": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 1,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0.09019608
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -15.7,
+                    "y": -19.8
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "layer": -1784358549,
+            "order": 2
         }
     }, {
         "Type": { "Id": "5a68c59783d93e60c704f63111bcb0ad", "Name": "Sprite2DRendererHitBox2D" }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "7274dc2d805942fab14269e271998b3f",
+    "Name": "RespawnCoinNumberRender",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -19.5,
+                    "y": -20.2
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0.5,
+                    "y": 0.5
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "0976708f4e814322ba32028adfe7c57c", "Name": "NumberObject" },
+        "Properties": {
+            "Digits": {
+                "Type": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
+                "Items": [
+                    { "$TypeId": 10, "Guid": "24861f212bc3e70419b27bb018980e3b", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "4e044891a636edd48893696c1109a5ed", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "a06dc390a1b326a419690012495b1617", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "d860544010c8e924eb606f94a055c7fc", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "82c373bdcebd8df48963281fb82f3391", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "5450eb7b5bf373642865e49d87a160ba", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "95115c8ef669efe4eaca67dc76fd85e7", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "e7fe8af6c4b59c448b611266a28fdc4a", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "de7e1361897b0574ca5329a66c714358", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "a4189b41edb585546923f98a601a6da0", "FileId": 21300000, "Type": 3 }
+                ]
+            },
+            "Spacing": 4
+        }
     }]
 }]

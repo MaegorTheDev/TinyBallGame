@@ -16,8 +16,10 @@ namespace game {
                     
                     if(!hit.entityHit.isNone() && this.world.getEntityName(hit.entityHit) == "GameStartButton") {
                         GameSystem.DestroyMainScreen(this.world);
-                    } else if(!hit.entityHit.isNone() && this.world.getEntityName(hit.entityHit) == "GameRestartButton") {
+                    } else if(!hit.entityHit.isNone() && this.world.getEntityName(hit.entityHit) == "RestartGameButton") {
                         GameSystem.DestroyEndScreen(this.world);
+                    } else if(!hit.entityHit.isNone() && this.world.getEntityName(hit.entityHit) == "RespawnGameButton") {
+                        RespawnSystem.Respawn(this.world);                        
                     }
                     
                 }
@@ -31,9 +33,11 @@ namespace game {
                         
                         if(!hit.entityHit.isNone() && this.world.getEntityName(hit.entityHit) == "GameStartButton") {
                             GameSystem.DestroyMainScreen(this.world);
-                        } else if(!hit.entityHit.isNone() && this.world.getEntityName(hit.entityHit) == "GameRestartButton") {
+                        } else if(!hit.entityHit.isNone() && this.world.getEntityName(hit.entityHit) == "RestartGameButton") {
                             GameSystem.DestroyEndScreen(this.world);
-                        }                           
+                        } else if(!hit.entityHit.isNone() && this.world.getEntityName(hit.entityHit) == "RespawnGameButton") {
+                            RespawnSystem.Respawn(this.world);
+                        }                          
                     }	
                 }
             }

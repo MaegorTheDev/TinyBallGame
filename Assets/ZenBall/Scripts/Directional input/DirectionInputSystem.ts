@@ -16,10 +16,12 @@ namespace game {
 				if(inputHelper.InputType == game.InputType.Power){
 					return;
 				}
-				if(GameSystem.CurrentGameMode == GameState.GameEnd || GameSystem.currentPlays <= 0){
+				if(GameSystem.CurrentGameMode != GameState.Waiting && GameSystem.CurrentGameMode != GameState.Aiming ){
+					//console.log(GameSystem.CurrentGameMode);
 					return;
 				}
 				if(!ut.Core2D.Input.isTouchSupported()){
+					
 
 					if( ut.Runtime.Input.getMouseButton(0)){
 						this.ProcessStartInput(entity, velocity, inputHelper);

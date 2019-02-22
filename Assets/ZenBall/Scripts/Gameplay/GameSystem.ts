@@ -5,12 +5,12 @@ namespace game {
     export class GameSystem extends ut.ComponentSystem {
         static BallRadius = 0; 
 
-        static playsPerLevel = 1;
-        static currentPlays  = 0;
-        static initialPlays = 1;
+        //static playsPerLevel = 1;
+       //static currentPlays  = 0;
+        //static initialPlays = 1;
 
-        static score = 0;
- 
+        //static score = 0;
+        static coins = 0;
         static CurrentGameMode;
         static StartFirstLevel = true;
         static isInTutorial = false;
@@ -20,23 +20,31 @@ namespace game {
                 GameSystem.ShowMainScreen(this.world);
                 GameSystem.StartFirstLevel = false;
             }     
+
+            
+            const coinScore = this.world.getEntityByName("CoinsRender");	  
+            if(!coinScore.isNone()){
+                this.world.usingComponentData(coinScore, [game.NumberObject], (numberObject)=>{
+                    numberObject.Number = GameSystem.coins;
+                });
+            }
         }
         static PlayGame(world: ut.World){
             GameSystem.CurrentGameMode = GameState.Waiting;
-            ut.EntityGroup.instantiate(world, 'game.GameplayEntityGroup');            
-            //GameSystem.DestroyObjects(world);      
-            GameSystem.currentPlays = 0 ;                           
+            ut.EntityGroup.instantiate(world, 'game.GameplayEntityGroup');    
             GameSystem.isInTutorial = false;              
+            //GameSystem.DestroyObjects(world);      
+            //GameSystem.currentPlays = 0 ;                                   
             //GameSystem.RestartWorld(world);
         }      
 
-        static AddScore(score:number, world:ut.World){
-            GameSystem.score += score;
+        static AddCoin(world:ut.World){
+            GameSystem.coins++;
             ScoreSystem.UpdateScore(world);
         }
 
-        static SetScore(score:number, world:ut.World){
-            GameSystem.score = score;
+        static SetCoin(coinNumber:number, world:ut.World){
+            GameSystem.coins = coinNumber;
             ScoreSystem.UpdateScore(world);
         }
 
@@ -46,16 +54,12 @@ namespace game {
                 TutorialSystem.ResetTutorial(world);
                 return;
             }       
-            //CoinSpawnSystem.resetRandomInterval();    
-          
+            //CoinSpawnSystem.resetRandomInterval();              
+            //GameSystem.currentPlays =  GameSystem.initialPlays;  
+            PoolObstacleSpawnerSystem.ResetGroups(world);     
+            RespawnSystem.RestartRespawns();     
             GameSystem.CurrentGameMode = game.GameState.Waiting;
-            GameSystem.currentPlays =  GameSystem.initialPlays;
-            JsonObstacleSpawner.currentGroup = 0;            
-            CoinCollisionSystem.actualCoins = 0 ;              
-
             PoolObstacleSpawnerSystem.SpawnObstacles(world);
-            GameSystem.SetScore(0, world); 
-            ShotsUISystem.UpdateShotsPeg(world);
         }
 
         static NewLevel(world: ut.World){
@@ -70,20 +74,21 @@ namespace game {
                 TutorialSystem.ShowTutorialWinScreen(world);
                 return;
             }
-           // GameSystem.DestroyObjects(world);
+            ShotsUISystem.UpdateShotsPeg(world);     
+            PoolObstacleSpawnerSystem.SpawnObstacles(world); 
+            
+            
+            //GameSystem.DestroyObjects(world);
             //CoinSpawnSystem.increaseRandomInterval();
-            GameSystem.currentPlays +=  GameSystem.playsPerLevel;
-            ShotsUISystem.UpdateShotsPeg(world);            
-            CoinCollisionSystem.actualCoins = 0 ;  
-            PoolObstacleSpawnerSystem.SpawnObstacles(world);          
+            //GameSystem.currentPlays +=  GameSystem.playsPerLevel;
         }
 
         
         static Play(world){
-            if(GameSystem.currentPlays != 0){
-                this.currentPlays --;                
-                ShotsUISystem.UpdateShotsPeg(world);       
-            }            
+        // if(GameSystem.currentPlays != 0){
+        // this.currentPlays --;                
+        //    ShotsUISystem.UpdateShotsPeg(world);       
+        // }            
         }
         static GameOverScreen:ut.Entity[];
         static EndGame(world:ut.World){
@@ -98,8 +103,20 @@ namespace game {
                 }
                 GameSystem.GameOverScreen = ut.EntityGroup.instantiate(world, 'game.GameOver'); 
                 GameSystem.CurrentGameMode = GameState.GameEnd;
+                
+                let coinsToRespawn = world.getEntityByName("RespawnCoinNumberRender") ;
+                if(!coinsToRespawn.isNone()){
+                    world.usingComponentData(coinsToRespawn, [game.NumberObject], (numberObject)=>{
+                        numberObject.Number = RespawnSystem.actualRespawns * 10;
+                        let numberObjects = numberObject.CurrentNumbers;
+                        for(let i = 0; i<numberObjects.length;i++){
+                            world.usingComponentData(numberObjects[i], [ut.Core2D.Sprite2DRenderer], (sprite) =>{
+                                sprite.color = new ut.Core2D.Color(sprite.color.r, sprite.color.g, sprite.color.b, 1);
+                            });
+                        }
+                    });
+                }
                 //GameSystem.DestroyObjects(world);
-                PoolObstacleSpawnerSystem.ResetGroups(world);
             } else {
                 TutorialSystem.ShowTutorialFailScreen(world);
             }
@@ -121,11 +138,42 @@ namespace game {
 
         
         static DestroyEndScreen(world:ut.World){
+
+            let coinsToRespawn = world.getEntityByName("RespawnCoinNumberRender") ;
+            if(!coinsToRespawn.isNone()){                
+                world.usingComponentData(coinsToRespawn, [game.NumberObject], (numberObject)=>{ 
+                    let numberObjects = numberObject.CurrentNumbers;
+                    for(let i = 0; i<numberObjects.length;i++){
+                        world.usingComponentData(numberObjects[i], [ut.Core2D.Sprite2DRenderer], (sprite) =>{
+                            sprite.color = new ut.Core2D.Color(sprite.color.r, sprite.color.g, sprite.color.b, 0);
+                        });
+                    }
+                });
+            }
+
             GameSystem.GameOverScreen.forEach(element => {                
                 ut.Core2D.TransformService.destroyTree(world, element);
             });
             GameSystem.CurrentGameMode = GameState.Waiting;
             GameSystem.RestartWorld(world);
+        }     
+        
+        static RespawnEndScreen(world:ut.World){
+            let coinsToRespawn = world.getEntityByName("RespawnCoinNumberRender") ;
+            if(!coinsToRespawn.isNone()){
+                world.usingComponentData(coinsToRespawn, [game.NumberObject], (numberObject)=>{ 
+                    let numberObjects = numberObject.CurrentNumbers;
+                    for(let i = 0; i<numberObjects.length;i++){
+                        world.usingComponentData(numberObjects[i], [ut.Core2D.Sprite2DRenderer], (sprite) =>{
+                            sprite.color = new ut.Core2D.Color(sprite.color.r, sprite.color.g, sprite.color.b, 0);
+                        });
+                    }
+                });
+            }
+            
+            GameSystem.GameOverScreen.forEach(element => {                
+                ut.Core2D.TransformService.destroyTree(world, element);
+            });
         }     
         
         

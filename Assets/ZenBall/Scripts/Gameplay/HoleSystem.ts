@@ -43,10 +43,6 @@ namespace game {
                         }                    
                 });    
             }
-
-              
-
-            GameSystem.AddScore(10, world);
         }
        
     }

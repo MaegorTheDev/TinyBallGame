@@ -8,11 +8,12 @@ namespace game {
         OnUpdate():void {            
             const line = this.world.getEntityByName("Guideline");      
             
-            if(GameSystem.currentPlays < 1 && LineRenderingSystem.pressed){
+            if(LineRenderingSystem.pressed){
                 this.ProcessFinishInput(line);
+                
             }  
             
-            if(GameSystem.CurrentGameMode == GameState.GameEnd || line.isNone() || GameSystem.currentPlays < 1){
+            if(GameSystem.CurrentGameMode == GameState.GameEnd || line.isNone() || GameSystem.CurrentGameMode == GameState.Playing){
                 return;
             }
 

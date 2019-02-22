@@ -29,7 +29,7 @@ namespace game {
                     //BallSystem.ChangeBallSpeed(newVelocity, ballEntity, this.world);
                }
                //Shoot!
-                else if(ball.Shoot && GameSystem.currentPlays > 0){   
+                else if(ball.Shoot){   
                     let velocity = new Vector2(ball.MoveDirection.x * ball.MaxPower, ball.MoveDirection.y * ball.MaxPower);  
                     BallSystem.ChangeBallSpeed(velocity, BallSystem.BallEntity , this.world);                                            
                     BallSystem.ResetBallInput(ball);

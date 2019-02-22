@@ -39,7 +39,7 @@ namespace game {
                                 TimeLethalitySystem.ResetTimer();   
                                 CollisionAudioSystem.PlayCoinSound(this.world);               
                                 CoinCollisionSystem.actualCoins++;                                
-                                GameSystem.AddScore(5, this.world);
+                                GameSystem.AddCoin(this.world);
                             }                 
                         }
                         

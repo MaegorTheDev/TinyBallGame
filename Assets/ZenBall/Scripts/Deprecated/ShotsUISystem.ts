@@ -11,7 +11,7 @@ namespace game {
             return;
             ut.EntityGroup.destroyAll(world, 'game.ShotPeg');               
             let borders = world.getEntityByName("Borders");
-            let numberOfShots = GameSystem.currentPlays;	              
+            let numberOfShots = 0;	              
             
             let pegSize;
             let pegYPos;

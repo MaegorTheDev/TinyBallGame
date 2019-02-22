@@ -69,6 +69,7 @@ namespace game {
             TutorialSystem.nextTutorial = false;              
             if(this.FinishTutorial()){
                 return;
+                
             }
 
             //Get Current tutorial and update
@@ -87,10 +88,10 @@ namespace game {
             //Start new tutorial
             if(tries > 0){              
                 BallSystem.SetBallPosition( startingPosition, this.world);       
-                GameSystem.currentPlays = tries;                      
+                //GameSystem.currentPlays = tries;                      
                 TutorialSystem.waitForClick = false;                
                 //ShotsUISystem.UpdateShotsPeg(this.world);                            
-                GameSystem.AddScore(0, this.world);
+                GameSystem.AddCoin(this.world);
             } else {                
                 GameSystem.CurrentGameMode = GameState.Tutorial;
                 TutorialSystem.waitForClick = true;
@@ -125,7 +126,7 @@ namespace game {
                        
                     if(tutorial.Index == TutorialSystem.index){                        
                         if(tutorial.Tries > 0){                            
-                            GameSystem.currentPlays = tutorial.Tries;                        
+                            //GameSystem.currentPlays = tutorial.Tries;                        
                             TutorialSystem.waitForClick = false;
                             if(!entityBall.isNone()){
                                 BallSystem.ChangeBallSpeedAndPosition(new Vector2(0,0), tutorial.BallPosition, entityBall, world);
@@ -137,7 +138,7 @@ namespace game {
                     }
                 });      
                 TutorialSystem.ShowCurrentTutorialObjects(world);       
-                GameSystem.SetScore(0, world);     
+                //GameSystem.SetScore(0, world);     
         }
 
         static HideFeedBack(world:ut.World){
