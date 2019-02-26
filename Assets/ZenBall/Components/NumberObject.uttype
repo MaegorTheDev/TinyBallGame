@@ -38,6 +38,14 @@
         "Visibility": 0,
         "EditorOnly": false,
         "Versioned": true
+    }, {
+        "Id": "d02f58f6a91244649e2cb0ef2cdd9596",
+        "Name": "Color",
+        "FieldType": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
     }],
     "DefaultValue": {
         "Type": { "Id": "0976708f4e814322ba32028adfe7c57c", "Name": "NumberObject" }

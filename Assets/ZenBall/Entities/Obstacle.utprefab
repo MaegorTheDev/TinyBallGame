@@ -48,56 +48,51 @@
             }
         }
     }, {
-        "Type": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
-        "Properties": {
-            "size": {
-                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
-                "Properties": {
-                    "x": 1,
-                    "y": 1
-                }
-            }
-        }
-    }, {
-        "Type": { "Id": "dad15a16473d1a6264af416ae1e47833", "Name": "RigidBody2D" },
-        "Properties": {
-            "freezeRotation": false,
-            "friction": 0,
-            "restitution": 0
-        }
-    }, {
         "Type": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
         "Properties": {
             "size": {
                 "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
                 "Properties": {
-                    "x": 1,
-                    "y": 1
+                    "x": 10,
+                    "y": 10
                 }
             }
         }
     }, {
         "Type": { "Id": "741cba1ee6a04deba186ecd330dc2645", "Name": "Obstacle" }
     }, {
-        "Type": { "Id": "526668276393435b834a891cadce3967", "Name": "Object" }
-    }, {
-        "Type": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
-        "Properties": {
-            "box": {
-                "Type": { "Id": "f216da154c4054842adb590807e977ba", "Name": "Rect" },
-                "Properties": {
-                    "x": -0.5,
-                    "y": -0.5,
-                    "width": 1,
-                    "height": 1
-                }
-            }
-        }
-    }, {
         "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
         "Properties": {
             "layer": 1587474927,
             "order": 1
+        }
+    }, {
+        "Type": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
+        "Properties": {
+            "size": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 10,
+                    "y": 10
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "dad15a16473d1a6264af416ae1e47833", "Name": "RigidBody2D" },
+        "Properties": {
+            "bodyType": {
+                "$TypeId": 8,
+                "Type": { "Id": "a4afdb83c635db286370870d059ac493", "Name": "BodyType" },
+                "Id": "9bd220821203281539749ecc043b64c8",
+                "Name": "Kinematic",
+                "Value": 1
+            },
+            "freezeRotation": true
+        }
+    }, {
+        "Type": { "Id": "5a68c59783d93e60c704f63111bcb0ad", "Name": "Sprite2DRendererHitBox2D" },
+        "Properties": {
+            "pixelAccurate": true
         }
     }]
 }]

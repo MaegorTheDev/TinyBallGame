@@ -116,9 +116,6 @@ namespace game {
             const worldPos = new Vector3(
             position.x / (display.frameWidth / 2) * (display.frameWidth / display.frameHeight * halfSize),
             position.y / (display.frameHeight / 2) * halfSize);	
-		
-
-
             return worldPos;
         }
     }

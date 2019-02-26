@@ -5,11 +5,50 @@
     "ExportFlags": 0,
     "SerializedVersion": 0,
     "Entities": [
+        { "$TypeId": 9, "Id": "ead95c4083de4b46a462ee31e0251651", "Name": "Comprar vida extra" },
         { "$TypeId": 9, "Id": "356248200f974f968b3c3483293e6807", "Name": "GameOverSprite" },
         { "$TypeId": 9, "Id": "4a85a5dae3a14ed0b3e8efefd39d9a41", "Name": "RestartGameButton" },
+        { "$TypeId": 9, "Id": "eee90f78c4de4341b682e9a5b9cf13e2", "Name": "NotEnoughCoinsText" },
         { "$TypeId": 9, "Id": "82295abf21d14ad6b8201ea2c8126a3f", "Name": "RespawnGameButton" },
-        { "$TypeId": 9, "Id": "7274dc2d805942fab14269e271998b3f", "Name": "RespawnCoinNumberRender" }
+        { "$TypeId": 9, "Id": "7274dc2d805942fab14269e271998b3f", "Name": "RespawnCoinNumberRender" },
+        { "$TypeId": 9, "Id": "3b27373230c4464b87abc629c169296f", "Name": "NotEnoughCoinsPng" }
     ]
+},
+{
+    "$TypeId": 5,
+    "Id": "ead95c4083de4b46a462ee31e0251651",
+    "Name": "Comprar vida extra",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0,
+                    "y": -18.6
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "3d5e9a84ec28ff14eba47312a3f004be", "FileId": 21300000, "Type": 3 }
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "layer": -1784358549
+        }
+    }]
 },
 {
     "$TypeId": 5,
@@ -75,7 +114,7 @@
                     "r": 1,
                     "g": 1,
                     "b": 1,
-                    "a": 1
+                    "a": 0.003921569
                 }
             }
         }
@@ -85,8 +124,8 @@
             "position": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
-                    "x": 13.7,
-                    "y": -19.8
+                    "x": 7.114,
+                    "y": -21.801
                 }
             }
         }
@@ -98,6 +137,73 @@
         }
     }, {
         "Type": { "Id": "5a68c59783d93e60c704f63111bcb0ad", "Name": "Sprite2DRendererHitBox2D" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0.598,
+                    "y": 0.644
+                }
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "eee90f78c4de4341b682e9a5b9cf13e2",
+    "Name": "NotEnoughCoinsText",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "de00c25a720009248981432a548efbf8", "FileId": 21300000, "Type": 3 },
+            "color": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 3.1,
+                    "y": -29.9
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "layer": -1784358549,
+            "order": 4
+        }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 1.151712,
+                    "y": 1.044576,
+                    "z": 2.16
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "1aaac7e47da047f3a10c2b804f318735", "Name": "CoinCheck" }
     }]
 },
 {
@@ -119,7 +225,7 @@
                     "r": 1,
                     "g": 0,
                     "b": 0,
-                    "a": 0.09019608
+                    "a": 0.003921569
                 }
             }
         }
@@ -129,8 +235,8 @@
             "position": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
-                    "x": -15.7,
-                    "y": -19.8
+                    "x": -8.252,
+                    "y": -21.82
                 }
             }
         }
@@ -142,6 +248,18 @@
         }
     }, {
         "Type": { "Id": "5a68c59783d93e60c704f63111bcb0ad", "Name": "Sprite2DRendererHitBox2D" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0.593232,
+                    "y": 0.627401,
+                    "z": 0.727
+                }
+            }
+        }
     }]
 },
 {
@@ -159,8 +277,8 @@
             "position": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
-                    "x": -19.5,
-                    "y": -20.2
+                    "x": -9.15,
+                    "y": -21.97
                 }
             }
         }
@@ -183,19 +301,83 @@
             "Digits": {
                 "Type": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
                 "Items": [
-                    { "$TypeId": 10, "Guid": "24861f212bc3e70419b27bb018980e3b", "FileId": 21300000, "Type": 3 },
-                    { "$TypeId": 10, "Guid": "4e044891a636edd48893696c1109a5ed", "FileId": 21300000, "Type": 3 },
-                    { "$TypeId": 10, "Guid": "a06dc390a1b326a419690012495b1617", "FileId": 21300000, "Type": 3 },
-                    { "$TypeId": 10, "Guid": "d860544010c8e924eb606f94a055c7fc", "FileId": 21300000, "Type": 3 },
-                    { "$TypeId": 10, "Guid": "82c373bdcebd8df48963281fb82f3391", "FileId": 21300000, "Type": 3 },
-                    { "$TypeId": 10, "Guid": "5450eb7b5bf373642865e49d87a160ba", "FileId": 21300000, "Type": 3 },
-                    { "$TypeId": 10, "Guid": "95115c8ef669efe4eaca67dc76fd85e7", "FileId": 21300000, "Type": 3 },
-                    { "$TypeId": 10, "Guid": "e7fe8af6c4b59c448b611266a28fdc4a", "FileId": 21300000, "Type": 3 },
-                    { "$TypeId": 10, "Guid": "de7e1361897b0574ca5329a66c714358", "FileId": 21300000, "Type": 3 },
-                    { "$TypeId": 10, "Guid": "a4189b41edb585546923f98a601a6da0", "FileId": 21300000, "Type": 3 }
+                    { "$TypeId": 10, "Guid": "88e7894d5faa84342bd3d8e47c61b8c4", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "841c9bf6b16db7a48bc451002e780b49", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "09b85bd77f6fbe8468d8adef988af77c", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "2053f53b8d249064fb27684385e586f3", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "808eaed360d0e144db531e4eab743c84", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "0ddae2429b403b0499f3536d54aa5123", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "e76850c33b1359841828a62bbf48a277", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "e9e0e36fef2733b418d2f71ce7b1b3ea", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "136bcf6274ebd9c4d87bbc35a08afb6b", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "db99f6c2ce5d4694993a3cdb626dc8df", "FileId": 21300000, "Type": 3 }
                 ]
             },
-            "Spacing": 4
+            "Spacing": 3,
+            "Color": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 1
+                }
+            }
         }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "3b27373230c4464b87abc629c169296f",
+    "Name": "NotEnoughCoinsPng",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "ccdb969403b035d4886d491a8c6a8467", "FileId": 21300000, "Type": 3 },
+            "color": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 0,
+                    "g": 0.1127791,
+                    "b": 1,
+                    "a": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -8.71,
+                    "y": -21.7
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "layer": -1784358549,
+            "order": 5
+        }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0.600246,
+                    "y": 0.3572262
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "1aaac7e47da047f3a10c2b804f318735", "Name": "CoinCheck" }
     }]
 }]

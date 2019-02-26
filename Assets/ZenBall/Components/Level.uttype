@@ -14,6 +14,14 @@
         "Visibility": 0,
         "EditorOnly": false,
         "Versioned": true
+    }, {
+        "Id": "798c1bef7b8d4d7092e9e184127a7d13",
+        "Name": "EntityChildren",
+        "FieldType": { "Id": "5a182d9d039d4dfd8fa96132d05f9ee7", "Name": "EntityReference" },
+        "Array": true,
+        "Visibility": 1,
+        "EditorOnly": false,
+        "Versioned": true
     }],
     "DefaultValue": {
         "Type": { "Id": "06dd4e24da1d4f809e519f9e4dcaacf8", "Name": "Level" }

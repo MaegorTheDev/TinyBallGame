@@ -23,6 +23,13 @@ namespace game {
             let numberToRender = this.data.numberObject.Number.toString();
             let lastSpriteObjets = this.data.numberObject.CurrentNumbers;
 
+            if(numberToRender.length < lastSpriteObjets.length){
+                for(let i = lastSpriteObjets.length-1; i>=numberToRender.length;i--){
+                    ut.Core2D.TransformService.destroyTree(this.world,lastSpriteObjets[i]);
+                }
+                lastSpriteObjets.length = numberToRender.length;                
+            }
+
             let currentX = this.data.position.position.x;
             let positionY = this.data.position.position.y;
 
@@ -43,6 +50,7 @@ namespace game {
                     position.position = new Vector3(currentX, positionY);
                     renderer.sprite = sprite;
                     scale.scale = new Vector3(this.data.scale.scale.x, this.data.scale.scale.y,1);
+                    renderer.color = this.data.numberObject.Color;
                 });
                 currentX += this.data.numberObject.Spacing * this.data.scale.scale.x;
             }

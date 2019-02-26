@@ -1,0 +1,12 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "1aaac7e47da047f3a10c2b804f318735",
+    "Name": "CoinCheck",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "DefaultValue": {
+        "Type": { "Id": "1aaac7e47da047f3a10c2b804f318735", "Name": "CoinCheck" }
+    }
+}]
