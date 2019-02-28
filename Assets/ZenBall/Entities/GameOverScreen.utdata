@@ -1,7 +1,7 @@
 ﻿[{
     "$TypeId": 4,
-    "Id": "37c0da42fbd741f6ba67d1965a408c3f",
-    "Name": "GameOver",
+    "Id": "6a2d1bfe12f04afaa0a45d427d153da5",
+    "Name": "GameOverScreen",
     "ExportFlags": 0,
     "SerializedVersion": 0,
     "Entities": [

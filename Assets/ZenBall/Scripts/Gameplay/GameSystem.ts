@@ -99,10 +99,10 @@ namespace game {
                             position.position = new Vector3(0, -100);
                         });
                 }
-                ut.EntityGroup.instantiate(world, 'game.GameOver'); 
+                ut.EntityGroup.instantiate(world, 'game.GameOverScreen'); 
                 //console.log("Spawned " + GameSystem.GameOverScreen[0].index);
                 GameSystem.CurrentGameMode = GameState.GameEnd;
-            //PoolObstacleSpawnerSystem.EndGame(world);
+                //PoolObstacleSpawnerSystem.EndGame(world);
                 let coinsToRespawn = world.getEntityByName("RespawnCoinNumberRender") ;
                 if(!coinsToRespawn.isNone()){
                     world.usingComponentData(coinsToRespawn, [game.NumberObject], (numberObject)=>{
@@ -154,7 +154,7 @@ namespace game {
             //    ut.Core2D.TransformService.destroyTree(world, element);
             //});
             
-            ut.EntityGroup.destroyAll(world,"game.GameOver");
+            ut.EntityGroup.destroyAll(world,"game.GameOverScreen");
             GameSystem.CurrentGameMode = GameState.Waiting;
             GameSystem.RestartWorld(world);
         }     
@@ -171,7 +171,7 @@ namespace game {
                     }
                 });
             }
-            ut.EntityGroup.destroyAll(world,"game.GameOver");
+            ut.EntityGroup.destroyAll(world,"game.GameOverScreen");
         }     
         
         

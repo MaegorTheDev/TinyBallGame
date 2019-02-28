@@ -903,7 +903,7 @@
                 "Value": 2
             },
             "Pools": 3,
-            "LevelsPerPool": 3
+            "LevelsPerPool": 10
         }
     }, {
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }

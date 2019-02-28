@@ -5,11 +5,18 @@ namespace game {
     export class MovingObjectSystem extends ut.ComponentSystem {
         static firstFrame;
         OnUpdate():void {            
-            if(GameSystem.CurrentGameMode == GameState.GameEnd){
-                return;
-            }
+            
             this.world.forEach([ut.Entity, ut.Core2D.TransformLocalPosition ,game.MovingObject], 
                 (entity,position, movingObject) =>{
+                if(GameSystem.CurrentGameMode == GameState.GameEnd){ 
+                        let setVelocity = new ut.Physics2D.SetVelocity2D;
+                        setVelocity.velocity = new Vector2(0,0);                             
+                        if (this.world.hasComponent(entity, ut.Physics2D.SetVelocity2D))
+                            this.world.setComponentData(entity, setVelocity);
+                        else
+                            this.world.addComponentData(entity, setVelocity);     
+                        return;
+                }
                 //If the object is not active, keep it in starting position;
                 if(!movingObject.Active || movingObject.TimeToGetToLimit == 0){   
                     position.position = movingObject.StartingPosition;
@@ -65,13 +72,13 @@ namespace game {
                     currentMagnitude = Math.sqrt(currentPosDiference.x * currentPosDiference.x + currentPosDiference.y * currentPosDiference.y);
                 }                                
                 //check Ping
-                if(movingObject.HasPong  && currentMagnitude <= 1){                     
+                if(movingObject.HasPong  && currentMagnitude <= 1.5){                     
                      movingObject.Direction *= -1; 
                      movingObject.HasPing = true;
                      movingObject.HasPong = false;                    
                 }
                 //check Pong
-                else if(movingObject.HasPing && currentMagnitude <= 1){
+                else if(movingObject.HasPing && currentMagnitude <= 1.5){
                     movingObject.Direction *= -1;                        
                     movingObject.HasPing = false;
                     movingObject.HasPong = true;                                    
