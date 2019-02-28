@@ -26,21 +26,12 @@ namespace game {
 
         }
         static EndGame(world:ut.World){
-            GameSystem.EndGame(world);
-            
+            BallSystem.ChangeBallSpeed(new Vector2, world);
+            GameSystem.EndGame(world);            
             const loseGameSound = world.getEntityByName("Lose");
             if (!world.hasComponent(loseGameSound, ut.Audio.AudioSourceStart)) {
                 world.addComponent(loseGameSound, ut.Audio.AudioSourceStart);
-            }          
-            
-            //TimeLethalitySystem.CurrentTime = 0;     
-            /** 
-            world.forEach([ut.Entity, game.Ball, ut.Core2D.Sprite2DSequencePlayer], (entity, ball, player ) => {               
-                player.paused = true;
-                player.time = 0;
-            });*/
-            
-
+            }                
         }
 
     }

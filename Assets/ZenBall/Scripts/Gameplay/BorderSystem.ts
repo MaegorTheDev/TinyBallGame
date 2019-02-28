@@ -11,13 +11,12 @@ namespace game {
             const background = this.world.getEntityByName("Background");		
             
             const halfSize = this.world.getComponentData(camera, ut.Core2D.Camera2D).halfVerticalSize;
-            
+           
             if(BorderSystem.calculateOnce){		
                 let height;
                 let width;
                 let worldHeight;
-                let worldWidth
-
+                let worldWidth;
                 //CalculateSize
                 this.world.usingComponentData(borders, [game.Borders], 
                     (borders)=>{    
@@ -53,11 +52,13 @@ namespace game {
                     scale.scale = new Vector3(worldWidth , (halfSize * 2));           
                  });        
 
-                 //Finish this
-                ShotsUISystem.Initialize(this.world);
-                //GameSystem.spawnObstacles = true;
                 BorderSystem.calculateOnce = false;
-            }
+            }            
+                                
+            let aspectRatio = display.frameHeight / display.frameWidth;
+
+            console.log()
+
         }
     }
 }

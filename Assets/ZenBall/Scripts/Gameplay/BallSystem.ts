@@ -31,7 +31,7 @@ namespace game {
                //Shoot!
                 else if(ball.Shoot){   
                     let velocity = new Vector2(ball.MoveDirection.x * ball.MaxPower, ball.MoveDirection.y * ball.MaxPower);  
-                    BallSystem.ChangeBallSpeed(velocity, BallSystem.BallEntity , this.world);                                            
+                    BallSystem.ChangeBallSpeed(velocity , this.world);                                            
                     BallSystem.ResetBallInput(ball);
                     BallSystem.lastVelocity = new Vector2(0,0);
 
@@ -60,13 +60,16 @@ namespace game {
             });           
         }
 
-        static ChangeBallSpeed(newSpeed:Vector2, entity:ut.Entity, world:ut.World){
+        static ChangeBallSpeed(newSpeed:Vector2, world:ut.World){
+            if (BallSystem.BallEntity.isNone()) {       
+                BallSystem.BallEntity = ut.EntityGroup.instantiate(world, 'game.BallGroup')[0];
+            }     
             let setVelocity = new ut.Physics2D.SetVelocity2D;
             setVelocity.velocity = newSpeed;                            
-            if (world.hasComponent(entity, ut.Physics2D.SetVelocity2D))
-                world.setComponentData(entity, setVelocity);
+            if (world.hasComponent(BallSystem.BallEntity, ut.Physics2D.SetVelocity2D))
+                world.setComponentData(BallSystem.BallEntity, setVelocity);
             else
-                world.addComponentData(entity, setVelocity);
+                world.addComponentData(BallSystem.BallEntity, setVelocity);
         }
         
         static ChangeBallSpeedAndPosition(newSpeed:Vector2, newPosition:Vector3, entity:ut.Entity, world:ut.World){

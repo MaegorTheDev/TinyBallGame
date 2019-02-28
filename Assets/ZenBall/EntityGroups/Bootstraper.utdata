@@ -7,7 +7,6 @@
     "Entities": [
         { "$TypeId": 9, "Id": "338f776ea0e34be8b539b14d25fafa7e", "Name": "Camera" },
         { "$TypeId": 9, "Id": "e7d6b50f8f9946d9a33c10e6b4e7a74b", "Name": "Sounds" },
-        { "$TypeId": 9, "Id": "342f6f12ffce4f7184b008b4f1b88d67", "Name": "BackgroundLoop" },
         { "$TypeId": 9, "Id": "eea8f4f87e344fc5b9abeaa9b4dbb7a2", "Name": "HitObject" },
         { "$TypeId": 9, "Id": "dc516d1df2234d9bbef9816ddb13ad9f", "Name": "CoinAudio" },
         { "$TypeId": 9, "Id": "a47b9ab0488f4ed39e24111dc22a4443", "Name": "Lose" },
@@ -83,41 +82,6 @@
     "Layer": 0,
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
-    }]
-},
-{
-    "$TypeId": 5,
-    "Id": "342f6f12ffce4f7184b008b4f1b88d67",
-    "Name": "BackgroundLoop",
-    "Enabled": true,
-    "Static": false,
-    "Layer": 0,
-    "Components": [{
-        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
-        "Properties": {
-            "parent": { "$TypeId": 9, "Id": "e7d6b50f8f9946d9a33c10e6b4e7a74b", "Name": "Sounds" }
-        }
-    }, {
-        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
-        "Properties": {
-            "position": {
-                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
-                "Properties": {
-                    "x": 0
-                }
-            }
-        }
-    }, {
-        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
-    }, {
-        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
-    }, {
-        "Type": { "Id": "a60aa1b9ad84a83eefb0d5382a4d5967", "Name": "AudioSource" },
-        "Properties": {
-            "clip": { "$TypeId": 10, "Guid": "e858840878b6fa94b9690bd2250f86ba", "FileId": 8300000, "Type": 3 },
-            "volume": 0.35,
-            "loop": true
-        }
     }]
 },
 {

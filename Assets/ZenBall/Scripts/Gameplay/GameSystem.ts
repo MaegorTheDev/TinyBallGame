@@ -89,7 +89,6 @@ namespace game {
         //    ShotsUISystem.UpdateShotsPeg(world);       
         // }            
         }
-        static GameOverScreen:ut.Entity[];
         static EndGame(world:ut.World){
             if(!GameSystem.isInTutorial){
                 //HideThePutt
@@ -100,7 +99,8 @@ namespace game {
                             position.position = new Vector3(0, -100);
                         });
                 }
-                GameSystem.GameOverScreen = ut.EntityGroup.instantiate(world, 'game.GameOver'); 
+                ut.EntityGroup.instantiate(world, 'game.GameOver'); 
+                //console.log("Spawned " + GameSystem.GameOverScreen[0].index);
                 GameSystem.CurrentGameMode = GameState.GameEnd;
                 
                 let coinsToRespawn = world.getEntityByName("RespawnCoinNumberRender") ;
@@ -150,9 +150,11 @@ namespace game {
                 });
             }
 
-            GameSystem.GameOverScreen.forEach(element => {                
-                ut.Core2D.TransformService.destroyTree(world, element);
-            });
+            //GameSystem.GameOverScreen.forEach(element => {                
+            //    ut.Core2D.TransformService.destroyTree(world, element);
+            //});
+            
+            ut.EntityGroup.destroyAll(world,"game.GameOver");
             GameSystem.CurrentGameMode = GameState.Waiting;
             GameSystem.RestartWorld(world);
         }     
@@ -169,10 +171,7 @@ namespace game {
                     }
                 });
             }
-            
-            GameSystem.GameOverScreen.forEach(element => {                
-                ut.Core2D.TransformService.destroyTree(world, element);
-            });
+            ut.EntityGroup.destroyAll(world,"game.GameOver");
         }     
         
         
