@@ -12,11 +12,11 @@ namespace game {
             
             const halfSize = this.world.getComponentData(camera, ut.Core2D.Camera2D).halfVerticalSize;
            
+            let height;
+            let width;
+            let worldHeight;
+            let worldWidth;
             if(BorderSystem.calculateOnce){		
-                let height;
-                let width;
-                let worldHeight;
-                let worldWidth;
                 //CalculateSize
                 this.world.usingComponentData(borders, [game.Borders], 
                     (borders)=>{    
@@ -55,9 +55,35 @@ namespace game {
                 BorderSystem.calculateOnce = false;
             }            
                                 
-            let aspectRatio = display.frameHeight / display.frameWidth;
+            //let aspectRatio = display.frameHeight / display.frameWidth;
+            let limitPosition = new Vector2(display.frameWidth / (display.frameWidth / 2) * (display.frameWidth / display.frameHeight * halfSize), 0);
+            //console.log(limitPosition);
+            let index = 0 ;
+            this.world.forEach([ut.Core2D.TransformLocalPosition, game.SideSpritesUI, ut.Core2D.Sprite2DRenderer, ut.Core2D.TransformLocalScale], 
+                (position, sideUIMask, renderer, scale) => {
+                let borderData = this.world.getComponentData(borders, game.Borders);
+                
+                let diference = limitPosition.x - (borderData.WorldWidth/2);
 
-            console.log()
+               if(index%2==0){
+                    let sprite = this.world.getComponentData(renderer.sprite, ut.Core2D.Sprite2D);
+                    sprite.pivot = new Vector2(0, 0.5);              
+                    this.world.setComponentData(renderer.sprite, sprite);  
+
+                    position.position = new Vector3(borderData.WorldWidth/2);  
+                    scale.scale = new Vector3(diference, borderData.WorldHeight);
+                    console.log(diference + " " +  borderData.WorldHeight);
+                } else {
+                    let sprite = this.world.getComponentData(renderer.sprite, ut.Core2D.Sprite2D);
+                    sprite.pivot = new Vector2(1, 0.5);              
+                    this.world.setComponentData(renderer.sprite, sprite);  
+
+                    position.position = new Vector3(-borderData.WorldWidth/2);                      
+                    scale.scale = new Vector3(diference, borderData.WorldHeight);
+                }
+                
+                index++;                
+            });
 
         }
     }

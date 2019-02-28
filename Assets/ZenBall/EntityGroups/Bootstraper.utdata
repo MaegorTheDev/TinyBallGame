@@ -19,7 +19,9 @@
         { "$TypeId": 9, "Id": "8d229b3f147d49d7be713241775dd8ed", "Name": "Roof" },
         { "$TypeId": 9, "Id": "27b31061f16341a0a49b2b5184f73acb", "Name": "Left" },
         { "$TypeId": 9, "Id": "2e5211317ed24795ae8d69f65314ed38", "Name": "Right" },
-        { "$TypeId": 9, "Id": "9e716a4568ed4ffea1e07dc84655cc40", "Name": "Background" },
+        { "$TypeId": 9, "Id": "63313e9fa2964969bd42bfc4aa3e3fa1", "Name": "Background" },
+        { "$TypeId": 9, "Id": "9e716a4568ed4ffea1e07dc84655cc40", "Name": "Side1" },
+        { "$TypeId": 9, "Id": "04b3d7bcc9654a9f97c386b95e186803", "Name": "Side2" },
         { "$TypeId": 9, "Id": "5a033e5cfedb41b080545d960c0bddc2", "Name": "Canvas" },
         { "$TypeId": 9, "Id": "3306d9b41e264a0e859266a018fbb7da", "Name": "Panel" },
         { "$TypeId": 9, "Id": "33fb87c5b94f48ce85b76f7b5631536e", "Name": "ScoreText" },
@@ -57,9 +59,9 @@
             "backgroundColor": {
                 "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
                 "Properties": {
-                    "r": 0.3410911,
-                    "g": 0.6886792,
-                    "b": 0.4622687,
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
                     "a": 1
                 }
             },
@@ -632,7 +634,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "9e716a4568ed4ffea1e07dc84655cc40",
+    "Id": "63313e9fa2964969bd42bfc4aa3e3fa1",
     "Name": "Background",
     "Enabled": true,
     "Static": false,
@@ -699,6 +701,152 @@
             "layer": 1587474927,
             "order": -1
         }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "9e716a4568ed4ffea1e07dc84655cc40",
+    "Name": "Side1",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "0114581e263c4d49a5d4046eef6f979d", "Name": "Borders" }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 42.7,
+                    "y": 0,
+                    "z": -1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 5,
+                    "y": 5,
+                    "z": 0.45
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "1929cc4b09a767141846beedae22d54e", "FileId": 21300000, "Type": 3 },
+            "color": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 0.745283,
+                    "g": 0.7417675,
+                    "b": 0.7417675,
+                    "a": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+        "Properties": {
+            "size": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 1,
+                    "y": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "layer": -1784358549,
+            "order": 10
+        }
+    }, {
+        "Type": { "Id": "a66ab0b5a4114385a87bcdfd2a421bed", "Name": "SideSpritesUI" }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "04b3d7bcc9654a9f97c386b95e186803",
+    "Name": "Side2",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "0114581e263c4d49a5d4046eef6f979d", "Name": "Borders" }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -40.2,
+                    "y": 0,
+                    "z": -1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 5,
+                    "y": 5,
+                    "z": 0.45
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "2295b9a8985eccb4681c7099814b3b8f", "FileId": 21300000, "Type": 3 },
+            "color": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 0.745283,
+                    "g": 0.7417675,
+                    "b": 0.7417675,
+                    "a": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+        "Properties": {
+            "size": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 1,
+                    "y": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "layer": -1784358549,
+            "order": 10
+        }
+    }, {
+        "Type": { "Id": "a66ab0b5a4114385a87bcdfd2a421bed", "Name": "SideSpritesUI" }
     }]
 },
 {
@@ -779,7 +927,7 @@
             "size": {
                 "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
                 "Properties": {
-                    "x": 633,
+                    "x": 576,
                     "y": 659
                 }
             }
