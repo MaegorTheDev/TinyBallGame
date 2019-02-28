@@ -113,16 +113,6 @@
                 "Name": "Entity"
             }
         }, {
-            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
-            "Path": "size.x",
-            "TypeCode": 13,
-            "Value": 20
-        }, {
-            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
-            "Path": "size.y",
-            "TypeCode": 13,
-            "Value": 2
-        }, {
             "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
             "Path": "box.x",
             "TypeCode": 13,
@@ -143,15 +133,15 @@
             "TypeCode": 13,
             "Value": 2
         }, {
-            "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
-            "Path": "rotation.z",
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.y",
             "TypeCode": 13,
-            "Value": 0
+            "Value": 12.5
         }, {
-            "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
-            "Path": "rotation.w",
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.x",
             "TypeCode": 13,
-            "Value": 1
+            "Value": -21.4
         }, {
             "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
             "Path": "size.x",
@@ -163,15 +153,15 @@
             "TypeCode": 13,
             "Value": 2
         }, {
-            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
-            "Path": "position.y",
+            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
+            "Path": "size.x",
             "TypeCode": 13,
-            "Value": 12.5
+            "Value": 20
         }, {
-            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
-            "Path": "position.x",
+            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
+            "Path": "size.y",
             "TypeCode": 13,
-            "Value": -21.4
+            "Value": 2
         }]
     }
 },
@@ -296,6 +286,11 @@
             "Path": "position.y",
             "TypeCode": 13,
             "Value": -29.9
+        }, {
+            "Target": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+            "Path": "order",
+            "TypeCode": 9,
+            "Value": 1
         }]
     }
 }]

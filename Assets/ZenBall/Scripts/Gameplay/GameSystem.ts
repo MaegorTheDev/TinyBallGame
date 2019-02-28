@@ -102,7 +102,7 @@ namespace game {
                 ut.EntityGroup.instantiate(world, 'game.GameOver'); 
                 //console.log("Spawned " + GameSystem.GameOverScreen[0].index);
                 GameSystem.CurrentGameMode = GameState.GameEnd;
-                
+            //PoolObstacleSpawnerSystem.EndGame(world);
                 let coinsToRespawn = world.getEntityByName("RespawnCoinNumberRender") ;
                 if(!coinsToRespawn.isNone()){
                     world.usingComponentData(coinsToRespawn, [game.NumberObject], (numberObject)=>{

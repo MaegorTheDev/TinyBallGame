@@ -165,8 +165,7 @@ namespace game {
                     } 
                     if(rotating){
                          world.usingComponentData(level.EntityChildren[i], [game.RotatingObject], 
-                         (rotatingObject) => {
- 
+                         (rotatingObject) => { 
                              rotatingObject.Active = true;
                          });
                     }
@@ -192,6 +191,13 @@ namespace game {
                     }
                 }
             });            
+        }
+
+        static EndGame(world:ut.World){
+            world.usingComponentData(PoolObstacleSpawnerSystem.objectSpawner, 
+                [game.ObstacleSpawnerHelper], (helper) =>{
+                 PoolObstacleSpawnerSystem.DeactivateLevel(world, helper.CurrentLevel);              
+            });
         }
 
 

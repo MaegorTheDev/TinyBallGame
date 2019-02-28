@@ -4,7 +4,10 @@ namespace game {
     /** New System */
     export class MovingObjectSystem extends ut.ComponentSystem {
         static firstFrame;
-        OnUpdate():void {
+        OnUpdate():void {            
+            if(GameSystem.CurrentGameMode == GameState.GameEnd){
+                return;
+            }
             this.world.forEach([ut.Entity, ut.Core2D.TransformLocalPosition ,game.MovingObject], 
                 (entity,position, movingObject) =>{
                 //If the object is not active, keep it in starting position;

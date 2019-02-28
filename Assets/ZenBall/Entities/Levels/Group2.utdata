@@ -14,6 +14,7 @@
         { "$TypeId": 9, "Id": "7cf4470cb5964b2b89a046acab6bfbc8", "Name": "level1" },
         { "$TypeId": 9, "Id": "49bb9755204643b0ac784b9e39216222", "Name": "Hole" },
         { "$TypeId": 9, "Id": "a2f00369e1994dd3b1146d41890af916", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "ad0fe29834a34ed9a249295a9cf3fd30", "Name": "Obstacle" },
         { "$TypeId": 9, "Id": "33d09811a25e49638f15549f4e6db6b9", "Name": "level2" },
         { "$TypeId": 9, "Id": "bde420c1e37f45509748c6fac27b9cb2", "Name": "Hole" },
         { "$TypeId": 9, "Id": "88bfc3edd74d410991068000b0bbdf74", "Name": "Obstacle" },
@@ -44,7 +45,8 @@
         { "$TypeId": 13, "Id": "86f264e66c44440cb395afee77a16fbc", "Name": "Obstacle" },
         { "$TypeId": 13, "Id": "77f454065a6e44a1a93b2fcea5833cc1", "Name": "Hole" },
         { "$TypeId": 13, "Id": "06203658a4c9491da2ccc6a40fa7baad", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "e12ac59587614aa7b37a2c7fec9f06ce", "Name": "Obstacle" }
+        { "$TypeId": 13, "Id": "e12ac59587614aa7b37a2c7fec9f06ce", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "899b99092f7d48ffaad9acf0fa3d9d6b", "Name": "Obstacle" }
     ]
 },
 {
@@ -189,6 +191,15 @@
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
         { "$TypeId": 9, "Id": "13d0bd2b2bed4c3095a41b2d5a752d0d", "Name": "Obstacle" }
+    ]
+},
+{
+    "$TypeId": 12,
+    "Id": "899b99092f7d48ffaad9acf0fa3d9d6b",
+    "Name": "Obstacle",
+    "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
+    "Entities": [
+        { "$TypeId": 9, "Id": "ad0fe29834a34ed9a249295a9cf3fd30", "Name": "Obstacle" }
     ]
 },
 {
@@ -671,6 +682,28 @@
             "Path": "position.x",
             "TypeCode": 13,
             "Value": 20
+        }]
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "ad0fe29834a34ed9a249295a9cf3fd30",
+    "Name": "Obstacle",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "2dc98cfdaac64110bef975c8cefe53f5", "Name": "Obstacle" },
+        "EntityModificationFlags": 0,
+        "Modifications": [{
+            "Target": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+            "Path": "parent",
+            "TypeCode": -2,
+            "Value": {
+                "Id": "33d09811a25e49638f15549f4e6db6b9",
+                "Name": "level2"
+            }
         }]
     }
 },

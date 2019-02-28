@@ -5,6 +5,10 @@ namespace game {
     @ut.requiredComponents(ut.Core2D.Sprite2DRenderer)
     export class CollisionAudioSystem extends ut.ComponentSystem {
         OnUpdate(): void {
+            
+            if(GameSystem.CurrentGameMode == GameState.GameEnd){
+                return;
+            }
             const hitAudioObject = this.world.getEntityByName("HitObject");    
             this.world.forEach([ut.Entity ,ut.Physics2D.ColliderContacts, game.Ball],
                 (entity, collidercontacts) => {      
