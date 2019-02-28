@@ -1,46 +1,50 @@
 ﻿[{
     "$TypeId": 4,
-    "Id": "5f829e4ac83c41ed8d37cbf080bc4a3c",
+    "Id": "508295fbef6048008367f34f6cc29a3a",
     "Name": "Group2",
     "ExportFlags": 0,
     "SerializedVersion": 0,
     "Entities": [
-        { "$TypeId": 9, "Id": "df2f6591d0b647fb95bad62bef7a90da", "Name": "Group2" },
-        { "$TypeId": 9, "Id": "d25dede680264c68b759d8b935adcbca", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "36810623cfa546d98e49d7d455040723", "Name": "level1" },
-        { "$TypeId": 9, "Id": "1e34c901c0c3402fb662cf0c9f68a73d", "Name": "Hole" },
-        { "$TypeId": 9, "Id": "441db32326d740b7ba0d70b6d810b7ff", "Name": "level2" },
-        { "$TypeId": 9, "Id": "564430c91a5e4c6882b78a2ed5de66f9", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "5f7501fd3ec5489b82b8b42ffa087f17", "Name": "Group1" },
+        { "$TypeId": 9, "Id": "441db32326d740b7ba0d70b6d810b7ff", "Name": "level5" },
         { "$TypeId": 9, "Id": "98b6eb4e217f4f97bfb63e7bedca75e8", "Name": "Hole" },
-        { "$TypeId": 9, "Id": "242db1e010004b6e9c8eb891545861dd", "Name": "level3" },
-        { "$TypeId": 9, "Id": "7d249f1568c04f61b2011fd3048d74ba", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "6af7e81aa61d4c638fd4ab0471c942dc", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "564430c91a5e4c6882b78a2ed5de66f9", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "df3a1d8f55db4bbd8f49cee90abae3c1", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "1d7fc63cdc094b7e9df33b61c701dc4c", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "7cf4470cb5964b2b89a046acab6bfbc8", "Name": "level1" },
+        { "$TypeId": 9, "Id": "49bb9755204643b0ac784b9e39216222", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "a2f00369e1994dd3b1146d41890af916", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "33d09811a25e49638f15549f4e6db6b9", "Name": "level2" },
+        { "$TypeId": 9, "Id": "bde420c1e37f45509748c6fac27b9cb2", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "88bfc3edd74d410991068000b0bbdf74", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "eeb78123fba14f538153483f1406f5a3", "Name": "level3" },
+        { "$TypeId": 9, "Id": "42895d1ab1b04155b671442e22bf19b1", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "00a0cd9b1e7d4a1ca57877fb086d5766", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "81239dd4c3fc43708e353e6c0efbd243", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "77432c682b8440a5898d4558a98e3094", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "4293f6ec67f649179075f7f961d1e4ef", "Name": "level4" },
+        { "$TypeId": 9, "Id": "f3212f7046774af8be35d73ee79e6796", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "b34f3468e77249239e7532d15afe80fc", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "66741b38a3234f8c882a4bdcb730a0b1", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "13d0bd2b2bed4c3095a41b2d5a752d0d", "Name": "Obstacle" }
     ],
     "PrefabInstances": [
-        { "$TypeId": 13, "Id": "78c58fabc38744a6b63aa7e4ec384de4", "Name": "Hole" },
-        { "$TypeId": 13, "Id": "02e540d882264258a70dee5110747873", "Name": "Obstacle" },
         { "$TypeId": 13, "Id": "e2ff84383bc04ab8b260df6cb538323d", "Name": "Hole" },
-        { "$TypeId": 13, "Id": "0f3af5cadf6045e8bcf99dcc127a33b3", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "1c8b420e7aad4375b812ea039598c72d", "Name": "Hole" },
-        { "$TypeId": 13, "Id": "b5c930a8c00c4bd5855dceb34fc193c5", "Name": "Obstacle" }
-    ]
-},
-{
-    "$TypeId": 12,
-    "Id": "78c58fabc38744a6b63aa7e4ec384de4",
-    "Name": "Hole",
-    "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
-    "Entities": [
-        { "$TypeId": 9, "Id": "1e34c901c0c3402fb662cf0c9f68a73d", "Name": "Hole" }
-    ]
-},
-{
-    "$TypeId": 12,
-    "Id": "02e540d882264258a70dee5110747873",
-    "Name": "Obstacle",
-    "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
-    "Entities": [
-        { "$TypeId": 9, "Id": "564430c91a5e4c6882b78a2ed5de66f9", "Name": "Obstacle" }
+        { "$TypeId": 13, "Id": "02e540d882264258a70dee5110747873", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "a305f686b08941268cf5e71626d35193", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "66674650eb9e40379e0897eb1231d818", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "1a4f3a0aa7bf4a65b728d7975b37b596", "Name": "Hole" },
+        { "$TypeId": 13, "Id": "3bb157e0f68e494b84803a9011a13048", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "9bda815f29164fa6b98fc8c47e33fe02", "Name": "Hole" },
+        { "$TypeId": 13, "Id": "c81c55995ed2437fb224f46e87f33390", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "bb33e1dbbb6a4c368084b5c93a27d3ab", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "f4392e49477849939cdf165d59aab70b", "Name": "Hole" },
+        { "$TypeId": 13, "Id": "50b6e7dccb8d49bf826c4fc959c2b671", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "6b92893681bd472db1c08e7f84de3a70", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "86f264e66c44440cb395afee77a16fbc", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "77f454065a6e44a1a93b2fcea5833cc1", "Name": "Hole" },
+        { "$TypeId": 13, "Id": "06203658a4c9491da2ccc6a40fa7baad", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "e12ac59587614aa7b37a2c7fec9f06ce", "Name": "Obstacle" }
     ]
 },
 {
@@ -54,137 +58,173 @@
 },
 {
     "$TypeId": 12,
-    "Id": "0f3af5cadf6045e8bcf99dcc127a33b3",
+    "Id": "02e540d882264258a70dee5110747873",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "7d249f1568c04f61b2011fd3048d74ba", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "564430c91a5e4c6882b78a2ed5de66f9", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "1c8b420e7aad4375b812ea039598c72d",
+    "Id": "a305f686b08941268cf5e71626d35193",
+    "Name": "Obstacle",
+    "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
+    "Entities": [
+        { "$TypeId": 9, "Id": "df3a1d8f55db4bbd8f49cee90abae3c1", "Name": "Obstacle" }
+    ]
+},
+{
+    "$TypeId": 12,
+    "Id": "66674650eb9e40379e0897eb1231d818",
+    "Name": "Obstacle",
+    "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
+    "Entities": [
+        { "$TypeId": 9, "Id": "1d7fc63cdc094b7e9df33b61c701dc4c", "Name": "Obstacle" }
+    ]
+},
+{
+    "$TypeId": 12,
+    "Id": "1a4f3a0aa7bf4a65b728d7975b37b596",
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "6af7e81aa61d4c638fd4ab0471c942dc", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "49bb9755204643b0ac784b9e39216222", "Name": "Hole" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "b5c930a8c00c4bd5855dceb34fc193c5",
+    "Id": "3bb157e0f68e494b84803a9011a13048",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "d25dede680264c68b759d8b935adcbca", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "a2f00369e1994dd3b1146d41890af916", "Name": "Obstacle" }
+    ]
+},
+{
+    "$TypeId": 12,
+    "Id": "9bda815f29164fa6b98fc8c47e33fe02",
+    "Name": "Hole",
+    "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
+    "Entities": [
+        { "$TypeId": 9, "Id": "bde420c1e37f45509748c6fac27b9cb2", "Name": "Hole" }
+    ]
+},
+{
+    "$TypeId": 12,
+    "Id": "c81c55995ed2437fb224f46e87f33390",
+    "Name": "Obstacle",
+    "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
+    "Entities": [
+        { "$TypeId": 9, "Id": "88bfc3edd74d410991068000b0bbdf74", "Name": "Obstacle" }
+    ]
+},
+{
+    "$TypeId": 12,
+    "Id": "bb33e1dbbb6a4c368084b5c93a27d3ab",
+    "Name": "Obstacle",
+    "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
+    "Entities": [
+        { "$TypeId": 9, "Id": "42895d1ab1b04155b671442e22bf19b1", "Name": "Obstacle" }
+    ]
+},
+{
+    "$TypeId": 12,
+    "Id": "f4392e49477849939cdf165d59aab70b",
+    "Name": "Hole",
+    "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
+    "Entities": [
+        { "$TypeId": 9, "Id": "00a0cd9b1e7d4a1ca57877fb086d5766", "Name": "Hole" }
+    ]
+},
+{
+    "$TypeId": 12,
+    "Id": "50b6e7dccb8d49bf826c4fc959c2b671",
+    "Name": "Obstacle",
+    "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
+    "Entities": [
+        { "$TypeId": 9, "Id": "81239dd4c3fc43708e353e6c0efbd243", "Name": "Obstacle" }
+    ]
+},
+{
+    "$TypeId": 12,
+    "Id": "6b92893681bd472db1c08e7f84de3a70",
+    "Name": "Obstacle",
+    "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
+    "Entities": [
+        { "$TypeId": 9, "Id": "77432c682b8440a5898d4558a98e3094", "Name": "Obstacle" }
+    ]
+},
+{
+    "$TypeId": 12,
+    "Id": "86f264e66c44440cb395afee77a16fbc",
+    "Name": "Obstacle",
+    "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
+    "Entities": [
+        { "$TypeId": 9, "Id": "f3212f7046774af8be35d73ee79e6796", "Name": "Obstacle" }
+    ]
+},
+{
+    "$TypeId": 12,
+    "Id": "77f454065a6e44a1a93b2fcea5833cc1",
+    "Name": "Hole",
+    "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
+    "Entities": [
+        { "$TypeId": 9, "Id": "b34f3468e77249239e7532d15afe80fc", "Name": "Hole" }
+    ]
+},
+{
+    "$TypeId": 12,
+    "Id": "06203658a4c9491da2ccc6a40fa7baad",
+    "Name": "Obstacle",
+    "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
+    "Entities": [
+        { "$TypeId": 9, "Id": "66741b38a3234f8c882a4bdcb730a0b1", "Name": "Obstacle" }
+    ]
+},
+{
+    "$TypeId": 12,
+    "Id": "e12ac59587614aa7b37a2c7fec9f06ce",
+    "Name": "Obstacle",
+    "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
+    "Entities": [
+        { "$TypeId": 9, "Id": "13d0bd2b2bed4c3095a41b2d5a752d0d", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 5,
-    "Id": "df2f6591d0b647fb95bad62bef7a90da",
-    "Name": "Group2",
+    "Id": "5f7501fd3ec5489b82b8b42ffa087f17",
+    "Name": "Group1",
     "Enabled": true,
     "Static": false,
     "Layer": 0,
     "Components": [{
-        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
-    }, {
         "Type": { "Id": "a726552055af4241a212048ea1eac898", "Name": "LevelGroup" },
         "Properties": {
             "Levels": {
                 "Type": { "Id": "5a182d9d039d4dfd8fa96132d05f9ee7", "Name": "EntityReference" },
                 "Items": [
-                    { "$TypeId": 9, "Id": "36810623cfa546d98e49d7d455040723", "Name": "level1" },
-                    { "$TypeId": 9, "Id": "441db32326d740b7ba0d70b6d810b7ff", "Name": "level2" },
-                    { "$TypeId": 9, "Id": "242db1e010004b6e9c8eb891545861dd", "Name": "level3" }
+                    { "$TypeId": 9, "Id": "7cf4470cb5964b2b89a046acab6bfbc8", "Name": "Entity" },
+                    { "$TypeId": 9, "Id": "33d09811a25e49638f15549f4e6db6b9", "Name": "level2" },
+                    { "$TypeId": 9, "Id": "b323fbe27a9c45c2b573fa8b4c0d4dd9", "Name": "level3" }
                 ]
             }
         }
+    }, {
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
     }]
 },
 {
     "$TypeId": 5,
-    "Id": "d25dede680264c68b759d8b935adcbca",
-    "Name": "Obstacle",
-    "Enabled": true,
-    "Static": false,
-    "Layer": 0,
-    "Components": [],
-    "Instance": {
-        "Source": { "$TypeId": 9, "Id": "2dc98cfdaac64110bef975c8cefe53f5", "Name": "Obstacle" },
-        "EntityModificationFlags": 0,
-        "Modifications": [{
-            "Target": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
-            "Path": "parent",
-            "TypeCode": -2,
-            "Value": {
-                "Id": "36810623cfa546d98e49d7d455040723",
-                "Name": "Entity"
-            }
-        }, {
-            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
-            "Path": "size.x",
-            "TypeCode": 13,
-            "Value": 40
-        }, {
-            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
-            "Path": "size.y",
-            "TypeCode": 13,
-            "Value": 2
-        }, {
-            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
-            "Path": "box.x",
-            "TypeCode": 13,
-            "Value": -20
-        }, {
-            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
-            "Path": "box.y",
-            "TypeCode": 13,
-            "Value": -1
-        }, {
-            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
-            "Path": "box.width",
-            "TypeCode": 13,
-            "Value": 40
-        }, {
-            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
-            "Path": "box.height",
-            "TypeCode": 13,
-            "Value": 2
-        }, {
-            "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
-            "Path": "rotation.z",
-            "TypeCode": 13,
-            "Value": -0.3655267
-        }, {
-            "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
-            "Path": "rotation.w",
-            "TypeCode": 13,
-            "Value": 0.9308009
-        }, {
-            "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
-            "Path": "size.x",
-            "TypeCode": 13,
-            "Value": 40
-        }, {
-            "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
-            "Path": "size.y",
-            "TypeCode": 13,
-            "Value": 2
-        }]
-    }
-},
-{
-    "$TypeId": 5,
-    "Id": "36810623cfa546d98e49d7d455040723",
-    "Name": "level1",
+    "Id": "441db32326d740b7ba0d70b6d810b7ff",
+    "Name": "level5",
     "Enabled": true,
     "Static": false,
     "Layer": 0,
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
         "Properties": {
-            "parent": { "$TypeId": 9, "Id": "df2f6591d0b647fb95bad62bef7a90da", "Name": "Group1" }
+            "parent": { "$TypeId": 9, "Id": "5f7501fd3ec5489b82b8b42ffa087f17", "Name": "Group1" }
         }
     }, {
         "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
@@ -194,7 +234,7 @@
             "StartingPosition": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
-                    "y": 20
+                    "y": -20
                 }
             }
         }
@@ -202,7 +242,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "1e34c901c0c3402fb662cf0c9f68a73d",
+    "Id": "98b6eb4e217f4f97bfb63e7bedca75e8",
     "Name": "Hole",
     "Enabled": true,
     "Static": false,
@@ -216,7 +256,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "36810623cfa546d98e49d7d455040723",
+                "Id": "441db32326d740b7ba0d70b6d810b7ff",
                 "Name": "Entity"
             }
         }, {
@@ -238,35 +278,9 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
             "TypeCode": 13,
-            "Value": -29.9
+            "Value": 35.8
         }]
     }
-},
-{
-    "$TypeId": 5,
-    "Id": "441db32326d740b7ba0d70b6d810b7ff",
-    "Name": "level2",
-    "Enabled": true,
-    "Static": false,
-    "Layer": 0,
-    "Components": [{
-        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
-        "Properties": {
-            "parent": { "$TypeId": 9, "Id": "df2f6591d0b647fb95bad62bef7a90da", "Name": "Group1" }
-        }
-    }, {
-        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
-    }, {
-        "Type": { "Id": "06dd4e24da1d4f809e519f9e4dcaacf8", "Name": "Level" },
-        "Properties": {
-            "StartingPosition": {
-                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
-                "Properties": {
-                    "y": -20
-                }
-            }
-        }
-    }]
 },
 {
     "$TypeId": 5,
@@ -327,81 +341,27 @@
             "Path": "size.y",
             "TypeCode": 13,
             "Value": 2
-        }]
-    }
-},
-{
-    "$TypeId": 5,
-    "Id": "98b6eb4e217f4f97bfb63e7bedca75e8",
-    "Name": "Hole",
-    "Enabled": true,
-    "Static": false,
-    "Layer": 0,
-    "Components": [],
-    "Instance": {
-        "Source": { "$TypeId": 9, "Id": "321296760a9346d195f38a1d0d9bf0ec", "Name": "Hole" },
-        "EntityModificationFlags": 0,
-        "Modifications": [{
-            "Target": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
-            "Path": "parent",
-            "TypeCode": -2,
-            "Value": {
-                "Id": "441db32326d740b7ba0d70b6d810b7ff",
-                "Name": "Entity"
-            }
         }, {
-            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
-            "Path": "scale.x",
+            "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
+            "Path": "rotation.z",
             "TypeCode": 13,
-            "Value": 5
+            "Value": 0.7071068
         }, {
-            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
-            "Path": "scale.y",
+            "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
+            "Path": "rotation.w",
             "TypeCode": 13,
-            "Value": 5
+            "Value": 0.7071068
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.x",
             "TypeCode": 13,
-            "Value": 0
-        }, {
-            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
-            "Path": "position.y",
-            "TypeCode": 13,
-            "Value": 35.8
+            "Value": -20.9
         }]
     }
 },
 {
     "$TypeId": 5,
-    "Id": "242db1e010004b6e9c8eb891545861dd",
-    "Name": "level3",
-    "Enabled": true,
-    "Static": false,
-    "Layer": 0,
-    "Components": [{
-        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
-        "Properties": {
-            "parent": { "$TypeId": 9, "Id": "df2f6591d0b647fb95bad62bef7a90da", "Name": "Group1" }
-        }
-    }, {
-        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
-    }, {
-        "Type": { "Id": "06dd4e24da1d4f809e519f9e4dcaacf8", "Name": "Level" },
-        "Properties": {
-            "StartingPosition": {
-                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
-                "Properties": {
-                    "x": -10,
-                    "y": -15
-                }
-            }
-        }
-    }]
-},
-{
-    "$TypeId": 5,
-    "Id": "7d249f1568c04f61b2011fd3048d74ba",
+    "Id": "df3a1d8f55db4bbd8f49cee90abae3c1",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -415,14 +375,14 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "242db1e010004b6e9c8eb891545861dd",
+                "Id": "441db32326d740b7ba0d70b6d810b7ff",
                 "Name": "Entity"
             }
         }, {
             "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
             "Path": "size.x",
             "TypeCode": 13,
-            "Value": 20
+            "Value": 30
         }, {
             "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
             "Path": "size.y",
@@ -432,7 +392,7 @@
             "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
             "Path": "box.width",
             "TypeCode": 13,
-            "Value": 20
+            "Value": 30
         }, {
             "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
             "Path": "box.height",
@@ -442,7 +402,7 @@
             "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
             "Path": "box.x",
             "TypeCode": 13,
-            "Value": -10
+            "Value": -15
         }, {
             "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
             "Path": "box.y",
@@ -452,7 +412,17 @@
             "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
             "Path": "size.x",
             "TypeCode": 13,
-            "Value": 20
+            "Value": 30
+        }, {
+            "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+            "Path": "size.y",
+            "TypeCode": 13,
+            "Value": 2
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.y",
+            "TypeCode": 13,
+            "Value": 12.3
         }, {
             "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
             "Path": "rotation.z",
@@ -464,16 +434,124 @@
             "TypeCode": 13,
             "Value": 0.7071068
         }, {
-            "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
-            "Path": "size.y",
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.x",
             "TypeCode": 13,
-            "Value": 2
+            "Value": 24.3
         }]
     }
 },
 {
     "$TypeId": 5,
-    "Id": "6af7e81aa61d4c638fd4ab0471c942dc",
+    "Id": "1d7fc63cdc094b7e9df33b61c701dc4c",
+    "Name": "Obstacle",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "2dc98cfdaac64110bef975c8cefe53f5", "Name": "Obstacle" },
+        "EntityModificationFlags": 0,
+        "Modifications": [{
+            "Target": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+            "Path": "parent",
+            "TypeCode": -2,
+            "Value": {
+                "Id": "441db32326d740b7ba0d70b6d810b7ff",
+                "Name": "Entity"
+            }
+        }, {
+            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
+            "Path": "size.x",
+            "TypeCode": 13,
+            "Value": 30
+        }, {
+            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
+            "Path": "size.y",
+            "TypeCode": 13,
+            "Value": 2
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.width",
+            "TypeCode": 13,
+            "Value": 30
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.height",
+            "TypeCode": 13,
+            "Value": 2
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.x",
+            "TypeCode": 13,
+            "Value": -15
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.y",
+            "TypeCode": 13,
+            "Value": -1
+        }, {
+            "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+            "Path": "size.x",
+            "TypeCode": 13,
+            "Value": 30
+        }, {
+            "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+            "Path": "size.y",
+            "TypeCode": 13,
+            "Value": 2
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.y",
+            "TypeCode": 13,
+            "Value": -17.6
+        }, {
+            "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
+            "Path": "rotation.z",
+            "TypeCode": 13,
+            "Value": 0.7071068
+        }, {
+            "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
+            "Path": "rotation.w",
+            "TypeCode": 13,
+            "Value": 0.7071068
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.x",
+            "TypeCode": 13,
+            "Value": -15.1
+        }]
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "7cf4470cb5964b2b89a046acab6bfbc8",
+    "Name": "level1",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "5f7501fd3ec5489b82b8b42ffa087f17", "Name": "Group1" }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
+    }, {
+        "Type": { "Id": "06dd4e24da1d4f809e519f9e4dcaacf8", "Name": "Level" },
+        "Properties": {
+            "StartingPosition": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "y": -20
+                }
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "49bb9755204643b0ac784b9e39216222",
     "Name": "Hole",
     "Enabled": true,
     "Static": false,
@@ -487,8 +565,8 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "242db1e010004b6e9c8eb891545861dd",
-                "Name": "Entity"
+                "Id": "7cf4470cb5964b2b89a046acab6bfbc8",
+                "Name": "level1"
             }
         }, {
             "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
@@ -510,6 +588,902 @@
             "Path": "position.y",
             "TypeCode": 13,
             "Value": 35.8
+        }]
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "a2f00369e1994dd3b1146d41890af916",
+    "Name": "Obstacle",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "8dd1d39a724a406a96b654d5ab86a10a", "Name": "MovingObject" },
+        "Properties": {
+            "TimeToGetToLimit": 5,
+            "Limit": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -20
+                }
+            }
+        }
+    }],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "2dc98cfdaac64110bef975c8cefe53f5", "Name": "Obstacle" },
+        "EntityModificationFlags": 0,
+        "Modifications": [{
+            "Target": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+            "Path": "parent",
+            "TypeCode": -2,
+            "Value": {
+                "Id": "7cf4470cb5964b2b89a046acab6bfbc8",
+                "Name": "level1"
+            }
+        }, {
+            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
+            "Path": "size.x",
+            "TypeCode": 13,
+            "Value": 20
+        }, {
+            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
+            "Path": "size.y",
+            "TypeCode": 13,
+            "Value": 5
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.width",
+            "TypeCode": 13,
+            "Value": 20
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.height",
+            "TypeCode": 13,
+            "Value": 5
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.x",
+            "TypeCode": 13,
+            "Value": -10
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.y",
+            "TypeCode": 13,
+            "Value": -2.5
+        }, {
+            "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+            "Path": "size.x",
+            "TypeCode": 13,
+            "Value": 20
+        }, {
+            "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+            "Path": "size.y",
+            "TypeCode": 13,
+            "Value": 5
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.y",
+            "TypeCode": 13,
+            "Value": 0
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.x",
+            "TypeCode": 13,
+            "Value": 20
+        }]
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "33d09811a25e49638f15549f4e6db6b9",
+    "Name": "level2",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "5f7501fd3ec5489b82b8b42ffa087f17", "Name": "Group1" }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
+    }, {
+        "Type": { "Id": "06dd4e24da1d4f809e519f9e4dcaacf8", "Name": "Level" },
+        "Properties": {
+            "StartingPosition": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "y": -20
+                }
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "bde420c1e37f45509748c6fac27b9cb2",
+    "Name": "Hole",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "321296760a9346d195f38a1d0d9bf0ec", "Name": "Hole" },
+        "EntityModificationFlags": 0,
+        "Modifications": [{
+            "Target": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+            "Path": "parent",
+            "TypeCode": -2,
+            "Value": {
+                "Id": "33d09811a25e49638f15549f4e6db6b9",
+                "Name": "level2"
+            }
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.x",
+            "TypeCode": 13,
+            "Value": 5
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.y",
+            "TypeCode": 13,
+            "Value": 5
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.x",
+            "TypeCode": 13,
+            "Value": 0
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.y",
+            "TypeCode": 13,
+            "Value": 35.8
+        }]
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "88bfc3edd74d410991068000b0bbdf74",
+    "Name": "Obstacle",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "f7f348e2bd0149b9a78c99a6676465f8", "Name": "RotatingObject" },
+        "Properties": {
+            "Speed": -10
+        }
+    }],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "2dc98cfdaac64110bef975c8cefe53f5", "Name": "Obstacle" },
+        "EntityModificationFlags": 0,
+        "Modifications": [{
+            "Target": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+            "Path": "parent",
+            "TypeCode": -2,
+            "Value": {
+                "Id": "33d09811a25e49638f15549f4e6db6b9",
+                "Name": "Entity"
+            }
+        }, {
+            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
+            "Path": "size.x",
+            "TypeCode": 13,
+            "Value": 20
+        }, {
+            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
+            "Path": "size.y",
+            "TypeCode": 13,
+            "Value": 5
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.width",
+            "TypeCode": 13,
+            "Value": 20
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.height",
+            "TypeCode": 13,
+            "Value": 5
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.x",
+            "TypeCode": 13,
+            "Value": -10
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.y",
+            "TypeCode": 13,
+            "Value": -2.5
+        }, {
+            "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+            "Path": "size.x",
+            "TypeCode": 13,
+            "Value": 20
+        }, {
+            "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+            "Path": "size.y",
+            "TypeCode": 13,
+            "Value": 5
+        }]
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "eeb78123fba14f538153483f1406f5a3",
+    "Name": "level3",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "5f7501fd3ec5489b82b8b42ffa087f17", "Name": "Group1" }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
+    }, {
+        "Type": { "Id": "06dd4e24da1d4f809e519f9e4dcaacf8", "Name": "Level" },
+        "Properties": {
+            "StartingPosition": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "y": -20
+                }
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "42895d1ab1b04155b671442e22bf19b1",
+    "Name": "Obstacle",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "2dc98cfdaac64110bef975c8cefe53f5", "Name": "Obstacle" },
+        "EntityModificationFlags": 0,
+        "Modifications": [{
+            "Target": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+            "Path": "parent",
+            "TypeCode": -2,
+            "Value": {
+                "Id": "eeb78123fba14f538153483f1406f5a3",
+                "Name": "level3"
+            }
+        }, {
+            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
+            "Path": "size.x",
+            "TypeCode": 13,
+            "Value": 30
+        }, {
+            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
+            "Path": "size.y",
+            "TypeCode": 13,
+            "Value": 2
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.width",
+            "TypeCode": 13,
+            "Value": 30
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.height",
+            "TypeCode": 13,
+            "Value": 2
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.x",
+            "TypeCode": 13,
+            "Value": -15
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.y",
+            "TypeCode": 13,
+            "Value": -1
+        }, {
+            "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+            "Path": "size.x",
+            "TypeCode": 13,
+            "Value": 30
+        }, {
+            "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+            "Path": "size.y",
+            "TypeCode": 13,
+            "Value": 2
+        }, {
+            "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
+            "Path": "rotation.z",
+            "TypeCode": 13,
+            "Value": 0.7071068
+        }, {
+            "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
+            "Path": "rotation.w",
+            "TypeCode": 13,
+            "Value": 0.7071068
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.x",
+            "TypeCode": 13,
+            "Value": -20.9
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.x",
+            "TypeCode": 13,
+            "Value": 1
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.y",
+            "TypeCode": 13,
+            "Value": 1
+        }]
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "00a0cd9b1e7d4a1ca57877fb086d5766",
+    "Name": "Hole",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "321296760a9346d195f38a1d0d9bf0ec", "Name": "Hole" },
+        "EntityModificationFlags": 0,
+        "Modifications": [{
+            "Target": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+            "Path": "parent",
+            "TypeCode": -2,
+            "Value": {
+                "Id": "eeb78123fba14f538153483f1406f5a3",
+                "Name": "level3"
+            }
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.x",
+            "TypeCode": 13,
+            "Value": 5
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.y",
+            "TypeCode": 13,
+            "Value": 5
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.x",
+            "TypeCode": 13,
+            "Value": 0
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.y",
+            "TypeCode": 13,
+            "Value": 35.8
+        }]
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "81239dd4c3fc43708e353e6c0efbd243",
+    "Name": "Obstacle",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "2dc98cfdaac64110bef975c8cefe53f5", "Name": "Obstacle" },
+        "EntityModificationFlags": 0,
+        "Modifications": [{
+            "Target": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+            "Path": "parent",
+            "TypeCode": -2,
+            "Value": {
+                "Id": "eeb78123fba14f538153483f1406f5a3",
+                "Name": "level3"
+            }
+        }, {
+            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
+            "Path": "size.x",
+            "TypeCode": 13,
+            "Value": 30
+        }, {
+            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
+            "Path": "size.y",
+            "TypeCode": 13,
+            "Value": 2
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.width",
+            "TypeCode": 13,
+            "Value": 30
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.height",
+            "TypeCode": 13,
+            "Value": 2
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.x",
+            "TypeCode": 13,
+            "Value": -15
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.y",
+            "TypeCode": 13,
+            "Value": -1
+        }, {
+            "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+            "Path": "size.x",
+            "TypeCode": 13,
+            "Value": 30
+        }, {
+            "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+            "Path": "size.y",
+            "TypeCode": 13,
+            "Value": 2
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.y",
+            "TypeCode": 13,
+            "Value": 12.3
+        }, {
+            "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
+            "Path": "rotation.z",
+            "TypeCode": 13,
+            "Value": 0.7071068
+        }, {
+            "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
+            "Path": "rotation.w",
+            "TypeCode": 13,
+            "Value": 0.7071068
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.x",
+            "TypeCode": 13,
+            "Value": 24.3
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.x",
+            "TypeCode": 13,
+            "Value": 1
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.y",
+            "TypeCode": 13,
+            "Value": 1
+        }]
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "77432c682b8440a5898d4558a98e3094",
+    "Name": "Obstacle",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "2dc98cfdaac64110bef975c8cefe53f5", "Name": "Obstacle" },
+        "EntityModificationFlags": 0,
+        "Modifications": [{
+            "Target": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+            "Path": "parent",
+            "TypeCode": -2,
+            "Value": {
+                "Id": "eeb78123fba14f538153483f1406f5a3",
+                "Name": "level3"
+            }
+        }, {
+            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
+            "Path": "size.x",
+            "TypeCode": 13,
+            "Value": 30
+        }, {
+            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
+            "Path": "size.y",
+            "TypeCode": 13,
+            "Value": 2
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.width",
+            "TypeCode": 13,
+            "Value": 30
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.height",
+            "TypeCode": 13,
+            "Value": 2
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.x",
+            "TypeCode": 13,
+            "Value": -15
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.y",
+            "TypeCode": 13,
+            "Value": -1
+        }, {
+            "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+            "Path": "size.x",
+            "TypeCode": 13,
+            "Value": 30
+        }, {
+            "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+            "Path": "size.y",
+            "TypeCode": 13,
+            "Value": 2
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.y",
+            "TypeCode": 13,
+            "Value": -17.6
+        }, {
+            "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
+            "Path": "rotation.z",
+            "TypeCode": 13,
+            "Value": 0.7071068
+        }, {
+            "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
+            "Path": "rotation.w",
+            "TypeCode": 13,
+            "Value": 0.7071068
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.x",
+            "TypeCode": 13,
+            "Value": -15.1
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.x",
+            "TypeCode": 13,
+            "Value": 1
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.y",
+            "TypeCode": 13,
+            "Value": 1
+        }]
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "4293f6ec67f649179075f7f961d1e4ef",
+    "Name": "level4",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "5f7501fd3ec5489b82b8b42ffa087f17", "Name": "Group1" }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
+    }, {
+        "Type": { "Id": "06dd4e24da1d4f809e519f9e4dcaacf8", "Name": "Level" },
+        "Properties": {
+            "StartingPosition": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "y": 20
+                }
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "f3212f7046774af8be35d73ee79e6796",
+    "Name": "Obstacle",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "2dc98cfdaac64110bef975c8cefe53f5", "Name": "Obstacle" },
+        "EntityModificationFlags": 0,
+        "Modifications": [{
+            "Target": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+            "Path": "parent",
+            "TypeCode": -2,
+            "Value": {
+                "Id": "4293f6ec67f649179075f7f961d1e4ef",
+                "Name": "level4"
+            }
+        }, {
+            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
+            "Path": "size.x",
+            "TypeCode": 13,
+            "Value": 30
+        }, {
+            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
+            "Path": "size.y",
+            "TypeCode": 13,
+            "Value": 2
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.width",
+            "TypeCode": 13,
+            "Value": 30
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.height",
+            "TypeCode": 13,
+            "Value": 2
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.x",
+            "TypeCode": 13,
+            "Value": -15
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.y",
+            "TypeCode": 13,
+            "Value": -1
+        }, {
+            "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+            "Path": "size.x",
+            "TypeCode": 13,
+            "Value": 30
+        }, {
+            "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+            "Path": "size.y",
+            "TypeCode": 13,
+            "Value": 2
+        }, {
+            "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
+            "Path": "rotation.z",
+            "TypeCode": 13,
+            "Value": 0.7071068
+        }, {
+            "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
+            "Path": "rotation.w",
+            "TypeCode": 13,
+            "Value": 0.7071068
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.x",
+            "TypeCode": 13,
+            "Value": -20.9
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.x",
+            "TypeCode": 13,
+            "Value": 1
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.y",
+            "TypeCode": 13,
+            "Value": 1
+        }]
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "b34f3468e77249239e7532d15afe80fc",
+    "Name": "Hole",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "321296760a9346d195f38a1d0d9bf0ec", "Name": "Hole" },
+        "EntityModificationFlags": 0,
+        "Modifications": [{
+            "Target": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+            "Path": "parent",
+            "TypeCode": -2,
+            "Value": {
+                "Id": "4293f6ec67f649179075f7f961d1e4ef",
+                "Name": "level4"
+            }
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.x",
+            "TypeCode": 13,
+            "Value": 5
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.y",
+            "TypeCode": 13,
+            "Value": 5
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.x",
+            "TypeCode": 13,
+            "Value": 0
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.y",
+            "TypeCode": 13,
+            "Value": 35.8
+        }]
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "66741b38a3234f8c882a4bdcb730a0b1",
+    "Name": "Obstacle",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "2dc98cfdaac64110bef975c8cefe53f5", "Name": "Obstacle" },
+        "EntityModificationFlags": 0,
+        "Modifications": [{
+            "Target": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+            "Path": "parent",
+            "TypeCode": -2,
+            "Value": {
+                "Id": "4293f6ec67f649179075f7f961d1e4ef",
+                "Name": "level4"
+            }
+        }, {
+            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
+            "Path": "size.x",
+            "TypeCode": 13,
+            "Value": 30
+        }, {
+            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
+            "Path": "size.y",
+            "TypeCode": 13,
+            "Value": 2
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.width",
+            "TypeCode": 13,
+            "Value": 30
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.height",
+            "TypeCode": 13,
+            "Value": 2
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.x",
+            "TypeCode": 13,
+            "Value": -15
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.y",
+            "TypeCode": 13,
+            "Value": -1
+        }, {
+            "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+            "Path": "size.x",
+            "TypeCode": 13,
+            "Value": 30
+        }, {
+            "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+            "Path": "size.y",
+            "TypeCode": 13,
+            "Value": 2
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.y",
+            "TypeCode": 13,
+            "Value": 12.3
+        }, {
+            "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
+            "Path": "rotation.z",
+            "TypeCode": 13,
+            "Value": 0.7071068
+        }, {
+            "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
+            "Path": "rotation.w",
+            "TypeCode": 13,
+            "Value": 0.7071068
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.x",
+            "TypeCode": 13,
+            "Value": 24.3
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.x",
+            "TypeCode": 13,
+            "Value": 1
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.y",
+            "TypeCode": 13,
+            "Value": 1
+        }]
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "13d0bd2b2bed4c3095a41b2d5a752d0d",
+    "Name": "Obstacle",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "2dc98cfdaac64110bef975c8cefe53f5", "Name": "Obstacle" },
+        "EntityModificationFlags": 0,
+        "Modifications": [{
+            "Target": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+            "Path": "parent",
+            "TypeCode": -2,
+            "Value": {
+                "Id": "4293f6ec67f649179075f7f961d1e4ef",
+                "Name": "level4"
+            }
+        }, {
+            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
+            "Path": "size.x",
+            "TypeCode": 13,
+            "Value": 30
+        }, {
+            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
+            "Path": "size.y",
+            "TypeCode": 13,
+            "Value": 2
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.width",
+            "TypeCode": 13,
+            "Value": 30
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.height",
+            "TypeCode": 13,
+            "Value": 2
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.x",
+            "TypeCode": 13,
+            "Value": -15
+        }, {
+            "Target": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+            "Path": "box.y",
+            "TypeCode": 13,
+            "Value": -1
+        }, {
+            "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+            "Path": "size.x",
+            "TypeCode": 13,
+            "Value": 30
+        }, {
+            "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+            "Path": "size.y",
+            "TypeCode": 13,
+            "Value": 2
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.y",
+            "TypeCode": 13,
+            "Value": -17.6
+        }, {
+            "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
+            "Path": "rotation.z",
+            "TypeCode": 13,
+            "Value": 0.7071068
+        }, {
+            "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
+            "Path": "rotation.w",
+            "TypeCode": 13,
+            "Value": 0.7071068
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.x",
+            "TypeCode": 13,
+            "Value": -15.1
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.x",
+            "TypeCode": 13,
+            "Value": 1
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.y",
+            "TypeCode": 13,
+            "Value": 1
         }]
     }
 }]

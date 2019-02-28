@@ -60,8 +60,7 @@ namespace game {
                     currentPosDiference = new Vector2(position.position.x - movingObject.StartingPosition.x, 
                         position.position.y - movingObject.StartingPosition.y );
                     currentMagnitude = Math.sqrt(currentPosDiference.x * currentPosDiference.x + currentPosDiference.y * currentPosDiference.y);
-                }
-
+                }                                
                 //check Ping
                 if(movingObject.HasPong  && currentMagnitude <= 1){                     
                      movingObject.Direction *= -1; 

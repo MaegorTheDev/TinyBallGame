@@ -39,7 +39,7 @@
         "EditorOnly": false,
         "Versioned": true
     }, {
-        "Id": "d02f58f6a91244649e2cb0ef2cdd9596",
+        "Id": "d5f9de75abfd4c76a143eca013d4e36c",
         "Name": "Color",
         "FieldType": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
         "Array": false,

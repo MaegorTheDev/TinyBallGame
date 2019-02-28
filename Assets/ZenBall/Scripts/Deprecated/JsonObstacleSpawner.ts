@@ -16,10 +16,6 @@ namespace game {
             }
                
             let objectSpawner = this.world.getEntityByName("Spawners");
-            if(objectSpawner.isNone()){                  
-                ut.EntityGroup.instantiate(this.world, 'game.GameplayEntityGroup');   
-                objectSpawner  = this.world.getEntityByName("Spawners");
-            }                     
                
             this.world.usingComponentData(objectSpawner, [game.ObstacleSpawnerHelper], 
                 (helper)=>{               

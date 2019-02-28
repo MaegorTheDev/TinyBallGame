@@ -12,13 +12,10 @@ namespace game {
 
             //Spawning Coins
             CoinSpawnSystem.objectSpawner = this.world.getEntityByName("Spawners");
-            if(CoinSpawnSystem.objectSpawner.isNone()){                  
-                ut.EntityGroup.instantiate(this.world, 'game.GameplayEntityGroup');   
-                CoinSpawnSystem.objectSpawner  = this.world.getEntityByName("Spawners");
-            }
         }
 
-        static SpawnCoins(world: ut.World){
+        static SpawnCoins(world: ut.World){                 
+            CoinSpawnSystem.ResetCoins(world);
             let height;
             let width;
             
@@ -78,7 +75,7 @@ namespace game {
                 index++;
             }
             
-            let coin;
+            let coin:ut.Entity;
             if(findLocation){  
                 coin = ut.EntityGroup.instantiate(world, entityGroup)[0];                    
                 world.usingComponentData(coin, [ut.Core2D.TransformLocalPosition], (transformLocalPosition)=>{
@@ -94,6 +91,12 @@ namespace game {
             }          
          
             return coin;            
+        }
+
+        static DestroyCoin(world:ut.World, entity:ut.Entity){
+            if(world.exists(entity)){
+                ut.Core2D.TransformService.destroyTree(world, entity);    
+            }
         }
 
         static increaseRandomInterval(){
@@ -177,7 +180,15 @@ namespace game {
         }
 
         static ResetCoins(world:ut.World){
-            ut.EntityGroup.destroyAll(world, 'game.Coin'); 
+            world.usingComponentData(CoinSpawnSystem.objectSpawner, [game.CoinSpawnerHelper], 
+                (helper)=>{ 
+                for(let i=0; i<helper.CoinsSpawned.length; i++){
+                    if(world.exists(helper.CoinsSpawned[i])&& !helper.CoinsSpawned[i].isNone()){                      
+                        //ut.Core2D.TransformService.destroyTree(world, helper.CoinsSpawned[i]);                    
+                        world.destroyEntity(helper.CoinsSpawned[i]);
+                    }
+                }
+            });
         }
 
        

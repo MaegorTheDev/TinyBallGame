@@ -5,50 +5,14 @@
     "ExportFlags": 0,
     "SerializedVersion": 0,
     "Entities": [
-        { "$TypeId": 9, "Id": "ead95c4083de4b46a462ee31e0251651", "Name": "Comprar vida extra" },
         { "$TypeId": 9, "Id": "356248200f974f968b3c3483293e6807", "Name": "GameOverSprite" },
+        { "$TypeId": 9, "Id": "45a789810fdd4369bfaadb1a97184e9b", "Name": "TryAgainSprite" },
         { "$TypeId": 9, "Id": "4a85a5dae3a14ed0b3e8efefd39d9a41", "Name": "RestartGameButton" },
-        { "$TypeId": 9, "Id": "eee90f78c4de4341b682e9a5b9cf13e2", "Name": "NotEnoughCoinsText" },
         { "$TypeId": 9, "Id": "82295abf21d14ad6b8201ea2c8126a3f", "Name": "RespawnGameButton" },
+        { "$TypeId": 9, "Id": "883bcd51fe4a4d6895f4a8be48babb29", "Name": "RespawnCoinCheckTransparency" },
         { "$TypeId": 9, "Id": "7274dc2d805942fab14269e271998b3f", "Name": "RespawnCoinNumberRender" },
-        { "$TypeId": 9, "Id": "3b27373230c4464b87abc629c169296f", "Name": "NotEnoughCoinsPng" }
+        { "$TypeId": 9, "Id": "531a5ee90da041d6b75b244171a1d3c2", "Name": "RespawnCoinCheckText" }
     ]
-},
-{
-    "$TypeId": 5,
-    "Id": "ead95c4083de4b46a462ee31e0251651",
-    "Name": "Comprar vida extra",
-    "Enabled": true,
-    "Static": false,
-    "Layer": 0,
-    "Components": [{
-        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
-    }, {
-        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
-        "Properties": {
-            "position": {
-                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
-                "Properties": {
-                    "x": 0,
-                    "y": -18.6
-                }
-            }
-        }
-    }, {
-        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
-    }, {
-        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
-    }, {
-        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
-        "Properties": {
-            "sprite": { "$TypeId": 10, "Guid": "3d5e9a84ec28ff14eba47312a3f004be", "FileId": 21300000, "Type": 3 }
-        }
-    }, {
-        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
-        "Properties": {
-            "layer": -1784358549
-        }
-    }]
 },
 {
     "$TypeId": 5,
@@ -72,6 +36,51 @@
                 "Properties": {
                     "x": 0,
                     "y": 18.4
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1.27
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "layer": -1784358549,
+            "order": 0
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "45a789810fdd4369bfaadb1a97184e9b",
+    "Name": "TryAgainSprite",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "3d5e9a84ec28ff14eba47312a3f004be", "FileId": 21300000, "Type": 3 }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0.2,
+                    "y": -14
                 }
             }
         }
@@ -124,8 +133,8 @@
             "position": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
-                    "x": 7.114,
-                    "y": -21.801
+                    "x": 7.21,
+                    "y": -17.02
                 }
             }
         }
@@ -143,67 +152,11 @@
             "scale": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
-                    "x": 0.598,
-                    "y": 0.644
+                    "x": 0.615,
+                    "y": 0.68
                 }
             }
         }
-    }]
-},
-{
-    "$TypeId": 5,
-    "Id": "eee90f78c4de4341b682e9a5b9cf13e2",
-    "Name": "NotEnoughCoinsText",
-    "Enabled": true,
-    "Static": false,
-    "Layer": 0,
-    "Components": [{
-        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
-    }, {
-        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
-        "Properties": {
-            "sprite": { "$TypeId": 10, "Guid": "de00c25a720009248981432a548efbf8", "FileId": 21300000, "Type": 3 },
-            "color": {
-                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
-                "Properties": {
-                    "r": 1,
-                    "g": 1,
-                    "b": 1,
-                    "a": 1
-                }
-            }
-        }
-    }, {
-        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
-        "Properties": {
-            "position": {
-                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
-                "Properties": {
-                    "x": 3.1,
-                    "y": -29.9
-                }
-            }
-        }
-    }, {
-        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
-        "Properties": {
-            "layer": -1784358549,
-            "order": 4
-        }
-    }, {
-        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
-        "Properties": {
-            "scale": {
-                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
-                "Properties": {
-                    "x": 1.151712,
-                    "y": 1.044576,
-                    "z": 2.16
-                }
-            }
-        }
-    }, {
-        "Type": { "Id": "1aaac7e47da047f3a10c2b804f318735", "Name": "CoinCheck" }
     }]
 },
 {
@@ -225,7 +178,7 @@
                     "r": 1,
                     "g": 0,
                     "b": 0,
-                    "a": 0.003921569
+                    "a": 0.03529412
                 }
             }
         }
@@ -235,8 +188,8 @@
             "position": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
-                    "x": -8.252,
-                    "y": -21.82
+                    "x": -8.208,
+                    "y": -16.981
                 }
             }
         }
@@ -254,12 +207,68 @@
             "scale": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
-                    "x": 0.593232,
-                    "y": 0.627401,
-                    "z": 0.727
+                    "x": 0.5928,
+                    "y": 0.6516043
                 }
             }
         }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "883bcd51fe4a4d6895f4a8be48babb29",
+    "Name": "RespawnCoinCheckTransparency",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "ccdb969403b035d4886d491a8c6a8467", "FileId": 21300000, "Type": 3 },
+            "color": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -8.211,
+                    "y": -17.068
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "layer": -1784358549,
+            "order": 6
+        }
+    }, {
+        "Type": { "Id": "5a68c59783d93e60c704f63111bcb0ad", "Name": "Sprite2DRendererHitBox2D" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0.5780606,
+                    "y": 0.342001
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "98810380c15f435084196a90db6fd8dd", "Name": "CoinCheck" }
     }]
 },
 {
@@ -277,8 +286,8 @@
             "position": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
-                    "x": -9.15,
-                    "y": -21.97
+                    "x": -9.11,
+                    "y": -17.37
                 }
             }
         }
@@ -290,8 +299,8 @@
             "scale": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0.45,
+                    "y": 0.45
                 }
             }
         }
@@ -328,8 +337,8 @@
 },
 {
     "$TypeId": 5,
-    "Id": "3b27373230c4464b87abc629c169296f",
-    "Name": "NotEnoughCoinsPng",
+    "Id": "531a5ee90da041d6b75b244171a1d3c2",
+    "Name": "RespawnCoinCheckText",
     "Enabled": true,
     "Static": false,
     "Layer": 0,
@@ -338,12 +347,12 @@
     }, {
         "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
         "Properties": {
-            "sprite": { "$TypeId": 10, "Guid": "ccdb969403b035d4886d491a8c6a8467", "FileId": 21300000, "Type": 3 },
+            "sprite": { "$TypeId": 10, "Guid": "de00c25a720009248981432a548efbf8", "FileId": 21300000, "Type": 3 },
             "color": {
                 "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
                 "Properties": {
-                    "r": 0,
-                    "g": 0.1127791,
+                    "r": 1,
+                    "g": 1,
                     "b": 1,
                     "a": 1
                 }
@@ -355,8 +364,8 @@
             "position": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
-                    "x": -8.71,
-                    "y": -21.7
+                    "x": 8.383,
+                    "y": -24.24
                 }
             }
         }
@@ -364,20 +373,23 @@
         "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
         "Properties": {
             "layer": -1784358549,
-            "order": 5
+            "order": 6
         }
+    }, {
+        "Type": { "Id": "5a68c59783d93e60c704f63111bcb0ad", "Name": "Sprite2DRendererHitBox2D" }
     }, {
         "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
         "Properties": {
             "scale": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
-                    "x": 0.600246,
-                    "y": 0.3572262
+                    "x": 0.8052,
+                    "y": 0.8052,
+                    "z": 0.8052
                 }
             }
         }
     }, {
-        "Type": { "Id": "1aaac7e47da047f3a10c2b804f318735", "Name": "CoinCheck" }
+        "Type": { "Id": "98810380c15f435084196a90db6fd8dd", "Name": "CoinCheck" }
     }]
 }]

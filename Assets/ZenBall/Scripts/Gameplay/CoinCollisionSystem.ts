@@ -35,7 +35,7 @@ namespace game {
                         let otherEntity = hitboxoverlapresults.overlaps[i].otherEntity;
                         if(!this.world.exists(otherEntity) || this.world.hasComponent(otherEntity, game.Ball)){ 
                             if(this.world.exists(entity) &&  this.world.hasComponent(entity, ut.Core2D.TransformLocalPosition)){
-                                ut.Core2D.TransformService.destroyTree(this.world, entity);     
+                                CoinSpawnSystem.DestroyCoin(this.world, entity);     
                                 TimeLethalitySystem.ResetTimer();   
                                 CollisionAudioSystem.PlayCoinSound(this.world);               
                                 CoinCollisionSystem.actualCoins++;                                

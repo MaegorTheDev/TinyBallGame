@@ -1,37 +1,13 @@
 ﻿[{
     "$TypeId": 3,
-    "Id": "d5eac844fae841258d4c39150fc47a73",
+    "Id": "8dd1d39a724a406a96b654d5ab86a10a",
     "Name": "MovingObject",
     "ExportFlags": 0,
     "Unlisted": false,
     "Visibility": 0,
     "TypeCode": "Component",
     "Fields": [{
-        "Id": "a7549a7e17a64995b90063f73bb68444",
-        "Name": "Limit",
-        "FieldType": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
-        "Array": false,
-        "Visibility": 0,
-        "EditorOnly": false,
-        "Versioned": true
-    }, {
-        "Id": "a14e0787ba4843fdbfcbc61bf7ac4cda",
-        "Name": "TimeToGetToLimit",
-        "FieldType": { "Id": "67325dccf2f047c19c7ef4a045354e67", "Name": "Float32" },
-        "Array": false,
-        "Visibility": 0,
-        "EditorOnly": false,
-        "Versioned": true
-    }, {
-        "Id": "55d4c23e331f4ce59b8047ba0fc75236",
-        "Name": "StartingPosition",
-        "FieldType": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
-        "Array": false,
-        "Visibility": 1,
-        "EditorOnly": false,
-        "Versioned": true
-    }, {
-        "Id": "c4140c7330a54e39b065bc35d683ef66",
+        "Id": "59416c9fa0c942edb6748ebb612d40a3",
         "Name": "Active",
         "FieldType": { "Id": "2b477f505af74487b7092b5617d88d3f", "Name": "Boolean" },
         "Array": false,
@@ -39,7 +15,15 @@
         "EditorOnly": false,
         "Versioned": true
     }, {
-        "Id": "7fc5f35703b947cc835f61117cc1834a",
+        "Id": "351b7600f29e46f198e8363902a239b4",
+        "Name": "StartingPosition",
+        "FieldType": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+        "Array": false,
+        "Visibility": 1,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "65382a55eee0440ea0667d52d03b5563",
         "Name": "Speed",
         "FieldType": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
         "Array": false,
@@ -47,15 +31,7 @@
         "EditorOnly": false,
         "Versioned": true
     }, {
-        "Id": "5f79555529d34fd685103b37280c170b",
-        "Name": "Direction",
-        "FieldType": { "Id": "2aa56ce081e14e8a93d276da72d813bc", "Name": "Int16" },
-        "Array": false,
-        "Visibility": 1,
-        "EditorOnly": false,
-        "Versioned": true
-    }, {
-        "Id": "77ca8ae86d4d45efadabe13773d52969",
+        "Id": "65f87d491acb44b2b4d83507ae3d8c4b",
         "Name": "HasPing",
         "FieldType": { "Id": "2b477f505af74487b7092b5617d88d3f", "Name": "Boolean" },
         "Array": false,
@@ -63,15 +39,39 @@
         "EditorOnly": false,
         "Versioned": true
     }, {
-        "Id": "9c00a630c6da40f69d55e837238dfa01",
+        "Id": "d8a7ec0df5b346b7b477611c44178423",
         "Name": "HasPong",
         "FieldType": { "Id": "2b477f505af74487b7092b5617d88d3f", "Name": "Boolean" },
         "Array": false,
         "Visibility": 1,
         "EditorOnly": false,
         "Versioned": true
+    }, {
+        "Id": "78375c741356476d9dad2e1fabb4e92a",
+        "Name": "Direction",
+        "FieldType": { "Id": "2aa56ce081e14e8a93d276da72d813bc", "Name": "Int16" },
+        "Array": false,
+        "Visibility": 1,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "c22c61fee8f24ccdb68033395d8ae90d",
+        "Name": "TimeToGetToLimit",
+        "FieldType": { "Id": "67325dccf2f047c19c7ef4a045354e67", "Name": "Float32" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "6cbf4729c0b64679a000eb2cc604bc9e",
+        "Name": "Limit",
+        "FieldType": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
     }],
     "DefaultValue": {
-        "Type": { "Id": "d5eac844fae841258d4c39150fc47a73", "Name": "MovingObject" }
+        "Type": { "Id": "8dd1d39a724a406a96b654d5ab86a10a", "Name": "MovingObject" }
     }
 }]

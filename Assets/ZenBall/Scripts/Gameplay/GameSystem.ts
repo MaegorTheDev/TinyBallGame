@@ -30,8 +30,7 @@ namespace game {
             }
         }
         static PlayGame(world: ut.World){
-            GameSystem.CurrentGameMode = GameState.Waiting;
-            ut.EntityGroup.instantiate(world, 'game.GameplayEntityGroup');    
+            GameSystem.CurrentGameMode = GameState.Waiting;   
             GameSystem.isInTutorial = false;              
             //GameSystem.DestroyObjects(world);      
             //GameSystem.currentPlays = 0 ;                                   
@@ -74,7 +73,7 @@ namespace game {
                 TutorialSystem.ShowTutorialWinScreen(world);
                 return;
             }
-            ShotsUISystem.UpdateShotsPeg(world);     
+            //ShotsUISystem.UpdateShotsPeg(world);     
             PoolObstacleSpawnerSystem.SpawnObstacles(world); 
             
             
@@ -185,7 +184,7 @@ namespace game {
         }
 
         static DestroyObjects(world: ut.World){
-            ut.EntityGroup.destroyAll(world, 'game.Coin');            
+            //ut.EntityGroup.destroyAll(world, 'game.Coin');            
             //ut.EntityGroup.destroyAll(world, 'game.Obstacle');  
             //ut.EntityGroup.destroyAll(world, 'game.Hole');
         }
