@@ -927,8 +927,8 @@
             "size": {
                 "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
                 "Properties": {
-                    "x": 576,
-                    "y": 659
+                    "x": 498,
+                    "y": 694
                 }
             }
         }
@@ -1051,7 +1051,7 @@
                 "Value": 2
             },
             "Pools": 3,
-            "LevelsPerPool": 10
+            "LevelsPerPool": 100
         }
     }, {
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }

@@ -10,7 +10,7 @@ namespace game {
         //static initialPlays = 1;
 
         //static score = 0;
-        static coins = 10;
+        static coins = 0;
         static CurrentGameMode;
         static StartFirstLevel = true;
         static isInTutorial = false;
