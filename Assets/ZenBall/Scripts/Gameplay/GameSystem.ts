@@ -4,7 +4,7 @@ namespace game {
     /** New System */
     export class GameSystem extends ut.ComponentSystem {
         static BallRadius = 0; 
-
+        static world;
         //static playsPerLevel = 1;
        //static currentPlays  = 0;
         //static initialPlays = 1;
@@ -12,39 +12,34 @@ namespace game {
         //static score = 0;
         static coins = 0;
         static CurrentGameMode;
-        static StartFirstLevel = true;
         static isInTutorial = false;
+        static fbloadEntity: ut.Entity;        
+        static loaded = false;
 
-        OnUpdate():void {                   
-            if(GameSystem.StartFirstLevel && !GameSystem.isInTutorial){
-                GameSystem.ShowMainScreen(this.world);
-                GameSystem.StartFirstLevel = false;
-            }     
-
-            
+        OnUpdate():void {                 
             const coinScore = this.world.getEntityByName("CoinsRender");	  
             if(!coinScore.isNone()){
                 this.world.usingComponentData(coinScore, [game.NumberObject], (numberObject)=>{
+                   // console.log("GameSystem current coins "  + GameSystem.coins);
                     numberObject.Number = GameSystem.coins;
                 });
             }
+            GameSystem.fbloadEntity = this.world.getEntityByName("FBItem");	
+            GameSystem.world = this.world;
         }
         static PlayGame(world: ut.World){
             GameSystem.CurrentGameMode = GameState.Waiting;   
-            GameSystem.isInTutorial = false;              
-            //GameSystem.DestroyObjects(world);      
-            //GameSystem.currentPlays = 0 ;                                   
-            //GameSystem.RestartWorld(world);
+            GameSystem.isInTutorial = false;            
         }      
 
         static AddCoin(world:ut.World){
             GameSystem.coins++;
             ScoreSystem.UpdateScore(world);
+            FBInstantService.getInstance().UpdateCoins(GameSystem.coins);
         }
 
-        static SetCoin(coinNumber:number, world:ut.World){
+        static SetCoin(coinNumber:number){
             GameSystem.coins = coinNumber;
-            ScoreSystem.UpdateScore(world);
         }
 
 
@@ -99,7 +94,8 @@ namespace game {
                             position.position = new Vector3(0, -100);
                         });
                 }
-                ut.EntityGroup.instantiate(world, 'game.GameOverScreen'); 
+                ut.EntityGroup.instantiate(world, 'game.GameOverScreen');
+                FBInstantService.getInstance().FailedLevelEvent(PoolObstacleSpawnerSystem.CurrentGroup,    PoolObstacleSpawnerSystem.CurrenLevelIndex);  
                 //console.log("Spawned " + GameSystem.GameOverScreen[0].index);
                 GameSystem.CurrentGameMode = GameState.GameEnd;
                 //PoolObstacleSpawnerSystem.EndGame(world);
@@ -122,15 +118,54 @@ namespace game {
         }
 
         static MainScreen:ut.Entity[];
-        static ShowMainScreen(world:ut.World){
-            GameSystem.MainScreen = ut.EntityGroup.instantiate(world, 'game.GameStart'); 
-            GameSystem.CurrentGameMode = GameState.GameStart;
+        static ShowMainScreen(worldP?:ut.World){
+            let world = worldP;
+            if(world == null || world == undefined){
+                world = GameSystem.world;
+            }
+            ut.EntityGroup.instantiate(world, 'game.GameStart'); 
+            GameSystem.CurrentGameMode = GameState.GameStart;      
+            GameSystem.loaded = true;      
+            if(FBInstantService.getInstance().isAvailable){
+                let profilePhoto = world.getEntityByName("GameStartPhoto");
+                let fbItem = world.getEntityByName("FBItem");
+                let playerData = world.getComponentData(fbItem, game.InitializeFBInstantComponent);
+                let imageBase64 =  localStorage.getItem(playerData.PlayerID);
+    
+                 // Image2D
+                let imgEntity = this.world.createEntity();
+                this.world.addComponent(imgEntity, ut.Core2D.Image2D);
+                let image = new ut.Core2D.Image2D();
+                image.pixelsToWorldUnits = 1;
+                this.world.setComponentData(imgEntity, image);
+            
+                // Image2DLoadFromFile
+                let loader = new ut.Core2D.Image2DLoadFromFile();
+                loader.imageFile = imageBase64;
+                this.world.addComponentData(imgEntity, loader);
+            
+                // Sprite2D
+                let sprite2DEntity = this.world.createEntity();
+                let sprite2D = new ut.Core2D.Sprite2D();
+                sprite2D.image = imgEntity;
+                sprite2D.imageRegion = new ut.Math.Rect(0, 0, 1, 1);            
+                sprite2D.pivot = new ut.Math.Vector2(0.5,0.5);
+                this.world.addComponentData(sprite2DEntity, sprite2D);
+            
+               //Sprite2DRenderer
+                var sprite2DRenderer = this.world.getComponentData(profilePhoto, ut.Core2D.Sprite2DRenderer);
+                sprite2DRenderer.sprite = sprite2DEntity;
+                this.world.setComponentData(profilePhoto, sprite2DRenderer);                
+            }            
         }
-
         static DestroyMainScreen(world:ut.World){
-            GameSystem.MainScreen.forEach(element => {                        
-                ut.Core2D.TransformService.destroyTree(world, element);
-            });
+            
+            ut.EntityGroup.destroyAll(this.world, "game.GameStart");
+           // GameSystem.MainScreen.forEach(element => { 
+           //     console.log("Delete " + world.exists(element))   
+            //    if(world.exists(element))                    
+            //        ut.Core2D.TransformService.destroyTree(world, element);
+            //});
             GameSystem.CurrentGameMode = GameState.Waiting;
             GameSystem.RestartWorld(world);
         }

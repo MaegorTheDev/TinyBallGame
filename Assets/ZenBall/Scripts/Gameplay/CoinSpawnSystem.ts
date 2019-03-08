@@ -37,12 +37,12 @@ namespace game {
             let index = 0;
             let randomPos:Vector3;
         
-            while (!findLocation && index < 1250){                    
+            while (!findLocation && index < 500){                    
                 randomPos = new Vector3(GameSystem.randomIntFromInterval(minX,maxX),
                         GameSystem.randomIntFromInterval(minY, maxY));
                 let imposibleCoin = false;               
                 
-                if(CoinSpawnSystem.DoesHitObstacle(world, randomPos)){            
+                if(CoinSpawnSystem.DoesHitObstacle(world, randomPos)){  
                    imposibleCoin = true;
                 }             
                 else if(!CoinSpawnSystem.IsVisibleFromBall(world, randomPos) && CoinSpawnSystem.spawnedCoins==0){                    
@@ -52,7 +52,7 @@ namespace game {
                    imposibleCoin = true;
                 }
 
-                if(CoinSpawnSystem.spawnedCoins > 0){
+                if(CoinSpawnSystem.spawnedCoins > 0 && !imposibleCoin){
                     world.usingComponentData(CoinSpawnSystem.objectSpawner, [game.CoinSpawnerHelper], 
                         (helper)=>{ 
                         for(let i = 0; i< helper.CoinsSpawned.length; i++){
@@ -67,7 +67,30 @@ namespace game {
                             }                    
                         } 
                     }); 
-                }         
+                }
+                //Check ball distance
+                if(!imposibleCoin){                    
+                    let ballPosition = BallSystem.GetBallPosition(world);
+                    let deltaX = ballPosition.x - randomPos.x;
+                    let deltaY = ballPosition.y - randomPos.y;
+                    let magnitude = deltaX * deltaX + deltaY  * deltaY ;                          
+                    if(magnitude < 50) {
+                        imposibleCoin = true;
+                    } 
+                }
+                if(!imposibleCoin){                    
+                    let holePosition = PoolObstacleSpawnerSystem.GetCurrentLevelHolePosition(world); 
+                    let deltaX = holePosition.x - randomPos.x;
+                    let deltaY = holePosition.y - randomPos.y;
+                    let magnitude = deltaX * deltaX + deltaY  * deltaY ;                          
+                    if(magnitude < 50) {
+                         imposibleCoin = true;
+                    } 
+                }
+
+                //Check hole distance
+                
+
                 if(!imposibleCoin){
                     findLocation = true;
                 }
@@ -110,28 +133,57 @@ namespace game {
 
         static DoesHitObstacle(world:ut.World, position:Vector3):boolean{
             
+            let hit;
             const camera = world.getEntityByName("Camera");
 
-            let hit = ut.HitBox2D.HitBox2DService.hitTest(world, new Vector3(position.x, position.y),camera);
-            if(!hit.entityHit.isNone()){
-                return true;
-            }
-            hit = ut.HitBox2D.HitBox2DService.hitTest(world, new Vector3(position.x+1.5, position.y+1.5),camera);
-            if(!hit.entityHit.isNone()){
-                return true;
-            }            
-            hit = ut.HitBox2D.HitBox2DService.hitTest(world, new Vector3(position.x+1.5, position.y-1.5),camera);
-            if(!hit.entityHit.isNone()){
-                return true;
-            }
+            //1
             hit = ut.HitBox2D.HitBox2DService.hitTest(world, new Vector3(position.x-1.5, position.y+1.5),camera);
             if(!hit.entityHit.isNone()){
                 return true;
             }
-            hit = ut.HitBox2D.HitBox2DService.hitTest(world, new Vector3(position.x-1.5, position.y-1.5),camera);
+            //2
+            hit = ut.HitBox2D.HitBox2DService.hitTest(world, new Vector3(position.x, position.y+1.5),camera);
             if(!hit.entityHit.isNone()){
                 return true;
             }
+            //3
+            hit = ut.HitBox2D.HitBox2DService.hitTest(world, new Vector3(position.x+1.5, position.y+1.5),camera);
+            if(!hit.entityHit.isNone()){
+                return true;
+            }             
+            //4
+            hit = ut.HitBox2D.HitBox2DService.hitTest(world, new Vector3(position.x-1.5, position.y),camera);
+            if(!hit.entityHit.isNone()){
+                return true;
+            }          
+            //5
+            hit = ut.HitBox2D.HitBox2DService.hitTest(world, new Vector3(position.x, position.y),camera);
+            if(!hit.entityHit.isNone()){
+                return true;
+            }     
+            //6
+            hit = ut.HitBox2D.HitBox2DService.hitTest(world, new Vector3(position.x+2, position.y),camera);
+            if(!hit.entityHit.isNone()){
+                return true;
+            }    
+            //7
+            hit = ut.HitBox2D.HitBox2DService.hitTest(world, new Vector3(position.x-2, position.y-2),camera);
+            if(!hit.entityHit.isNone()){
+                return true;
+            }    
+            //8           
+            hit = ut.HitBox2D.HitBox2DService.hitTest(world, new Vector3(position.x, position.y-2),camera);
+            if(!hit.entityHit.isNone()){
+                return true;
+            } 
+            //9            
+            hit = ut.HitBox2D.HitBox2DService.hitTest(world, new Vector3(position.x+2, position.y-2),camera);
+            if(!hit.entityHit.isNone()){
+                return true;
+            }
+            
+
+            
 
             return false;
             

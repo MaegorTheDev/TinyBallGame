@@ -517,7 +517,7 @@
             "Target": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
             "Path": "sprite",
             "TypeCode": -1,
-            "Value": { "$TypeId": 10, "Guid": "9b51e4402d2b2064eaec94f23201f360", "FileId": 21300000, "Type": 3 }
+            "Value": { "$TypeId": 10, "Guid": "d0aa268f7e594654aaf29ddd25ae9f9c", "FileId": 21300008, "Type": 3 }
         }, {
             "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
             "Path": "size.x",
@@ -654,7 +654,7 @@
             "Target": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
             "Path": "sprite",
             "TypeCode": -1,
-            "Value": { "$TypeId": 10, "Guid": "9b51e4402d2b2064eaec94f23201f360", "FileId": 21300000, "Type": 3 }
+            "Value": { "$TypeId": 10, "Guid": "d0aa268f7e594654aaf29ddd25ae9f9c", "FileId": 21300008, "Type": 3 }
         }]
     }
 },
@@ -828,7 +828,7 @@
             "Target": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
             "Path": "sprite",
             "TypeCode": -1,
-            "Value": { "$TypeId": 10, "Guid": "9b51e4402d2b2064eaec94f23201f360", "FileId": 21300000, "Type": 3 }
+            "Value": { "$TypeId": 10, "Guid": "d0aa268f7e594654aaf29ddd25ae9f9c", "FileId": 21300008, "Type": 3 }
         }]
     }
 },
@@ -1354,7 +1354,7 @@
             "Target": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
             "Path": "sprite",
             "TypeCode": -1,
-            "Value": { "$TypeId": 10, "Guid": "9b51e4402d2b2064eaec94f23201f360", "FileId": 21300000, "Type": 3 }
+            "Value": { "$TypeId": 10, "Guid": "d0aa268f7e594654aaf29ddd25ae9f9c", "FileId": 21300008, "Type": 3 }
         }, {
             "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
             "Path": "size.x",

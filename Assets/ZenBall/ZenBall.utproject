@@ -31,7 +31,7 @@
         "MemorySize": 16,
         "IncludeWebPDecompressor": false,
         "RunBabel": false,
-        "MinifyJavaScript": true,
+        "MinifyJavaScript": false,
         "LinkToSource": true,
         "SymbolsInReleaseBuild": false
     },

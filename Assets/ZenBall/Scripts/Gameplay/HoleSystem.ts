@@ -31,6 +31,7 @@ namespace game {
         
         static NextLevel(world:ut.World){
             GameSystem.CurrentGameMode = GameState.Waiting;
+            FBInstantService.getInstance().SuccessLevelEvent(PoolObstacleSpawnerSystem.CurrentGroup,    PoolObstacleSpawnerSystem.CurrenLevelIndex); 
             GameSystem.NewLevel(world);       
         }
        

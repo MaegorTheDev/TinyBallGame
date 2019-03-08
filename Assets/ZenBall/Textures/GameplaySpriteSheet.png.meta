@@ -1,10 +1,12 @@
 fileFormatVersion: 2
-guid: 892392a92dd8841bd814c19af3368e28
+guid: d0aa268f7e594654aaf29ddd25ae9f9c
 TextureImporter:
   fileIDToRecycleName:
-    21300000: square
-    21300002: circle
-    21300004: rectangle
+    21300000: GameplaySpriteSheet_0
+    21300002: GameplaySpriteSheet_1
+    21300004: GameplaySpriteSheet_2
+    21300006: GameplaySpriteSheet_3
+    21300008: GameplaySpriteSheet_4
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -34,12 +36,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -48,7 +50,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 2.5
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,10 +65,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
-    resizeAlgorithm: 1
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -74,10 +76,10 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 1
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -85,10 +87,10 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 1
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -96,10 +98,10 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 1
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -109,61 +111,101 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: square
+      name: GameplaySpriteSheet_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 58
-        width: 82
-        height: 79
+        x: 44
+        y: 192
+        width: 276
+        height: 275
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe5729cf2f6334a5e95da437f953a0cd
+      spriteID: e53ff15ec75816542b1b9327ac51d4e1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: circle
+      name: GameplaySpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 140
-        y: 53
-        width: 90
-        height: 87
+        x: 362
+        y: 384
+        width: 172
+        height: 63
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b0c7a0e767834822b8d6aa19e2fea77
+      spriteID: 01d99a25cac2dd8478c400515928a871
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rectangle
+      name: GameplaySpriteSheet_2
       rect:
         serializedVersion: 2
-        x: 16
-        y: 11
-        width: 235
-        height: 25
+        x: 607
+        y: 377
+        width: 66
+        height: 78
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 244eab8c8a955458aba8408d6899b40e
+      spriteID: 7e2f3000587ee3e478aa134cd0f0fbb3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameplaySpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 374
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 172d115400f03b6419c662033326ae02
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameplaySpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 10
+        width: 1013
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 25, y: 21, z: 25, w: 21}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d648802e104322442b77311af0573332
       vertices: []
       indices: 
       edges: []
@@ -171,7 +213,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 42005375136984bb881ced1ad9439abf
+    spriteID: 310c9ab9e6b032a4da69604a8d9a519e
     vertices: []
     indices: 
     edges: []

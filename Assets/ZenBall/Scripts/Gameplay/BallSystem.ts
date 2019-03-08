@@ -60,6 +60,18 @@ namespace game {
             });           
         }
 
+        static GetBallPosition(world:ut.World):Vector3{
+            let result:Vector3;
+            if (BallSystem.BallEntity.isNone()) {       
+                BallSystem.BallEntity = ut.EntityGroup.instantiate(world, 'game.BallGroup')[0];
+            }                 
+            world.usingComponentData( BallSystem.BallEntity, [ut.Entity, ut.Core2D.TransformLocalPosition, ut.Physics2D.Velocity2D], (entity, position, velocity ) => {          
+                result = position.position;                                                    
+            });    
+            
+            return result;
+        }
+
         static ChangeBallSpeed(newSpeed:Vector2, world:ut.World){
             if (BallSystem.BallEntity.isNone()) {       
                 BallSystem.BallEntity = ut.EntityGroup.instantiate(world, 'game.BallGroup')[0];

@@ -11,7 +11,12 @@ namespace game {
             if(RespawnSystem.actualRespawns * 10 > GameSystem.coins){
                 return;
             } 
-            GameSystem.coins -= (RespawnSystem.actualRespawns * 10);
+            GameSystem.coins -= (RespawnSystem.actualRespawns * 10);       
+
+            FBInstantService.getInstance().UpdateCoins(GameSystem.coins);
+            FBInstantService.getInstance().Respawned(PoolObstacleSpawnerSystem.CurrentGroup,   
+                 PoolObstacleSpawnerSystem.CurrenLevelIndex, RespawnSystem.actualRespawns * 10);  
+               
             ScoreSystem.UpdateScore(world);
             RespawnSystem.actualRespawns++;
             let objectSpawner = world.getEntityByName("Spawners");

@@ -10,10 +10,8 @@
         { "$TypeId": 9, "Id": "eea8f4f87e344fc5b9abeaa9b4dbb7a2", "Name": "HitObject" },
         { "$TypeId": 9, "Id": "dc516d1df2234d9bbef9816ddb13ad9f", "Name": "CoinAudio" },
         { "$TypeId": 9, "Id": "a47b9ab0488f4ed39e24111dc22a4443", "Name": "Lose" },
-        { "$TypeId": 9, "Id": "a379ff7481f1437cadc2cd9fbab97983", "Name": "NoShots" },
         { "$TypeId": 9, "Id": "206947d2ab684ce599eb66b47913a5d6", "Name": "LowLive" },
         { "$TypeId": 9, "Id": "0d4a175bd7414225bb7ee114f6a772ae", "Name": "HoleAudioSource" },
-        { "$TypeId": 9, "Id": "64225779d47b4efbb754ed8dd45d31bc", "Name": "WinLevel" },
         { "$TypeId": 9, "Id": "0114581e263c4d49a5d4046eef6f979d", "Name": "Borders" },
         { "$TypeId": 9, "Id": "76b3ba21971e46d4a27fac2cf6976d12", "Name": "Ground" },
         { "$TypeId": 9, "Id": "8d229b3f147d49d7be713241775dd8ed", "Name": "Roof" },
@@ -22,11 +20,9 @@
         { "$TypeId": 9, "Id": "63313e9fa2964969bd42bfc4aa3e3fa1", "Name": "Background" },
         { "$TypeId": 9, "Id": "9e716a4568ed4ffea1e07dc84655cc40", "Name": "Side1" },
         { "$TypeId": 9, "Id": "04b3d7bcc9654a9f97c386b95e186803", "Name": "Side2" },
-        { "$TypeId": 9, "Id": "5a033e5cfedb41b080545d960c0bddc2", "Name": "Canvas" },
-        { "$TypeId": 9, "Id": "3306d9b41e264a0e859266a018fbb7da", "Name": "Panel" },
-        { "$TypeId": 9, "Id": "33fb87c5b94f48ce85b76f7b5631536e", "Name": "ScoreText" },
         { "$TypeId": 9, "Id": "d562f25fd4754928b37e1c756e0d8f5e", "Name": "Spawners" },
-        { "$TypeId": 9, "Id": "a983d25029094dceb4f549ee9daeb668", "Name": "CoinsRender" }
+        { "$TypeId": 9, "Id": "a983d25029094dceb4f549ee9daeb668", "Name": "CoinsRender" },
+        { "$TypeId": 9, "Id": "8eedb7445d0940cfa700a5eb75bbc790", "Name": "FBItem" }
     ]
 },
 {
@@ -65,9 +61,9 @@
             "backgroundColor": {
                 "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
                 "Properties": {
-                    "r": 0,
-                    "g": 0,
-                    "b": 0,
+                    "r": 0.3803922,
+                    "g": 0.7607844,
+                    "b": 0.5058824,
                     "a": 1
                 }
             },
@@ -164,26 +160,6 @@
 },
 {
     "$TypeId": 5,
-    "Id": "a379ff7481f1437cadc2cd9fbab97983",
-    "Name": "NoShots",
-    "Enabled": true,
-    "Static": false,
-    "Layer": 0,
-    "Components": [{
-        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
-        "Properties": {
-            "parent": { "$TypeId": 9, "Id": "e7d6b50f8f9946d9a33c10e6b4e7a74b", "Name": "Sounds" }
-        }
-    }, {
-        "Type": { "Id": "a60aa1b9ad84a83eefb0d5382a4d5967", "Name": "AudioSource" },
-        "Properties": {
-            "clip": { "$TypeId": 10, "Guid": "b245e73a87b0f3c48afdd123cc7d9064", "FileId": 8300000, "Type": 3 },
-            "volume": 0.5
-        }
-    }]
-},
-{
-    "$TypeId": 5,
     "Id": "206947d2ab684ce599eb66b47913a5d6",
     "Name": "LowLive",
     "Enabled": true,
@@ -218,29 +194,8 @@
     }, {
         "Type": { "Id": "a60aa1b9ad84a83eefb0d5382a4d5967", "Name": "AudioSource" },
         "Properties": {
-            "clip": { "$TypeId": 10, "Guid": "220c39712ad6d47499fc0fc5ab1c0881", "FileId": 8300000, "Type": 3 },
-            "volume": 0.5
-        }
-    }]
-},
-{
-    "$TypeId": 5,
-    "Id": "64225779d47b4efbb754ed8dd45d31bc",
-    "Name": "WinLevel",
-    "Enabled": true,
-    "Static": false,
-    "Layer": 0,
-    "Components": [{
-        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
-        "Properties": {
-            "parent": { "$TypeId": 9, "Id": "e7d6b50f8f9946d9a33c10e6b4e7a74b", "Name": "Sounds" }
-        }
-    }, {
-        "Type": { "Id": "a60aa1b9ad84a83eefb0d5382a4d5967", "Name": "AudioSource" },
-        "Properties": {
             "clip": { "$TypeId": 10, "Guid": "b577340a62a40fd41920ec172e278374", "FileId": 8300000, "Type": 3 },
-            "volume": 0.75,
-            "loop": false
+            "volume": 0.5
         }
     }]
 },
@@ -309,7 +264,7 @@
                     "r": 1,
                     "g": 1,
                     "b": 1,
-                    "a": 0
+                    "a": 0.9372549
                 }
             }
         }
@@ -393,7 +348,7 @@
                     "r": 1,
                     "g": 1,
                     "b": 1,
-                    "a": 0
+                    "a": 0.9372549
                 }
             }
         }
@@ -488,7 +443,7 @@
                     "r": 1,
                     "g": 1,
                     "b": 1,
-                    "a": 0
+                    "a": 0.9372549
                 }
             }
         }
@@ -592,7 +547,7 @@
                     "r": 1,
                     "g": 1,
                     "b": 1,
-                    "a": 0
+                    "a": 0.9372549
                 }
             }
         }
@@ -670,8 +625,8 @@
             "scale": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
-                    "x": 75,
-                    "y": 100,
+                    "x": 1,
+                    "y": 1,
                     "z": 0.45
                 }
             }
@@ -679,13 +634,13 @@
     }, {
         "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
         "Properties": {
-            "sprite": { "$TypeId": 10, "Guid": "1b4986d4ce0628144aee5da6e8fcf1f3", "FileId": 21300000, "Type": 3 },
+            "sprite": { "$TypeId": 10 },
             "color": {
                 "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
                 "Properties": {
-                    "r": 1,
-                    "g": 1,
-                    "b": 1,
+                    "r": 0.4235294,
+                    "g": 0.8470589,
+                    "b": 0.5647059,
                     "a": 1
                 }
             }
@@ -696,8 +651,8 @@
             "size": {
                 "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
                 "Properties": {
-                    "x": 0.7599866,
-                    "y": 1.010678
+                    "x": 58.47,
+                    "y": 100
                 }
             }
         }
@@ -750,13 +705,13 @@
     }, {
         "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
         "Properties": {
-            "sprite": { "$TypeId": 10, "Guid": "1929cc4b09a767141846beedae22d54e", "FileId": 21300000, "Type": 3 },
+            "sprite": { "$TypeId": 10, "Guid": "1b4986d4ce0628144aee5da6e8fcf1f3", "FileId": 21300000, "Type": 3 },
             "color": {
                 "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
                 "Properties": {
-                    "r": 0.745283,
-                    "g": 0.7417675,
-                    "b": 0.7417675,
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
                     "a": 1
                 }
             }
@@ -823,13 +778,13 @@
     }, {
         "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
         "Properties": {
-            "sprite": { "$TypeId": 10, "Guid": "2295b9a8985eccb4681c7099814b3b8f", "FileId": 21300000, "Type": 3 },
+            "sprite": { "$TypeId": 10, "Guid": "1b4986d4ce0628144aee5da6e8fcf1f3", "FileId": 21300002, "Type": 3 },
             "color": {
                 "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
                 "Properties": {
-                    "r": 0.745283,
-                    "g": 0.7417675,
-                    "b": 0.7417675,
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
                     "a": 1
                 }
             }
@@ -853,183 +808,6 @@
         }
     }, {
         "Type": { "Id": "a66ab0b5a4114385a87bcdfd2a421bed", "Name": "SideSpritesUI" }
-    }]
-},
-{
-    "$TypeId": 5,
-    "Id": "5a033e5cfedb41b080545d960c0bddc2",
-    "Name": "Canvas",
-    "Enabled": true,
-    "Static": false,
-    "Layer": 0,
-    "Components": [{
-        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
-    }, {
-        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
-    }, {
-        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
-    }, {
-        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
-    }, {
-        "Type": { "Id": "5ddde0b906f5f2c3b13d17f455d6ef5e", "Name": "RectTransform" }
-    }, {
-        "Type": { "Id": "757a06c4ae1ec5fccccd28eb89a6dc54", "Name": "UICanvas" },
-        "Properties": {
-            "camera": { "$TypeId": 9, "Id": "338f776ea0e34be8b539b14d25fafa7e", "Name": "Camera" },
-            "uiScaleMode": {
-                "$TypeId": 8,
-                "Type": { "Id": "0accc10de1131b44701da611a92a0f65", "Name": "UIScaleMode" },
-                "Id": "9d7c7416dafcd189680613e618163ec5",
-                "Name": "ScaleWithScreenSize",
-                "Value": 1
-            },
-            "referenceResolution": {
-                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
-                "Properties": {
-                    "x": 1080,
-                    "y": 1920
-                }
-            },
-            "matchWidthOrHeight": 1
-        }
-    }]
-},
-{
-    "$TypeId": 5,
-    "Id": "3306d9b41e264a0e859266a018fbb7da",
-    "Name": "Panel",
-    "Enabled": true,
-    "Static": false,
-    "Layer": 0,
-    "Components": [{
-        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
-        "Properties": {
-            "parent": { "$TypeId": 9, "Id": "5a033e5cfedb41b080545d960c0bddc2", "Name": "Canvas" }
-        }
-    }, {
-        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
-    }, {
-        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
-    }, {
-        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
-    }, {
-        "Type": { "Id": "5ddde0b906f5f2c3b13d17f455d6ef5e", "Name": "RectTransform" }
-    }, {
-        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
-        "Properties": {
-            "color": {
-                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
-                "Properties": {
-                    "r": 1,
-                    "g": 1,
-                    "b": 1,
-                    "a": 0
-                }
-            }
-        }
-    }, {
-        "Type": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
-        "Properties": {
-            "size": {
-                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
-                "Properties": {
-                    "x": 575.9999,
-                    "y": 638
-                }
-            }
-        }
-    }]
-},
-{
-    "$TypeId": 5,
-    "Id": "33fb87c5b94f48ce85b76f7b5631536e",
-    "Name": "ScoreText",
-    "Enabled": true,
-    "Static": false,
-    "Layer": 0,
-    "Components": [{
-        "Type": { "Id": "5ddde0b906f5f2c3b13d17f455d6ef5e", "Name": "RectTransform" },
-        "Properties": {
-            "anchorMin": {
-                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
-                "Properties": {
-                    "x": 0.2864125,
-                    "y": 0.8974595
-                }
-            },
-            "anchorMax": {
-                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
-                "Properties": {
-                    "x": 0.6075606,
-                    "y": 1
-                }
-            },
-            "sizeDelta": {
-                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
-                "Properties": {
-                    "x": -336.5,
-                    "y": -1.600006
-                }
-            },
-            "anchoredPosition": {
-                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
-                "Properties": {
-                    "x": -34.99976,
-                    "y": 1.118042
-                }
-            }
-        }
-    }, {
-        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
-        "Properties": {
-            "parent": { "$TypeId": 9, "Id": "3306d9b41e264a0e859266a018fbb7da", "Name": "Panel" }
-        }
-    }, {
-        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
-        "Properties": {
-            "position": {
-                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
-                "Properties": {
-                    "x": -176.6702,
-                    "y": 1329.358
-                }
-            }
-        }
-    }, {
-        "Type": { "Id": "617fd26299c944d58b61164e0c9c9353", "Name": "Text2DRenderer" },
-        "Properties": {
-            "style": { "$TypeId": 9, "Id": "33fb87c5b94f48ce85b76f7b5631536e", "Name": "ScoreText" }
-        }
-    }, {
-        "Type": { "Id": "ced0260f12f72499bae7fea4e1df92b7", "Name": "Text2DStyle" },
-        "Properties": {
-            "color": {
-                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
-                "Properties": {
-                    "r": 1,
-                    "g": 1,
-                    "b": 1,
-                    "a": 1
-                }
-            },
-            "size": 25
-        }
-    }, {
-        "Type": { "Id": "00d6bc791188d69186aa19bf8f6652a8", "Name": "RectTransformFinalSize" }
-    }, {
-        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
-        "Properties": {
-            "layer": -1784358549
-        }
-    }, {
-        "Type": { "Id": "ebf6e4be1bc00e559ef91e165189cb3e", "Name": "Text2DStyleNativeFont" },
-        "Properties": {
-            "font": { "$TypeId": 9, "Id": "33fb87c5b94f48ce85b76f7b5631536e", "Name": "ScoreText" },
-            "italic": false,
-            "weight": 700
-        }
-    }, {
-        "Type": { "Id": "6f5ed9937f81d1780663edc21a6f0da2", "Name": "NativeFont" }
     }]
 },
 {
@@ -1065,8 +843,8 @@
                 "Name": "Pool",
                 "Value": 2
             },
-            "Pools": 3,
-            "LevelsPerPool": 100
+            "Pools": 4,
+            "LevelsPerPool": 15
         }
     }, {
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
@@ -1113,19 +891,32 @@
             "Digits": {
                 "Type": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
                 "Items": [
-                    { "$TypeId": 10, "Guid": "88e7894d5faa84342bd3d8e47c61b8c4", "FileId": 21300000, "Type": 3 },
-                    { "$TypeId": 10, "Guid": "841c9bf6b16db7a48bc451002e780b49", "FileId": 21300000, "Type": 3 },
-                    { "$TypeId": 10, "Guid": "09b85bd77f6fbe8468d8adef988af77c", "FileId": 21300000, "Type": 3 },
-                    { "$TypeId": 10, "Guid": "2053f53b8d249064fb27684385e586f3", "FileId": 21300000, "Type": 3 },
-                    { "$TypeId": 10, "Guid": "808eaed360d0e144db531e4eab743c84", "FileId": 21300000, "Type": 3 },
-                    { "$TypeId": 10, "Guid": "0ddae2429b403b0499f3536d54aa5123", "FileId": 21300000, "Type": 3 },
-                    { "$TypeId": 10, "Guid": "e76850c33b1359841828a62bbf48a277", "FileId": 21300000, "Type": 3 },
-                    { "$TypeId": 10, "Guid": "e9e0e36fef2733b418d2f71ce7b1b3ea", "FileId": 21300000, "Type": 3 },
-                    { "$TypeId": 10, "Guid": "136bcf6274ebd9c4d87bbc35a08afb6b", "FileId": 21300000, "Type": 3 },
-                    { "$TypeId": 10, "Guid": "db99f6c2ce5d4694993a3cdb626dc8df", "FileId": 21300000, "Type": 3 }
+                    { "$TypeId": 10, "Guid": "75d27ca4860d8084ca99f76e461d6eaf", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "75d27ca4860d8084ca99f76e461d6eaf", "FileId": 21300002, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "75d27ca4860d8084ca99f76e461d6eaf", "FileId": 21300004, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "75d27ca4860d8084ca99f76e461d6eaf", "FileId": 21300006, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "75d27ca4860d8084ca99f76e461d6eaf", "FileId": 21300008, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "75d27ca4860d8084ca99f76e461d6eaf", "FileId": 21300010, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "75d27ca4860d8084ca99f76e461d6eaf", "FileId": 21300012, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "75d27ca4860d8084ca99f76e461d6eaf", "FileId": 21300014, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "75d27ca4860d8084ca99f76e461d6eaf", "FileId": 21300016, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "75d27ca4860d8084ca99f76e461d6eaf", "FileId": 21300018, "Type": 3 }
                 ]
             },
             "Spacing": 3
         }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "8eedb7445d0940cfa700a5eb75bbc790",
+    "Name": "FBItem",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "b2c7c927e8094fc7881438ef366a6d00", "Name": "InitializeFBInstantComponent" }
     }]
 }]

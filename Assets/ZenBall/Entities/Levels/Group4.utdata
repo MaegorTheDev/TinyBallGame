@@ -1,0 +1,378 @@
+﻿[{
+    "$TypeId": 4,
+    "Id": "83094aaa642d49cf8cffc3d3c735982f",
+    "Name": "Group4",
+    "ExportFlags": 0,
+    "SerializedVersion": 0,
+    "Entities": [
+        { "$TypeId": 9, "Id": "aeb31877e8da44fda1c8458fbff19ffb", "Name": "Group1" },
+        { "$TypeId": 9, "Id": "e5a342d27ffd41edb0dd76b008df5193", "Name": "level6" },
+        { "$TypeId": 9, "Id": "832fd198fb0c40e6ad3ef7a6263ee19b", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "e924765b6b9148e5b6aae8383dfec7a8", "Name": "level7" },
+        { "$TypeId": 9, "Id": "687d07536c35424090bb75a9987827d7", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "257cbcdd638c4e05ab7759a36955d7dc", "Name": "level8" },
+        { "$TypeId": 9, "Id": "e1aeec4d0b90485ba5bbc973de1eedb6", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "6077aa69dcaa4c25a9419638db9b2b99", "Name": "level9" },
+        { "$TypeId": 9, "Id": "80242af8fd5145c39214041c8262fb01", "Name": "Hole" }
+    ],
+    "PrefabInstances": [
+        { "$TypeId": 13, "Id": "63f002335261472486c0aa7944cdd669", "Name": "Hole" },
+        { "$TypeId": 13, "Id": "80ac040846f44b3895812139a861871f", "Name": "Hole" },
+        { "$TypeId": 13, "Id": "6616a40d03b74b35a676855ca854c419", "Name": "Hole" },
+        { "$TypeId": 13, "Id": "605b3fe764364c08ab9121e91fd29f7d", "Name": "Hole" }
+    ]
+},
+{
+    "$TypeId": 12,
+    "Id": "63f002335261472486c0aa7944cdd669",
+    "Name": "Hole",
+    "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
+    "Entities": [
+        { "$TypeId": 9, "Id": "832fd198fb0c40e6ad3ef7a6263ee19b", "Name": "Hole" }
+    ]
+},
+{
+    "$TypeId": 12,
+    "Id": "80ac040846f44b3895812139a861871f",
+    "Name": "Hole",
+    "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
+    "Entities": [
+        { "$TypeId": 9, "Id": "687d07536c35424090bb75a9987827d7", "Name": "Hole" }
+    ]
+},
+{
+    "$TypeId": 12,
+    "Id": "6616a40d03b74b35a676855ca854c419",
+    "Name": "Hole",
+    "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
+    "Entities": [
+        { "$TypeId": 9, "Id": "e1aeec4d0b90485ba5bbc973de1eedb6", "Name": "Hole" }
+    ]
+},
+{
+    "$TypeId": 12,
+    "Id": "605b3fe764364c08ab9121e91fd29f7d",
+    "Name": "Hole",
+    "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
+    "Entities": [
+        { "$TypeId": 9, "Id": "80242af8fd5145c39214041c8262fb01", "Name": "Hole" }
+    ]
+},
+{
+    "$TypeId": 5,
+    "Id": "aeb31877e8da44fda1c8458fbff19ffb",
+    "Name": "Group1",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "a726552055af4241a212048ea1eac898", "Name": "LevelGroup" },
+        "Properties": {
+            "Levels": {
+                "Type": { "Id": "5a182d9d039d4dfd8fa96132d05f9ee7", "Name": "EntityReference" },
+                "Items": [
+                    { "$TypeId": 9, "Id": "2b77aa4a8bf647fcbf5cbd1103f01c34", "Name": "level1" },
+                    { "$TypeId": 9, "Id": "441db32326d740b7ba0d70b6d810b7ff", "Name": "level2" },
+                    { "$TypeId": 9, "Id": "242db1e010004b6e9c8eb891545861dd", "Name": "level3" }
+                ]
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "e5a342d27ffd41edb0dd76b008df5193",
+    "Name": "level6",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "aeb31877e8da44fda1c8458fbff19ffb", "Name": "Group1" }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
+    }, {
+        "Type": { "Id": "06dd4e24da1d4f809e519f9e4dcaacf8", "Name": "Level" },
+        "Properties": {
+            "StartingPosition": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0,
+                    "y": 40
+                }
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "832fd198fb0c40e6ad3ef7a6263ee19b",
+    "Name": "Hole",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "321296760a9346d195f38a1d0d9bf0ec", "Name": "Hole" },
+        "EntityModificationFlags": 0,
+        "Modifications": [{
+            "Target": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+            "Path": "parent",
+            "TypeCode": -2,
+            "Value": {
+                "Id": "e5a342d27ffd41edb0dd76b008df5193",
+                "Name": "Entity"
+            }
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.x",
+            "TypeCode": 13,
+            "Value": 5
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.y",
+            "TypeCode": 13,
+            "Value": 5
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.x",
+            "TypeCode": 13,
+            "Value": 0.2
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.y",
+            "TypeCode": 13,
+            "Value": -0.3
+        }, {
+            "Target": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+            "Path": "order",
+            "TypeCode": 9,
+            "Value": 1
+        }]
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "e924765b6b9148e5b6aae8383dfec7a8",
+    "Name": "level7",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "aeb31877e8da44fda1c8458fbff19ffb", "Name": "Group1" }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
+    }, {
+        "Type": { "Id": "06dd4e24da1d4f809e519f9e4dcaacf8", "Name": "Level" },
+        "Properties": {
+            "StartingPosition": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "y": 0
+                }
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "687d07536c35424090bb75a9987827d7",
+    "Name": "Hole",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "321296760a9346d195f38a1d0d9bf0ec", "Name": "Hole" },
+        "EntityModificationFlags": 0,
+        "Modifications": [{
+            "Target": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+            "Path": "parent",
+            "TypeCode": -2,
+            "Value": {
+                "Id": "e924765b6b9148e5b6aae8383dfec7a8",
+                "Name": "Entity"
+            }
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.x",
+            "TypeCode": 13,
+            "Value": 5
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.y",
+            "TypeCode": 13,
+            "Value": 5
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.x",
+            "TypeCode": 13,
+            "Value": 0
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.y",
+            "TypeCode": 13,
+            "Value": 35.4
+        }, {
+            "Target": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+            "Path": "order",
+            "TypeCode": 9,
+            "Value": 1
+        }]
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "257cbcdd638c4e05ab7759a36955d7dc",
+    "Name": "level8",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "aeb31877e8da44fda1c8458fbff19ffb", "Name": "Group1" }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
+    }, {
+        "Type": { "Id": "06dd4e24da1d4f809e519f9e4dcaacf8", "Name": "Level" },
+        "Properties": {
+            "StartingPosition": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0,
+                    "y": 20
+                }
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "e1aeec4d0b90485ba5bbc973de1eedb6",
+    "Name": "Hole",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "321296760a9346d195f38a1d0d9bf0ec", "Name": "Hole" },
+        "EntityModificationFlags": 0,
+        "Modifications": [{
+            "Target": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+            "Path": "parent",
+            "TypeCode": -2,
+            "Value": {
+                "Id": "257cbcdd638c4e05ab7759a36955d7dc",
+                "Name": "Entity"
+            }
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.x",
+            "TypeCode": 13,
+            "Value": 5
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.y",
+            "TypeCode": 13,
+            "Value": 5
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.x",
+            "TypeCode": 13,
+            "Value": 0.8
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.y",
+            "TypeCode": 13,
+            "Value": -33.3
+        }, {
+            "Target": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+            "Path": "order",
+            "TypeCode": 9,
+            "Value": 1
+        }]
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "6077aa69dcaa4c25a9419638db9b2b99",
+    "Name": "level9",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "aeb31877e8da44fda1c8458fbff19ffb", "Name": "Group1" }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
+    }, {
+        "Type": { "Id": "06dd4e24da1d4f809e519f9e4dcaacf8", "Name": "Level" },
+        "Properties": {
+            "StartingPosition": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0,
+                    "y": 40
+                }
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "80242af8fd5145c39214041c8262fb01",
+    "Name": "Hole",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "321296760a9346d195f38a1d0d9bf0ec", "Name": "Hole" },
+        "EntityModificationFlags": 0,
+        "Modifications": [{
+            "Target": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+            "Path": "parent",
+            "TypeCode": -2,
+            "Value": {
+                "Id": "6077aa69dcaa4c25a9419638db9b2b99",
+                "Name": "Entity"
+            }
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.x",
+            "TypeCode": 13,
+            "Value": 5
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.y",
+            "TypeCode": 13,
+            "Value": 5
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.x",
+            "TypeCode": 13,
+            "Value": 0.2
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.y",
+            "TypeCode": 13,
+            "Value": -0.3
+        }, {
+            "Target": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+            "Path": "order",
+            "TypeCode": 9,
+            "Value": 1
+        }]
+    }
+}]

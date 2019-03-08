@@ -32,7 +32,7 @@ namespace game {
                         
                         let touch: ut.Core2D.Touch = ut.Core2D.Input.getTouch(0);
                         
-						if (touch.phase == ut.Core2D.TouchState.Moved) {
+						if (touch.phase == ut.Core2D.TouchState.Moved || touch.phase == ut.Core2D.TouchState.Stationary) {
                             this.ProcessOnPressed(line, new Vector2(touch.x, touch.y));
                             //console.log("moved: " + ut.Core2D.Input.touchCount());
                         }

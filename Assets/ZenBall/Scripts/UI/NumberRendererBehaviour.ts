@@ -23,6 +23,10 @@ namespace game {
             let numberToRender = this.data.numberObject.Number.toString();
             let lastSpriteObjets = this.data.numberObject.CurrentNumbers;
 
+            
+            //console.log("EntityUpdate number to render:" + numberToRender);
+            //console.log("Entity name: " + this.world.getEntityName(this.entity));
+
             if(numberToRender.length < lastSpriteObjets.length){
                 for(let i = lastSpriteObjets.length-1; i>=numberToRender.length;i--){
                     ut.Core2D.TransformService.destroyTree(this.world,lastSpriteObjets[i]);
@@ -38,9 +42,11 @@ namespace game {
                 let digit;
                 if(lastSpriteObjets.length > i){
                     digit = lastSpriteObjets[i];
+                    //console.log("Replace digit");
                 }
                 else {
-                    digit = ut.EntityGroup.instantiate(this.world, "game.DigitSprite")[0];        
+                    digit = ut.EntityGroup.instantiate(this.world, "game.DigitSprite")[0];    
+                    //console.log("Instantiate digit ");    
                     this.data.numberObject.CurrentNumbers[i] = digit;
                 }               
                 
@@ -54,7 +60,6 @@ namespace game {
                 });
                 currentX += this.data.numberObject.Spacing * this.data.scale.scale.x;
             }
-
 
         }
 

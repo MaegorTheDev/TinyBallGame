@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "allowJs": true
+    }
+    "files": [	
+        "External/dst/fbinstant.d.ts"
+    ]
+ 
+}
