@@ -40,6 +40,8 @@ namespace game {
             BoxingSystem.currentRenderingAspect = diference;
             this.world.setComponentData(camera, cameraData);
 
+            
+            BoxingSystem.Boxing = false;
              
             
             //console.log(limitPosition);

@@ -1,7 +1,7 @@
 ﻿[{
     "$TypeId": 1,
     "Id": "bd3bec50aeda4f09995b49d83094aed8",
-    "Name": "ZenBall",
+    "Name": "Casual Golf",
     "ExportFlags": 0,
     "SerializedVersion": 7,
     "Settings": {
@@ -31,7 +31,7 @@
         "MemorySize": 16,
         "IncludeWebPDecompressor": false,
         "RunBabel": false,
-        "MinifyJavaScript": false,
+        "MinifyJavaScript": true,
         "LinkToSource": true,
         "SymbolsInReleaseBuild": false
     },

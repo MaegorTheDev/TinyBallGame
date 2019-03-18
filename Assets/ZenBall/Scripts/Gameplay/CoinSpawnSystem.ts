@@ -3,15 +3,29 @@ namespace game {
     
     /** New System */
     export class CoinSpawnSystem extends ut.ComponentSystem {
-        static maxCoins;
+        static maxCoins = 3;
         static spawnedCoins = 0;
 
-        static randomInterval = new Vector2(1,3);
+        static randomInterval = new Vector2(1, CoinSpawnSystem.maxCoins);
         static objectSpawner:ut.Entity;
         OnUpdate():void {     
 
             //Spawning Coins
             CoinSpawnSystem.objectSpawner = this.world.getEntityByName("Spawners");
+
+            let CoinSpawner = this.world.getComponentData(CoinSpawnSystem.objectSpawner, game.CoinSpawnerHelper);
+            if(CoinSpawner.CoinsSpawned.length == 0 ){
+                for(let i =0; i<CoinSpawnSystem.maxCoins; i++){
+                    let coin = ut.EntityGroup.instantiate(this.world, "game.Coin")[0];  
+                    console.log("Spawned coin" + coin.index);   
+                    this.world.usingComponentData(coin, [ut.Core2D.TransformLocalPosition], (transformLocalPosition)=>{
+                        transformLocalPosition.position = new Vector3(-100,0);
+                    });                                                
+                    CoinSpawner.CoinsSpawned[CoinSpawner.CoinsSpawned.length] = coin;
+                }
+
+                this.world.setComponentData(CoinSpawnSystem.objectSpawner, CoinSpawner);
+            }
         }
 
         static SpawnCoins(world: ut.World){                 
@@ -28,11 +42,11 @@ namespace game {
             CoinSpawnSystem.maxCoins = GameSystem.randomIntFromInterval(CoinSpawnSystem.randomInterval.x, CoinSpawnSystem.randomInterval.y);  
             CoinSpawnSystem.spawnedCoins = 0;
             for(let i = 0; i<CoinSpawnSystem.maxCoins; i++){     
-                CoinSpawnSystem.spawnCoin(world, "game.Coin", -width/2 + 10, width/2 - 10, -height/2 + 10, height/2 - 10);    
+                CoinSpawnSystem.spawnCoin(world, -width/2 + 10, width/2 - 10, -height/2 + 10, height/2 - 10);    
             }           
         }
 
-        static spawnCoin(world: ut.World, entityGroup: string, minX, maxX, minY, maxY):ut.Entity{  
+        static spawnCoin(world: ut.World, minX, maxX, minY, maxY):ut.Entity{  
             let findLocation = false;
             let index = 0;
             let randomPos:Vector3;
@@ -100,16 +114,13 @@ namespace game {
             
             let coin:ut.Entity;
             if(findLocation){  
-                coin = ut.EntityGroup.instantiate(world, entityGroup)[0];                    
-                world.usingComponentData(coin, [ut.Core2D.TransformLocalPosition], (transformLocalPosition)=>{
-                    transformLocalPosition.position = randomPos;
-                });                              
                 world.usingComponentData(CoinSpawnSystem.objectSpawner, [game.CoinSpawnerHelper], 
-                        (helper)=>{ 
-                        helper.CoinsSpawned[helper.CoinsSpawned.length] = coin;
+                    ( helper)=>{ 
+                    let entityCoin = helper.CoinsSpawned[CoinSpawnSystem.spawnedCoins];
+                    world.usingComponentData(entityCoin, [ut.Core2D.TransformLocalPosition], (transform) =>{
+                        transform.position = randomPos;
+                    });
                 });
-                                          
-                
                 CoinSpawnSystem.spawnedCoins++;
             }          
          
@@ -117,9 +128,9 @@ namespace game {
         }
 
         static DestroyCoin(world:ut.World, entity:ut.Entity){
-            if(world.exists(entity)){
-                ut.Core2D.TransformService.destroyTree(world, entity);    
-            }
+            world.usingComponentData(entity, [ut.Core2D.TransformLocalPosition], (transformLocalPosition)=>{
+                transformLocalPosition.position = new Vector3(-100,0);
+            });  
         }
 
         static increaseRandomInterval(){
@@ -237,7 +248,10 @@ namespace game {
                 for(let i=0; i<helper.CoinsSpawned.length; i++){
                     if(world.exists(helper.CoinsSpawned[i])&& !helper.CoinsSpawned[i].isNone()){                      
                         //ut.Core2D.TransformService.destroyTree(world, helper.CoinsSpawned[i]);                    
-                        world.destroyEntity(helper.CoinsSpawned[i]);
+                        //world.destroyEntity(helper.CoinsSpawned[i]);
+                        world.usingComponentData(helper.CoinsSpawned[i], [ut.Core2D.TransformLocalPosition], (transformLocalPosition)=>{
+                            transformLocalPosition.position = new Vector3(-100,0);
+                        });      
                     }
                 }
             });

@@ -26,8 +26,8 @@
             "position": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
-                    "x": -20,
-                    "y": -34.7
+                    "x": 0,
+                    "y": -35
                 }
             }
         }
@@ -98,10 +98,7 @@
     }, {
         "Type": { "Id": "4ca2ce637ae940118b5952682078805e", "Name": "Ball" },
         "Properties": {
-            "MaxPower": 200,
-            "MoveDirection": {
-                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" }
-            }
+            "MaxPower": 200
         }
     }, {
         "Type": { "Id": "4877aebd4079748a17f940cbbee5d2e6", "Name": "Velocity2D" }
@@ -131,8 +128,8 @@
     }, {
         "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
         "Properties": {
-            "layer": 1587474927,
-            "order": 3
+            "layer": 1074977805,
+            "order": 5
         }
     }]
 },
@@ -177,8 +174,8 @@
     }, {
         "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
         "Properties": {
-            "layer": 1587474927,
-            "order": 2
+            "layer": 1074977805,
+            "order": 4
         }
     }, {
         "Type": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
@@ -186,7 +183,7 @@
             "size": {
                 "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
                 "Properties": {
-                    "x": 50,
+                    "x": 15,
                     "y": 3.5
                 }
             }
@@ -244,7 +241,7 @@
     }, {
         "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
         "Properties": {
-            "layer": -1784358549,
+            "layer": 1074977805,
             "order": 1
         }
     }]
@@ -264,8 +261,8 @@
             "position": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
-                    "x": 42.3,
-                    "y": -15.6
+                    "x": 17,
+                    "y": -33
                 }
             }
         }
@@ -279,7 +276,7 @@
     }, {
         "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
         "Properties": {
-            "layer": 1587474927,
+            "layer": 1074977805,
             "order": 1
         }
     }, {

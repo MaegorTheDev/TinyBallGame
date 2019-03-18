@@ -20,6 +20,10 @@ namespace game {
         
         // this method is called for each entity matching the NumberRendererBehaviourFilter signature, every frame it's enabled
         OnEntityUpdate():void { 
+            if(!this.data.numberObject.Render){
+                return;
+            }
+
             let numberToRender = this.data.numberObject.Number.toString();
             let lastSpriteObjets = this.data.numberObject.CurrentNumbers;
 

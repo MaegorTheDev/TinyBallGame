@@ -36,8 +36,7 @@ namespace game {
                     BallSystem.lastVelocity = new Vector2(0,0);
 
                     SpeedLethalitySystem.SetStartingVelocity(velocity);
-
-                    GameSystem.Play(this.world);                    
+             
                     GameSystem.CurrentGameMode = game.GameState.Playing;
                 }
                 
@@ -101,6 +100,16 @@ namespace game {
             ball.Power = 0;
             ball.MoveDirection = new Vector2(0,0);
             ball.Shoot = false;
+        }
+
+        static SetPuttPosition(world:ut.World, pos:Vector3){
+            let putt = world.getEntityByName("Putt");
+            if(!putt.isNone()){
+                world.usingComponentData(putt,  [ut.Core2D.TransformLocalPosition], 
+                    (position,)=>{   
+                        position.position = pos;
+                    });
+            }
         }
         
     }

@@ -12,7 +12,10 @@ namespace game {
             const HoleAudioSource = this.world.getEntityByName("HoleAudioSource");
             
             this.world.forEach([ut.Entity, ut.HitBox2D.HitBoxOverlapResults, game.Hole],
-                (entity, hitboxoverlapresults, coin) => {
+                (entity, hitboxoverlapresults, hole) => {
+                    if(!hole.Active){
+                        return;
+                    }                    
                     for (let i = 0; i < hitboxoverlapresults.overlaps.length; i++) {
                         let otherEntity = hitboxoverlapresults.overlaps[i].otherEntity;
                         if(!this.world.exists(otherEntity) || this.world.hasComponent(otherEntity, game.Ball)){        

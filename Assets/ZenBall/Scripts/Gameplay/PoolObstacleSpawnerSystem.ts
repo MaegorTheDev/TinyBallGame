@@ -23,10 +23,9 @@ namespace game {
             PoolObstacleSpawnerSystem.SpawnLevel(world);            
         }
 
-        static CheckGroupStatus(world:ut.World): boolean{                 
-           let entity = world.getEntityByName("Spawners");
+        static CheckGroupStatus(world:ut.World): boolean{         
            let result = false;
-           world.usingComponentData(entity, [game.ObstacleSpawnerHelper],
+           world.usingComponentData(PoolObstacleSpawnerSystem.HelperEntity, [game.ObstacleSpawnerHelper],
                (helper)=>{  
                 if(PoolObstacleSpawnerSystem.CurrentGroup == 0 || 
                     PoolObstacleSpawnerSystem.CurrentLevel == helper.LevelsPerPool){
@@ -41,19 +40,16 @@ namespace game {
         }
 
         static ChangeCurrentLevelGroup(world: ut.World){
-            //Destroy last group   
-            
+            //Destroy last group               
             if(PoolObstacleSpawnerSystem.CurrentGroup > 0){  
                 ut.EntityGroup.destroyAll(world,  "game.Group" + PoolObstacleSpawnerSystem.CurrentGroup);
             }           
-
             //Instantiate next Group
             PoolObstacleSpawnerSystem.CurrentGroup++;
-
             let group = ut.EntityGroup.instantiate(world, "game.Group" + PoolObstacleSpawnerSystem.CurrentGroup); 
-
             PoolObstacleSpawnerSystem.CurrentLevel = 0;
             let currentGroup = group[0];
+            
             world.usingComponentData(PoolObstacleSpawnerSystem.HelperEntity, [game.ObstacleSpawnerHelper], 
                 (helper)=>{                     
                 helper.CurrentGroup = group[0];
@@ -74,9 +70,7 @@ namespace game {
                         level.Index = currentIndexLevel; 
                         currentIndexLevel++;
                     });
-                } else if(!world.hasComponent(group[i], game.LevelGroup)){
-
-                  
+                } else if(!world.hasComponent(group[i], game.LevelGroup)){                 
                   
                     world.usingComponentData(group[i], [ut.Core2D.TransformNode, ut.Core2D.TransformLocalPosition],(node, position) => {
                         //level.EntityChildren[level.EntityChildren.length] = group[i];
@@ -125,13 +119,7 @@ namespace game {
                 world.usingComponentData(randomLevel, [game.Level, ut.Core2D.TransformLocalPosition], 
                     (level, position) =>{                   
                     BallSystem.SetBallPosition(level.StartingPosition, world);
-                    let putt = world.getEntityByName("Putt");
-                    if(!putt.isNone()){
-                        world.usingComponentData(putt,  [ut.Core2D.TransformLocalPosition], 
-                            (puttPosition,)=>{   
-                                puttPosition.position = level.StartingPosition;                                
-                            });
-                    }
+                    BallSystem.SetPuttPosition(world, level.StartingPosition);                   
                     position.position = new Vector3(0,0);           
                     PoolObstacleSpawnerSystem.CurrenLevelIndex = level.Index;         
                 });
@@ -146,17 +134,15 @@ namespace game {
         }
 
         static ResetGroups(world){
-            let currentGroup = world.getEntityByName("game.Group"+PoolObstacleSpawnerSystem.CurrentGroup);   
-            if(!currentGroup.isNone())
-                ut.Core2D.TransformService.destroyTree(world, currentGroup);  
-
-                
+            if(PoolObstacleSpawnerSystem.CurrentGroup > 0 ){
+                ut.EntityGroup.destroyAll(world,  "game.Group" + PoolObstacleSpawnerSystem.CurrentGroup); 
+            }               
             PoolObstacleSpawnerSystem.CurrentGroup = 0;            
             PoolObstacleSpawnerSystem.CurrentLevel = 0;
         }       
 
         static GetCurrentLevelHolePosition(world:ut.World):Vector3{
-            let result;
+            let result;  
             world.usingComponentData(PoolObstacleSpawnerSystem.HelperEntity, [game.ObstacleSpawnerHelper], 
                 (helper)=>{ 
                 let positionObject = world.getComponentData(helper.CurrentLevel, game.Level);    
@@ -172,6 +158,7 @@ namespace game {
                 if(world.exists(level.EntityChildren[i])){
                     let rotating:boolean = world.hasComponent(level.EntityChildren[i], game.RotatingObject);
                     let moving:boolean = world.hasComponent(level.EntityChildren[i], game.MovingObject);
+                    let hole:boolean =  world.hasComponent(level.EntityChildren[i], game.Hole);
  
                     if(moving){
                         world.usingComponentData(level.EntityChildren[i], [game.MovingObject], 
@@ -185,6 +172,14 @@ namespace game {
                              rotatingObject.Active = true;
                          });
                     }
+
+                    if(hole){
+                        world.usingComponentData(level.EntityChildren[i], [game.Hole], 
+                        (holeComponent) => { 
+                            holeComponent.Active = true;
+                        });
+                   }
+
                 }                   
                }
            });            
@@ -192,24 +187,33 @@ namespace game {
         static DeactivateLevel(world:ut.World, level:ut.Entity){
             world.usingComponentData(level, [game.Level], (level)=>{
                 for(let i=0; i<level.EntityChildren.length; i++){
-                    if(world.hasComponent(level.EntityChildren[i], game.MovingObject)){
-                        world.usingComponentData(level.EntityChildren[i], [game.MovingObject, ut.Core2D.TransformLocalPosition], 
-                         (movingObject, position) => {
-                             movingObject.Active = false;
-                             position.position = movingObject.StartingPosition;     
-                        });              
+                    if(world.exists(level.EntityChildren[i])){
+                        if(world.hasComponent(level.EntityChildren[i], game.MovingObject)){
+                            world.usingComponentData(level.EntityChildren[i], [game.MovingObject, ut.Core2D.TransformLocalPosition], 
+                             (movingObject, position) => {
+                                 movingObject.Active = false;
+                                 position.position = movingObject.StartingPosition;     
+                            });              
+                        }
+                        if(world.hasComponent(level.EntityChildren[i], game.RotatingObject)){
+                            world.usingComponentData(level.EntityChildren[i], [game.RotatingObject], 
+                             (rotatingObject) => {
+                                rotatingObject.Active = false;
+                            });              
+                        }
+                        if(world.hasComponent(level.EntityChildren[i], game.Hole)){
+                            world.usingComponentData(level.EntityChildren[i], [game.Hole], 
+                            (holeComponent) => { 
+                                holeComponent.Active = false;
+                            });
+                       }
                     }
-                    if(world.hasComponent(level.EntityChildren[i], game.RotatingObject)){
-                        world.usingComponentData(level.EntityChildren[i], [game.RotatingObject], 
-                         (rotatingObject) => {
-                            rotatingObject.Active = false;
-                        });              
-                    }
+                   
                 }
             });            
         }
 
-        static EndGame(world:ut.World){             
+        static EndGame(world:ut.World){        
             world.usingComponentData(PoolObstacleSpawnerSystem.HelperEntity, 
                 [game.ObstacleSpawnerHelper], (helper) =>{
                  PoolObstacleSpawnerSystem.DeactivateLevel(world, helper.CurrentLevel);              

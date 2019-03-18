@@ -118,10 +118,43 @@ namespace game {
             }
         }
 
+        public ShowProfilePic(world:ut.World){
+            let profilePhoto = world.getEntityByName("GameStartPhoto");
+                let fbItem = world.getEntityByName("FBItem");
+                let playerData = world.getComponentData(fbItem, game.InitializeFBInstantComponent);
+                let imageBase64 =  localStorage.getItem(playerData.PlayerID);
+    
+                 // Image2D
+                let imgEntity = world.createEntity();
+                world.addComponent(imgEntity, ut.Core2D.Image2D);
+                let image = new ut.Core2D.Image2D();
+                image.pixelsToWorldUnits = 1;
+                world.setComponentData(imgEntity, image);
+            
+                // Image2DLoadFromFile
+                let loader = new ut.Core2D.Image2DLoadFromFile();
+                loader.imageFile = imageBase64;
+                world.addComponentData(imgEntity, loader);
+            
+                // Sprite2D
+                let sprite2DEntity = world.createEntity();
+                let sprite2D = new ut.Core2D.Sprite2D();
+                sprite2D.image = imgEntity;
+                sprite2D.imageRegion = new ut.Math.Rect(0, 0, 1, 1);            
+                sprite2D.pivot = new ut.Math.Vector2(0.5,0.5);
+                world.addComponentData(sprite2DEntity, sprite2D);
+            
+               //Sprite2DRenderer
+                var sprite2DRenderer = world.getComponentData(profilePhoto, ut.Core2D.Sprite2DRenderer);
+                sprite2DRenderer.sprite = sprite2DEntity;
+                world.setComponentData(profilePhoto, sprite2DRenderer);                
+        }
+
  
         public get isAvailable(): boolean {
             return this.hasInstant;
         }
+        
     }
  
  

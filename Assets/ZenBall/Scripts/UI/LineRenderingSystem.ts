@@ -59,7 +59,7 @@ namespace game {
                     let diference = new Vector2(coordinates.x - position.position.x, coordinates.y -  position.position.y);   
                     lineMagnitude= Math.sqrt(diference.x*diference.x + diference.y * diference.y);
                    
-                    let normalized = diference.normalize();
+                    let normalized = diference.normalize().multiplyScalar(-1);
                     lineRotation = Math.atan2(normalized.y, normalized.x);                    
                     linePosition = new Vector3 (position.position.x, position.position.y);
                    
@@ -75,15 +75,8 @@ namespace game {
             
                     position.position = linePosition;   
                     rotation.rotation.setFromAxisAngle(new Vector3(0,0,1), lineRotation);
-                    options.size = new Vector2(lineMagnitude, 3.3);
-                });               
-                /**
-                let dotedBall = this.world.getEntityByName("DottedGuide");  
-                this.world.usingComponentData(dotedBall, [ut.Core2D.TransformLocalPosition, ut.Core2D.Sprite2DRenderer], 
-                    (position,  renderer) => {   
-                        renderer.color = new ut.Core2D.Color(1, 1, 1, 1);                             
-                        position.position = new Vector3(coordinates.x, coordinates.y);   
-                    });      */         
+                   //options.size = new Vector2(lineMagnitude, 3.3);
+                });                                     
         }
 
 		ProcessFinishInput(entity: ut.Entity):void{		              
@@ -91,14 +84,7 @@ namespace game {
             this.world.usingComponentData(entity, [ut.Core2D.Sprite2DRenderer], 
                 (renderer) => {
                     renderer.color = new ut.Core2D.Color(1, 1, 1, 0);   
-                });
-            /**
-            let dotedBall = this.world.getEntityByName("DottedGuide");  
-            this.world.usingComponentData(dotedBall, [ut.Core2D.Sprite2DRenderer], 
-                (renderer) => {   
-                    renderer.color = new ut.Core2D.Color(1, 1, 1, 0);  
-                });          */
-				
+                });				
         }
         
         ScreenToWorldCoordenates(screenPos: Vector2):Vector3{

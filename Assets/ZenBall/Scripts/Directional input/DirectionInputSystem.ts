@@ -80,7 +80,7 @@ namespace game {
 
 			inputHelper.IsClickDown = false;
 
-			ball.MoveDirection = normalized;
+			ball.MoveDirection = normalized.multiplyScalar(-1);
 			ball.Shoot = true;			
 			
 		}
