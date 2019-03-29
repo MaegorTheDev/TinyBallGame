@@ -1,4 +1,4 @@
-namespace game {
+namespace casualgf {
  
     export class FBInstantService {
  
@@ -19,8 +19,11 @@ namespace game {
                 // let's do our async and goto main menu.
                 await FBInstant.initializeAsync();
                     FBInstant.setLoadingProgress(50);
-                    console.log("Starting game async...");   
-                     
+                    //console.log("Starting casualgf async...");   
+                FBInstant.onPause(()=>{
+                    //console.log("Paused");
+                }) ;   
+                
                 return await FBInstant.startGameAsync().then(()=>{
                     let imageURL = FBInstant.player.getPhoto();
                     let downloadedImg = new Image;
@@ -38,7 +41,7 @@ namespace game {
                                 FBInstant.setLoadingProgress(100);    
                                 let entity = world.getEntityByName("FBItem");   
 
-                                let playerData = new game.InitializeFBInstantComponent;
+                                let playerData = new casualgf.InitializeFBInstantComponent;
                                 playerData.PlayerID =  FBInstant.player.getID();
                                 playerData.PlayerName = FBInstant.player.getName();               
                                 playerData.Image = FBInstant.player.getPhoto(); 
@@ -47,7 +50,7 @@ namespace game {
                                 FBInstantService.getInstance().SetCoins();  
                             }
                             catch (err) {
-                                console.log("Error: " + err);
+                                //console.log("Error: " + err);
                             }
                     };
                     downloadedImg.src = imageURL;                
@@ -68,7 +71,7 @@ namespace game {
                     currentCoins: coins,
                 })
                 .then(function() {
-                    console.log('data updated');
+                    //console.log('data updated');
                 });
             }
         }
@@ -79,7 +82,7 @@ namespace game {
                 FBInstant.player
                 .getDataAsync(['currentCoins'])
                 .then(function(data) {
-                    //console.log('data is loaded');
+                    ////console.log('data is loaded');
                     if(data['currentCoins'] == undefined){
                         GameSystem.SetCoin(0);
                     }
@@ -121,7 +124,7 @@ namespace game {
         public ShowProfilePic(world:ut.World){
             let profilePhoto = world.getEntityByName("GameStartPhoto");
                 let fbItem = world.getEntityByName("FBItem");
-                let playerData = world.getComponentData(fbItem, game.InitializeFBInstantComponent);
+                let playerData = world.getComponentData(fbItem, casualgf.InitializeFBInstantComponent);
                 let imageBase64 =  localStorage.getItem(playerData.PlayerID);
     
                  // Image2D
@@ -154,6 +157,7 @@ namespace game {
         public get isAvailable(): boolean {
             return this.hasInstant;
         }
+
         
     }
  

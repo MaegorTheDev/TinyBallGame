@@ -1,7 +1,7 @@
-namespace game {
+namespace casualgf {
  
     export class ProcessFBLoadBehaviourFilter extends ut.EntityFilter {
-        fbload: game.InitializeFBInstantComponent;
+        fbload: casualgf.InitializeFBInstantComponent;
     }
  
     export class ProcessFBLoadBehaviour extends ut.ComponentBehaviour {
@@ -17,8 +17,8 @@ namespace game {
             FBInstantService.getInstance().initialize(this.world);
             
             /** .then(()=>{    
-                console.log("FB INSTANTESERVICE");
-                let playerData = new game.InitializeFBInstantComponent;
+                //console.log("FB INSTANTESERVICE");
+                let playerData = new casualgf.InitializeFBInstantComponent;
                 playerData.PlayerID =  FBInstant.player.getID();
                 playerData.PlayerName = FBInstant.player.getName();               
                 playerData.Image = FBInstant.player.getPhoto(); 

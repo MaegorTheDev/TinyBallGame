@@ -1,7 +1,7 @@
 
-namespace game {
+namespace casualgf {
 
-    @ut.executeBefore(game.GameSystem)
+    @ut.executeBefore(casualgf.GameSystem)
     /** New System */
     export class TutorialSystem extends ut.ComponentSystem {
         static index = -1; 
@@ -18,14 +18,14 @@ namespace game {
         
         OnUpdate():void {       
             let playTutorial = false               
-            this.world.forEach([game.TutorialHelper], (tutorial ) => {        
+            this.world.forEach([casualgf.TutorialHelper], (tutorial ) => {        
                 playTutorial = tutorial.PlayTutorial;  
             });           
 
             if(playTutorial){
                 GameSystem.isInTutorial = true;
                 if(!TutorialSystem.firstTutorial){    
-                    this.TutorialEntity = ut.EntityGroup.instantiate(this.world, 'game.TutorialEntityGroup');
+                    this.TutorialEntity = ut.EntityGroup.instantiate(this.world, 'casualgf.TutorialEntityGroup');
                     GameSystem.CurrentGameMode = GameState.Tutorial;    
                     TutorialSystem.firstTutorial= true;
                 }
@@ -77,7 +77,7 @@ namespace game {
             let tutorialObjectList;
             let tries;   
             let startingPosition;
-            this.world.forEach([ut.Entity, game.Tutorial], (entity, tutorial ) => {          
+            this.world.forEach([ut.Entity, casualgf.Tutorial], (entity, tutorial ) => {          
                 if(tutorial.Index == TutorialSystem.index){
                     tutorialObjectList = tutorial.ChildEntities;
                     tries = tutorial.Tries;
@@ -95,7 +95,7 @@ namespace game {
             } else {                
                 GameSystem.CurrentGameMode = GameState.Tutorial;
                 TutorialSystem.waitForClick = true;
-                //ut.EntityGroup.destroyAll(this.world, "game.BallGroup");                
+                //ut.EntityGroup.destroyAll(this.world, "casualgf.BallGroup");                
                 BallSystem.SetBallPosition(new Vector3(-75,-75), this.world);
                 ScoreSystem.CleanScore(this.world);
             }          
@@ -109,11 +109,11 @@ namespace game {
         public FinishTutorial():boolean{             
             //Ending tutorials!
             if(TutorialSystem.index  > TutorialSystem.maxIndex){
-                this.world.forEach([game.TutorialHelper], (tutorial) => {        
+                this.world.forEach([casualgf.TutorialHelper], (tutorial) => {        
                     tutorial.PlayTutorial = false;  
                 });         
                 TutorialSystem.waitForClick = false;    
-                ut.EntityGroup.destroyAll(this.world, 'game.TutorialEntityGroup'); 
+                ut.EntityGroup.destroyAll(this.world, 'casualgf.TutorialEntityGroup'); 
                 GameSystem.PlayGame(this.world);
                 return true;
             }
@@ -122,7 +122,7 @@ namespace game {
 
         static ResetTutorial(world: ut.World){
             let entityBall = world.getEntityByName("Ball");
-            world.forEach([ut.Entity, game.Tutorial], (entity, tutorial ) => {  
+            world.forEach([ut.Entity, casualgf.Tutorial], (entity, tutorial ) => {  
                        
                     if(tutorial.Index == TutorialSystem.index){                        
                         if(tutorial.Tries > 0){                            
@@ -144,7 +144,7 @@ namespace game {
         static HideFeedBack(world:ut.World){
             let tutorialEntity = world.getEntityByName("Tutorial");
             if(!tutorialEntity.isNone()){   
-                world.usingComponentData(tutorialEntity, [game.TutorialScreens], (TutorialScreens)=>{
+                world.usingComponentData(tutorialEntity, [casualgf.TutorialScreens], (TutorialScreens)=>{
                     TutorialSystem.setEntityEnabled(world, TutorialScreens.Win, false);
                     TutorialSystem.setEntityEnabled(world, TutorialScreens.Lose, false);
                 });
@@ -168,7 +168,7 @@ namespace game {
             BallSystem.SetBallPosition(new Vector3(-75,-75), world);       
             let tutorialEntity = world.getEntityByName("Tutorial");
             if(!tutorialEntity.isNone()){   
-                world.usingComponentData(tutorialEntity, [game.TutorialScreens], (TutorialScreens)=>{
+                world.usingComponentData(tutorialEntity, [casualgf.TutorialScreens], (TutorialScreens)=>{
                     TutorialSystem.setEntityEnabled(world, TutorialScreens.Win, true);
                 });
             }
@@ -183,7 +183,7 @@ namespace game {
             BallSystem.SetBallPosition(new Vector3(-75,-75), world);
             let tutorialEntity = world.getEntityByName("Tutorial");
             if(!tutorialEntity.isNone()){   
-                world.usingComponentData(tutorialEntity, [game.TutorialScreens], (TutorialScreens)=>{
+                world.usingComponentData(tutorialEntity, [casualgf.TutorialScreens], (TutorialScreens)=>{
                     TutorialSystem.setEntityEnabled(world, TutorialScreens.Lose, true);
                 });
             }            
@@ -193,7 +193,7 @@ namespace game {
         }
 
         static HideCurrentTutorialObjects(world:ut.World){            
-            world.forEach([ut.Entity, game.Tutorial], (entity, tutorial ) => {          
+            world.forEach([ut.Entity, casualgf.Tutorial], (entity, tutorial ) => {          
                 if(tutorial.Index == TutorialSystem.index) {
                     for(let i = 0; i < tutorial.ChildEntities.length; i++){
                         TutorialSystem.setEntityEnabled(world, tutorial.ChildEntities[i], false);
@@ -203,7 +203,7 @@ namespace game {
         }
 
         static ShowCurrentTutorialObjects(world:ut.World){
-            world.forEach([ut.Entity, game.Tutorial], (entity, tutorial ) => {          
+            world.forEach([ut.Entity, casualgf.Tutorial], (entity, tutorial ) => {          
                 if(tutorial.Index == TutorialSystem.index) {
                     for(let i = 0; i < tutorial.ChildEntities.length; i++){
                         TutorialSystem.setEntityEnabled(world, tutorial.ChildEntities[i], true);
@@ -214,7 +214,7 @@ namespace game {
 
         
         public CheckTutorialObjectsStatus(){
-            this.world.forEach([ut.Entity, game.Tutorial], (entity, tutorial ) => {          
+            this.world.forEach([ut.Entity, casualgf.Tutorial], (entity, tutorial ) => {          
                 if(tutorial.Index < TutorialSystem.index ){
                         for(let i = 0; i < tutorial.ChildEntities.length; i++){
                             if(this.world.exists(tutorial.ChildEntities[i]))

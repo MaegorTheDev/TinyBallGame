@@ -1,5 +1,5 @@
 
-namespace game {    
+namespace casualgf {    
     //@ut.executeAfter(ut.Shared.UserCodeStart)
     //@ut.executeBefore(ut.Shared.UserCodeEnd)
     /** New System */
@@ -13,7 +13,7 @@ namespace game {
                 BallSystem.BallEntity =  this.world.getEntityByName("Ball");	  
                 return;
             }
-            this.world.usingComponentData(BallSystem.BallEntity ,[ut.Entity, game.Ball, game.InputHelper, ut.Physics2D.Velocity2D], 
+            this.world.usingComponentData(BallSystem.BallEntity ,[ut.Entity, casualgf.Ball, casualgf.InputHelper, ut.Physics2D.Velocity2D], 
                 (entity, ball, inputHelper, velocity ) => {
 
                 if( GameSystem.CurrentGameMode != GameState.Aiming ){
@@ -37,7 +37,7 @@ namespace game {
 
                     SpeedLethalitySystem.SetStartingVelocity(velocity);
              
-                    GameSystem.CurrentGameMode = game.GameState.Playing;
+                    GameSystem.CurrentGameMode = casualgf.GameState.Playing;
                 }
                 
         });
@@ -46,7 +46,7 @@ namespace game {
         static SetBallPosition(spawnPosition:Vector3, world:ut.World){
               
             if (BallSystem.BallEntity.isNone()) {       
-                BallSystem.BallEntity = ut.EntityGroup.instantiate(world, 'game.BallGroup')[0];
+                BallSystem.BallEntity = ut.EntityGroup.instantiate(world, 'casualgf.BallGroup')[0];
             }                 
             world.usingComponentData( BallSystem.BallEntity, [ut.Entity, ut.Core2D.TransformLocalPosition, ut.Physics2D.Velocity2D], (entity, position, velocity ) => {          
                 position.position = spawnPosition; 
@@ -62,7 +62,7 @@ namespace game {
         static GetBallPosition(world:ut.World):Vector3{
             let result:Vector3;
             if (BallSystem.BallEntity.isNone()) {       
-                BallSystem.BallEntity = ut.EntityGroup.instantiate(world, 'game.BallGroup')[0];
+                BallSystem.BallEntity = ut.EntityGroup.instantiate(world, 'casualgf.BallGroup')[0];
             }                 
             world.usingComponentData( BallSystem.BallEntity, [ut.Entity, ut.Core2D.TransformLocalPosition, ut.Physics2D.Velocity2D], (entity, position, velocity ) => {          
                 result = position.position;                                                    
@@ -73,7 +73,7 @@ namespace game {
 
         static ChangeBallSpeed(newSpeed:Vector2, world:ut.World){
             if (BallSystem.BallEntity.isNone()) {       
-                BallSystem.BallEntity = ut.EntityGroup.instantiate(world, 'game.BallGroup')[0];
+                BallSystem.BallEntity = ut.EntityGroup.instantiate(world, 'casualgf.BallGroup')[0];
             }     
             let setVelocity = new ut.Physics2D.SetVelocity2D;
             setVelocity.velocity = newSpeed;                            
@@ -96,7 +96,7 @@ namespace game {
             });               
         }
 
-        static ResetBallInput(ball:game.Ball){
+        static ResetBallInput(ball:casualgf.Ball){
             ball.Power = 0;
             ball.MoveDirection = new Vector2(0,0);
             ball.Shoot = false;

@@ -1,5 +1,5 @@
 
-namespace game {
+namespace casualgf {
 
     /** New System */
     export class BoxingSystem extends ut.ComponentSystem {
@@ -22,7 +22,7 @@ namespace game {
             //let aspectRatio = display.frameHeight / display.frameWidth;
             let limitPosition = new Vector2(display.frameWidth / (display.frameWidth / 2) * (display.frameWidth / display.frameHeight * halfSize), 
                                 display.frameHeight / (display.frameHeight / 2) * halfSize);
-            let borderData = this.world.getComponentData(borders, game.Borders);
+            let borderData = this.world.getComponentData(borders, casualgf.Borders);
             let worldAspect = borderData.WorldWidth/borderData.WorldHeight;
             let currentAspect = borderData.Width/borderData.Height;
 
@@ -44,13 +44,13 @@ namespace game {
             BoxingSystem.Boxing = false;
              
             
-            //console.log(limitPosition);
+            ////console.log(limitPosition);
            
         }
 
         static SetBordersOnSide(world:ut.World, borderData, limitPosition){
             let index = 0 ;
-            world.forEach([ut.Core2D.TransformLocalPosition, game.SideSpritesUI, ut.Core2D.Sprite2DRenderer, ut.Core2D.TransformLocalScale], 
+            world.forEach([ut.Core2D.TransformLocalPosition, casualgf.SideSpritesUI, ut.Core2D.Sprite2DRenderer, ut.Core2D.TransformLocalScale], 
                 (position, sideUIMask, renderer, scale) => {
                 
                 let diference = limitPosition.x - (borderData.WorldWidth/2);
@@ -77,7 +77,7 @@ namespace game {
 
         static SetBordersTopDown(world:ut.World, borderData, limitPosition){
             let index = 0 ;
-            world.forEach([ut.Core2D.TransformLocalPosition, game.SideSpritesUI, ut.Core2D.Sprite2DRenderer, ut.Core2D.TransformLocalScale], 
+            world.forEach([ut.Core2D.TransformLocalPosition, casualgf.SideSpritesUI, ut.Core2D.Sprite2DRenderer, ut.Core2D.TransformLocalScale], 
                 (position, sideUIMask, renderer, scale) => {
                 
                 let diference = limitPosition.y - (borderData.WorldHeight/2);

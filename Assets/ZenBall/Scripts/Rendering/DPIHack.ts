@@ -3,7 +3,7 @@
     const w = (window as any);
 
     const initialize_hack = () => {
-        console.log("Initializing HDPI hacks v7 by @abeisgreat");
+        //console.log("Initializing HDPI hacks v7 by @abeisgreat");
         const fakeMouseEventFn = (ev) => {
             const ut_HTML = w.ut._HTML;
             const fakeEvent = {
@@ -92,7 +92,7 @@
         }
     }, 10);
 })();
-namespace game {
+namespace casualgf {
 
     /** New System */
     export class DPIHack extends ut.ComponentSystem {

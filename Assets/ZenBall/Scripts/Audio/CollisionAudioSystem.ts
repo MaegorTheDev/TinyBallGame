@@ -1,4 +1,4 @@
-namespace game {
+namespace casualgf {
     @ut.executeAfter(ut.Shared.UserCodeStart)
     @ut.executeBefore(ut.Shared.UserCodeEnd)
     @ut.requiredComponents(ut.Physics2D.ColliderContacts)
@@ -10,7 +10,7 @@ namespace game {
                 return;
             }
             const hitAudioObject = this.world.getEntityByName("HitObject");    
-            this.world.forEach([ut.Entity ,ut.Physics2D.ColliderContacts, game.Ball],
+            this.world.forEach([ut.Entity ,ut.Physics2D.ColliderContacts, casualgf.Ball],
                 (entity, collidercontacts) => {      
                     if (collidercontacts.contacts.length == 0 ){
                         return;
@@ -21,9 +21,9 @@ namespace game {
                           continue;
                         }
             
-                        if(this.world.hasComponent(otherEntity, game.HitSound)){
+                        if(this.world.hasComponent(otherEntity, casualgf.HitSound)){
                             this.world.usingComponentData(hitAudioObject,
-                                [ut.Entity, game.HitAudio, ut.Audio.AudioSource], 
+                                [ut.Entity, casualgf.HitAudio, ut.Audio.AudioSource], 
                                 (entity, hitAudio, audiosource) => {     
                                     let randomAudioClip= 
                                         hitAudio.HitAudioClips[ GameSystem.randomIntFromInterval(0, hitAudio.HitAudioClips.length - 1)];

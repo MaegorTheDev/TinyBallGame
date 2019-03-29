@@ -1,5 +1,5 @@
 
-namespace game {
+namespace casualgf {
 
     /** New System */
     export class GameSystem extends ut.ComponentSystem {
@@ -19,8 +19,8 @@ namespace game {
         OnUpdate():void {                 
             const coinScore = this.world.getEntityByName("CoinsRender");	  
             if(!coinScore.isNone()){
-                this.world.usingComponentData(coinScore, [game.NumberObject], (numberObject)=>{
-                   // console.log("GameSystem current coins "  + GameSystem.coins);
+                this.world.usingComponentData(coinScore, [casualgf.NumberObject], (numberObject)=>{
+                   // //console.log("GameSystem current coins "  + GameSystem.coins);
                    if(GameSystem.coins != numberObject.Number){
                       numberObject.Number = GameSystem.coins;
                       numberObject.Render = true;
@@ -55,14 +55,14 @@ namespace game {
             PoolObstacleSpawnerSystem.ResetGroups(world);     
             RespawnSystem.RestartRespawns();     
 
-            GameSystem.CurrentGameMode = game.GameState.Waiting;
+            GameSystem.CurrentGameMode = casualgf.GameState.Waiting;
             PoolObstacleSpawnerSystem.SpawnObstacles(world);
         }
 
         static NewLevel(world: ut.World){            
             if(GameSystem.BallRadius == 0){
                 const ball = world.getEntityByName("Ball");	  
-                world.usingComponentData(ball,[game.Ball, ut.Core2D.TransformLocalScale], (ball, scale) => {
+                world.usingComponentData(ball,[casualgf.Ball, ut.Core2D.TransformLocalScale], (ball, scale) => {
                     GameSystem.BallRadius = scale.scale.x/2;
                 });   
             }                       
@@ -77,7 +77,7 @@ namespace game {
             if(!GameSystem.isInTutorial){
                 //HideThePutt
                 BallSystem.SetPuttPosition(world, new Vector3(0,-100));
-                ut.EntityGroup.instantiate(world, 'game.GameOverScreen');
+                ut.EntityGroup.instantiate(world, 'casualgf.GameOverScreen');
                 FBInstantService.getInstance().FailedLevelEvent(PoolObstacleSpawnerSystem.CurrentGroup,    PoolObstacleSpawnerSystem.CurrenLevelIndex);  
                 
                 GameSystem.CurrentGameMode = GameState.GameEnd;                
@@ -94,7 +94,7 @@ namespace game {
             if(world == null || world == undefined){
                 world = GameSystem.world;
             }
-            ut.EntityGroup.instantiate(world, 'game.GameStart'); 
+            ut.EntityGroup.instantiate(world, 'casualgf.GameStart'); 
             GameSystem.CurrentGameMode = GameState.GameStart;      
             GameSystem.loaded = true;      
             if(FBInstantService.getInstance().isAvailable){
@@ -103,21 +103,21 @@ namespace game {
         }
 
         static DestroyMainScreen(world:ut.World){            
-            ut.EntityGroup.destroyAll(this.world, "game.GameStart");
+            ut.EntityGroup.destroyAll(this.world, "casualgf.GameStart");
             GameSystem.CurrentGameMode = GameState.Waiting;
             GameSystem.RestartWorld(world);
         }
         
         static DestroyEndScreen(world:ut.World){            
             RespawnSystem.ChangeAlphaRespawnCoinNumber(world, 0);
-            ut.EntityGroup.destroyAll(world,"game.GameOverScreen");
+            ut.EntityGroup.destroyAll(world,"casualgf.GameOverScreen");
             GameSystem.CurrentGameMode = GameState.Waiting;
             GameSystem.RestartWorld(world);
         }     
         
         static RespawnEndScreen(world:ut.World){           
             RespawnSystem.ChangeAlphaRespawnCoinNumber(world, 0);
-            ut.EntityGroup.destroyAll(world,"game.GameOverScreen");
+            ut.EntityGroup.destroyAll(world,"casualgf.GameOverScreen");
         }             
 
         static randomIntFromInterval(min,max)  // min and max included

@@ -1,5 +1,5 @@
 
-namespace game {
+namespace casualgf {
 
     //@ut.executeAfter(ut.Shared.UserCodeStart)
     //@ut.executeBefore(ut.Shared.UserCodeEnd)
@@ -8,10 +8,10 @@ namespace game {
         
         OnUpdate():void {
             /**
-            this.world.forEach([game.Ball, game.InputHelper], (ball, inputHelper) => {
+            this.world.forEach([casualgf.Ball, casualgf.InputHelper], (ball, inputHelper) => {
                 
                 const powerDelta = ball.MaxPower / 100;
-				if(inputHelper.InputType == game.InputType.Power){
+				if(inputHelper.InputType == casualgf.InputType.Power){
 					return;
                 }
 

@@ -1,5 +1,5 @@
 
-namespace game {
+namespace casualgf {
 
     /** New System */
     export class TimeLethalitySystem extends ut.ComponentSystem {
@@ -22,7 +22,7 @@ namespace game {
                 return;
             }
 
-            if(GameSystem.CurrentGameMode != game.GameState.Playing){
+            if(GameSystem.CurrentGameMode != casualgf.GameState.Playing){
                 if(TimeLethalitySystem.TimeToGetNextCoin - TimeLethalitySystem.CurrentTime < TimeLethalitySystem.TimeToStartBlinking){                   
                     TimeLethalitySystem.PlayLowHealthAudio(this.world);
                 }
@@ -33,7 +33,7 @@ namespace game {
             let dt = this.scheduler.deltaTime();
             TimeLethalitySystem.CurrentTime += dt;     
 
-            //console.log(TimeLethalitySystem.CurrentTime );
+            ////console.log(TimeLethalitySystem.CurrentTime );
             if(TimeLethalitySystem.CurrentTime > TimeLethalitySystem.TimeToGetNextCoin){
                TimeLethalitySystem.EndGame(this.world, audioSource);
                                 
@@ -46,13 +46,13 @@ namespace game {
         static CheckBlinking(world:ut.World, audioSource:ut.Entity){
             let percentage = (TimeLethalitySystem.TimeToGetNextCoin - TimeLethalitySystem.CurrentTime)/3;     
                 if(TimeLethalitySystem.TimeToGetNextCoin - TimeLethalitySystem.CurrentTime < TimeLethalitySystem.TimeToStartBlinking){
-                    world.forEach([ut.Entity, game.Ball, ut.Core2D.Sprite2DSequencePlayer], (entity, ball, player ) => {               
+                    world.forEach([ut.Entity, casualgf.Ball, ut.Core2D.Sprite2DSequencePlayer], (entity, ball, player ) => {               
                         player.paused = false;                       
                         player.speed = 7 * (1 - percentage)  ;
                     });        
                     TimeLethalitySystem.PlayLowHealthAudio(world);   
                 }else {
-                    world.forEach([ut.Entity, game.Ball, ut.Core2D.Sprite2DSequencePlayer], (entity, ball, player ) => {               
+                    world.forEach([ut.Entity, casualgf.Ball, ut.Core2D.Sprite2DSequencePlayer], (entity, ball, player ) => {               
                         player.paused = true;
                         player.time = 0;
                     });
@@ -72,7 +72,7 @@ namespace game {
             if (!world.hasComponent(loseGameSound, ut.Audio.AudioSourceStart)) {
                 world.addComponent(loseGameSound, ut.Audio.AudioSourceStart);
             }               
-            world.forEach([ut.Entity, game.Ball, ut.Core2D.Sprite2DSequencePlayer], (entity, ball, player ) => {               
+            world.forEach([ut.Entity, casualgf.Ball, ut.Core2D.Sprite2DSequencePlayer], (entity, ball, player ) => {               
                 player.paused = true;
                 player.time = 0;
             });

@@ -1,26 +1,26 @@
 
-namespace game {
+namespace casualgf {
 
     /** New System */
     export class LineRenderingSystem extends ut.ComponentSystem {
         static pressed = false; 
 
         OnUpdate():void {            
-            const line = this.world.getEntityByName("Guideline");      
-            
-            if(LineRenderingSystem.pressed){
-                this.ProcessFinishInput(line);
-                
-            }  
-            
-            if(GameSystem.CurrentGameMode == GameState.GameEnd || line.isNone() || GameSystem.CurrentGameMode == GameState.Playing){
+            const line = this.world.getEntityByName("Guideline");    
+                       
+            if(line.isNone()){
                 return;
             }
+
+            let render:boolean = !(GameSystem.CurrentGameMode == GameState.GameEnd || line.isNone() || GameSystem.CurrentGameMode == GameState.Playing);
 
            		if(!ut.Core2D.Input.isTouchSupported()){            
                        
                     let mousePos = ut.Core2D.Input.getInputPosition();
-					if(ut.Runtime.Input.getMouseButton(0)){   
+                    if(ut.Runtime.Input.getMouseButtonDown(0) && render){   
+                        this.ProcessOnStart(mousePos);
+                    }
+					else if(ut.Runtime.Input.getMouseButton(0) && render){   
                         this.ProcessOnPressed(line, mousePos);
                     }
 					else if (ut.Runtime.Input.getMouseButtonUp(0)) {
@@ -31,16 +31,33 @@ namespace game {
 					if (ut.Core2D.Input.touchCount() > 0) {
                         
                         let touch: ut.Core2D.Touch = ut.Core2D.Input.getTouch(0);
-                        
-						if (touch.phase == ut.Core2D.TouchState.Moved || touch.phase == ut.Core2D.TouchState.Stationary) {
+                        if (touch.phase == ut.Core2D.TouchState.Began && render) {
+                            this.ProcessOnStart(new Vector2(touch.x, touch.y));
+                            ////console.log("moved: " + ut.Core2D.Input.touchCount());
+                        }                        
+						else if ((touch.phase == ut.Core2D.TouchState.Moved || touch.phase == ut.Core2D.TouchState.Stationary) && render) {
                             this.ProcessOnPressed(line, new Vector2(touch.x, touch.y));
-                            //console.log("moved: " + ut.Core2D.Input.touchCount());
+                            ////console.log("moved: " + ut.Core2D.Input.touchCount());
                         }
-                        else if (touch.phase == ut.Core2D.TouchState.Ended){		
-							this.ProcessFinishInput(line);
+                        else if (touch.phase == ut.Core2D.TouchState.Ended){	
+                            this.ProcessFinishInput(line);
+                            
+            //let dt = this.scheduler.pause();
 						}	
 					}
 				}
+        }
+
+        ProcessOnStart(touchPosition:Vector2):void{            
+            const firstTouch = this.world.getEntityByName("FirstTouchSprite");        
+            var worldPoss = this.ScreenToWorldCoordenates(touchPosition);
+            this.world.usingComponentData(firstTouch, [ut.Core2D.TransformLocalPosition, ut.Core2D.Sprite2DRenderer], 
+                (position, renderer) => {
+                    position.position = new Vector3(worldPoss.x, worldPoss.y);
+                    renderer.color =  new ut.Core2D.Color(1, 1, 1, 1);   
+                });
+
+            LineRenderingSystem.pressed = true;
         }
 
 
@@ -52,17 +69,14 @@ namespace game {
 
             let linePosition;
             let lineRotation;
-            let lineMagnitude;
 
-            this.world.usingComponentData(ball, [ut.Core2D.TransformLocalPosition], 
-                (position) => {      
-                    let diference = new Vector2(coordinates.x - position.position.x, coordinates.y -  position.position.y);   
-                    lineMagnitude= Math.sqrt(diference.x*diference.x + diference.y * diference.y);
-                   
-                    let normalized = diference.normalize().multiplyScalar(-1);
+            this.world.usingComponentData(ball, [ut.Core2D.TransformLocalPosition, casualgf.InputHelper], 
+                (position, helper) => {      
+                    let diference = new Vector2(helper.FirstTouchData.x - coordinates.x, helper.FirstTouchData.y - coordinates.y);   
+                    let normalized = diference.normalize();
+
                     lineRotation = Math.atan2(normalized.y, normalized.x);                    
-                    linePosition = new Vector3 (position.position.x, position.position.y);
-                   
+                    linePosition = new Vector3 (position.position.x, position.position.y);                   
                 });              
 
             this.world.usingComponentData(entity, [ut.Core2D.TransformLocalPosition, ut.Core2D.TransformLocalRotation, ut.Core2D.Sprite2DRenderer, ut.Core2D.Sprite2DRendererOptions], 
@@ -75,16 +89,37 @@ namespace game {
             
                     position.position = linePosition;   
                     rotation.rotation.setFromAxisAngle(new Vector3(0,0,1), lineRotation);
-                   //options.size = new Vector2(lineMagnitude, 3.3);
-                });                                     
+                });          
+                
+            const secondTouch = this.world.getEntityByName("SecondTouchSprite");     
+            this.world.usingComponentData(secondTouch, [ut.Core2D.TransformLocalPosition, ut.Core2D.Sprite2DRenderer], 
+                (position, renderer) => {
+                    position.position = new Vector3(coordinates.x, coordinates.y);
+                    renderer.color =  new ut.Core2D.Color(1, 1, 1, 1);   
+                });
         }
 
-		ProcessFinishInput(entity: ut.Entity):void{		              
-            LineRenderingSystem.pressed = false;
+		ProcessFinishInput(entity: ut.Entity):void{		
+            //LineRenderingSystem.pressed = false;
             this.world.usingComponentData(entity, [ut.Core2D.Sprite2DRenderer], 
                 (renderer) => {
                     renderer.color = new ut.Core2D.Color(1, 1, 1, 0);   
-                });				
+                });		
+
+            const firstTouch = this.world.getEntityByName("FirstTouchSprite");        
+                this.world.usingComponentData(firstTouch, [ut.Core2D.Sprite2DRenderer], 
+                    (renderer) => {
+                        renderer.color =  new ut.Core2D.Color(1, 1, 1, 0);   
+                    });
+                
+            const secondTouch = this.world.getEntityByName("SecondTouchSprite");        
+                this.world.usingComponentData(secondTouch, [ut.Core2D.Sprite2DRenderer], 
+                    ( renderer) => {
+                        renderer.color =  new ut.Core2D.Color(1, 1, 1, 0);   
+                    });
+
+                    
+            LineRenderingSystem.pressed = false;
         }
         
         ScreenToWorldCoordenates(screenPos: Vector2):Vector3{

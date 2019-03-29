@@ -10,7 +10,7 @@ declare class FBInstant {
     static player: FBInstant.FBPlayer;
     /**
      * 当前游戏的来源信息
-     * Contains functions and properties related to the current game context.
+     * Contains functions and properties related to the current casualgf context.
      */
     static context: FBInstant.Context;
     /**
@@ -20,7 +20,7 @@ declare class FBInstant {
     static getLocale(): string;
     /**
      * 获取运行的平台信息: IOS | ANDROID | WEB | MOBILE_WEB
-     * The platform on which the game is currently running
+     * The platform on which the casualgf is currently running
      */
     static getPlatform(): FBPlatform;
     /**
@@ -35,7 +35,7 @@ declare class FBInstant {
     static initializeAsync(): Promise<void>;
     /**
      * 通知平台资源加载的百分比
-     * Report the game's initial loading progress.
+     * Report the casualgf's initial loading progress.
      * @param percentage 0-100
      */
     static setLoadingProgress(percentage: number): void;
@@ -46,12 +46,12 @@ declare class FBInstant {
     static getSupportedAPIs(): string[];
     /**
      * 获取入口点数据
-     * Returns any data object associated with the entry point that the game was launched from.
+     * Returns any data object associated with the entry point that the casualgf was launched from.
      */
     static getEntryPointData(): Object;
     /**
      * 用户从哪个入口进入的游戏
-     * Returns the entry point that the game was launched from
+     * Returns the entry point that the casualgf was launched from
      */
     static getEntryPointAsync(): string;
     /**
@@ -62,7 +62,7 @@ declare class FBInstant {
     /**
      * 游戏已完成加载资源，用户点击了开始游戏的按钮
      * 返回一个 Promise 方法
-     * This indicates that the game has finished initial loading and is ready to start. Context information will be up-to-date when the returned promise resolves.
+     * This indicates that the casualgf has finished initial loading and is ready to start. Context information will be up-to-date when the returned promise resolves.
      */
     static startGameAsync(): Promise<void>;
     /**
@@ -72,7 +72,7 @@ declare class FBInstant {
     static shareAsync(payload: FBInstant.SharePayload): Promise<void>;
     /**
      * 通知 Facebook 在游戏中发生的更新
-     * Informs Facebook of an update that occurred in the game. 
+     * Informs Facebook of an update that occurred in the casualgf. 
      */
     static updateAsync(payload: FBInstant.CustomUpdatePayload | FBInstant.LeaderboardUpdatePayload): Promise<void>;
     /**
@@ -87,12 +87,12 @@ declare class FBInstant {
     static canCreateShortcutAsync(): Promise<Boolean>;
     /**
      * 如果用户有资格，提示用户创建游戏的快捷方式。
-     * Prompts the user to create a shortcut to the game if they are eligible to Can only be called once per session. 
+     * Prompts the user to create a shortcut to the casualgf if they are eligible to Can only be called once per session. 
      */
     static createShortcutAsync(): Promise<void>;
     /**
      * 退出游戏
-     * Quits the game.
+     * Quits the casualgf.
      */
     static quit(): void;
     /**
@@ -164,12 +164,12 @@ declare namespace FBInstant {
         getSignedPlayerInfoAsync(requestPayload?: string): Promise<SignedPlayerInfo>;
         /**
          * 返回一个 promise，表示玩家是否可以与游戏机器人对战。
-         * Returns a promise that resolves with whether the player can subscribe to the game bot or not.
+         * Returns a promise that resolves with whether the player can subscribe to the casualgf bot or not.
          */
         canSubscribeBotAsync(): Promise<Boolean>;
         /**
          * 请求玩家订阅游戏机器人。
-         * Request that the player subscribe the bot associated to the game. 
+         * Request that the player subscribe the bot associated to the casualgf. 
          */
         subscribeBotAsync(): Promise<void>;
         /**
@@ -230,17 +230,17 @@ declare namespace FBInstant {
     interface Context {
         /**
          * 当前游戏来源的唯一id
-         * A unique identifier for the current game context. 
+         * A unique identifier for the current casualgf context. 
          */
         getID(): string;
         /**
          * 游戏的来源类型："POST" | "THREAD" | "GROUP" | "SOLO"
-         * The type of the current game context.
+         * The type of the current casualgf context.
          */
         getType(): string;
         /**
          * 用这个方法来判断当前游戏环境中游戏参与者的数量是否介于指定的最小值和最大值之间。
-         * This function determines whether the number of participants in the current game context is between a given minimum and maximum, inclusive.
+         * This function determines whether the number of participants in the current casualgf context is between a given minimum and maximum, inclusive.
          */
         isSizeBetween(minSize: number, maxSize: number): { answer: boolean, minSize: number, maxSize: number };
         /**
@@ -270,7 +270,7 @@ declare namespace FBInstant {
     interface payments {
         /**
          * 获取游戏的产品目录。
-         * Fetches the game's product catalog.
+         * Fetches the casualgf's product catalog.
          */
         getCatalogAsync(): Promise<Product[]>;
         /**
@@ -468,7 +468,7 @@ declare namespace FBInstant {
         title: string,
         /**
          * 产品的游戏指定id
-         * The product's game-specified identifier
+         * The product's casualgf-specified identifier
          */
         productID: string,
         /**
@@ -517,7 +517,7 @@ declare namespace FBInstant {
         paymentID: string,
         /**
          * 产品id
-         * The product's game-specified identifier
+         * The product's casualgf-specified identifier
          */
         productID: string,
         /**
@@ -624,7 +624,7 @@ declare namespace FBInstant {
         getPhoto(): string;
         /**
          * 玩家的id
-         * Gets the game's unique identifier for the player.
+         * Gets the casualgf's unique identifier for the player.
          */
         getID(): string;
     }

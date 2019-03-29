@@ -140,7 +140,27 @@
         { "$TypeId": 9, "Id": "a373cbc20f8a4425883805f3472be79a", "Name": "Obstacle" },
         { "$TypeId": 9, "Id": "cdc301c323274ad18dce58c1f3207222", "Name": "Obstacle" },
         { "$TypeId": 9, "Id": "6985de0a3e9e4bc2b582fb0c28369397", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "8abc81f335714a82955b4f9f77fa9ed0", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "8abc81f335714a82955b4f9f77fa9ed0", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "c35364e28f244812acca7a9d4f5ce9bc", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "7a35323ba46949259f09a18f20b975fb", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "60fadda03eb34c06ae203451f29961d1", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "ef1af488b36440d992f389ba293ce2b3", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "eedf127681c44be9b3734230899b733b", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "79d28f030d3348f98bde6b37f7304b3a", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "17db396a79244933a2228bc58ddd8283", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "75756948bb6d47e5b01129b6fe1a66bb", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "53a4e9b914ee42b8afc1749b8f2edf2a", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "6f3c45ebbdf4449eb76d9a2236d617ff", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "d32a1ff139ec4ce3993b8aba7b3d6258", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "fd0f3c2d761b40739f38b60bdbb245c8", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "0c2ae2a6724f4bb0b0b07a0c1ba27859", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "41f6090ac72b4e51998cfa5eed70a73d", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "62aabe2f36864fd6a960b068e351f716", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "ad0dd3e3f12546cbacb45a6ced2ca523", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "354bb0b9fb3f415bbef9bcbff99b894a", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "424295b18bba4c96972bc9a696084c6b", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "b995836f33fa4673b8cd05d60f7bc99c", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "ff9c695497144fe2af764715c7a4507a", "Name": "Flag" }
     ],
     "PrefabInstances": [
         { "$TypeId": 13, "Id": "27155a9f25794f389c5075036ad536fd", "Name": "Obstacle" },
@@ -275,7 +295,8 @@
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "222845d602b24128b254a9383d37b934", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "222845d602b24128b254a9383d37b934", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "ff9c695497144fe2af764715c7a4507a", "Name": "Flag" }
     ]
 },
 {
@@ -338,7 +359,8 @@
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "f4e016c09a6b49c5b025b0ba5c2621f6", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "f4e016c09a6b49c5b025b0ba5c2621f6", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "b995836f33fa4673b8cd05d60f7bc99c", "Name": "Flag" }
     ]
 },
 {
@@ -374,7 +396,8 @@
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "a836011e6da64c9987bebdcb215ae8d5", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "a836011e6da64c9987bebdcb215ae8d5", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "424295b18bba4c96972bc9a696084c6b", "Name": "Flag" }
     ]
 },
 {
@@ -401,7 +424,8 @@
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "f42bc222a1ff4f6595b48bf8e2b9efb7", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "f42bc222a1ff4f6595b48bf8e2b9efb7", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "354bb0b9fb3f415bbef9bcbff99b894a", "Name": "Flag" }
     ]
 },
 {
@@ -446,7 +470,8 @@
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "b472408afe2e46a39bcfb6f7c9f4f4c8", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "b472408afe2e46a39bcfb6f7c9f4f4c8", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "ad0dd3e3f12546cbacb45a6ced2ca523", "Name": "Flag" }
     ]
 },
 {
@@ -491,7 +516,8 @@
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "93ba3e5bf3fa49eda4175015405f1a67", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "93ba3e5bf3fa49eda4175015405f1a67", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "62aabe2f36864fd6a960b068e351f716", "Name": "Flag" }
     ]
 },
 {
@@ -536,7 +562,8 @@
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "6d836a9010424b049d2d918168a42a8d", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "6d836a9010424b049d2d918168a42a8d", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "41f6090ac72b4e51998cfa5eed70a73d", "Name": "Flag" }
     ]
 },
 {
@@ -554,7 +581,8 @@
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "f672099cc5be480a81a476fe86409fbf", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "f672099cc5be480a81a476fe86409fbf", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "0c2ae2a6724f4bb0b0b07a0c1ba27859", "Name": "Flag" }
     ]
 },
 {
@@ -635,7 +663,8 @@
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "6a06ec29e7754ac89e8fde9a14ee145e", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "6a06ec29e7754ac89e8fde9a14ee145e", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "fd0f3c2d761b40739f38b60bdbb245c8", "Name": "Flag" }
     ]
 },
 {
@@ -671,7 +700,8 @@
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "69b0eb33053a4f85a6a826146eec93d0", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "69b0eb33053a4f85a6a826146eec93d0", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "d32a1ff139ec4ce3993b8aba7b3d6258", "Name": "Flag" }
     ]
 },
 {
@@ -761,7 +791,8 @@
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "37fe4741d5f548e28cbd98d01db5ee38", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "37fe4741d5f548e28cbd98d01db5ee38", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "6f3c45ebbdf4449eb76d9a2236d617ff", "Name": "Flag" }
     ]
 },
 {
@@ -779,7 +810,8 @@
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "703ef551fc5448bc99d0a8b27fcffd48", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "703ef551fc5448bc99d0a8b27fcffd48", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "53a4e9b914ee42b8afc1749b8f2edf2a", "Name": "Flag" }
     ]
 },
 {
@@ -833,7 +865,8 @@
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "10988c6166e84915b21155b8c59f6678", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "10988c6166e84915b21155b8c59f6678", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "75756948bb6d47e5b01129b6fe1a66bb", "Name": "Flag" }
     ]
 },
 {
@@ -914,7 +947,8 @@
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "715d900607394127ab41642515916909", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "715d900607394127ab41642515916909", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "17db396a79244933a2228bc58ddd8283", "Name": "Flag" }
     ]
 },
 {
@@ -950,7 +984,8 @@
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "931b103b78414c51afa697f8e5cf3488", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "931b103b78414c51afa697f8e5cf3488", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "79d28f030d3348f98bde6b37f7304b3a", "Name": "Flag" }
     ]
 },
 {
@@ -1031,7 +1066,8 @@
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "5822359a8b9b4995bbf019cb73fdfc73", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "5822359a8b9b4995bbf019cb73fdfc73", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "eedf127681c44be9b3734230899b733b", "Name": "Flag" }
     ]
 },
 {
@@ -1121,7 +1157,8 @@
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "2e4bbf7e9ed04f8688b2fdde32705279", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "2e4bbf7e9ed04f8688b2fdde32705279", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "ef1af488b36440d992f389ba293ce2b3", "Name": "Flag" }
     ]
 },
 {
@@ -1130,7 +1167,8 @@
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "b266545a501042a59c369885889e8766", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "b266545a501042a59c369885889e8766", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "60fadda03eb34c06ae203451f29961d1", "Name": "Flag" }
     ]
 },
 {
@@ -1184,7 +1222,8 @@
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "618a1e227694441083fa51b860cbc7cb", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "618a1e227694441083fa51b860cbc7cb", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "7a35323ba46949259f09a18f20b975fb", "Name": "Flag" }
     ]
 },
 {
@@ -1256,7 +1295,8 @@
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "5e7cbd01bf564b11857ea56629b3b5da", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "5e7cbd01bf564b11857ea56629b3b5da", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "c35364e28f244812acca7a9d4f5ce9bc", "Name": "Flag" }
     ]
 },
 {
@@ -1457,12 +1497,12 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.x",
             "TypeCode": 13,
-            "Value": 10.3
+            "Value": 10.4
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
             "TypeCode": 13,
-            "Value": 40.3
+            "Value": 37.8
         }, {
             "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
             "Path": "size.x",
@@ -2484,7 +2524,7 @@
             "StartingPosition": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
-                    "x": 17,
+                    "x": -17,
                     "y": -33
                 }
             }
@@ -2524,12 +2564,12 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.x",
             "TypeCode": 13,
-            "Value": -20.2
+            "Value": 20
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
             "TypeCode": 13,
-            "Value": 40.2
+            "Value": 37.1
         }]
     }
 },
@@ -2556,7 +2596,7 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.x",
             "TypeCode": 13,
-            "Value": -30
+            "Value": 29.4
         }, {
             "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
             "Path": "size.y",
@@ -2566,12 +2606,12 @@
             "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
             "Path": "size.x",
             "TypeCode": 13,
-            "Value": 25
+            "Value": 30
         }, {
             "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
             "Path": "size.x",
             "TypeCode": 13,
-            "Value": 25
+            "Value": 30
         }, {
             "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
             "Path": "size.y",
@@ -2581,7 +2621,7 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
             "TypeCode": 13,
-            "Value": 10.2
+            "Value": 13
         }, {
             "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
             "Path": "rotation.z",
@@ -2618,7 +2658,7 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.x",
             "TypeCode": 13,
-            "Value": 29.3
+            "Value": -30.8
         }, {
             "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
             "Path": "size.y",
@@ -2680,7 +2720,7 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.x",
             "TypeCode": 13,
-            "Value": -29.7
+            "Value": 30
         }, {
             "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
             "Path": "size.y",
@@ -2850,7 +2890,7 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
             "TypeCode": 13,
-            "Value": 40
+            "Value": 37
         }]
     }
 },
@@ -3204,7 +3244,7 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
             "TypeCode": 13,
-            "Value": 40
+            "Value": 36.4
         }]
     }
 },
@@ -3516,7 +3556,7 @@
             "StartingPosition": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
-                    "x": 20,
+                    "x": -20,
                     "y": -40
                 }
             }
@@ -3556,7 +3596,7 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.x",
             "TypeCode": 13,
-            "Value": -15
+            "Value": 15
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
@@ -3625,7 +3665,7 @@
             "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
             "Path": "rotation.z",
             "TypeCode": 13,
-            "Value": 0.3826834
+            "Value": -0.3826834
         }, {
             "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
             "Path": "rotation.w",
@@ -3721,7 +3761,7 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
             "TypeCode": 13,
-            "Value": 41.7
+            "Value": 36.7
         }]
     }
 },
@@ -4420,7 +4460,7 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
             "TypeCode": 13,
-            "Value": 40
+            "Value": 37
         }]
     }
 },
@@ -4725,7 +4765,7 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
             "TypeCode": 13,
-            "Value": 40
+            "Value": 36.3
         }]
     }
 },
@@ -5459,7 +5499,7 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
             "TypeCode": 13,
-            "Value": 40
+            "Value": 37
         }]
     }
 },
@@ -5621,7 +5661,7 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
             "TypeCode": 13,
-            "Value": 40
+            "Value": 36.3
         }]
     }
 },
@@ -7843,7 +7883,7 @@
             "StartingPosition": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
-                    "x": 18,
+                    "x": -18,
                     "y": -35
                 }
             }
@@ -7883,7 +7923,7 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.x",
             "TypeCode": 13,
-            "Value": -18
+            "Value": 18
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
@@ -7919,7 +7959,7 @@
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
                     "x": -14,
-                    "y": -49
+                    "y": -20
                 }
             }
         }
@@ -7939,12 +7979,12 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.x",
             "TypeCode": 13,
-            "Value": -14
+            "Value": 14
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
             "TypeCode": 13,
-            "Value": -28
+            "Value": -20
         }, {
             "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
             "Path": "scale.x",
@@ -8025,9 +8065,10 @@
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
                     "x": 14,
-                    "y": 49
+                    "y": 24
                 }
-            }
+            },
+            "Initialized": false
         }
     }],
     "Instance": {
@@ -8045,12 +8086,12 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.x",
             "TypeCode": 13,
-            "Value": 14
+            "Value": -14
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
             "TypeCode": 13,
-            "Value": 28
+            "Value": 24
         }, {
             "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
             "Path": "scale.x",
@@ -9365,7 +9406,7 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
             "TypeCode": 13,
-            "Value": 40
+            "Value": 35.9
         }, {
             "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
             "Path": "size.x",
@@ -10064,7 +10105,7 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
             "TypeCode": 13,
-            "Value": 40
+            "Value": 36.6
         }, {
             "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
             "Path": "size.x",
@@ -10457,5 +10498,265 @@
             "TypeCode": 13,
             "Value": 1
         }]
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "c35364e28f244812acca7a9d4f5ce9bc",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "7a35323ba46949259f09a18f20b975fb",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "60fadda03eb34c06ae203451f29961d1",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "ef1af488b36440d992f389ba293ce2b3",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "eedf127681c44be9b3734230899b733b",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "79d28f030d3348f98bde6b37f7304b3a",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "17db396a79244933a2228bc58ddd8283",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "75756948bb6d47e5b01129b6fe1a66bb",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "53a4e9b914ee42b8afc1749b8f2edf2a",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "6f3c45ebbdf4449eb76d9a2236d617ff",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "d32a1ff139ec4ce3993b8aba7b3d6258",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "fd0f3c2d761b40739f38b60bdbb245c8",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "0c2ae2a6724f4bb0b0b07a0c1ba27859",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "41f6090ac72b4e51998cfa5eed70a73d",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "62aabe2f36864fd6a960b068e351f716",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "ad0dd3e3f12546cbacb45a6ced2ca523",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "354bb0b9fb3f415bbef9bcbff99b894a",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "424295b18bba4c96972bc9a696084c6b",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "b995836f33fa4673b8cd05d60f7bc99c",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "ff9c695497144fe2af764715c7a4507a",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
     }
 }]

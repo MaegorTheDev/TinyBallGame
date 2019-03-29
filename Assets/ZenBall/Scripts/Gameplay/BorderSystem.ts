@@ -1,5 +1,5 @@
 
-namespace game {
+namespace casualgf {
     
     /** New System */
     export class BorderSystem extends ut.ComponentSystem {
@@ -8,7 +8,7 @@ namespace game {
             
             const display = this.world.getConfigData(ut.Core2D.DisplayInfo);            
             const borders = this.world.getEntityByName("Borders");		        
-            let border = this.world.getComponentData(borders, game.Borders);
+            let border = this.world.getComponentData(borders, casualgf.Borders);
 
             if(border.Width != display.frameWidth || border.Height != display.frameHeight){
                 border.Height = display.frameHeight;

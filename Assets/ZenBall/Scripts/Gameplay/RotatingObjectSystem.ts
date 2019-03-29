@@ -1,5 +1,5 @@
 
-namespace game {
+namespace casualgf {
 
     /** New System */
     export class RotatingObjectSystem extends ut.ComponentSystem {
@@ -9,7 +9,7 @@ namespace game {
                 return;
             }
 
-            this.world.forEach([ut.Entity, ut.Core2D.TransformLocalRotation ,game.RotatingObject], 
+            this.world.forEach([ut.Entity, ut.Core2D.TransformLocalRotation ,casualgf.RotatingObject], 
                 (entity,rotation, RotatingObject) =>{                        
                     if(!RotatingObject.Active){
                         return;
@@ -24,7 +24,7 @@ namespace game {
         }
 
         static DeactivateRotatingObjects(world:ut.World){
-            world.forEach([ut.Entity, game.RotatingObject], 
+            world.forEach([ut.Entity, casualgf.RotatingObject], 
                 (entity, RotatingObject) =>{       
                     RotatingObject.Active = false;
                 });

@@ -1,9 +1,9 @@
 
-namespace game {
+namespace casualgf {
 
     export class CoinCheckBehaviourFilter extends ut.EntityFilter {
         node: ut.Core2D.TransformNode;
-        coinChecker: game.CoinCheck;
+        coinChecker: casualgf.CoinCheck;
         renderer: ut.Core2D.Sprite2DRenderer;
         position?: ut.Core2D.TransformLocalPosition;        
     }

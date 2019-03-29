@@ -5,826 +5,868 @@
     "ExportFlags": 0,
     "SerializedVersion": 0,
     "Entities": [
-        { "$TypeId": 9, "Id": "2dbfef37b0a84e6a8ed4c5906a6ec670", "Name": "Group1" },
-        { "$TypeId": 9, "Id": "9321e641b720436b94b9a3bba6d16f31", "Name": "1.1" },
-        { "$TypeId": 9, "Id": "4d9eb0e1bbdb4ba6b87486ee1fef635e", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "a9296e0e792742bf8858483282cddde3", "Name": "Hole" },
-        { "$TypeId": 9, "Id": "09b014f09d42456f8506e1dcf7bf79c3", "Name": "1.2" },
-        { "$TypeId": 9, "Id": "c44616e9c77d4114a4b0e18460c8b5ee", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "6c56c5bcb4bc4a8e8c02ad70619f95be", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "cf1aa74138fe43ea9661c427f191a26e", "Name": "Hole" },
-        { "$TypeId": 9, "Id": "ea4a5d41581943d98f9797a6996f4593", "Name": "1.3" },
-        { "$TypeId": 9, "Id": "89bcb4cc57b645f8ab46158f29efa53d", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "f4a32b55f3e640e58cf6a491d32806f4", "Name": "Hole" },
-        { "$TypeId": 9, "Id": "ceebca13d7f84f29af7051586f0d5914", "Name": "1.4" },
-        { "$TypeId": 9, "Id": "5e9511b592b540718d00aa52450f470c", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "7fa3da90c7824adb8e39c5d02333cac5", "Name": "Hole" },
-        { "$TypeId": 9, "Id": "4bc9843d04a045f78ae2bcd9e70fa252", "Name": "1.5" },
-        { "$TypeId": 9, "Id": "fc32db39aecc4287bb26bc53808f447d", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "64d208cb07064d85bb394d85f3d954bf", "Name": "Hole" },
-        { "$TypeId": 9, "Id": "d55648aacf01439ba59f18ea3a160e0f", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "df02c8eeec1f4d28adb6a2b6be8d01f8", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "ebb8cbb639634982bffa708d46e447b9", "Name": "1.6" },
-        { "$TypeId": 9, "Id": "dda8c6563687473b9bc077d3ba934d7d", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "00c77e122f884284b85fa2af431a09fd", "Name": "Hole" },
-        { "$TypeId": 9, "Id": "a1f88c23a2fd4e28bfa96a7d2115ebe7", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "5c3e42258e2a4f81ac90aa1a8fbb1bc7", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "d58d208a1278440a9b35166240d8b115", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "4422a38779ce4fc491483ff3dcb20e1f", "Name": "Hole" },
-        { "$TypeId": 9, "Id": "446a71f3f5d24b379103d376d88a5a42", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "f55b07a806b245af87ab945cd043559c", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "4e8d246fb35a4ab3be0210f773944e84", "Name": "1.7" },
-        { "$TypeId": 9, "Id": "6af24ac8b70347b880155dac957d7441", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "3b2fd6a89ab4442585dae7d39d4d85b3", "Name": "Hole" },
-        { "$TypeId": 9, "Id": "09c2542de848483d8143e7ec3f15be7c", "Name": "1.8" },
-        { "$TypeId": 9, "Id": "cb2e6e708da645d4a64ce4a9ce8be407", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "a6a7b0a40f574f42a3b5ef536d6a9307", "Name": "Hole" },
-        { "$TypeId": 9, "Id": "290c63fee79c4255b0e5340ab28a1a4c", "Name": "1.9" },
-        { "$TypeId": 9, "Id": "7892cf3a4f2147e08c884f60d9911c51", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "21e56ed3677b4a5eac8a9ccecbb2ae60", "Name": "Hole" },
-        { "$TypeId": 9, "Id": "b8d6f17d38f54490909cc0075479e25f", "Name": "1.10" },
-        { "$TypeId": 9, "Id": "c704ea86a9ff48039128fb01a8023824", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "39b29543ef934e4f8c81582f8cf61ca3", "Name": "Hole" },
-        { "$TypeId": 9, "Id": "cf79bb191a3f422a91550cfa41f4eb32", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "2511fa5fdcd5467f85b09b828be47f33", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "44f43d0fd4fa41069020b93b9911230b", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "95705e27594249fd94634030a1bd77f7", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "dc8aa0d6ba404d4098cacce32e9920bc", "Name": "1.11" },
-        { "$TypeId": 9, "Id": "25391a7875704b5680b5f400c257b9aa", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "d3f5346c243d49c998add89442693519", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "e4422156018c490b89d74657f61d3de6", "Name": "Hole" },
-        { "$TypeId": 9, "Id": "4e0dc56971994994bcc752de2b44562c", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "443da32be3844be3a65cc14d268ce85d", "Name": "1.12" },
-        { "$TypeId": 9, "Id": "edf5f4aea26346d4b43d7fa7c0662422", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "04eb7ec01c9d413f998ab067b7521385", "Name": "Hole" },
-        { "$TypeId": 9, "Id": "c666ca0c631545d3b12a63860180b073", "Name": "1.13" },
-        { "$TypeId": 9, "Id": "aeb7edd7dafb4820926caf2a4d345c25", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "6dc575efe8214d18ba49e2bf7df3fd88", "Name": "Hole" },
-        { "$TypeId": 9, "Id": "dd12c5c23df4421eac70f9a7e9cee648", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "69088c9ee222432f8b290af6850d9ab2", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "508e5c29a4da4ed18ba546bb8dd29e90", "Name": "1.14" },
-        { "$TypeId": 9, "Id": "eb8daf8c5a4f4269b287f5defe2e140f", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "9600eede27e449d991f3057ee2db358c", "Name": "Hole" },
-        { "$TypeId": 9, "Id": "bd2081ecae734d92a7dc968189efbd8c", "Name": "1.15" },
-        { "$TypeId": 9, "Id": "cd987b810bdd406f9643d12a18ba8c8f", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "46c0e13f464a4317ac9cdedb9fe6b052", "Name": "Hole" },
-        { "$TypeId": 9, "Id": "2422a77046a24ed68d4d300735d6e40e", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "bcf91805c17b411fa91c8d0e179a3e71", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "c36a7ad26a3d4b27926dc03ef3dc6ae2", "Name": "1.16" },
-        { "$TypeId": 9, "Id": "7fb3b970d8e744e4b5f8e30e5194eef7", "Name": "Hole" },
-        { "$TypeId": 9, "Id": "f1aba5862f404c6fa366a0037ab0757e", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "644c6bc2ea2e45a493e67b827bb737e7", "Name": "1.17" },
-        { "$TypeId": 9, "Id": "fee912de619d4ea7ba06d96a69a8fb64", "Name": "Hole" },
-        { "$TypeId": 9, "Id": "0fb616e03b3a4b27800d3860884fd768", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "7bea13ccf98041198652b7646a0eefe5", "Name": "1.18" },
-        { "$TypeId": 9, "Id": "d6d4405fe43d4adfbc14cd0bf9f4fc0c", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "80605b43e0064857a5b620dc2d8717c6", "Name": "Hole" },
-        { "$TypeId": 9, "Id": "1d08873795e541a29935f12f0450cbe9", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "6e91af0702a6495aab0cb2552ebd8783", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "d9ea61d363fb4c1ab3d9b33b116f6404", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "7099ac50a7eb4f8a9cded3c671c3663e", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "be127f2ed6cc46d1b1362826e00ca1dd", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "8407c4bdd2d64b42a32afa3dd2a5444b", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "b2880fdf5c1b47278dfd0fe37f6e7dbd", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "69d78d2b5f2f4913be566efd9ec16fd7", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "ed3ad3e70ebe4ee9a4a23d90dad8906c", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "4ff0e29ed25645a0a9a8ad89f818a797", "Name": "1.19" },
-        { "$TypeId": 9, "Id": "acdfe94de8a5441ca6402338ade1d609", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "c0b775045f11495c92d04ed02ae6ab4e", "Name": "Hole" },
-        { "$TypeId": 9, "Id": "04838058e0274083a41e0314135c2366", "Name": "1.20" },
-        { "$TypeId": 9, "Id": "4b76a925326f457b85ee6d2ae25fac83", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "fd83adeb6603460bb24cd82902e2dcaf", "Name": "Hole" },
-        { "$TypeId": 9, "Id": "7786e15930e844e8975ad016ba19bf4d", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "b628ea3370ab4863a0e2f276589343b1", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "48ce3028515a45778d1e3b03ca5877c0", "Name": "Obstacle" },
-        { "$TypeId": 9, "Id": "323e57df1b3c489892286bbd9dd28d15", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "65fda063a6fb4dd9b6afb6e7c4d54233", "Name": "Group1" },
+        { "$TypeId": 9, "Id": "b80e2c72d61948f78afcadf7f66915f4", "Name": "1.1" },
+        { "$TypeId": 9, "Id": "0bac00ce20e142d288c96455fec02a72", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "a3d9236f9ff64115b6fab44468ad4bf3", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "1837a59804fe49edb5ce51b9dfa17b3b", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "2a6a8c9b1f2643ceb9a787155b77d4f0", "Name": "1.2" },
+        { "$TypeId": 9, "Id": "a9b8c89731354ce0b597a32b097d5398", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "b34078e76793443cabd66b93fcb3ae8a", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "a60a1c70e3e44626aa8211e32331b954", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "6609de9d629344688c3bd18e8da5c530", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "1a09386ac55d48c98069e4b8a1aa6427", "Name": "1.3" },
+        { "$TypeId": 9, "Id": "193d2d36df6f4fa2818d974075b8f956", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "b972d6e8cbf44803a2e68934d024423d", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "decedecc629d468987b4017c7058f015", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "09be05d01cf84fb1ac844091347f050c", "Name": "1.4" },
+        { "$TypeId": 9, "Id": "4a34b11c097648edbebc24177fb1a845", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "2d8067fef35c46db8e1136fe6d4960f5", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "f3920ee3eb264ead98616a6f8bf9ee73", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "afda632e168641d6905e1a5a3378ddf8", "Name": "1.5" },
+        { "$TypeId": 9, "Id": "522a0b0a34ad4904baa2915e6e9e4039", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "7a4e637a95124114be084e4bf46e8249", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "94da0ca2b4ac4e79a19012173ad94698", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "ea4e5c5d02be4cfbbca513da2b8e6e84", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "f5e563ca9455439e9ba5103b4dd89c3c", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "8378e0a7c6fb4591ab7337b65fd5689f", "Name": "1.6" },
+        { "$TypeId": 9, "Id": "264e08dbf5924f93ba56e603f8e7570a", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "04aef8965e594574992a27344dd9be45", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "b779c4785a0e4b1ba83489364403f594", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "c31a83efd1314c2ea921b8021c195e16", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "99b7a446f7a5437ebdeabfbcfd53f7e0", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "68be88d651ba431a803688870bce4aa1", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "1f67f9b714674cee86311136049d9d05", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "fe4e4fbb3a14478c827760232a2286e5", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "c9fd638f709c4a649ef9ad6e5b68d53f", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "6a7a0969cf4f40f5a4cc270ce6847659", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "2e0db5bff47b46a194e22ff87751f0d6", "Name": "1.7" },
+        { "$TypeId": 9, "Id": "09200e2319d94de0b73779950ec15919", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "d21d752362404e3d9871b127826af00c", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "facb9e8e9fea425faf9e5ef4e3d8b850", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "3436ea0130ba4999bf47891edeaa36de", "Name": "1.8" },
+        { "$TypeId": 9, "Id": "a6e3466e96fb4cb68bf9eed81ec3ba67", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "76809dd411bd496faa016963994dd0fe", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "66c54bd09c1540b8beb4a15b9c7d2662", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "6592f155e4a143b9af022967e33bb184", "Name": "1.9" },
+        { "$TypeId": 9, "Id": "4f7f446cbc3c41669d6ebdf5e1d3208d", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "324ebc7be7eb4cae92f5ffbb80f4109d", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "981283a07add4c468e3449a915809bc9", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "7ebc3622b7f4442a9e076e705713d062", "Name": "1.10" },
+        { "$TypeId": 9, "Id": "083c39ea7e4b4d73945dda3b77ffa296", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "09fd9ae59e174a718bca178dd19da6dd", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "6c0299b0b44444e1b1df5e42fa3deb0b", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "9aec5f44e3fb48e5bb268de74e6b92b0", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "77af3d3c5629467f827ff28ad8ede293", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "9b15ab2dd66f4db6b3f7e255d2fe3f75", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "97a6f4c5046143b18a37d33e549e6a04", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "cd838ff6793942f8bc022e4a41069e95", "Name": "1.11" },
+        { "$TypeId": 9, "Id": "f341d2436d814b5f8d77dc6a6845cf5d", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "8f7cd8f99c00456da3fe0b3453a03cf2", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "01adb0b3b919495cbaee87fa98a00cf3", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "36277311a7e149c780d894ec32ec22e0", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "dbce4765ffc84ca6937f342990ae22cf", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "246891263ab74f029d8888fa9fbeaea3", "Name": "1.12" },
+        { "$TypeId": 9, "Id": "7581b41e88e544b5b58b8c2dded26fc3", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "2714f3e23289491e9018ab17e666218b", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "6073eaa9f51646ffa8d4274c1ec4b626", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "54877f4ff0104a5ba3d37ede76154ae9", "Name": "1.13" },
+        { "$TypeId": 9, "Id": "2cb16804058a41bb850c629aa48602a7", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "c27ec39981b9408396672ffa697919dc", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "b32bc703852f4e31a7fe99c03743272f", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "8567ddd05284453f8f2c2f3101a90b83", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "e24f5cab9841432e85c67e4f79833969", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "dd33e8c06202404889251ff5d2370640", "Name": "1.14" },
+        { "$TypeId": 9, "Id": "2ecd4181eccc42f1acabc81c0b769746", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "88186a535d17477b908fe6ecacb488d3", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "dda929c151f94ed68ff4e5fe1a76b51a", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "19bf0361859141fcab2b780efd567fc0", "Name": "1.15" },
+        { "$TypeId": 9, "Id": "8b4f745c6cd24ba698394e0caceb26a7", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "f4b26dc9a7854c8c946375eca9c17599", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "b4fb44f4f658435c961df90d1d04aac1", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "b9003ddcb7b84b4bbb921f25e038e5ab", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "ca049af9be2d4339a7977e264de5ebbf", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "a88d15d275f94e62b94b3bb0ffcb2bad", "Name": "1.16" },
+        { "$TypeId": 9, "Id": "d3335d39ecc54125816a15e0d2cc51fc", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "c26a47de2e334864b2936720d0f706b9", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "5efeba22867c4657b242c70ef7c6531d", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "e2e5b425ef8742e99bfe633b7821f08c", "Name": "1.17" },
+        { "$TypeId": 9, "Id": "b5f3b8ece57c4a159c2fe0d0957c54c4", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "e6d5801438184d85bb8bf8085cabf134", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "a97d61b91a9348feba9ab6c033329e96", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "fe8d42c7891046bba36df19fa6195378", "Name": "1.18" },
+        { "$TypeId": 9, "Id": "d612bd1f5d684ad793bcd50b7d76e99f", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "25943c4da35642db884840b93dacf885", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "7e361548a5234eac802f6f232710ca03", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "ac9f01401e694b6dba2a51834cbfc41f", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "19b807db5f3845749ffea36b136b5d21", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "d58c5f1795204a3f9064d0f14f55aea3", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "b3d4db3dafcc4c34b455876d12226d27", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "43e59d6117694c7a9a74804871b12ab9", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "f0db66eff95c433ab2bc016749e5acc7", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "a5f49168350f49f3b38e391c55addf98", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "eccfd38e5aff47b2a63b882d87bd37bc", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "363450d4905048f7ae4f32fe6213aa8d", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "95f4d4a3bb474158af63b7c84397a582", "Name": "1.19" },
+        { "$TypeId": 9, "Id": "5cf766c6350142ee88a3c4090fc383e0", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "be3fe17b42844ed3abd5a9ec8e4d101b", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "10d337258ed949f089b67a3890b76127", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "e43f764b4417424486c8135e77ca9ece", "Name": "1.20" },
+        { "$TypeId": 9, "Id": "8baafbbfe5b9450ea47a4238f4a179cf", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "927f107285c845d8b5c7b2e0dc80062a", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "5f4b05df213e4ade80c980221577344d", "Name": "Flag" },
+        { "$TypeId": 9, "Id": "5cbf4750dc3744e3ae65d6d1ddd03099", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "2813838e9ba049e28e084dc0f0dd84a2", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "3f055e50fc424a33b6e8b978e8d9e381", "Name": "Obstacle" },
+        { "$TypeId": 9, "Id": "cceb973278724a3296ad4194ce22eba0", "Name": "Obstacle" }
     ],
     "PrefabInstances": [
-        { "$TypeId": 13, "Id": "bd707aec316f41db9413a20daeaec4c5", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "3db741e6f2ef46638606a8c765272d4a", "Name": "Hole" },
-        { "$TypeId": 13, "Id": "f4fd22acb7674d7b9e4488173811f2b2", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "83b091664dbc44e0aeff81c282c3ca62", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "52d4a16e5cc945b4a0359ab68e091f90", "Name": "Hole" },
-        { "$TypeId": 13, "Id": "cf9ec67da6f546b3910d23779e6aa017", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "e2383a97b25241ed980bc18cdfd2da25", "Name": "Hole" },
-        { "$TypeId": 13, "Id": "b0fbdbd3c5ac4f139f2cfd7d001b4b27", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "058d20efd9f34af7be36c6928faefd80", "Name": "Hole" },
-        { "$TypeId": 13, "Id": "35d2e8d36cb8462caebe36291df38ff7", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "17a882741583412fa71c4bcf2f391b1f", "Name": "Hole" },
-        { "$TypeId": 13, "Id": "6b2705bad9a24401a34c160cf264da90", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "d233c23091894faea7345367d7e9e054", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "36a82d5abc894faab676e951b2304bfe", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "b10fb3eda9d44e2983ed1ee6214abd82", "Name": "Hole" },
-        { "$TypeId": 13, "Id": "db8820fe39164256ad9cc382ea809af8", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "febd25570ec84875b3f015bddc0c69a4", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "901d7559889b4cf4839a9c1611f5424d", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "2669d6eee71f4d398b9f908fcf418ac9", "Name": "Hole" },
-        { "$TypeId": 13, "Id": "3e5dff3d00314a10a305586dcead8c9a", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "d421fa31387446c6920280f80a422766", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "2d46f4e5a6fa4e27ad815d3e706aefa2", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "984b3fe2311e46178eee2d7af3e86264", "Name": "Hole" },
-        { "$TypeId": 13, "Id": "60535c38f88a4fbe91f309f1ad57c0cf", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "1d121fb499294bfdaa2a23f74baec817", "Name": "Hole" },
-        { "$TypeId": 13, "Id": "0253c9028f214aaaa655bb77d0e07efe", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "2537132bbb374fb1bd7dffd778a1f25b", "Name": "Hole" },
-        { "$TypeId": 13, "Id": "075c343b05ca4d34aafffc502a47f46e", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "d0e6278b415640d9a291d2010edb50fe", "Name": "Hole" },
-        { "$TypeId": 13, "Id": "43016cc794c0447c8f51150bbc85a55b", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "094606db817243148a7aac5773102c35", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "cec8e64eab0642389f475a48c24cfbd1", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "48eac9c4aa894265beb10cf9e8619af4", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "d21a74731060400eb55944438ee5b50a", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "4055c82b1c1244d1b975d992d14502de", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "539790a903fd4123997636122d19584f", "Name": "Hole" },
-        { "$TypeId": 13, "Id": "b49b135c2ef0423398cf79e57c87786f", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "a012e808f10c4524b687c4737e82ee73", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "d29157d7231040969c66d45457efbabd", "Name": "Hole" },
-        { "$TypeId": 13, "Id": "fbbc7d544d2b4411bb40a9ac231752a2", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "f688f3aeb7394d57bf9a68df1a9c6eba", "Name": "Hole" },
-        { "$TypeId": 13, "Id": "1ad3c8dfdd914c1b87d3601c8f11babb", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "ae140c72e34e4268aa9ace25175a743e", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "aa8d84434a934cb5bc8224c2eff140de", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "f2b11aea718b40e8a5adaeeb0de07c68", "Name": "Hole" },
-        { "$TypeId": 13, "Id": "7984857e23f04b5fa4a6c47f05987338", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "edf7321758044bd5a7cf66b2919e851b", "Name": "Hole" },
-        { "$TypeId": 13, "Id": "5513f02919dc405588e3bca8309323b2", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "593b8792be714f1daed985239ec812ed", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "ddec743bea7748ed8d1f6ff2b1c47e71", "Name": "Hole" },
-        { "$TypeId": 13, "Id": "5fe746ef9561410c8604b4674d50c721", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "57be7f7caf82416fbd899e30775de045", "Name": "Hole" },
-        { "$TypeId": 13, "Id": "56c85283d35a4a1bae48e06839337ede", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "ad1d8f15902741faa22b4b734ed5aac1", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "a7811b937b6a4bd0a34dd1ee036a4f41", "Name": "Hole" },
-        { "$TypeId": 13, "Id": "8cc25cb5fd1245f38ab27d05cc76b301", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "9c32423dd289455ab2a6c2f8a785bb03", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "6164a8d8d5884072b5e57ec2e02af76f", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "e5752c765d434669a317fc8e93a8db20", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "9ff94d84e9cb46ed991e9949db7a42e6", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "f6d0a4b4b0a44dbba25421a53619b6e2", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "0229a15a4aa34982baab0f26f508be0b", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "38191c488d934b6584502bc569f13161", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "9bf2909608ff4622bc5044c74294262a", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "a04726febdd04b358c0f73d19c00a836", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "0b21b0a2193f4e2dad9b5901ca315b9b", "Name": "Hole" },
-        { "$TypeId": 13, "Id": "4cfdd3e6f7954fd2b5fdd0e864f90842", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "c83f2d55a743489f884353c6625ac655", "Name": "Hole" },
-        { "$TypeId": 13, "Id": "7ab6321feeec44e4812c3c9860afbf5d", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "433de897b3394053ba3e52896869feea", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "7511e1fa26124dd8938ed213a9476837", "Name": "Obstacle" },
-        { "$TypeId": 13, "Id": "19e1b2f80307402c8e1954bb65c00ff8", "Name": "Obstacle" }
+        { "$TypeId": 13, "Id": "c5d8cfcb2ffa46e9a80f2310967f32a9", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "77410339ef9e4c6faf686ed84eb7016c", "Name": "Hole" },
+        { "$TypeId": 13, "Id": "1dabe830ee3c42bd9c68c7e776395ef6", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "a0c943675f4245f293cc9be7ca0df2cb", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "807647dedcf24e07817fcfdaed704dfa", "Name": "Hole" },
+        { "$TypeId": 13, "Id": "8c6de84c7faa499d8ea629186dc8d586", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "91ed2ec01e6045f8bbd575f50ea08ccf", "Name": "Hole" },
+        { "$TypeId": 13, "Id": "78a2de43aa24461299761f8b085fc106", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "3cab27bf4c4946a28cb5d3d1bc590873", "Name": "Hole" },
+        { "$TypeId": 13, "Id": "4dd6c2b90d6d465e985dd490af07ebb8", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "2c5e8a8bff764dcb956633b17d47b9f9", "Name": "Hole" },
+        { "$TypeId": 13, "Id": "d2774a4dabe9464da26ef5bbf1afe623", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "158029084fe2435a8bc743cd2e2a7074", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "0f3b30616d614dbdbc4923a28b22c770", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "6da0533b71204e9ab7875faea04dd857", "Name": "Hole" },
+        { "$TypeId": 13, "Id": "30bc52e09b1449e99f3bf5519a97346a", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "0a3c98c6b0ea48bc877cecbd088a7ab1", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "f60f93de5aa144018451f6363d2bc065", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "b29bae2f8197416b92c867550f332da8", "Name": "Hole" },
+        { "$TypeId": 13, "Id": "8f834659bd6740158decf639fc017aeb", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "e7527c15ab014bf89b410d4c9909dce3", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "ce2230ccbc5340d7a54808679da10273", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "3ab6bfa03a0c48b8846b045e30c8fe63", "Name": "Hole" },
+        { "$TypeId": 13, "Id": "0b765ccb95894907abfd65b5406f52de", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "d7e6fe054ff645f287137bf889b24981", "Name": "Hole" },
+        { "$TypeId": 13, "Id": "64124583a28a4e2bbd4777e2ed31b474", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "3385ee839aba4b32a99604e8752a96e6", "Name": "Hole" },
+        { "$TypeId": 13, "Id": "6ebca468d6184fa0878ccedcf121be4d", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "30c48959619c4893a23c1cd4d85b379a", "Name": "Hole" },
+        { "$TypeId": 13, "Id": "61a6378a0f3440f882f8c8d73ade3881", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "b9fe8ef07dc341aeb2e01848b155df2d", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "8c44afed8c8d42fdb0d4b910f504cc19", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "22aab67497bb48d587ebe459a2e18fc3", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "c0d889a68ec242d7a75ebcba2fa9e9cb", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "9e707428f1064b1d82395b0f034c1613", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "72186efac6b3432c9ec7c795246d6a0e", "Name": "Hole" },
+        { "$TypeId": 13, "Id": "2c99a0bcb8804333b989239fc6dc1ff9", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "55f3b1c70d7247ed908cb6eb7b9ede5e", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "b0a4508f269a4fd6ba55dc71c492a9b4", "Name": "Hole" },
+        { "$TypeId": 13, "Id": "33d017052c66430d82fba536998dea0b", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "864245c4fd844e4f83ae7f9c032a88ce", "Name": "Hole" },
+        { "$TypeId": 13, "Id": "37f3c14df67643f4a42c992b4985a4d7", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "55afbc0139184ffb912608eb3e2467bf", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "f409ec0cf7da48e5a47927af87641827", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "7f7e8195ba63424f97ac15ad02d3ae2a", "Name": "Hole" },
+        { "$TypeId": 13, "Id": "852d59fb384c47af916f8de88925cc83", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "2030baed9d4a4ad58fbe87f93bd5808d", "Name": "Hole" },
+        { "$TypeId": 13, "Id": "15cc2c6435654004bde478425f787a52", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "c2849f8036f045ec850ed319a909e248", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "ea890efbc3ba44e89fc9f002e6362474", "Name": "Hole" },
+        { "$TypeId": 13, "Id": "7814686f22c848d6baffb0f004a7d725", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "f227cdb5cd254d76bf7c34cd9422d023", "Name": "Hole" },
+        { "$TypeId": 13, "Id": "6a8cf8977c014fdd8ed2616545b7f1fd", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "48f41060c8864b28b068760ac2bfbf73", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "86f5a0c2b32b4de9a0b57586b836c62e", "Name": "Hole" },
+        { "$TypeId": 13, "Id": "87e8cd6f5b2b4835b096c05b78b3fa35", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "ce7f2da2412143c5ac47c7d3d12300ed", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "a543b03e49174231978eadc49913de26", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "2219570e55524735b626b704ef9a835e", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "996c67b5aa364c2987f8b674f531a35f", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "8c576e934ac143a186979a822d3db95c", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "0188c0e4b4694e85a6cfd2bd0592c996", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "3bc07d35bc064bb7befee7e2b663a85b", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "77560a154b4a499fb2e3c71977a839ac", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "07cdcfcaa723441d910886035988d24f", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "60f94b6b90d94a2cad058be0ad837634", "Name": "Hole" },
+        { "$TypeId": 13, "Id": "8e7bec04981f4b8c858aa692db529435", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "7f2e4a752e024c7d9f33b24b3a23e034", "Name": "Hole" },
+        { "$TypeId": 13, "Id": "6bf1a3ffff4a474e8acc1dd6ec51c031", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "e96dbb04d1b54efe8ca0adb63ef07ecd", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "709a0192b16448c4b506af83bd9b43d9", "Name": "Obstacle" },
+        { "$TypeId": 13, "Id": "8f5fa86ec51442db84bd0f212b6b4d9b", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "bd707aec316f41db9413a20daeaec4c5",
+    "Id": "c5d8cfcb2ffa46e9a80f2310967f32a9",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "4d9eb0e1bbdb4ba6b87486ee1fef635e", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "0bac00ce20e142d288c96455fec02a72", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "3db741e6f2ef46638606a8c765272d4a",
+    "Id": "77410339ef9e4c6faf686ed84eb7016c",
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "a9296e0e792742bf8858483282cddde3", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "a3d9236f9ff64115b6fab44468ad4bf3", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "1837a59804fe49edb5ce51b9dfa17b3b", "Name": "Flag" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "f4fd22acb7674d7b9e4488173811f2b2",
+    "Id": "1dabe830ee3c42bd9c68c7e776395ef6",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "c44616e9c77d4114a4b0e18460c8b5ee", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "a9b8c89731354ce0b597a32b097d5398", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "83b091664dbc44e0aeff81c282c3ca62",
+    "Id": "a0c943675f4245f293cc9be7ca0df2cb",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "6c56c5bcb4bc4a8e8c02ad70619f95be", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "b34078e76793443cabd66b93fcb3ae8a", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "52d4a16e5cc945b4a0359ab68e091f90",
+    "Id": "807647dedcf24e07817fcfdaed704dfa",
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "cf1aa74138fe43ea9661c427f191a26e", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "a60a1c70e3e44626aa8211e32331b954", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "6609de9d629344688c3bd18e8da5c530", "Name": "Flag" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "cf9ec67da6f546b3910d23779e6aa017",
+    "Id": "8c6de84c7faa499d8ea629186dc8d586",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "89bcb4cc57b645f8ab46158f29efa53d", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "193d2d36df6f4fa2818d974075b8f956", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "e2383a97b25241ed980bc18cdfd2da25",
+    "Id": "91ed2ec01e6045f8bbd575f50ea08ccf",
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "f4a32b55f3e640e58cf6a491d32806f4", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "b972d6e8cbf44803a2e68934d024423d", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "decedecc629d468987b4017c7058f015", "Name": "Flag" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "b0fbdbd3c5ac4f139f2cfd7d001b4b27",
+    "Id": "78a2de43aa24461299761f8b085fc106",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "5e9511b592b540718d00aa52450f470c", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "4a34b11c097648edbebc24177fb1a845", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "058d20efd9f34af7be36c6928faefd80",
+    "Id": "3cab27bf4c4946a28cb5d3d1bc590873",
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "7fa3da90c7824adb8e39c5d02333cac5", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "2d8067fef35c46db8e1136fe6d4960f5", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "f3920ee3eb264ead98616a6f8bf9ee73", "Name": "Flag" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "35d2e8d36cb8462caebe36291df38ff7",
+    "Id": "4dd6c2b90d6d465e985dd490af07ebb8",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "fc32db39aecc4287bb26bc53808f447d", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "522a0b0a34ad4904baa2915e6e9e4039", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "17a882741583412fa71c4bcf2f391b1f",
+    "Id": "2c5e8a8bff764dcb956633b17d47b9f9",
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "64d208cb07064d85bb394d85f3d954bf", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "7a4e637a95124114be084e4bf46e8249", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "94da0ca2b4ac4e79a19012173ad94698", "Name": "Flag" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "6b2705bad9a24401a34c160cf264da90",
+    "Id": "d2774a4dabe9464da26ef5bbf1afe623",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "d55648aacf01439ba59f18ea3a160e0f", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "ea4e5c5d02be4cfbbca513da2b8e6e84", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "d233c23091894faea7345367d7e9e054",
+    "Id": "158029084fe2435a8bc743cd2e2a7074",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "df02c8eeec1f4d28adb6a2b6be8d01f8", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "f5e563ca9455439e9ba5103b4dd89c3c", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "36a82d5abc894faab676e951b2304bfe",
+    "Id": "0f3b30616d614dbdbc4923a28b22c770",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "dda8c6563687473b9bc077d3ba934d7d", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "264e08dbf5924f93ba56e603f8e7570a", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "b10fb3eda9d44e2983ed1ee6214abd82",
+    "Id": "6da0533b71204e9ab7875faea04dd857",
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "00c77e122f884284b85fa2af431a09fd", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "04aef8965e594574992a27344dd9be45", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "b779c4785a0e4b1ba83489364403f594", "Name": "Flag" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "db8820fe39164256ad9cc382ea809af8",
+    "Id": "30bc52e09b1449e99f3bf5519a97346a",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "a1f88c23a2fd4e28bfa96a7d2115ebe7", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "c31a83efd1314c2ea921b8021c195e16", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "febd25570ec84875b3f015bddc0c69a4",
+    "Id": "0a3c98c6b0ea48bc877cecbd088a7ab1",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "5c3e42258e2a4f81ac90aa1a8fbb1bc7", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "99b7a446f7a5437ebdeabfbcfd53f7e0", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "901d7559889b4cf4839a9c1611f5424d",
+    "Id": "f60f93de5aa144018451f6363d2bc065",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "d58d208a1278440a9b35166240d8b115", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "68be88d651ba431a803688870bce4aa1", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "2669d6eee71f4d398b9f908fcf418ac9",
+    "Id": "b29bae2f8197416b92c867550f332da8",
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "4422a38779ce4fc491483ff3dcb20e1f", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "1f67f9b714674cee86311136049d9d05", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "fe4e4fbb3a14478c827760232a2286e5", "Name": "Flag" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "3e5dff3d00314a10a305586dcead8c9a",
+    "Id": "8f834659bd6740158decf639fc017aeb",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "446a71f3f5d24b379103d376d88a5a42", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "c9fd638f709c4a649ef9ad6e5b68d53f", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "d421fa31387446c6920280f80a422766",
+    "Id": "e7527c15ab014bf89b410d4c9909dce3",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "f55b07a806b245af87ab945cd043559c", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "6a7a0969cf4f40f5a4cc270ce6847659", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "2d46f4e5a6fa4e27ad815d3e706aefa2",
+    "Id": "ce2230ccbc5340d7a54808679da10273",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "6af24ac8b70347b880155dac957d7441", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "09200e2319d94de0b73779950ec15919", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "984b3fe2311e46178eee2d7af3e86264",
+    "Id": "3ab6bfa03a0c48b8846b045e30c8fe63",
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "3b2fd6a89ab4442585dae7d39d4d85b3", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "d21d752362404e3d9871b127826af00c", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "facb9e8e9fea425faf9e5ef4e3d8b850", "Name": "Flag" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "60535c38f88a4fbe91f309f1ad57c0cf",
+    "Id": "0b765ccb95894907abfd65b5406f52de",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "cb2e6e708da645d4a64ce4a9ce8be407", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "a6e3466e96fb4cb68bf9eed81ec3ba67", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "1d121fb499294bfdaa2a23f74baec817",
+    "Id": "d7e6fe054ff645f287137bf889b24981",
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "a6a7b0a40f574f42a3b5ef536d6a9307", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "76809dd411bd496faa016963994dd0fe", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "66c54bd09c1540b8beb4a15b9c7d2662", "Name": "Flag" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "0253c9028f214aaaa655bb77d0e07efe",
+    "Id": "64124583a28a4e2bbd4777e2ed31b474",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "7892cf3a4f2147e08c884f60d9911c51", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "4f7f446cbc3c41669d6ebdf5e1d3208d", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "2537132bbb374fb1bd7dffd778a1f25b",
+    "Id": "3385ee839aba4b32a99604e8752a96e6",
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "21e56ed3677b4a5eac8a9ccecbb2ae60", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "324ebc7be7eb4cae92f5ffbb80f4109d", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "981283a07add4c468e3449a915809bc9", "Name": "Flag" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "075c343b05ca4d34aafffc502a47f46e",
+    "Id": "6ebca468d6184fa0878ccedcf121be4d",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "c704ea86a9ff48039128fb01a8023824", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "083c39ea7e4b4d73945dda3b77ffa296", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "d0e6278b415640d9a291d2010edb50fe",
+    "Id": "30c48959619c4893a23c1cd4d85b379a",
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "39b29543ef934e4f8c81582f8cf61ca3", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "09fd9ae59e174a718bca178dd19da6dd", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "6c0299b0b44444e1b1df5e42fa3deb0b", "Name": "Flag" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "43016cc794c0447c8f51150bbc85a55b",
+    "Id": "61a6378a0f3440f882f8c8d73ade3881",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "cf79bb191a3f422a91550cfa41f4eb32", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "9aec5f44e3fb48e5bb268de74e6b92b0", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "094606db817243148a7aac5773102c35",
+    "Id": "b9fe8ef07dc341aeb2e01848b155df2d",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "2511fa5fdcd5467f85b09b828be47f33", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "77af3d3c5629467f827ff28ad8ede293", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "cec8e64eab0642389f475a48c24cfbd1",
+    "Id": "8c44afed8c8d42fdb0d4b910f504cc19",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "44f43d0fd4fa41069020b93b9911230b", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "9b15ab2dd66f4db6b3f7e255d2fe3f75", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "48eac9c4aa894265beb10cf9e8619af4",
+    "Id": "22aab67497bb48d587ebe459a2e18fc3",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "95705e27594249fd94634030a1bd77f7", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "97a6f4c5046143b18a37d33e549e6a04", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "d21a74731060400eb55944438ee5b50a",
+    "Id": "c0d889a68ec242d7a75ebcba2fa9e9cb",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "25391a7875704b5680b5f400c257b9aa", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "f341d2436d814b5f8d77dc6a6845cf5d", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "4055c82b1c1244d1b975d992d14502de",
+    "Id": "9e707428f1064b1d82395b0f034c1613",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "d3f5346c243d49c998add89442693519", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "8f7cd8f99c00456da3fe0b3453a03cf2", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "539790a903fd4123997636122d19584f",
+    "Id": "72186efac6b3432c9ec7c795246d6a0e",
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "e4422156018c490b89d74657f61d3de6", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "01adb0b3b919495cbaee87fa98a00cf3", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "36277311a7e149c780d894ec32ec22e0", "Name": "Flag" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "b49b135c2ef0423398cf79e57c87786f",
+    "Id": "2c99a0bcb8804333b989239fc6dc1ff9",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "4e0dc56971994994bcc752de2b44562c", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "dbce4765ffc84ca6937f342990ae22cf", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "a012e808f10c4524b687c4737e82ee73",
+    "Id": "55f3b1c70d7247ed908cb6eb7b9ede5e",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "edf5f4aea26346d4b43d7fa7c0662422", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "7581b41e88e544b5b58b8c2dded26fc3", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "d29157d7231040969c66d45457efbabd",
+    "Id": "b0a4508f269a4fd6ba55dc71c492a9b4",
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "04eb7ec01c9d413f998ab067b7521385", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "2714f3e23289491e9018ab17e666218b", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "6073eaa9f51646ffa8d4274c1ec4b626", "Name": "Flag" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "fbbc7d544d2b4411bb40a9ac231752a2",
+    "Id": "33d017052c66430d82fba536998dea0b",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "aeb7edd7dafb4820926caf2a4d345c25", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "2cb16804058a41bb850c629aa48602a7", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "f688f3aeb7394d57bf9a68df1a9c6eba",
+    "Id": "864245c4fd844e4f83ae7f9c032a88ce",
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "6dc575efe8214d18ba49e2bf7df3fd88", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "c27ec39981b9408396672ffa697919dc", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "b32bc703852f4e31a7fe99c03743272f", "Name": "Flag" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "1ad3c8dfdd914c1b87d3601c8f11babb",
+    "Id": "37f3c14df67643f4a42c992b4985a4d7",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "dd12c5c23df4421eac70f9a7e9cee648", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "8567ddd05284453f8f2c2f3101a90b83", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "ae140c72e34e4268aa9ace25175a743e",
+    "Id": "55afbc0139184ffb912608eb3e2467bf",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "69088c9ee222432f8b290af6850d9ab2", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "e24f5cab9841432e85c67e4f79833969", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "aa8d84434a934cb5bc8224c2eff140de",
+    "Id": "f409ec0cf7da48e5a47927af87641827",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "eb8daf8c5a4f4269b287f5defe2e140f", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "2ecd4181eccc42f1acabc81c0b769746", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "f2b11aea718b40e8a5adaeeb0de07c68",
+    "Id": "7f7e8195ba63424f97ac15ad02d3ae2a",
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "9600eede27e449d991f3057ee2db358c", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "88186a535d17477b908fe6ecacb488d3", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "dda929c151f94ed68ff4e5fe1a76b51a", "Name": "Flag" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "7984857e23f04b5fa4a6c47f05987338",
+    "Id": "852d59fb384c47af916f8de88925cc83",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "cd987b810bdd406f9643d12a18ba8c8f", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "8b4f745c6cd24ba698394e0caceb26a7", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "edf7321758044bd5a7cf66b2919e851b",
+    "Id": "2030baed9d4a4ad58fbe87f93bd5808d",
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "46c0e13f464a4317ac9cdedb9fe6b052", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "f4b26dc9a7854c8c946375eca9c17599", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "b4fb44f4f658435c961df90d1d04aac1", "Name": "Flag" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "5513f02919dc405588e3bca8309323b2",
+    "Id": "15cc2c6435654004bde478425f787a52",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "2422a77046a24ed68d4d300735d6e40e", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "b9003ddcb7b84b4bbb921f25e038e5ab", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "593b8792be714f1daed985239ec812ed",
+    "Id": "c2849f8036f045ec850ed319a909e248",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "bcf91805c17b411fa91c8d0e179a3e71", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "ca049af9be2d4339a7977e264de5ebbf", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "ddec743bea7748ed8d1f6ff2b1c47e71",
+    "Id": "ea890efbc3ba44e89fc9f002e6362474",
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "7fb3b970d8e744e4b5f8e30e5194eef7", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "d3335d39ecc54125816a15e0d2cc51fc", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "c26a47de2e334864b2936720d0f706b9", "Name": "Flag" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "5fe746ef9561410c8604b4674d50c721",
+    "Id": "7814686f22c848d6baffb0f004a7d725",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "f1aba5862f404c6fa366a0037ab0757e", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "5efeba22867c4657b242c70ef7c6531d", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "57be7f7caf82416fbd899e30775de045",
+    "Id": "f227cdb5cd254d76bf7c34cd9422d023",
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "fee912de619d4ea7ba06d96a69a8fb64", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "b5f3b8ece57c4a159c2fe0d0957c54c4", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "e6d5801438184d85bb8bf8085cabf134", "Name": "Flag" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "56c85283d35a4a1bae48e06839337ede",
+    "Id": "6a8cf8977c014fdd8ed2616545b7f1fd",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "0fb616e03b3a4b27800d3860884fd768", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "a97d61b91a9348feba9ab6c033329e96", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "ad1d8f15902741faa22b4b734ed5aac1",
+    "Id": "48f41060c8864b28b068760ac2bfbf73",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "d6d4405fe43d4adfbc14cd0bf9f4fc0c", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "d612bd1f5d684ad793bcd50b7d76e99f", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "a7811b937b6a4bd0a34dd1ee036a4f41",
+    "Id": "86f5a0c2b32b4de9a0b57586b836c62e",
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "80605b43e0064857a5b620dc2d8717c6", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "25943c4da35642db884840b93dacf885", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "7e361548a5234eac802f6f232710ca03", "Name": "Flag" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "8cc25cb5fd1245f38ab27d05cc76b301",
+    "Id": "87e8cd6f5b2b4835b096c05b78b3fa35",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "1d08873795e541a29935f12f0450cbe9", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "ac9f01401e694b6dba2a51834cbfc41f", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "9c32423dd289455ab2a6c2f8a785bb03",
+    "Id": "ce7f2da2412143c5ac47c7d3d12300ed",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "6e91af0702a6495aab0cb2552ebd8783", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "19b807db5f3845749ffea36b136b5d21", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "6164a8d8d5884072b5e57ec2e02af76f",
+    "Id": "a543b03e49174231978eadc49913de26",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "d9ea61d363fb4c1ab3d9b33b116f6404", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "d58c5f1795204a3f9064d0f14f55aea3", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "e5752c765d434669a317fc8e93a8db20",
+    "Id": "2219570e55524735b626b704ef9a835e",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "7099ac50a7eb4f8a9cded3c671c3663e", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "b3d4db3dafcc4c34b455876d12226d27", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "9ff94d84e9cb46ed991e9949db7a42e6",
+    "Id": "996c67b5aa364c2987f8b674f531a35f",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "be127f2ed6cc46d1b1362826e00ca1dd", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "43e59d6117694c7a9a74804871b12ab9", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "f6d0a4b4b0a44dbba25421a53619b6e2",
+    "Id": "8c576e934ac143a186979a822d3db95c",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "8407c4bdd2d64b42a32afa3dd2a5444b", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "f0db66eff95c433ab2bc016749e5acc7", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "0229a15a4aa34982baab0f26f508be0b",
+    "Id": "0188c0e4b4694e85a6cfd2bd0592c996",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "b2880fdf5c1b47278dfd0fe37f6e7dbd", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "a5f49168350f49f3b38e391c55addf98", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "38191c488d934b6584502bc569f13161",
+    "Id": "3bc07d35bc064bb7befee7e2b663a85b",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "69d78d2b5f2f4913be566efd9ec16fd7", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "eccfd38e5aff47b2a63b882d87bd37bc", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "9bf2909608ff4622bc5044c74294262a",
+    "Id": "77560a154b4a499fb2e3c71977a839ac",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "ed3ad3e70ebe4ee9a4a23d90dad8906c", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "363450d4905048f7ae4f32fe6213aa8d", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "a04726febdd04b358c0f73d19c00a836",
+    "Id": "07cdcfcaa723441d910886035988d24f",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "acdfe94de8a5441ca6402338ade1d609", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "5cf766c6350142ee88a3c4090fc383e0", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "0b21b0a2193f4e2dad9b5901ca315b9b",
+    "Id": "60f94b6b90d94a2cad058be0ad837634",
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "c0b775045f11495c92d04ed02ae6ab4e", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "be3fe17b42844ed3abd5a9ec8e4d101b", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "10d337258ed949f089b67a3890b76127", "Name": "Flag" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "4cfdd3e6f7954fd2b5fdd0e864f90842",
+    "Id": "8e7bec04981f4b8c858aa692db529435",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "4b76a925326f457b85ee6d2ae25fac83", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "8baafbbfe5b9450ea47a4238f4a179cf", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "c83f2d55a743489f884353c6625ac655",
+    "Id": "7f2e4a752e024c7d9f33b24b3a23e034",
     "Name": "Hole",
     "Source": { "Id": "75a003f986aa4e5dae3d053a8fbbcc0d", "Name": "Hole" },
     "Entities": [
-        { "$TypeId": 9, "Id": "fd83adeb6603460bb24cd82902e2dcaf", "Name": "Hole" }
+        { "$TypeId": 9, "Id": "927f107285c845d8b5c7b2e0dc80062a", "Name": "Hole" },
+        { "$TypeId": 9, "Id": "5f4b05df213e4ade80c980221577344d", "Name": "Flag" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "7ab6321feeec44e4812c3c9860afbf5d",
+    "Id": "6bf1a3ffff4a474e8acc1dd6ec51c031",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "7786e15930e844e8975ad016ba19bf4d", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "5cbf4750dc3744e3ae65d6d1ddd03099", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "433de897b3394053ba3e52896869feea",
+    "Id": "e96dbb04d1b54efe8ca0adb63ef07ecd",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "b628ea3370ab4863a0e2f276589343b1", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "2813838e9ba049e28e084dc0f0dd84a2", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "7511e1fa26124dd8938ed213a9476837",
+    "Id": "709a0192b16448c4b506af83bd9b43d9",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "48ce3028515a45778d1e3b03ca5877c0", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "3f055e50fc424a33b6e8b978e8d9e381", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 12,
-    "Id": "19e1b2f80307402c8e1954bb65c00ff8",
+    "Id": "8f5fa86ec51442db84bd0f212b6b4d9b",
     "Name": "Obstacle",
     "Source": { "Id": "793c973b8e8e4f82a9cff7c9cf16b308", "Name": "Obstacle" },
     "Entities": [
-        { "$TypeId": 9, "Id": "323e57df1b3c489892286bbd9dd28d15", "Name": "Obstacle" }
+        { "$TypeId": 9, "Id": "cceb973278724a3296ad4194ce22eba0", "Name": "Obstacle" }
     ]
 },
 {
     "$TypeId": 5,
-    "Id": "2dbfef37b0a84e6a8ed4c5906a6ec670",
+    "Id": "65fda063a6fb4dd9b6afb6e7c4d54233",
     "Name": "Group1",
     "Enabled": true,
     "Static": false,
@@ -847,7 +889,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "9321e641b720436b94b9a3bba6d16f31",
+    "Id": "b80e2c72d61948f78afcadf7f66915f4",
     "Name": "1.1",
     "Enabled": true,
     "Static": false,
@@ -855,7 +897,7 @@
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
         "Properties": {
-            "parent": { "$TypeId": 9, "Id": "2dbfef37b0a84e6a8ed4c5906a6ec670", "Name": "Group1" }
+            "parent": { "$TypeId": 9, "Id": "65fda063a6fb4dd9b6afb6e7c4d54233", "Name": "Group1" }
         }
     }, {
         "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
@@ -878,7 +920,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "4d9eb0e1bbdb4ba6b87486ee1fef635e",
+    "Id": "0bac00ce20e142d288c96455fec02a72",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -892,8 +934,8 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "9321e641b720436b94b9a3bba6d16f31",
-                "Name": "1.1"
+                "Id": "b80e2c72d61948f78afcadf7f66915f4",
+                "Name": "Entity"
             }
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
@@ -950,17 +992,12 @@
 },
 {
     "$TypeId": 5,
-    "Id": "a9296e0e792742bf8858483282cddde3",
+    "Id": "a3d9236f9ff64115b6fab44468ad4bf3",
     "Name": "Hole",
     "Enabled": true,
     "Static": false,
     "Layer": 0,
-    "Components": [{
-        "Type": { "Id": "f7f348e2bd0149b9a78c99a6676465f8", "Name": "RotatingObject" },
-        "Properties": {
-            "Speed": -5
-        }
-    }],
+    "Components": [],
     "Instance": {
         "Source": { "$TypeId": 9, "Id": "321296760a9346d195f38a1d0d9bf0ec", "Name": "Hole" },
         "EntityModificationFlags": 0,
@@ -969,7 +1006,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "9321e641b720436b94b9a3bba6d16f31",
+                "Id": "b80e2c72d61948f78afcadf7f66915f4",
                 "Name": "Entity"
             }
         }, {
@@ -997,7 +1034,20 @@
 },
 {
     "$TypeId": 5,
-    "Id": "09b014f09d42456f8506e1dcf7bf79c3",
+    "Id": "1837a59804fe49edb5ce51b9dfa17b3b",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "2a6a8c9b1f2643ceb9a787155b77d4f0",
     "Name": "1.2",
     "Enabled": true,
     "Static": false,
@@ -1005,7 +1055,7 @@
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
         "Properties": {
-            "parent": { "$TypeId": 9, "Id": "2dbfef37b0a84e6a8ed4c5906a6ec670", "Name": "Group1" }
+            "parent": { "$TypeId": 9, "Id": "65fda063a6fb4dd9b6afb6e7c4d54233", "Name": "Group1" }
         }
     }, {
         "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
@@ -1027,7 +1077,7 @@
             "StartingPosition": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
-                    "x": -20,
+                    "x": 20,
                     "y": -40
                 }
             }
@@ -1036,7 +1086,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "c44616e9c77d4114a4b0e18460c8b5ee",
+    "Id": "a9b8c89731354ce0b597a32b097d5398",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -1050,19 +1100,111 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "09b014f09d42456f8506e1dcf7bf79c3",
-                "Name": "1.2"
+                "Id": "2a6a8c9b1f2643ceb9a787155b77d4f0",
+                "Name": "Entity"
             }
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.x",
             "TypeCode": 13,
-            "Value": -21.1
+            "Value": 22.9
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
             "TypeCode": 13,
             "Value": 9.5
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.x",
+            "TypeCode": 13,
+            "Value": 1
+        }, {
+            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+            "Path": "scale.y",
+            "TypeCode": 13,
+            "Value": 1
+        }, {
+            "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+            "Path": "size.x",
+            "TypeCode": 13,
+            "Value": 45
+        }, {
+            "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+            "Path": "size.y",
+            "TypeCode": 13,
+            "Value": 3.5
+        }, {
+            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
+            "Path": "size.x",
+            "TypeCode": 13,
+            "Value": 45
+        }, {
+            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
+            "Path": "size.y",
+            "TypeCode": 13,
+            "Value": 3.5
+        }, {
+            "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
+            "Path": "rotation.z",
+            "TypeCode": 13,
+            "Value": 0.2164396
+        }, {
+            "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
+            "Path": "rotation.w",
+            "TypeCode": 13,
+            "Value": 0.9762961
+        }, {
+            "Target": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+            "Path": "order",
+            "TypeCode": 9,
+            "Value": 3
+        }, {
+            "Target": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+            "Path": "color.r",
+            "TypeCode": 13,
+            "Value": 1
+        }, {
+            "Target": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+            "Path": "color.g",
+            "TypeCode": 13,
+            "Value": 1
+        }, {
+            "Target": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+            "Path": "color.b",
+            "TypeCode": 13,
+            "Value": 1
+        }]
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "b34078e76793443cabd66b93fcb3ae8a",
+    "Name": "Obstacle",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "2dc98cfdaac64110bef975c8cefe53f5", "Name": "Obstacle" },
+        "EntityModificationFlags": 0,
+        "Modifications": [{
+            "Target": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+            "Path": "parent",
+            "TypeCode": -2,
+            "Value": {
+                "Id": "2a6a8c9b1f2643ceb9a787155b77d4f0",
+                "Name": "Entity"
+            }
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.x",
+            "TypeCode": 13,
+            "Value": 22.9
+        }, {
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.y",
+            "TypeCode": 13,
+            "Value": -9.44
         }, {
             "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
             "Path": "scale.x",
@@ -1104,11 +1246,6 @@
             "TypeCode": 13,
             "Value": 0.9762961
         }, {
-            "Target": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
-            "Path": "order",
-            "TypeCode": 9,
-            "Value": 3
-        }, {
             "Target": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
             "Path": "color.r",
             "TypeCode": 13,
@@ -1128,94 +1265,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "6c56c5bcb4bc4a8e8c02ad70619f95be",
-    "Name": "Obstacle",
-    "Enabled": true,
-    "Static": false,
-    "Layer": 0,
-    "Components": [],
-    "Instance": {
-        "Source": { "$TypeId": 9, "Id": "2dc98cfdaac64110bef975c8cefe53f5", "Name": "Obstacle" },
-        "EntityModificationFlags": 0,
-        "Modifications": [{
-            "Target": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
-            "Path": "parent",
-            "TypeCode": -2,
-            "Value": {
-                "Id": "09b014f09d42456f8506e1dcf7bf79c3",
-                "Name": "1.2"
-            }
-        }, {
-            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
-            "Path": "position.x",
-            "TypeCode": 13,
-            "Value": -22.54
-        }, {
-            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
-            "Path": "position.y",
-            "TypeCode": 13,
-            "Value": -9.44
-        }, {
-            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
-            "Path": "scale.x",
-            "TypeCode": 13,
-            "Value": 1
-        }, {
-            "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
-            "Path": "scale.y",
-            "TypeCode": 13,
-            "Value": 1
-        }, {
-            "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
-            "Path": "size.x",
-            "TypeCode": 13,
-            "Value": 45
-        }, {
-            "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
-            "Path": "size.y",
-            "TypeCode": 13,
-            "Value": 3.5
-        }, {
-            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
-            "Path": "size.x",
-            "TypeCode": 13,
-            "Value": 45
-        }, {
-            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
-            "Path": "size.y",
-            "TypeCode": 13,
-            "Value": 3.5
-        }, {
-            "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
-            "Path": "rotation.z",
-            "TypeCode": 13,
-            "Value": 0.2164396
-        }, {
-            "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
-            "Path": "rotation.w",
-            "TypeCode": 13,
-            "Value": 0.976296
-        }, {
-            "Target": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
-            "Path": "color.r",
-            "TypeCode": 13,
-            "Value": 1
-        }, {
-            "Target": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
-            "Path": "color.g",
-            "TypeCode": 13,
-            "Value": 1
-        }, {
-            "Target": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
-            "Path": "color.b",
-            "TypeCode": 13,
-            "Value": 1
-        }]
-    }
-},
-{
-    "$TypeId": 5,
-    "Id": "cf1aa74138fe43ea9661c427f191a26e",
+    "Id": "a60a1c70e3e44626aa8211e32331b954",
     "Name": "Hole",
     "Enabled": true,
     "Static": false,
@@ -1229,8 +1279,8 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "09b014f09d42456f8506e1dcf7bf79c3",
-                "Name": "1.2"
+                "Id": "2a6a8c9b1f2643ceb9a787155b77d4f0",
+                "Name": "Entity"
             }
         }, {
             "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
@@ -1246,7 +1296,7 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.x",
             "TypeCode": 13,
-            "Value": -20
+            "Value": 20
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
@@ -1257,7 +1307,20 @@
 },
 {
     "$TypeId": 5,
-    "Id": "ea4a5d41581943d98f9797a6996f4593",
+    "Id": "6609de9d629344688c3bd18e8da5c530",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "1a09386ac55d48c98069e4b8a1aa6427",
     "Name": "1.3",
     "Enabled": true,
     "Static": false,
@@ -1265,7 +1328,7 @@
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
         "Properties": {
-            "parent": { "$TypeId": 9, "Id": "2dbfef37b0a84e6a8ed4c5906a6ec670", "Name": "Group1" }
+            "parent": { "$TypeId": 9, "Id": "65fda063a6fb4dd9b6afb6e7c4d54233", "Name": "Group1" }
         }
     }, {
         "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
@@ -1288,7 +1351,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "89bcb4cc57b645f8ab46158f29efa53d",
+    "Id": "193d2d36df6f4fa2818d974075b8f956",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -1302,8 +1365,8 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "ea4a5d41581943d98f9797a6996f4593",
-                "Name": "1.3"
+                "Id": "1a09386ac55d48c98069e4b8a1aa6427",
+                "Name": "Entity"
             }
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
@@ -1365,7 +1428,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "f4a32b55f3e640e58cf6a491d32806f4",
+    "Id": "b972d6e8cbf44803a2e68934d024423d",
     "Name": "Hole",
     "Enabled": true,
     "Static": false,
@@ -1379,8 +1442,8 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "ea4a5d41581943d98f9797a6996f4593",
-                "Name": "1.3"
+                "Id": "1a09386ac55d48c98069e4b8a1aa6427",
+                "Name": "Entity"
             }
         }, {
             "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
@@ -1407,7 +1470,20 @@
 },
 {
     "$TypeId": 5,
-    "Id": "ceebca13d7f84f29af7051586f0d5914",
+    "Id": "decedecc629d468987b4017c7058f015",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "09be05d01cf84fb1ac844091347f050c",
     "Name": "1.4",
     "Enabled": true,
     "Static": false,
@@ -1415,7 +1491,7 @@
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
         "Properties": {
-            "parent": { "$TypeId": 9, "Id": "2dbfef37b0a84e6a8ed4c5906a6ec670", "Name": "Group1" }
+            "parent": { "$TypeId": 9, "Id": "65fda063a6fb4dd9b6afb6e7c4d54233", "Name": "Group1" }
         }
     }, {
         "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
@@ -1438,7 +1514,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "5e9511b592b540718d00aa52450f470c",
+    "Id": "4a34b11c097648edbebc24177fb1a845",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -1452,7 +1528,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "ceebca13d7f84f29af7051586f0d5914",
+                "Id": "09be05d01cf84fb1ac844091347f050c",
                 "Name": "Entity"
             }
         }, {
@@ -1515,7 +1591,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "7fa3da90c7824adb8e39c5d02333cac5",
+    "Id": "2d8067fef35c46db8e1136fe6d4960f5",
     "Name": "Hole",
     "Enabled": true,
     "Static": false,
@@ -1529,7 +1605,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "ceebca13d7f84f29af7051586f0d5914",
+                "Id": "09be05d01cf84fb1ac844091347f050c",
                 "Name": "Entity"
             }
         }, {
@@ -1557,7 +1633,20 @@
 },
 {
     "$TypeId": 5,
-    "Id": "4bc9843d04a045f78ae2bcd9e70fa252",
+    "Id": "f3920ee3eb264ead98616a6f8bf9ee73",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "afda632e168641d6905e1a5a3378ddf8",
     "Name": "1.5",
     "Enabled": true,
     "Static": false,
@@ -1565,7 +1654,7 @@
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
         "Properties": {
-            "parent": { "$TypeId": 9, "Id": "2dbfef37b0a84e6a8ed4c5906a6ec670", "Name": "Group1" }
+            "parent": { "$TypeId": 9, "Id": "65fda063a6fb4dd9b6afb6e7c4d54233", "Name": "Group1" }
         }
     }, {
         "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
@@ -1587,7 +1676,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "fc32db39aecc4287bb26bc53808f447d",
+    "Id": "522a0b0a34ad4904baa2915e6e9e4039",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -1601,8 +1690,8 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "4bc9843d04a045f78ae2bcd9e70fa252",
-                "Name": "1.5"
+                "Id": "afda632e168641d6905e1a5a3378ddf8",
+                "Name": "Entity"
             }
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
@@ -1674,7 +1763,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "64d208cb07064d85bb394d85f3d954bf",
+    "Id": "7a4e637a95124114be084e4bf46e8249",
     "Name": "Hole",
     "Enabled": true,
     "Static": false,
@@ -1688,8 +1777,8 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "4bc9843d04a045f78ae2bcd9e70fa252",
-                "Name": "1.5"
+                "Id": "afda632e168641d6905e1a5a3378ddf8",
+                "Name": "Entity"
             }
         }, {
             "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
@@ -1705,7 +1794,7 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
             "TypeCode": 13,
-            "Value": 35
+            "Value": 32.4
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.x",
@@ -1716,7 +1805,20 @@
 },
 {
     "$TypeId": 5,
-    "Id": "d55648aacf01439ba59f18ea3a160e0f",
+    "Id": "94da0ca2b4ac4e79a19012173ad94698",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "ea4e5c5d02be4cfbbca513da2b8e6e84",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -1730,8 +1832,8 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "4bc9843d04a045f78ae2bcd9e70fa252",
-                "Name": "1.5"
+                "Id": "afda632e168641d6905e1a5a3378ddf8",
+                "Name": "Entity"
             }
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
@@ -1803,7 +1905,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "df02c8eeec1f4d28adb6a2b6be8d01f8",
+    "Id": "f5e563ca9455439e9ba5103b4dd89c3c",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -1817,8 +1919,8 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "4bc9843d04a045f78ae2bcd9e70fa252",
-                "Name": "1.5"
+                "Id": "afda632e168641d6905e1a5a3378ddf8",
+                "Name": "Entity"
             }
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
@@ -1901,7 +2003,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "ebb8cbb639634982bffa708d46e447b9",
+    "Id": "8378e0a7c6fb4591ab7337b65fd5689f",
     "Name": "1.6",
     "Enabled": true,
     "Static": false,
@@ -1909,7 +2011,7 @@
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
         "Properties": {
-            "parent": { "$TypeId": 9, "Id": "2dbfef37b0a84e6a8ed4c5906a6ec670", "Name": "Group1" }
+            "parent": { "$TypeId": 9, "Id": "65fda063a6fb4dd9b6afb6e7c4d54233", "Name": "Group1" }
         }
     }, {
         "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
@@ -1932,7 +2034,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "dda8c6563687473b9bc077d3ba934d7d",
+    "Id": "264e08dbf5924f93ba56e603f8e7570a",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -1946,7 +2048,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "ebb8cbb639634982bffa708d46e447b9",
+                "Id": "8378e0a7c6fb4591ab7337b65fd5689f",
                 "Name": "Entity"
             }
         }, {
@@ -2004,7 +2106,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "00c77e122f884284b85fa2af431a09fd",
+    "Id": "04aef8965e594574992a27344dd9be45",
     "Name": "Hole",
     "Enabled": true,
     "Static": false,
@@ -2018,7 +2120,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "ebb8cbb639634982bffa708d46e447b9",
+                "Id": "8378e0a7c6fb4591ab7337b65fd5689f",
                 "Name": "Entity"
             }
         }, {
@@ -2046,7 +2148,20 @@
 },
 {
     "$TypeId": 5,
-    "Id": "a1f88c23a2fd4e28bfa96a7d2115ebe7",
+    "Id": "b779c4785a0e4b1ba83489364403f594",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "c31a83efd1314c2ea921b8021c195e16",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -2060,7 +2175,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "ebb8cbb639634982bffa708d46e447b9",
+                "Id": "8378e0a7c6fb4591ab7337b65fd5689f",
                 "Name": "Entity"
             }
         }, {
@@ -2118,7 +2233,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "5c3e42258e2a4f81ac90aa1a8fbb1bc7",
+    "Id": "99b7a446f7a5437ebdeabfbcfd53f7e0",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -2132,7 +2247,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "ebb8cbb639634982bffa708d46e447b9",
+                "Id": "8378e0a7c6fb4591ab7337b65fd5689f",
                 "Name": "Entity"
             }
         }, {
@@ -2185,7 +2300,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "d58d208a1278440a9b35166240d8b115",
+    "Id": "68be88d651ba431a803688870bce4aa1",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -2199,7 +2314,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "ebb8cbb639634982bffa708d46e447b9",
+                "Id": "8378e0a7c6fb4591ab7337b65fd5689f",
                 "Name": "Entity"
             }
         }, {
@@ -2257,7 +2372,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "4422a38779ce4fc491483ff3dcb20e1f",
+    "Id": "1f67f9b714674cee86311136049d9d05",
     "Name": "Hole",
     "Enabled": true,
     "Static": false,
@@ -2271,7 +2386,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "ebb8cbb639634982bffa708d46e447b9",
+                "Id": "8378e0a7c6fb4591ab7337b65fd5689f",
                 "Name": "Entity"
             }
         }, {
@@ -2299,7 +2414,20 @@
 },
 {
     "$TypeId": 5,
-    "Id": "446a71f3f5d24b379103d376d88a5a42",
+    "Id": "fe4e4fbb3a14478c827760232a2286e5",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "c9fd638f709c4a649ef9ad6e5b68d53f",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -2313,7 +2441,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "ebb8cbb639634982bffa708d46e447b9",
+                "Id": "8378e0a7c6fb4591ab7337b65fd5689f",
                 "Name": "Entity"
             }
         }, {
@@ -2371,7 +2499,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "f55b07a806b245af87ab945cd043559c",
+    "Id": "6a7a0969cf4f40f5a4cc270ce6847659",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -2385,7 +2513,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "ebb8cbb639634982bffa708d46e447b9",
+                "Id": "8378e0a7c6fb4591ab7337b65fd5689f",
                 "Name": "Entity"
             }
         }, {
@@ -2438,7 +2566,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "4e8d246fb35a4ab3be0210f773944e84",
+    "Id": "2e0db5bff47b46a194e22ff87751f0d6",
     "Name": "1.7",
     "Enabled": true,
     "Static": false,
@@ -2446,7 +2574,7 @@
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
         "Properties": {
-            "parent": { "$TypeId": 9, "Id": "2dbfef37b0a84e6a8ed4c5906a6ec670", "Name": "Group1" }
+            "parent": { "$TypeId": 9, "Id": "65fda063a6fb4dd9b6afb6e7c4d54233", "Name": "Group1" }
         }
     }, {
         "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
@@ -2469,7 +2597,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "6af24ac8b70347b880155dac957d7441",
+    "Id": "09200e2319d94de0b73779950ec15919",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -2483,7 +2611,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "4e8d246fb35a4ab3be0210f773944e84",
+                "Id": "2e0db5bff47b46a194e22ff87751f0d6",
                 "Name": "Entity"
             }
         }, {
@@ -2536,7 +2664,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "3b2fd6a89ab4442585dae7d39d4d85b3",
+    "Id": "d21d752362404e3d9871b127826af00c",
     "Name": "Hole",
     "Enabled": true,
     "Static": false,
@@ -2550,7 +2678,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "4e8d246fb35a4ab3be0210f773944e84",
+                "Id": "2e0db5bff47b46a194e22ff87751f0d6",
                 "Name": "Entity"
             }
         }, {
@@ -2578,7 +2706,20 @@
 },
 {
     "$TypeId": 5,
-    "Id": "09c2542de848483d8143e7ec3f15be7c",
+    "Id": "facb9e8e9fea425faf9e5ef4e3d8b850",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "3436ea0130ba4999bf47891edeaa36de",
     "Name": "1.8",
     "Enabled": true,
     "Static": false,
@@ -2586,7 +2727,7 @@
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
         "Properties": {
-            "parent": { "$TypeId": 9, "Id": "2dbfef37b0a84e6a8ed4c5906a6ec670", "Name": "Group1" }
+            "parent": { "$TypeId": 9, "Id": "65fda063a6fb4dd9b6afb6e7c4d54233", "Name": "Group1" }
         }
     }, {
         "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
@@ -2609,7 +2750,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "cb2e6e708da645d4a64ce4a9ce8be407",
+    "Id": "a6e3466e96fb4cb68bf9eed81ec3ba67",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -2623,7 +2764,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "09c2542de848483d8143e7ec3f15be7c",
+                "Id": "3436ea0130ba4999bf47891edeaa36de",
                 "Name": "Entity"
             }
         }, {
@@ -2686,7 +2827,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "a6a7b0a40f574f42a3b5ef536d6a9307",
+    "Id": "76809dd411bd496faa016963994dd0fe",
     "Name": "Hole",
     "Enabled": true,
     "Static": false,
@@ -2700,7 +2841,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "09c2542de848483d8143e7ec3f15be7c",
+                "Id": "3436ea0130ba4999bf47891edeaa36de",
                 "Name": "Entity"
             }
         }, {
@@ -2728,7 +2869,20 @@
 },
 {
     "$TypeId": 5,
-    "Id": "290c63fee79c4255b0e5340ab28a1a4c",
+    "Id": "66c54bd09c1540b8beb4a15b9c7d2662",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "6592f155e4a143b9af022967e33bb184",
     "Name": "1.9",
     "Enabled": true,
     "Static": false,
@@ -2736,7 +2890,7 @@
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
         "Properties": {
-            "parent": { "$TypeId": 9, "Id": "2dbfef37b0a84e6a8ed4c5906a6ec670", "Name": "Group1" }
+            "parent": { "$TypeId": 9, "Id": "65fda063a6fb4dd9b6afb6e7c4d54233", "Name": "Group1" }
         }
     }, {
         "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
@@ -2759,7 +2913,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "7892cf3a4f2147e08c884f60d9911c51",
+    "Id": "4f7f446cbc3c41669d6ebdf5e1d3208d",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -2773,7 +2927,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "290c63fee79c4255b0e5340ab28a1a4c",
+                "Id": "6592f155e4a143b9af022967e33bb184",
                 "Name": "Entity"
             }
         }, {
@@ -2836,7 +2990,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "21e56ed3677b4a5eac8a9ccecbb2ae60",
+    "Id": "324ebc7be7eb4cae92f5ffbb80f4109d",
     "Name": "Hole",
     "Enabled": true,
     "Static": false,
@@ -2850,7 +3004,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "290c63fee79c4255b0e5340ab28a1a4c",
+                "Id": "6592f155e4a143b9af022967e33bb184",
                 "Name": "Entity"
             }
         }, {
@@ -2878,7 +3032,20 @@
 },
 {
     "$TypeId": 5,
-    "Id": "b8d6f17d38f54490909cc0075479e25f",
+    "Id": "981283a07add4c468e3449a915809bc9",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "7ebc3622b7f4442a9e076e705713d062",
     "Name": "1.10",
     "Enabled": true,
     "Static": false,
@@ -2886,7 +3053,7 @@
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
         "Properties": {
-            "parent": { "$TypeId": 9, "Id": "2dbfef37b0a84e6a8ed4c5906a6ec670", "Name": "Group1" }
+            "parent": { "$TypeId": 9, "Id": "65fda063a6fb4dd9b6afb6e7c4d54233", "Name": "Group1" }
         }
     }, {
         "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
@@ -2909,7 +3076,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "c704ea86a9ff48039128fb01a8023824",
+    "Id": "083c39ea7e4b4d73945dda3b77ffa296",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -2923,8 +3090,8 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "b8d6f17d38f54490909cc0075479e25f",
-                "Name": "1.10"
+                "Id": "7ebc3622b7f4442a9e076e705713d062",
+                "Name": "Entity"
             }
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
@@ -2986,7 +3153,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "39b29543ef934e4f8c81582f8cf61ca3",
+    "Id": "09fd9ae59e174a718bca178dd19da6dd",
     "Name": "Hole",
     "Enabled": true,
     "Static": false,
@@ -3000,7 +3167,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "b8d6f17d38f54490909cc0075479e25f",
+                "Id": "7ebc3622b7f4442a9e076e705713d062",
                 "Name": "Entity"
             }
         }, {
@@ -3028,7 +3195,20 @@
 },
 {
     "$TypeId": 5,
-    "Id": "cf79bb191a3f422a91550cfa41f4eb32",
+    "Id": "6c0299b0b44444e1b1df5e42fa3deb0b",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "9aec5f44e3fb48e5bb268de74e6b92b0",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -3042,8 +3222,8 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "b8d6f17d38f54490909cc0075479e25f",
-                "Name": "1.10"
+                "Id": "7ebc3622b7f4442a9e076e705713d062",
+                "Name": "Entity"
             }
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
@@ -3105,7 +3285,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "2511fa5fdcd5467f85b09b828be47f33",
+    "Id": "77af3d3c5629467f827ff28ad8ede293",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -3119,8 +3299,8 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "b8d6f17d38f54490909cc0075479e25f",
-                "Name": "1.10"
+                "Id": "7ebc3622b7f4442a9e076e705713d062",
+                "Name": "Entity"
             }
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
@@ -3182,7 +3362,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "44f43d0fd4fa41069020b93b9911230b",
+    "Id": "9b15ab2dd66f4db6b3f7e255d2fe3f75",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -3196,8 +3376,8 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "b8d6f17d38f54490909cc0075479e25f",
-                "Name": "1.10"
+                "Id": "7ebc3622b7f4442a9e076e705713d062",
+                "Name": "Entity"
             }
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
@@ -3259,7 +3439,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "95705e27594249fd94634030a1bd77f7",
+    "Id": "97a6f4c5046143b18a37d33e549e6a04",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -3273,8 +3453,8 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "b8d6f17d38f54490909cc0075479e25f",
-                "Name": "1.10"
+                "Id": "7ebc3622b7f4442a9e076e705713d062",
+                "Name": "Entity"
             }
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
@@ -3336,7 +3516,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "dc8aa0d6ba404d4098cacce32e9920bc",
+    "Id": "cd838ff6793942f8bc022e4a41069e95",
     "Name": "1.11",
     "Enabled": true,
     "Static": false,
@@ -3344,7 +3524,7 @@
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
         "Properties": {
-            "parent": { "$TypeId": 9, "Id": "2dbfef37b0a84e6a8ed4c5906a6ec670", "Name": "Group1" }
+            "parent": { "$TypeId": 9, "Id": "65fda063a6fb4dd9b6afb6e7c4d54233", "Name": "Group1" }
         }
     }, {
         "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
@@ -3367,7 +3547,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "25391a7875704b5680b5f400c257b9aa",
+    "Id": "f341d2436d814b5f8d77dc6a6845cf5d",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -3375,13 +3555,13 @@
     "Components": [],
     "Instance": {
         "Source": { "$TypeId": 9, "Id": "2dc98cfdaac64110bef975c8cefe53f5", "Name": "Obstacle" },
-        "EntityModificationFlags": 0,
+        "EntityModificationFlags": 1,
         "Modifications": [{
             "Target": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "dc8aa0d6ba404d4098cacce32e9920bc",
+                "Id": "cd838ff6793942f8bc022e4a41069e95",
                 "Name": "Entity"
             }
         }, {
@@ -3444,7 +3624,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "d3f5346c243d49c998add89442693519",
+    "Id": "8f7cd8f99c00456da3fe0b3453a03cf2",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -3458,8 +3638,8 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "dc8aa0d6ba404d4098cacce32e9920bc",
-                "Name": "1.11"
+                "Id": "cd838ff6793942f8bc022e4a41069e95",
+                "Name": "Entity"
             }
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
@@ -3470,7 +3650,7 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
             "TypeCode": 13,
-            "Value": 28
+            "Value": 24.7
         }, {
             "Target": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
             "Path": "scale.x",
@@ -3531,7 +3711,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "e4422156018c490b89d74657f61d3de6",
+    "Id": "01adb0b3b919495cbaee87fa98a00cf3",
     "Name": "Hole",
     "Enabled": true,
     "Static": false,
@@ -3545,7 +3725,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "dc8aa0d6ba404d4098cacce32e9920bc",
+                "Id": "cd838ff6793942f8bc022e4a41069e95",
                 "Name": "Entity"
             }
         }, {
@@ -3567,13 +3747,26 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
             "TypeCode": 13,
-            "Value": 40
+            "Value": 35.8
         }]
     }
 },
 {
     "$TypeId": 5,
-    "Id": "4e0dc56971994994bcc752de2b44562c",
+    "Id": "36277311a7e149c780d894ec32ec22e0",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "dbce4765ffc84ca6937f342990ae22cf",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -3587,7 +3780,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "dc8aa0d6ba404d4098cacce32e9920bc",
+                "Id": "cd838ff6793942f8bc022e4a41069e95",
                 "Name": "Entity"
             }
         }, {
@@ -3650,7 +3843,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "443da32be3844be3a65cc14d268ce85d",
+    "Id": "246891263ab74f029d8888fa9fbeaea3",
     "Name": "1.12",
     "Enabled": true,
     "Static": false,
@@ -3658,7 +3851,7 @@
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
         "Properties": {
-            "parent": { "$TypeId": 9, "Id": "2dbfef37b0a84e6a8ed4c5906a6ec670", "Name": "Group1" }
+            "parent": { "$TypeId": 9, "Id": "65fda063a6fb4dd9b6afb6e7c4d54233", "Name": "Group1" }
         }
     }, {
         "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
@@ -3681,7 +3874,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "edf5f4aea26346d4b43d7fa7c0662422",
+    "Id": "7581b41e88e544b5b58b8c2dded26fc3",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -3695,7 +3888,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "443da32be3844be3a65cc14d268ce85d",
+                "Id": "246891263ab74f029d8888fa9fbeaea3",
                 "Name": "Entity"
             }
         }, {
@@ -3743,7 +3936,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "04eb7ec01c9d413f998ab067b7521385",
+    "Id": "2714f3e23289491e9018ab17e666218b",
     "Name": "Hole",
     "Enabled": true,
     "Static": false,
@@ -3757,7 +3950,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "443da32be3844be3a65cc14d268ce85d",
+                "Id": "246891263ab74f029d8888fa9fbeaea3",
                 "Name": "Entity"
             }
         }, {
@@ -3785,7 +3978,20 @@
 },
 {
     "$TypeId": 5,
-    "Id": "c666ca0c631545d3b12a63860180b073",
+    "Id": "6073eaa9f51646ffa8d4274c1ec4b626",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "54877f4ff0104a5ba3d37ede76154ae9",
     "Name": "1.13",
     "Enabled": true,
     "Static": false,
@@ -3793,7 +3999,7 @@
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
         "Properties": {
-            "parent": { "$TypeId": 9, "Id": "2dbfef37b0a84e6a8ed4c5906a6ec670", "Name": "Group1" }
+            "parent": { "$TypeId": 9, "Id": "65fda063a6fb4dd9b6afb6e7c4d54233", "Name": "Group1" }
         }
     }, {
         "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
@@ -3816,7 +4022,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "aeb7edd7dafb4820926caf2a4d345c25",
+    "Id": "2cb16804058a41bb850c629aa48602a7",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -3830,7 +4036,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "c666ca0c631545d3b12a63860180b073",
+                "Id": "54877f4ff0104a5ba3d37ede76154ae9",
                 "Name": "Entity"
             }
         }, {
@@ -3893,7 +4099,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "6dc575efe8214d18ba49e2bf7df3fd88",
+    "Id": "c27ec39981b9408396672ffa697919dc",
     "Name": "Hole",
     "Enabled": true,
     "Static": false,
@@ -3907,7 +4113,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "c666ca0c631545d3b12a63860180b073",
+                "Id": "54877f4ff0104a5ba3d37ede76154ae9",
                 "Name": "Entity"
             }
         }, {
@@ -3929,13 +4135,26 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
             "TypeCode": 13,
-            "Value": 40
+            "Value": 34.4
         }]
     }
 },
 {
     "$TypeId": 5,
-    "Id": "dd12c5c23df4421eac70f9a7e9cee648",
+    "Id": "b32bc703852f4e31a7fe99c03743272f",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "8567ddd05284453f8f2c2f3101a90b83",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -3949,7 +4168,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "c666ca0c631545d3b12a63860180b073",
+                "Id": "54877f4ff0104a5ba3d37ede76154ae9",
                 "Name": "Entity"
             }
         }, {
@@ -4012,7 +4231,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "69088c9ee222432f8b290af6850d9ab2",
+    "Id": "e24f5cab9841432e85c67e4f79833969",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -4026,7 +4245,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "c666ca0c631545d3b12a63860180b073",
+                "Id": "54877f4ff0104a5ba3d37ede76154ae9",
                 "Name": "Entity"
             }
         }, {
@@ -4089,7 +4308,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "508e5c29a4da4ed18ba546bb8dd29e90",
+    "Id": "dd33e8c06202404889251ff5d2370640",
     "Name": "1.14",
     "Enabled": true,
     "Static": false,
@@ -4097,7 +4316,7 @@
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
         "Properties": {
-            "parent": { "$TypeId": 9, "Id": "2dbfef37b0a84e6a8ed4c5906a6ec670", "Name": "Group1" }
+            "parent": { "$TypeId": 9, "Id": "65fda063a6fb4dd9b6afb6e7c4d54233", "Name": "Group1" }
         }
     }, {
         "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
@@ -4111,7 +4330,7 @@
             "StartingPosition": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
-                    "x": 20,
+                    "x": -20,
                     "y": -40
                 }
             }
@@ -4120,7 +4339,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "eb8daf8c5a4f4269b287f5defe2e140f",
+    "Id": "2ecd4181eccc42f1acabc81c0b769746",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -4134,14 +4353,14 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "508e5c29a4da4ed18ba546bb8dd29e90",
+                "Id": "dd33e8c06202404889251ff5d2370640",
                 "Name": "Entity"
             }
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.x",
             "TypeCode": 13,
-            "Value": 13
+            "Value": -13
         }, {
             "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
             "Path": "size.y",
@@ -4187,7 +4406,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "9600eede27e449d991f3057ee2db358c",
+    "Id": "88186a535d17477b908fe6ecacb488d3",
     "Name": "Hole",
     "Enabled": true,
     "Static": false,
@@ -4201,7 +4420,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "508e5c29a4da4ed18ba546bb8dd29e90",
+                "Id": "dd33e8c06202404889251ff5d2370640",
                 "Name": "Entity"
             }
         }, {
@@ -4218,7 +4437,7 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.x",
             "TypeCode": 13,
-            "Value": -15
+            "Value": 15
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
@@ -4229,7 +4448,20 @@
 },
 {
     "$TypeId": 5,
-    "Id": "bd2081ecae734d92a7dc968189efbd8c",
+    "Id": "dda929c151f94ed68ff4e5fe1a76b51a",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "19bf0361859141fcab2b780efd567fc0",
     "Name": "1.15",
     "Enabled": true,
     "Static": false,
@@ -4237,7 +4469,7 @@
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
         "Properties": {
-            "parent": { "$TypeId": 9, "Id": "2dbfef37b0a84e6a8ed4c5906a6ec670", "Name": "Group1" }
+            "parent": { "$TypeId": 9, "Id": "65fda063a6fb4dd9b6afb6e7c4d54233", "Name": "Group1" }
         }
     }, {
         "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
@@ -4260,7 +4492,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "cd987b810bdd406f9643d12a18ba8c8f",
+    "Id": "8b4f745c6cd24ba698394e0caceb26a7",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -4274,14 +4506,14 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "bd2081ecae734d92a7dc968189efbd8c",
+                "Id": "19bf0361859141fcab2b780efd567fc0",
                 "Name": "Entity"
             }
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.x",
             "TypeCode": 13,
-            "Value": 25
+            "Value": 21.9
         }, {
             "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
             "Path": "size.y",
@@ -4337,7 +4569,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "46c0e13f464a4317ac9cdedb9fe6b052",
+    "Id": "f4b26dc9a7854c8c946375eca9c17599",
     "Name": "Hole",
     "Enabled": true,
     "Static": false,
@@ -4351,7 +4583,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "bd2081ecae734d92a7dc968189efbd8c",
+                "Id": "19bf0361859141fcab2b780efd567fc0",
                 "Name": "Entity"
             }
         }, {
@@ -4373,13 +4605,26 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
             "TypeCode": 13,
-            "Value": 40
+            "Value": 36.7
         }]
     }
 },
 {
     "$TypeId": 5,
-    "Id": "2422a77046a24ed68d4d300735d6e40e",
+    "Id": "b4fb44f4f658435c961df90d1d04aac1",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "b9003ddcb7b84b4bbb921f25e038e5ab",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -4393,14 +4638,14 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "bd2081ecae734d92a7dc968189efbd8c",
+                "Id": "19bf0361859141fcab2b780efd567fc0",
                 "Name": "Entity"
             }
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.x",
             "TypeCode": 13,
-            "Value": -19
+            "Value": -26.5
         }, {
             "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
             "Path": "size.y",
@@ -4456,7 +4701,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "bcf91805c17b411fa91c8d0e179a3e71",
+    "Id": "ca049af9be2d4339a7977e264de5ebbf",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -4470,14 +4715,14 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "bd2081ecae734d92a7dc968189efbd8c",
+                "Id": "19bf0361859141fcab2b780efd567fc0",
                 "Name": "Entity"
             }
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.x",
             "TypeCode": 13,
-            "Value": 25
+            "Value": 28.3
         }, {
             "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
             "Path": "size.y",
@@ -4533,7 +4778,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "c36a7ad26a3d4b27926dc03ef3dc6ae2",
+    "Id": "a88d15d275f94e62b94b3bb0ffcb2bad",
     "Name": "1.16",
     "Enabled": true,
     "Static": false,
@@ -4541,7 +4786,7 @@
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
         "Properties": {
-            "parent": { "$TypeId": 9, "Id": "2dbfef37b0a84e6a8ed4c5906a6ec670", "Name": "Group1" }
+            "parent": { "$TypeId": 9, "Id": "65fda063a6fb4dd9b6afb6e7c4d54233", "Name": "Group1" }
         }
     }, {
         "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
@@ -4555,7 +4800,7 @@
             "StartingPosition": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
-                    "x": 15,
+                    "x": -15,
                     "y": -40
                 }
             }
@@ -4564,7 +4809,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "7fb3b970d8e744e4b5f8e30e5194eef7",
+    "Id": "d3335d39ecc54125816a15e0d2cc51fc",
     "Name": "Hole",
     "Enabled": true,
     "Static": false,
@@ -4578,7 +4823,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "c36a7ad26a3d4b27926dc03ef3dc6ae2",
+                "Id": "a88d15d275f94e62b94b3bb0ffcb2bad",
                 "Name": "Entity"
             }
         }, {
@@ -4595,7 +4840,7 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.x",
             "TypeCode": 13,
-            "Value": -15
+            "Value": 15
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
@@ -4606,7 +4851,20 @@
 },
 {
     "$TypeId": 5,
-    "Id": "f1aba5862f404c6fa366a0037ab0757e",
+    "Id": "c26a47de2e334864b2936720d0f706b9",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "5efeba22867c4657b242c70ef7c6531d",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -4620,14 +4878,14 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "c36a7ad26a3d4b27926dc03ef3dc6ae2",
+                "Id": "a88d15d275f94e62b94b3bb0ffcb2bad",
                 "Name": "Entity"
             }
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.x",
             "TypeCode": 13,
-            "Value": -13
+            "Value": 13
         }, {
             "Target": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
             "Path": "size.y",
@@ -4683,7 +4941,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "644c6bc2ea2e45a493e67b827bb737e7",
+    "Id": "e2e5b425ef8742e99bfe633b7821f08c",
     "Name": "1.17",
     "Enabled": true,
     "Static": false,
@@ -4691,7 +4949,7 @@
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
         "Properties": {
-            "parent": { "$TypeId": 9, "Id": "2dbfef37b0a84e6a8ed4c5906a6ec670", "Name": "Group1" }
+            "parent": { "$TypeId": 9, "Id": "65fda063a6fb4dd9b6afb6e7c4d54233", "Name": "Group1" }
         }
     }, {
         "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
@@ -4705,7 +4963,7 @@
             "StartingPosition": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
-                    "x": 20,
+                    "x": -20,
                     "y": -40
                 }
             }
@@ -4714,7 +4972,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "fee912de619d4ea7ba06d96a69a8fb64",
+    "Id": "b5f3b8ece57c4a159c2fe0d0957c54c4",
     "Name": "Hole",
     "Enabled": true,
     "Static": false,
@@ -4728,7 +4986,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "644c6bc2ea2e45a493e67b827bb737e7",
+                "Id": "e2e5b425ef8742e99bfe633b7821f08c",
                 "Name": "Entity"
             }
         }, {
@@ -4745,7 +5003,7 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.x",
             "TypeCode": 13,
-            "Value": -15
+            "Value": 15
         }, {
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
@@ -4756,7 +5014,20 @@
 },
 {
     "$TypeId": 5,
-    "Id": "0fb616e03b3a4b27800d3860884fd768",
+    "Id": "e6d5801438184d85bb8bf8085cabf134",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "a97d61b91a9348feba9ab6c033329e96",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -4770,7 +5041,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "644c6bc2ea2e45a493e67b827bb737e7",
+                "Id": "e2e5b425ef8742e99bfe633b7821f08c",
                 "Name": "Entity"
             }
         }, {
@@ -4807,7 +5078,7 @@
             "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
             "Path": "rotation.z",
             "TypeCode": 13,
-            "Value": 0.3826834
+            "Value": -0.3826834
         }, {
             "Target": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
             "Path": "rotation.w",
@@ -4833,7 +5104,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "7bea13ccf98041198652b7646a0eefe5",
+    "Id": "fe8d42c7891046bba36df19fa6195378",
     "Name": "1.18",
     "Enabled": true,
     "Static": false,
@@ -4841,7 +5112,7 @@
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
         "Properties": {
-            "parent": { "$TypeId": 9, "Id": "2dbfef37b0a84e6a8ed4c5906a6ec670", "Name": "Group1" }
+            "parent": { "$TypeId": 9, "Id": "65fda063a6fb4dd9b6afb6e7c4d54233", "Name": "Group1" }
         }
     }, {
         "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
@@ -4864,7 +5135,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "d6d4405fe43d4adfbc14cd0bf9f4fc0c",
+    "Id": "d612bd1f5d684ad793bcd50b7d76e99f",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -4878,7 +5149,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "7bea13ccf98041198652b7646a0eefe5",
+                "Id": "fe8d42c7891046bba36df19fa6195378",
                 "Name": "Entity"
             }
         }, {
@@ -4941,7 +5212,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "80605b43e0064857a5b620dc2d8717c6",
+    "Id": "25943c4da35642db884840b93dacf885",
     "Name": "Hole",
     "Enabled": true,
     "Static": false,
@@ -4955,7 +5226,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "7bea13ccf98041198652b7646a0eefe5",
+                "Id": "fe8d42c7891046bba36df19fa6195378",
                 "Name": "Entity"
             }
         }, {
@@ -4977,13 +5248,26 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
             "TypeCode": 13,
-            "Value": 40
+            "Value": 37.2
         }]
     }
 },
 {
     "$TypeId": 5,
-    "Id": "1d08873795e541a29935f12f0450cbe9",
+    "Id": "7e361548a5234eac802f6f232710ca03",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "ac9f01401e694b6dba2a51834cbfc41f",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -4997,7 +5281,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "7bea13ccf98041198652b7646a0eefe5",
+                "Id": "fe8d42c7891046bba36df19fa6195378",
                 "Name": "Entity"
             }
         }, {
@@ -5060,7 +5344,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "6e91af0702a6495aab0cb2552ebd8783",
+    "Id": "19b807db5f3845749ffea36b136b5d21",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -5074,7 +5358,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "7bea13ccf98041198652b7646a0eefe5",
+                "Id": "fe8d42c7891046bba36df19fa6195378",
                 "Name": "Entity"
             }
         }, {
@@ -5142,7 +5426,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "d9ea61d363fb4c1ab3d9b33b116f6404",
+    "Id": "d58c5f1795204a3f9064d0f14f55aea3",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -5156,7 +5440,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "7bea13ccf98041198652b7646a0eefe5",
+                "Id": "fe8d42c7891046bba36df19fa6195378",
                 "Name": "Entity"
             }
         }, {
@@ -5219,7 +5503,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "7099ac50a7eb4f8a9cded3c671c3663e",
+    "Id": "b3d4db3dafcc4c34b455876d12226d27",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -5233,7 +5517,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "7bea13ccf98041198652b7646a0eefe5",
+                "Id": "fe8d42c7891046bba36df19fa6195378",
                 "Name": "Entity"
             }
         }, {
@@ -5301,7 +5585,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "be127f2ed6cc46d1b1362826e00ca1dd",
+    "Id": "43e59d6117694c7a9a74804871b12ab9",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -5315,7 +5599,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "7bea13ccf98041198652b7646a0eefe5",
+                "Id": "fe8d42c7891046bba36df19fa6195378",
                 "Name": "Entity"
             }
         }, {
@@ -5378,7 +5662,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "8407c4bdd2d64b42a32afa3dd2a5444b",
+    "Id": "f0db66eff95c433ab2bc016749e5acc7",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -5392,7 +5676,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "7bea13ccf98041198652b7646a0eefe5",
+                "Id": "fe8d42c7891046bba36df19fa6195378",
                 "Name": "Entity"
             }
         }, {
@@ -5460,7 +5744,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "b2880fdf5c1b47278dfd0fe37f6e7dbd",
+    "Id": "a5f49168350f49f3b38e391c55addf98",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -5474,7 +5758,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "7bea13ccf98041198652b7646a0eefe5",
+                "Id": "fe8d42c7891046bba36df19fa6195378",
                 "Name": "Entity"
             }
         }, {
@@ -5537,7 +5821,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "69d78d2b5f2f4913be566efd9ec16fd7",
+    "Id": "eccfd38e5aff47b2a63b882d87bd37bc",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -5551,7 +5835,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "7bea13ccf98041198652b7646a0eefe5",
+                "Id": "fe8d42c7891046bba36df19fa6195378",
                 "Name": "Entity"
             }
         }, {
@@ -5619,7 +5903,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "ed3ad3e70ebe4ee9a4a23d90dad8906c",
+    "Id": "363450d4905048f7ae4f32fe6213aa8d",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -5633,7 +5917,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "7bea13ccf98041198652b7646a0eefe5",
+                "Id": "fe8d42c7891046bba36df19fa6195378",
                 "Name": "Entity"
             }
         }, {
@@ -5696,7 +5980,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "4ff0e29ed25645a0a9a8ad89f818a797",
+    "Id": "95f4d4a3bb474158af63b7c84397a582",
     "Name": "1.19",
     "Enabled": true,
     "Static": false,
@@ -5704,7 +5988,7 @@
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
         "Properties": {
-            "parent": { "$TypeId": 9, "Id": "2dbfef37b0a84e6a8ed4c5906a6ec670", "Name": "Group1" }
+            "parent": { "$TypeId": 9, "Id": "65fda063a6fb4dd9b6afb6e7c4d54233", "Name": "Group1" }
         }
     }, {
         "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
@@ -5727,7 +6011,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "acdfe94de8a5441ca6402338ade1d609",
+    "Id": "5cf766c6350142ee88a3c4090fc383e0",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -5741,7 +6025,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "4ff0e29ed25645a0a9a8ad89f818a797",
+                "Id": "95f4d4a3bb474158af63b7c84397a582",
                 "Name": "Entity"
             }
         }, {
@@ -5789,7 +6073,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "c0b775045f11495c92d04ed02ae6ab4e",
+    "Id": "be3fe17b42844ed3abd5a9ec8e4d101b",
     "Name": "Hole",
     "Enabled": true,
     "Static": false,
@@ -5803,7 +6087,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "4ff0e29ed25645a0a9a8ad89f818a797",
+                "Id": "95f4d4a3bb474158af63b7c84397a582",
                 "Name": "Entity"
             }
         }, {
@@ -5831,7 +6115,20 @@
 },
 {
     "$TypeId": 5,
-    "Id": "04838058e0274083a41e0314135c2366",
+    "Id": "10d337258ed949f089b67a3890b76127",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "e43f764b4417424486c8135e77ca9ece",
     "Name": "1.20",
     "Enabled": true,
     "Static": false,
@@ -5839,7 +6136,7 @@
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
         "Properties": {
-            "parent": { "$TypeId": 9, "Id": "2dbfef37b0a84e6a8ed4c5906a6ec670", "Name": "Group1" }
+            "parent": { "$TypeId": 9, "Id": "65fda063a6fb4dd9b6afb6e7c4d54233", "Name": "Group1" }
         }
     }, {
         "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
@@ -5870,7 +6167,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "4b76a925326f457b85ee6d2ae25fac83",
+    "Id": "8baafbbfe5b9450ea47a4238f4a179cf",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -5884,7 +6181,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "04838058e0274083a41e0314135c2366",
+                "Id": "e43f764b4417424486c8135e77ca9ece",
                 "Name": "Entity"
             }
         }, {
@@ -5962,7 +6259,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "fd83adeb6603460bb24cd82902e2dcaf",
+    "Id": "927f107285c845d8b5c7b2e0dc80062a",
     "Name": "Hole",
     "Enabled": true,
     "Static": false,
@@ -5976,7 +6273,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "04838058e0274083a41e0314135c2366",
+                "Id": "e43f764b4417424486c8135e77ca9ece",
                 "Name": "Entity"
             }
         }, {
@@ -5998,13 +6295,26 @@
             "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
             "Path": "position.y",
             "TypeCode": 13,
-            "Value": 41.7
+            "Value": 36.9
         }]
     }
 },
 {
     "$TypeId": 5,
-    "Id": "7786e15930e844e8975ad016ba19bf4d",
+    "Id": "5f4b05df213e4ade80c980221577344d",
+    "Name": "Flag",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [],
+    "Instance": {
+        "Source": { "$TypeId": 9, "Id": "6b477d3ea3394cc29a93648ddad6b026", "Name": "Flag" },
+        "EntityModificationFlags": 0
+    }
+},
+{
+    "$TypeId": 5,
+    "Id": "5cbf4750dc3744e3ae65d6d1ddd03099",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -6018,7 +6328,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "04838058e0274083a41e0314135c2366",
+                "Id": "e43f764b4417424486c8135e77ca9ece",
                 "Name": "Entity"
             }
         }, {
@@ -6096,7 +6406,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "b628ea3370ab4863a0e2f276589343b1",
+    "Id": "2813838e9ba049e28e084dc0f0dd84a2",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -6110,7 +6420,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "04838058e0274083a41e0314135c2366",
+                "Id": "e43f764b4417424486c8135e77ca9ece",
                 "Name": "Entity"
             }
         }, {
@@ -6188,7 +6498,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "48ce3028515a45778d1e3b03ca5877c0",
+    "Id": "3f055e50fc424a33b6e8b978e8d9e381",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -6202,7 +6512,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "04838058e0274083a41e0314135c2366",
+                "Id": "e43f764b4417424486c8135e77ca9ece",
                 "Name": "Entity"
             }
         }, {
@@ -6280,7 +6590,7 @@
 },
 {
     "$TypeId": 5,
-    "Id": "323e57df1b3c489892286bbd9dd28d15",
+    "Id": "cceb973278724a3296ad4194ce22eba0",
     "Name": "Obstacle",
     "Enabled": true,
     "Static": false,
@@ -6294,7 +6604,7 @@
             "Path": "parent",
             "TypeCode": -2,
             "Value": {
-                "Id": "04838058e0274083a41e0314135c2366",
+                "Id": "e43f764b4417424486c8135e77ca9ece",
                 "Name": "Entity"
             }
         }, {

@@ -1,5 +1,5 @@
 
-namespace game {
+namespace casualgf {
     /** New System */
     export class JsonObstacleSpawner extends ut.ComponentSystem {
         static loaded = false;
@@ -17,7 +17,7 @@ namespace game {
                
             let objectSpawner = this.world.getEntityByName("Spawners");
                
-            this.world.usingComponentData(objectSpawner, [game.ObstacleSpawnerHelper], 
+            this.world.usingComponentData(objectSpawner, [casualgf.ObstacleSpawnerHelper], 
                 (helper)=>{               
                     spawnMode = helper.SpawnMode;            
                 });     
@@ -69,14 +69,14 @@ namespace game {
                     });
             }
 
-            let hole = ut.EntityGroup.instantiate(world, "game.Hole")[0];
+            let hole = ut.EntityGroup.instantiate(world, "casualgf.Hole")[0];
             world.usingComponentData(hole,  [ut.Core2D.TransformLocalPosition, ut.Core2D.TransformLocalScale], 
                 (position, scale)=>{   
                     position.position = room.HolePos;
                     scale.scale = room.HoleScale;
                 });
             for(let i = 0; i<room.ObstacleData.length; i++){
-                let obstacle = ut.EntityGroup.instantiate(world, "game.Obstacle")[0];      
+                let obstacle = ut.EntityGroup.instantiate(world, "casualgf.Obstacle")[0];      
                 world.usingComponentData(obstacle, 
                     [ut.Core2D.TransformLocalPosition, ut.Core2D.TransformLocalRotation, ut.Core2D.Sprite2DRenderer, ut.Core2D.Sprite2DRendererOptions, ut.HitBox2D.RectHitBox2D, ut.Physics2D.BoxCollider2D], 
                     (positionObstacle, rotation,  renderer, rendererOptions, hitbox, boxCollider)=>{     
@@ -94,7 +94,7 @@ namespace game {
 
                     if(room.ObstacleData[i].Type == "L"){
                         renderer.color = new ut.Core2D.Color(212/255, 108/255, 75/255, 1);
-                        world.addComponent(obstacle, game.Lethal);
+                        world.addComponent(obstacle, casualgf.Lethal);
                     }
                 });           
             }
@@ -127,7 +127,7 @@ namespace game {
 
         public RandomRoom():Room{
             let random = GameSystem.randomIntFromInterval(0,this.Rooms.length-1);
-            //console.log("RandomRoom " + random);
+            ////console.log("RandomRoom " + random);
             return this.Rooms[random];
         }
     }
@@ -138,7 +138,7 @@ namespace game {
             this.initialBallPos = BallPos;
             this.HolePos = HolePos;
             this.HoleScale = HoleScale;
-            //console.log(this);
+            ////console.log(this);
         }        
         public ObstacleData;
         public initialBallPos:Vector3;

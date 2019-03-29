@@ -1,11 +1,11 @@
 
-namespace game {
+namespace casualgf {
 
     /** New System */
     export class LethalObstaclesSystem extends ut.ComponentSystem {
         
         OnUpdate():void { 
-            this.world.forEach([ut.Entity ,ut.Physics2D.ColliderContacts, game.Ball],
+            this.world.forEach([ut.Entity ,ut.Physics2D.ColliderContacts, casualgf.Ball],
             (entity, collidercontacts) => {      
                 if (collidercontacts.contacts.length == 0 ){
                     return;
@@ -16,8 +16,8 @@ namespace game {
                       continue;
                     }
         
-                    if(this.world.hasComponent(otherEntity, game.Lethal)){
-                           // console.log("LethalObstacleSystem " + this.world.getEntityName(entity));      
+                    if(this.world.hasComponent(otherEntity, casualgf.Lethal)){
+                           // //console.log("LethalObstacleSystem " + this.world.getEntityName(entity));      
                            LethalObstaclesSystem.EndGame(this.world);                 
                         return;
                     }                           

@@ -1,5 +1,5 @@
 
-namespace game {
+namespace casualgf {
 
     /** New System */
     export class ObstacleSpawnSystem extends ut.ComponentSystem {
@@ -21,7 +21,7 @@ namespace game {
             if(objectSpawner.isNone()){
                 return;
             }
-            this.world.usingComponentData(objectSpawner, [game.ObstacleSpawnerHelper], 
+            this.world.usingComponentData(objectSpawner, [casualgf.ObstacleSpawnerHelper], 
                 (helper)=>{        
                 areaPercerntage = helper.AreaPercentage;
                 XValues = helper.XScaleValues;
@@ -37,7 +37,7 @@ namespace game {
 /** 
             if(GameSystem.spawnObstacles){  
                 const borders = this.world.getEntityByName("Borders");	                            
-                this.world.usingComponentData(borders, [game.Borders], 
+                this.world.usingComponentData(borders, [casualgf.Borders], 
                     (borders)=>{ 
                     ObstacleSpawnSystem.totalArea = borders.WorldHeight * borders.WorldWidth;
                 });                   
@@ -51,7 +51,7 @@ namespace game {
                     let currentObstacleArea = randomScaleX * randomScaleY;                     
 
                     if(currentObstacleArea + currentArea < obstacleArea){
-                        if(ObstacleSpawnSystem.spawnObstacle(this.world, "game.Obstacle", randomScaleX, randomScaleY, borderOffset, borders)){
+                        if(ObstacleSpawnSystem.spawnObstacle(this.world, "casualgf.Obstacle", randomScaleX, randomScaleY, borderOffset, borders)){
                             currentArea += currentObstacleArea;
                         }
                     }
@@ -68,7 +68,7 @@ namespace game {
             let halfWidth;
             let halfHeigth;
                         
-            world.usingComponentData(borders, [game.Borders], 
+            world.usingComponentData(borders, [casualgf.Borders], 
                 (borders)=>{    
                 halfWidth = borders.WorldWidth/2;
                 halfHeigth = borders.WorldHeight/2;      
@@ -84,7 +84,7 @@ namespace game {
 
                 let coinInside = false;
                 
-                world.forEach([game.Object, ut.Core2D.TransformLocalPosition, ut.Core2D.TransformLocalScale],
+                world.forEach([casualgf.Object, ut.Core2D.TransformLocalPosition, ut.Core2D.TransformLocalScale],
                     (obstacle, transform, scale) => { 
                     if( (transform.position.x - scale.scale.x/2 - offset < randomPos.x - xScale/2 &&
                         transform.position.x + scale.scale.x/2 + offset > randomPos.x + xScale/2 )||(

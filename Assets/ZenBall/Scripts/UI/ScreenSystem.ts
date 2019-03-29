@@ -1,5 +1,5 @@
 
-namespace game {
+namespace casualgf {
 
     /** New System */
     export class ScreenSystem extends ut.ComponentSystem {

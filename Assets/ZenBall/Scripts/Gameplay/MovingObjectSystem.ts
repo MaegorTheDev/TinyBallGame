@@ -1,10 +1,10 @@
 
-namespace game {
+namespace casualgf {
 
     /** New System */
     export class MovingObjectSystem extends ut.ComponentSystem {
         OnUpdate():void {                        
-            this.world.forEach([ut.Entity, ut.Core2D.TransformLocalPosition ,game.MovingObject], 
+            this.world.forEach([ut.Entity, ut.Core2D.TransformLocalPosition ,casualgf.MovingObject], 
                 (entity,position, movingObject) =>{
                 //If the object is not active, keep it in starting position;
                 if(!movingObject.Active || movingObject.TimeToGetToLimit == 0){   
@@ -40,7 +40,7 @@ namespace game {
         }
 
         static Initialize(world:ut.World, entity:ut.Entity){
-            let movingObject =  world.getComponentData(entity, game.MovingObject);
+            let movingObject =  world.getComponentData(entity, casualgf.MovingObject);
             movingObject.StartingPosition = world.getComponentData(entity, ut.Core2D.TransformLocalPosition).position;
             let diference = new Vector2(movingObject.Limit.x - movingObject.StartingPosition.x, 
                 movingObject.Limit.y - movingObject.StartingPosition.y);
@@ -66,7 +66,7 @@ namespace game {
         static Move(world:ut.World, entity:ut.Entity){
             let currentPosDiference;
             let currentMagnitude;
-            let movingObject = world.getComponentData(entity, game.MovingObject);
+            let movingObject = world.getComponentData(entity, casualgf.MovingObject);
             let position = world.getComponentData(entity, ut.Core2D.TransformLocalPosition);
                 
             if(movingObject.HasPong){

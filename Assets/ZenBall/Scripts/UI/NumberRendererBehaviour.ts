@@ -1,11 +1,11 @@
 
-namespace game {
+namespace casualgf {
 
     export class NumberRendererBehaviourFilter extends ut.EntityFilter {
         node: ut.Core2D.TransformNode;
         position: ut.Core2D.TransformLocalPosition;
         scale: ut.Core2D.TransformLocalScale;
-        numberObject: game.NumberObject;
+        numberObject: casualgf.NumberObject;
     }
 
     export class NumberRendererBehaviour extends ut.ComponentBehaviour {
@@ -16,7 +16,15 @@ namespace game {
         // uncomment any method you need
         
         // this method is called for each entity matching the NumberRendererBehaviourFilter signature, once when enabled
-        //OnEntityEnable():void { }
+        OnEntityEnable():void {
+            if(this.data.numberObject.BackgroundImage != undefined && this.world.exists(this.data.numberObject.BackgroundImage)){
+                this.world.usingComponentData(this.data.numberObject.BackgroundImage, 
+                    [casualgf.InitialImageSize, ut.Core2D.Sprite2DRendererOptions], 
+                    (helper, renderer) => {
+                    helper.InitialSize = renderer.size.x;
+                });
+            }
+        }
         
         // this method is called for each entity matching the NumberRendererBehaviourFilter signature, every frame it's enabled
         OnEntityUpdate():void { 
@@ -28,8 +36,8 @@ namespace game {
             let lastSpriteObjets = this.data.numberObject.CurrentNumbers;
 
             
-            //console.log("EntityUpdate number to render:" + numberToRender);
-            //console.log("Entity name: " + this.world.getEntityName(this.entity));
+            ////console.log("EntityUpdate number to render:" + numberToRender);
+            ////console.log("Entity name: " + this.world.getEntityName(this.entity));
 
             if(numberToRender.length < lastSpriteObjets.length){
                 for(let i = lastSpriteObjets.length-1; i>=numberToRender.length;i--){
@@ -46,11 +54,11 @@ namespace game {
                 let digit;
                 if(lastSpriteObjets.length > i){
                     digit = lastSpriteObjets[i];
-                    //console.log("Replace digit");
+                    ////console.log("Replace digit");
                 }
                 else {
-                    digit = ut.EntityGroup.instantiate(this.world, "game.DigitSprite")[0];    
-                    //console.log("Instantiate digit ");    
+                    digit = ut.EntityGroup.instantiate(this.world, "casualgf.DigitSprite")[0];    
+                    ////console.log("Instantiate digit ");    
                     this.data.numberObject.CurrentNumbers[i] = digit;
                 }               
                 
@@ -63,6 +71,17 @@ namespace game {
                     renderer.color = this.data.numberObject.Color;
                 });
                 currentX += this.data.numberObject.Spacing * this.data.scale.scale.x;
+            }
+
+            if(this.data.numberObject.BackgroundImage != undefined && this.world.exists(this.data.numberObject.BackgroundImage)){
+                this.world.usingComponentData(this.data.numberObject.BackgroundImage, 
+                    [ut.Core2D.Sprite2DRendererOptions, casualgf.InitialImageSize], 
+                    (renderer, helper) => {
+                    let currentSize = helper.InitialSize;
+                    currentSize += this.data.numberObject.Spacing * numberToRender.length;
+                    renderer.size.setX(currentSize);
+                });
+
             }
 
         }

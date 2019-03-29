@@ -1,5 +1,5 @@
 
-namespace game {
+namespace casualgf {
 
     /** New System */
     export class RespawnSystem extends ut.ComponentSystem {
@@ -24,8 +24,8 @@ namespace game {
                 return;
             }
             let startingPosition;
-            world.usingComponentData(objectSpawner, [game.ObstacleSpawnerHelper], (helper) =>{
-                world.usingComponentData(helper.CurrentLevel, [game.Level], (level)=>{
+            world.usingComponentData(objectSpawner, [casualgf.ObstacleSpawnerHelper], (helper) =>{
+                world.usingComponentData(helper.CurrentLevel, [casualgf.Level], (level)=>{
                     startingPosition = level.StartingPosition;
                 });
             });
@@ -43,7 +43,7 @@ namespace game {
         static ChangeAlphaRespawnCoinNumber(world:ut.World, alpha:number){            
             let coinsToRespawn = world.getEntityByName("RespawnCoinNumberRender") ;
             if(!coinsToRespawn.isNone()){
-                world.usingComponentData(coinsToRespawn, [game.NumberObject], (numberObject)=>{
+                world.usingComponentData(coinsToRespawn, [casualgf.NumberObject], (numberObject)=>{
                     if(RespawnSystem.actualRespawns * 10 != numberObject.Number){
                         numberObject.Number = RespawnSystem.actualRespawns * 10;
                         numberObject.Render = true;

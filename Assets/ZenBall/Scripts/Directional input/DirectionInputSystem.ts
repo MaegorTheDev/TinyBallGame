@@ -1,5 +1,5 @@
 
-namespace game {
+namespace casualgf {
 	//@ut.executeAfter(ut.Shared.UserCodeStart)
     //@ut.executeBefore(ut.Shared.UserCodeEnd)
     /** InputHandlingSystem */
@@ -12,19 +12,28 @@ namespace game {
 			const cameraPos = this.world.getComponentData(camera, ut.Core2D.TransformLocalPosition).position;
 			const halfSize = this.world.getComponentData(camera, ut.Core2D.Camera2D).halfVerticalSize;		
 
-            this.world.forEach([ut.Entity, game.Ball, ut.Physics2D.Velocity2D, ut.Core2D.TransformLocalPosition, game.InputHelper], (entity, ball, velocity, localPosition , inputHelper ) => {
-				if(inputHelper.InputType == game.InputType.Power){
+			this.world.forEach([ut.Entity, casualgf.InputHelper], 
+				(entity, inputHelper ) => {
+				if(inputHelper.InputType == casualgf.InputType.Power){
 					return;
 				}
 				if(GameSystem.CurrentGameMode != GameState.Waiting && GameSystem.CurrentGameMode != GameState.Aiming ){
-					//console.log(GameSystem.CurrentGameMode);
+					////console.log(GameSystem.CurrentGameMode);
 					return;
 				}
-				if(!ut.Core2D.Input.isTouchSupported()){
-					
+				if(!ut.Core2D.Input.isTouchSupported()){	
+					if( ut.Runtime.Input.getMouseButtonDown(0)){
+						let mousePos = ut.Core2D.Input.getInputPosition();
+						// adjust 0,0 to the center of the screen
+						mousePos.x -= display.frameWidth / 2;
+						mousePos.y -= display.frameHeight / 2;
 
-					if( ut.Runtime.Input.getMouseButton(0)){
-						this.ProcessStartInput(entity, velocity, inputHelper);
+						//Mouse world position
+						const mouseWorldPos = new Vector2(
+						cameraPos.x + mousePos.x / (display.frameWidth / 2) * (display.frameWidth / display.frameHeight * halfSize),
+						cameraPos.y + mousePos.y / (display.frameHeight / 2) * halfSize);
+
+						this.ProcessStartInput(entity, mouseWorldPos);
 					}
 					else if (ut.Runtime.Input.getMouseButtonUp(0)) {
 						let mousePos = ut.Core2D.Input.getInputPosition();
@@ -37,15 +46,25 @@ namespace game {
 						cameraPos.x + mousePos.x / (display.frameWidth / 2) * (display.frameWidth / display.frameHeight * halfSize),
 						cameraPos.y + mousePos.y / (display.frameHeight / 2) * halfSize);
 
-						this.ProcessFinishInput(mouseWorldPos, ball, localPosition, inputHelper);
+						this.ProcessFinishInput(entity, mouseWorldPos);
 					}
 				}				
 				else {
 					if (ut.Core2D.Input.touchCount() > 0) {
 						let touch: ut.Core2D.Touch = ut.Core2D.Input.getTouch(0);
 						if (touch.phase == ut.Core2D.TouchState.Began) {
-							//console.log("began: " + ut.Core2D.Input.touchCount());							
-							this.ProcessStartInput(entity, velocity, inputHelper);
+							////console.log("began: " + ut.Core2D.Input.touchCount());
+							let pos = new Vector2 (touch.x, touch.y);
+
+							pos.x -= display.frameWidth / 2;
+							pos.y -= display.frameHeight / 2;
+	
+							//Mouse world position
+							const mouseWorldPos = new Vector2(
+							cameraPos.x + pos.x / (display.frameWidth / 2) * (display.frameWidth / display.frameHeight * halfSize),
+							cameraPos.y + pos.y / (display.frameHeight / 2) * halfSize);
+
+							this.ProcessStartInput(entity, mouseWorldPos);
 						}else if (touch.phase == ut.Core2D.TouchState.Ended){
 							let pos = new Vector2 (touch.x, touch.y);
 
@@ -57,31 +76,37 @@ namespace game {
 							cameraPos.x + pos.x / (display.frameWidth / 2) * (display.frameWidth / display.frameHeight * halfSize),
 							cameraPos.y + pos.y / (display.frameHeight / 2) * halfSize);
 	
-							this.ProcessFinishInput(mouseWorldPos, ball, localPosition, inputHelper);
+							this.ProcessFinishInput(entity, mouseWorldPos);
 						}	
 					}
 				}
 			});	
 		}
-		ProcessStartInput(entity, velocity, inputHelper):void
-		{				
-			inputHelper.IsClickDown = true;					
+		ProcessStartInput(entity, worldPosition):void
+		{	
+			this.world.usingComponentData(entity, [casualgf.InputHelper], (inputHelper) => {
+				inputHelper.IsClickDown = true;					
+				inputHelper.FirstTouchData = worldPosition;
+			});
 			GameSystem.CurrentGameMode = GameState.Aiming;	
-			//console.log("StartInput");			
+			////console.log("StartInput");			
 		}
 
-		ProcessFinishInput(worldPosition: Vector2,ball , localPosition, inputHelper):void
+		ProcessFinishInput(entity:ut.Entity, worldPosition: Vector2):void
 		{
-			let playerWorldPosition = localPosition.position;
-			let diference = new Vector2(worldPosition.x - playerWorldPosition.x, worldPosition.y - playerWorldPosition.y);
+			let inputHelper = this.world.getComponentData(entity, casualgf.InputHelper);
+			let diference = new Vector2(inputHelper.FirstTouchData.x - worldPosition.x  , inputHelper.FirstTouchData.y-worldPosition.y);
 			
 			let magnitude = Math.sqrt(diference.x * diference.x + diference.y * diference.y);
-			let normalized = new Vector2(diference.x/magnitude, diference.y/magnitude);
+			let normalized = new Vector2(diference.x/magnitude, diference.y/magnitude).multiplyScalar(-1);
 
 			inputHelper.IsClickDown = false;
+			this.world.setComponentData(entity, inputHelper);
 
-			ball.MoveDirection = normalized.multiplyScalar(-1);
-			ball.Shoot = true;			
+			this.world.usingComponentData(entity, [casualgf.Ball], (ball)=>{
+				ball.MoveDirection = normalized.multiplyScalar(-1);
+				ball.Shoot = true;	
+			});		
 			
 		}
     }  
@@ -112,27 +137,27 @@ namespace game {
 					}
 
 					if (touch.phase == ut.Core2D.TouchState.Moved) {
-						//console.log("moved: " + ut.Core2D.Input.touchCount());
+						////console.log("moved: " + ut.Core2D.Input.touchCount());
 					}
 					else if (touch.phase == ut.Core2D.TouchState.Ended) {
-						//console.log("ended: " + ut.Core2D.Input.touchCount());
+						////console.log("ended: " + ut.Core2D.Input.touchCount());
 					}
 					else if (touch.phase == ut.Core2D.TouchState.Stationary) {
-						//console.log("holding: " + ut.Core2D.Input.touchCount());
+						////console.log("holding: " + ut.Core2D.Input.touchCount());
 					}
 					else if (touch.phase == ut.Core2D.TouchState.Canceled) {
-						//console.log("cancelled: " + ut.Core2D.Input.touchCount());
+						////console.log("cancelled: " + ut.Core2D.Input.touchCount());
 					}
 					else if (touch.phase == ut.Core2D.TouchState.Began) {
-						//console.log("began: " + ut.Core2D.Input.touchCount());
+						////console.log("began: " + ut.Core2D.Input.touchCount());
 					}
 					else {
-						console.log("NO TOUCH STATE!!!");
+						//console.log("NO TOUCH STATE!!!");
 					}
 				}
 			}
 			else {
-				//console.log("TOUCH IS DISABLED!!!");
+				////console.log("TOUCH IS DISABLED!!!");
 			}
 		}
  * 

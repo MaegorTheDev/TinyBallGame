@@ -1,6 +1,6 @@
 
-namespace game {
-    //@ut.executeBefore(game.BallShootingSystem)
+namespace casualgf {
+    //@ut.executeBefore(casualgf.BallShootingSystem)
     /** New System */
     export class ShotsUISystem extends ut.ComponentSystem {
         OnUpdate():void {           
@@ -9,7 +9,7 @@ namespace game {
         static UpdateShotsPeg(world){
               
             return;
-            ut.EntityGroup.destroyAll(world, 'game.ShotPeg');               
+            ut.EntityGroup.destroyAll(world, 'casualgf.ShotPeg');               
             let borders = world.getEntityByName("Borders");
             let numberOfShots = 0;	              
             
@@ -17,7 +17,7 @@ namespace game {
             let pegYPos;
             let currentX;
 
-            world.usingComponentData(borders, [game.Borders], 
+            world.usingComponentData(borders, [casualgf.Borders], 
                 (borders)=>{
                     pegSize =   ((borders.WorldWidth - ((numberOfShots-1) * 0.75)) - 5)  / numberOfShots;
                     pegYPos = (borders.WorldHeight/2) - 0.5;
@@ -25,7 +25,7 @@ namespace game {
           
             });      
             for(let i =0; i < numberOfShots; i++){
-                let peg = ut.EntityGroup.instantiate(world, "game.ShotPeg")[0];        
+                let peg = ut.EntityGroup.instantiate(world, "casualgf.ShotPeg")[0];        
                 world.usingComponentData(peg, [ut.Core2D.TransformLocalPosition, ut.Core2D.Sprite2DRendererOptions], 
                     (transformLocalPosition, options)=>{
                         let pos = new Vector3(currentX, pegYPos);   
@@ -55,7 +55,7 @@ namespace game {
             let index = 1;
             let currentPlays = GameSystem.currentPlays;
             let isClickDown = false;
-            this.world.forEach([game.Ball, game.InputHelper, ut.Entity],
+            this.world.forEach([casualgf.Ball, casualgf.InputHelper, ut.Entity],
                 (ball, helper, entity) => { 
                     isClickDown = helper.IsClickDown;
             });
@@ -63,12 +63,12 @@ namespace game {
             if(isClickDown && currentPlays == 0){
                 ShotsUISystem.frameCount++;
                 if(ShotsUISystem.frameCount % 14 == 0){
-                    this.world.forEach([game.NoShotsSprite, ut.Core2D.Sprite2DRenderer],
+                    this.world.forEach([casualgf.NoShotsSprite, ut.Core2D.Sprite2DRenderer],
                         (peg, renderer) => { 
                         renderer.sprite = peg.NoShots;
                     });
                 } else if (ShotsUISystem.frameCount % 14 == 7){
-                    this.world.forEach([game.NoShotsSprite, ut.Core2D.Sprite2DRenderer],
+                    this.world.forEach([casualgf.NoShotsSprite, ut.Core2D.Sprite2DRenderer],
                         (peg, renderer) => { 
                         renderer.sprite = peg.DefaultSprite;
                     });
@@ -77,7 +77,7 @@ namespace game {
             }
             else  {                 
                 ShotsUISystem.frameCount = 0; 
-                this.world.forEach([game.ShotPeg, ut.Core2D.Sprite2DRenderer],
+                this.world.forEach([casualgf.ShotPeg, ut.Core2D.Sprite2DRenderer],
                     (peg, renderer) => { 
                     if(index < currentPlays){
                         renderer.sprite = peg.InitialSprite;

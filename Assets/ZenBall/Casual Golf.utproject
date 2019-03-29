@@ -44,7 +44,7 @@
     "Name": "Main",
     "SerializedVersion": 1,
     "ExportFlags": 0,
-    "Namespace": "game",
+    "Namespace": "casualgf",
     "Options": 4,
     "Dependencies": [
         { "Id": "30097418841f56d73400bf82ee859ac9", "Name": "UTiny.Core2D" },
