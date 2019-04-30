@@ -1,0 +1,40 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "f7f348e2bd0149b9a78c99a6676465f8",
+    "Name": "RotatingObject",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "Documentation": {
+        "Summary": "Component of rotating objects. \nActive: Is currently active?\nInitialRotation: Initial rotation quaternion \nSpeed:Angular Speed\n"
+    },
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "0eb7d869cc4644e1af55f96a58d32080",
+        "Name": "Active",
+        "FieldType": { "Id": "2b477f505af74487b7092b5617d88d3f", "Name": "Boolean" },
+        "Array": false,
+        "Visibility": 1,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "cfd68e8be57f4af18958e2dcc2bfcc5d",
+        "Name": "InitialRotation",
+        "FieldType": { "Id": "dc7e11e5d517ed01fd5d084a6c9fd64d", "Name": "Quaternion" },
+        "Array": false,
+        "Visibility": 1,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "29b1b92737974640bff036ee29ff6eb1",
+        "Name": "Speed",
+        "FieldType": { "Id": "67325dccf2f047c19c7ef4a045354e67", "Name": "Float32" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "f7f348e2bd0149b9a78c99a6676465f8", "Name": "RotatingObject" }
+    }
+}]

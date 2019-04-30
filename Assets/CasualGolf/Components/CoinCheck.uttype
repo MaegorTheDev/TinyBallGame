@@ -1,0 +1,15 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "e93527d7e079488fac510bb47d6676e1",
+    "Name": "CoinCheck",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "Documentation": {
+        "Summary": "Checks if the number of coins is a certain number to show or hide an object"
+    },
+    "TypeCode": "Component",
+    "DefaultValue": {
+        "Type": { "Id": "e93527d7e079488fac510bb47d6676e1", "Name": "CoinCheck" }
+    }
+}]

@@ -2,13 +2,14 @@
     "compilerOptions": {
         "experimentalDecorators": true,
         "skipLibCheck": true,
-        "outFile": "F:/2019/TinyProyect/TinyBallGame/TinyExport/ZenBall/html5/development/artifacts/scripts/tsc-emit.js",
+        "outFile": "F:/2019/TinyProyect/TinyBallGame/TinyExport/Casual Golf/html5/development/artifacts/scripts/tsc-emit.js",
         "sourceMap": true,
-        "target": "ES5"
+        "target": "ES5",
+        "allowJs": true
     },
     "compileOnSave": true,
     "include": [
-        "Assets/ZenBall/**/*.ts",
+        "Assets/CasualGolf/**/*.ts",
         "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.Core2D/**/*.ts",
         "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.Math/**/*.ts",
         "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.Core/**/*.ts",
@@ -30,13 +31,12 @@
         "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.EntityGroup/**/*.ts",
         "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.HitBox2D/**/*.ts",
         "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.Audio/**/*.ts",
-        "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.Animation/**/*.ts",
-        "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.UIControls/**/*.ts",
-        "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.UIControlsExtensions/**/*.ts"
+        "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.Animation/**/*.ts"
     ],
     "exclude": [],
     "files": [
-        "TinyExport/ZenBall/html5/development/artifacts/scripts/bind-generated.d.ts",
-        "Tiny/Dist/runtimedll/RuntimeFull.d.ts"
+        "TinyExport/Casual Golf/html5/development/artifacts/scripts/bind-generated.d.ts",
+        "Tiny/Dist/runtimedll/RuntimeFull.d.ts",
+        "Assets/CasualGolf/External/dst/fbinstant.d.ts"
     ]
 }

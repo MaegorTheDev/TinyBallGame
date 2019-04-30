@@ -1,0 +1,67 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "6d6b8de8fef14b59b5dbbff52256975b",
+    "Name": "FreeRewardedAd",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "Documentation": {
+        "Summary": "Index: The number in the list of rewarded adds\nReward: How many coins are rewarded\nUnactiveSpriteEntity: The sprite entity when this ad is not active\nAvailableSprite: Sprite when the add is available to watch"
+    },
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "8d22c70310f44ca781fe35f5d068ec88",
+        "Name": "Index",
+        "FieldType": { "Id": "2aa56ce081e14e8a93d276da72d813bc", "Name": "Int16" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "f410a281901246e7a808bbb9317445a6",
+        "Name": "Reward",
+        "FieldType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "109204fb9207473a9d5ee720a6b61824",
+        "Name": "UnactiveSpriteEntity",
+        "FieldType": { "Id": "5a182d9d039d4dfd8fa96132d05f9ee7", "Name": "EntityReference" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "f53a042637d9461d9655a068d4d74c4d",
+        "Name": "CollectedSprite",
+        "FieldType": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "a28e9ebd8b834d36a2862f33d8e1b4e9",
+        "Name": "AvailableSprite",
+        "FieldType": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "a9bb125dc2c34c5982f5f3af76b86cd2",
+        "Name": "Available",
+        "FieldType": { "Id": "2b477f505af74487b7092b5617d88d3f", "Name": "Boolean" },
+        "Array": false,
+        "Visibility": 1,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "6d6b8de8fef14b59b5dbbff52256975b", "Name": "FreeRewardedAd" },
+        "Properties": {
+            "Available": true
+        }
+    }
+}]

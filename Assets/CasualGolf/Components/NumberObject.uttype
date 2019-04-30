@@ -1,0 +1,72 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "0976708f4e814322ba32028adfe7c57c",
+    "Name": "NumberObject",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "Documentation": {
+        "Summary": "Object used to render a number in the world\nNumber: number to render\nDigits: the sprites of each of the numbers. ITs important to be in the same order.\nCurrentNumbers: Entities that were spawned\nSpacing: Spacing between numbers\nColor: Color tint of the number\nRender: Is it drawn?\nBackbroundImage: if it needs to expand the background image"
+    },
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "a549212462224cb68d681968f48ff6ad",
+        "Name": "Number",
+        "FieldType": { "Id": "37695933217a49f68ce15db33f63cdf9", "Name": "Int64" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "4ed4dbf19e5d40b2bce51cde2f0c4c9c",
+        "Name": "Digits",
+        "FieldType": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
+        "Array": true,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "c0c4c730cab345d1941f6cfd32f22daf",
+        "Name": "CurrentNumbers",
+        "FieldType": { "Id": "5a182d9d039d4dfd8fa96132d05f9ee7", "Name": "EntityReference" },
+        "Array": true,
+        "Visibility": 1,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "d385de1c15e347429f507d8d589146bd",
+        "Name": "Spacing",
+        "FieldType": { "Id": "67325dccf2f047c19c7ef4a045354e67", "Name": "Float32" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "d5f9de75abfd4c76a143eca013d4e36c",
+        "Name": "Color",
+        "FieldType": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "a5b79c5403bf44bab4821ee073bf6edc",
+        "Name": "Render",
+        "FieldType": { "Id": "2b477f505af74487b7092b5617d88d3f", "Name": "Boolean" },
+        "Array": false,
+        "Visibility": 1,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "0f9ef00dc0d646b98a68484dc6016d46",
+        "Name": "BackgroundImage",
+        "FieldType": { "Id": "5a182d9d039d4dfd8fa96132d05f9ee7", "Name": "EntityReference" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "0976708f4e814322ba32028adfe7c57c", "Name": "NumberObject" }
+    }
+}]

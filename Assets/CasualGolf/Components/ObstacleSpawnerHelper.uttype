@@ -1,0 +1,56 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "929ba5ca25074f5c9c8fbba9fa52aa6d",
+    "Name": "ObstacleSpawnerHelper",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "Documentation": {
+        "Summary": "Helper to keep the data to spawn obtacles\nPools: How many groups there are\nLevelsPerPool: How many levels are necesary to complete the pool and going to the next one\nCurrentGroup/Level: References to the current objects entity"
+    },
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "bcb4d557fcfc45bfa7ed9cd61003e378",
+        "Name": "SpawnMode",
+        "FieldType": { "Id": "c7c81bbc6f764be4a2a670fef202ed81", "Name": "ObstacleSpawnerMode" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "4d5f7efb09954038814e3b6e71ebe67f",
+        "Name": "Pools",
+        "FieldType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "b9e629cbeca3475c89353788d10b725d",
+        "Name": "LevelsPerPool",
+        "FieldType": { "Id": "2aa56ce081e14e8a93d276da72d813bc", "Name": "Int16" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "ee29aac354c74f3da95ade15c43552ad",
+        "Name": "CurrentGroup",
+        "FieldType": { "Id": "5a182d9d039d4dfd8fa96132d05f9ee7", "Name": "EntityReference" },
+        "Array": false,
+        "Visibility": 1,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "5f457c797f364068917837b390508b59",
+        "Name": "CurrentLevel",
+        "FieldType": { "Id": "5a182d9d039d4dfd8fa96132d05f9ee7", "Name": "EntityReference" },
+        "Array": false,
+        "Visibility": 1,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "929ba5ca25074f5c9c8fbba9fa52aa6d", "Name": "ObstacleSpawnerHelper" }
+    }
+}]

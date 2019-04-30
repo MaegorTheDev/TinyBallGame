@@ -1,0 +1,32 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "f30cb3a62bd74ee9a371952358175b6d",
+    "Name": "FreeRewardsHelper",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "Documentation": {
+        "Summary": "Main component to manage the Rewarded ads\nResetDateTime: When is due to reset\nCurrentIndex: Which of the rewards is available."
+    },
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "b0a04b66dd7841c3981df8a1fd30885f",
+        "Name": "ResetDateTime",
+        "FieldType": { "Id": "1bff5adddd7c41de98d3329c7c641208", "Name": "String" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "94b29f4f4fc640d4bf50f6a5bc4b3f14",
+        "Name": "CurrentIndex",
+        "FieldType": { "Id": "2aa56ce081e14e8a93d276da72d813bc", "Name": "Int16" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "f30cb3a62bd74ee9a371952358175b6d", "Name": "FreeRewardsHelper" }
+    }
+}]

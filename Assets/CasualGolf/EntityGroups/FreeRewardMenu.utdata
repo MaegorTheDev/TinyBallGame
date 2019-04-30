@@ -1,0 +1,625 @@
+﻿[{
+    "$TypeId": 4,
+    "Id": "afc60731a63d4dcaae48b187100e2ebc",
+    "Name": "FreeRewardMenu",
+    "ExportFlags": 0,
+    "SerializedVersion": 0,
+    "Entities": [
+        { "$TypeId": 9, "Id": "4fa994375f8946ddbfa0d11079c44074", "Name": "Tablero Rewards" },
+        { "$TypeId": 9, "Id": "473f012d63b54e1c8ec2941970aadaed", "Name": "FreeRewardsButton1" },
+        { "$TypeId": 9, "Id": "c64d06e5234140fd82e5b763c87117bb", "Name": "RespawnCoinCheckTransparency" },
+        { "$TypeId": 9, "Id": "30fd06652c084c8ca24bad21fb073146", "Name": "FreeRewardsButton2" },
+        { "$TypeId": 9, "Id": "beb763da72d24bf2b1498e18ec1937e4", "Name": "RespawnCoinCheckTransparency" },
+        { "$TypeId": 9, "Id": "a9d8ff2a616f429b8603b122947dd33f", "Name": "FreeRewardsButton3" },
+        { "$TypeId": 9, "Id": "b5fb9c6793074b0fb690566f92015a2a", "Name": "RespawnCoinCheckTransparency" },
+        { "$TypeId": 9, "Id": "4c8f0c94963740359fe5a365a9a0497b", "Name": "FreeRewardsButton4" },
+        { "$TypeId": 9, "Id": "fc6c90365b774981a438167f91783578", "Name": "RespawnCoinCheckTransparency" },
+        { "$TypeId": 9, "Id": "4feeda2ba7704005ae8db3192a72b6c9", "Name": "GoBack" }
+    ]
+},
+{
+    "$TypeId": 5,
+    "Id": "4fa994375f8946ddbfa0d11079c44074",
+    "Name": "Tablero Rewards",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "3916558fb11e55544928b7d3d4a720b3", "FileId": 21300000, "Type": 3 }
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "layer": -1784358549
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "473f012d63b54e1c8ec2941970aadaed",
+    "Name": "FreeRewardsButton1",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "ebaa7ee6eebc4f544866e495bfceeba5", "FileId": 21300002, "Type": 3 },
+            "color": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -23,
+                    "y": 12
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "layer": -1784358549,
+            "order": 3
+        }
+    }, {
+        "Type": { "Id": "5a68c59783d93e60c704f63111bcb0ad", "Name": "Sprite2DRendererHitBox2D" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 0.6762
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "6d6b8de8fef14b59b5dbbff52256975b", "Name": "FreeRewardedAd" },
+        "Properties": {
+            "Reward": 5,
+            "UnactiveSpriteEntity": { "$TypeId": 9, "Id": "c64d06e5234140fd82e5b763c87117bb", "Name": "RespawnCoinCheckTransparency" },
+            "CollectedSprite": { "$TypeId": 10, "Guid": "ebaa7ee6eebc4f544866e495bfceeba5", "FileId": 21300000, "Type": 3 },
+            "AvailableSprite": { "$TypeId": 10, "Guid": "ebaa7ee6eebc4f544866e495bfceeba5", "FileId": 21300002, "Type": 3 }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "c64d06e5234140fd82e5b763c87117bb",
+    "Name": "RespawnCoinCheckTransparency",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "68441f87a64f0a540bba7bcb8e6d614f", "FileId": 21300002, "Type": 3 },
+            "color": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -0.17,
+                    "y": 12.26,
+                    "z": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "layer": -1784358549,
+            "order": 6
+        }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 8.96,
+                    "y": 5.61,
+                    "z": 2
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+        "Properties": {
+            "size": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 5.170421,
+                    "y": 1.47661
+                }
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "30fd06652c084c8ca24bad21fb073146",
+    "Name": "FreeRewardsButton2",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "ebaa7ee6eebc4f544866e495bfceeba5", "FileId": 21300006, "Type": 3 },
+            "color": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -23,
+                    "y": 3
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "layer": -1784358549,
+            "order": 3
+        }
+    }, {
+        "Type": { "Id": "5a68c59783d93e60c704f63111bcb0ad", "Name": "Sprite2DRendererHitBox2D" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 0.6762
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "6d6b8de8fef14b59b5dbbff52256975b", "Name": "FreeRewardedAd" },
+        "Properties": {
+            "Index": 1,
+            "Reward": 10,
+            "UnactiveSpriteEntity": { "$TypeId": 9, "Id": "beb763da72d24bf2b1498e18ec1937e4", "Name": "RespawnCoinCheckTransparency" },
+            "CollectedSprite": { "$TypeId": 10, "Guid": "ebaa7ee6eebc4f544866e495bfceeba5", "FileId": 21300004, "Type": 3 },
+            "AvailableSprite": { "$TypeId": 10, "Guid": "ebaa7ee6eebc4f544866e495bfceeba5", "FileId": 21300006, "Type": 3 }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "beb763da72d24bf2b1498e18ec1937e4",
+    "Name": "RespawnCoinCheckTransparency",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "68441f87a64f0a540bba7bcb8e6d614f", "FileId": 21300002, "Type": 3 },
+            "color": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -0.224,
+                    "y": 3.059,
+                    "z": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "layer": -1784358549,
+            "order": 6
+        }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 8.96,
+                    "y": 5.61,
+                    "z": 2
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+        "Properties": {
+            "size": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 5.235249,
+                    "y": 1.51396
+                }
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "a9d8ff2a616f429b8603b122947dd33f",
+    "Name": "FreeRewardsButton3",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "ebaa7ee6eebc4f544866e495bfceeba5", "FileId": 21300010, "Type": 3 },
+            "color": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -23,
+                    "y": -6
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "layer": -1784358549,
+            "order": 3
+        }
+    }, {
+        "Type": { "Id": "5a68c59783d93e60c704f63111bcb0ad", "Name": "Sprite2DRendererHitBox2D" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 0.6762
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "6d6b8de8fef14b59b5dbbff52256975b", "Name": "FreeRewardedAd" },
+        "Properties": {
+            "Index": 2,
+            "Reward": 15,
+            "UnactiveSpriteEntity": { "$TypeId": 9, "Id": "b5fb9c6793074b0fb690566f92015a2a", "Name": "RespawnCoinCheckTransparency" },
+            "CollectedSprite": { "$TypeId": 10, "Guid": "ebaa7ee6eebc4f544866e495bfceeba5", "FileId": 21300008, "Type": 3 },
+            "AvailableSprite": { "$TypeId": 10, "Guid": "ebaa7ee6eebc4f544866e495bfceeba5", "FileId": 21300010, "Type": 3 }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "b5fb9c6793074b0fb690566f92015a2a",
+    "Name": "RespawnCoinCheckTransparency",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "68441f87a64f0a540bba7bcb8e6d614f", "FileId": 21300002, "Type": 3 },
+            "color": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0,
+                    "y": -5.84,
+                    "z": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "layer": -1784358549,
+            "order": 6
+        }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 8.96,
+                    "y": 5.61,
+                    "z": 2
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+        "Properties": {
+            "size": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 5.206192,
+                    "y": 1.418333
+                }
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "4c8f0c94963740359fe5a365a9a0497b",
+    "Name": "FreeRewardsButton4",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "ebaa7ee6eebc4f544866e495bfceeba5", "FileId": 21300014, "Type": 3 },
+            "color": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -23,
+                    "y": -15
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "layer": -1784358549,
+            "order": 3
+        }
+    }, {
+        "Type": { "Id": "5a68c59783d93e60c704f63111bcb0ad", "Name": "Sprite2DRendererHitBox2D" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 0.6762
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "6d6b8de8fef14b59b5dbbff52256975b", "Name": "FreeRewardedAd" },
+        "Properties": {
+            "Index": 3,
+            "Reward": 20,
+            "UnactiveSpriteEntity": { "$TypeId": 9, "Id": "fc6c90365b774981a438167f91783578", "Name": "RespawnCoinCheckTransparency" },
+            "CollectedSprite": { "$TypeId": 10, "Guid": "ebaa7ee6eebc4f544866e495bfceeba5", "FileId": 21300012, "Type": 3 },
+            "AvailableSprite": { "$TypeId": 10, "Guid": "ebaa7ee6eebc4f544866e495bfceeba5", "FileId": 21300014, "Type": 3 }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "fc6c90365b774981a438167f91783578",
+    "Name": "RespawnCoinCheckTransparency",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "68441f87a64f0a540bba7bcb8e6d614f", "FileId": 21300002, "Type": 3 },
+            "color": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0,
+                    "y": -14.743,
+                    "z": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "layer": -1784358549,
+            "order": 6
+        }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 8.96,
+                    "y": 5.61,
+                    "z": 2
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+        "Properties": {
+            "size": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 5.206192,
+                    "y": 1.4535
+                }
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "4feeda2ba7704005ae8db3192a72b6c9",
+    "Name": "GoBack",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "68441f87a64f0a540bba7bcb8e6d614f", "FileId": 21300006, "Type": 3 },
+            "color": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 0,
+                    "g": 0.1176734,
+                    "b": 1,
+                    "a": 0.003921569
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 23.898,
+                    "y": 19.518
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "layer": -1784358549,
+            "order": 3
+        }
+    }, {
+        "Type": { "Id": "5a68c59783d93e60c704f63111bcb0ad", "Name": "Sprite2DRendererHitBox2D" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0.7284521,
+                    "y": 1.132065,
+                    "z": 0.6762
+                }
+            }
+        }
+    }]
+}]

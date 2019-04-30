@@ -1,0 +1,24 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "a726552055af4241a212048ea1eac898",
+    "Name": "LevelGroup",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "Documentation": {
+        "Summary": "List of all the levels of the group"
+    },
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "661695eb64b5474cb3bc4c63054e31e8",
+        "Name": "Levels",
+        "FieldType": { "Id": "5a182d9d039d4dfd8fa96132d05f9ee7", "Name": "EntityReference" },
+        "Array": true,
+        "Visibility": 1,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "a726552055af4241a212048ea1eac898", "Name": "LevelGroup" }
+    }
+}]

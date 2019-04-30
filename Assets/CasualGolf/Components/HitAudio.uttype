@@ -1,0 +1,24 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "8387ccd975f84189835f34ae7f20f33e",
+    "Name": "HitAudio",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "Documentation": {
+        "Summary": "Component that stores the AudioClips for the hits to walls or obstacles"
+    },
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "e3a607168c5b47648f5a33421b3af7fd",
+        "Name": "HitAudioClips",
+        "FieldType": { "Id": "1ae8c073dc444f4fb2d3120e5e618326", "Name": "AudioClipEntity" },
+        "Array": true,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "8387ccd975f84189835f34ae7f20f33e", "Name": "HitAudio" }
+    }
+}]

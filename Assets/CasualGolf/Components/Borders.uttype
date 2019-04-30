@@ -1,0 +1,48 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "b88c9306a3074119b9dc033c72fe5a84",
+    "Name": "Borders",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "Documentation": {
+        "Summary": "Height/Width: Screen Height/Width\nWorldHeight/Width: Height/Width in world units\n"
+    },
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "04828d4fb6bf4dec86c33739c6256568",
+        "Name": "Height",
+        "FieldType": { "Id": "67325dccf2f047c19c7ef4a045354e67", "Name": "Float32" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "30edd236032840b88e9b74c540431293",
+        "Name": "Width",
+        "FieldType": { "Id": "67325dccf2f047c19c7ef4a045354e67", "Name": "Float32" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "0beac690ff334b48821950da70a67b58",
+        "Name": "WorldHeight",
+        "FieldType": { "Id": "67325dccf2f047c19c7ef4a045354e67", "Name": "Float32" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "7db02fa4fa154242964b0f0884edc9e5",
+        "Name": "WorldWidth",
+        "FieldType": { "Id": "67325dccf2f047c19c7ef4a045354e67", "Name": "Float32" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "b88c9306a3074119b9dc033c72fe5a84", "Name": "Borders" }
+    }
+}]

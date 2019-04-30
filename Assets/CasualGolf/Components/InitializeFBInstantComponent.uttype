@@ -1,0 +1,48 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "b2c7c927e8094fc7881438ef366a6d00",
+    "Name": "InitializeFBInstantComponent",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "Documentation": {
+        "Summary": "Data of the FB user of the player."
+    },
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "65bbf4a1627c4676a291c4232ca6e552",
+        "Name": "Loaded",
+        "FieldType": { "Id": "2b477f505af74487b7092b5617d88d3f", "Name": "Boolean" },
+        "Array": false,
+        "Visibility": 1,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "e9bc990080014519bd2de050a81850e1",
+        "Name": "PlayerID",
+        "FieldType": { "Id": "1bff5adddd7c41de98d3329c7c641208", "Name": "String" },
+        "Array": false,
+        "Visibility": 1,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "38de365e71f24c7081a75b3b41c5e26e",
+        "Name": "PlayerName",
+        "FieldType": { "Id": "1bff5adddd7c41de98d3329c7c641208", "Name": "String" },
+        "Array": false,
+        "Visibility": 1,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "d46d5759097e41d09e943be4424024ed",
+        "Name": "Image",
+        "FieldType": { "Id": "1bff5adddd7c41de98d3329c7c641208", "Name": "String" },
+        "Array": false,
+        "Visibility": 1,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "b2c7c927e8094fc7881438ef366a6d00", "Name": "InitializeFBInstantComponent" }
+    }
+}]

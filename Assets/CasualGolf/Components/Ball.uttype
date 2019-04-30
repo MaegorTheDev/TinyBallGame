@@ -1,0 +1,49 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "4ca2ce637ae940118b5952682078805e",
+    "Name": "Ball",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "Documentation": {
+        "Summary": "Max Power: the used force to move the ball after a shot.\nShoot: Is the Ball about to shoot?\nMoveDirection: Which is the direction the ball should go."
+    },
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "96511ab6307e48b785e0cb06248afae9",
+        "Name": "MaxPower",
+        "FieldType": { "Id": "67325dccf2f047c19c7ef4a045354e67", "Name": "Float32" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "f3fece516aab4cfb986c9675ea8e7a11",
+        "Name": "Shoot",
+        "FieldType": { "Id": "2b477f505af74487b7092b5617d88d3f", "Name": "Boolean" },
+        "Array": false,
+        "Visibility": 1,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "cae50c2e74e24e9bbcd8a0bc9269fd1f",
+        "Name": "MoveDirection",
+        "FieldType": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+        "Array": false,
+        "Visibility": 1,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "4ca2ce637ae940118b5952682078805e", "Name": "Ball" },
+        "Properties": {
+            "MaxPower": 500,
+            "MoveDirection": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "y": 1
+                }
+            }
+        }
+    }
+}]

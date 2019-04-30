@@ -1,0 +1,35 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "72382148a9504f3782c7a81ee18d0fdb",
+    "Name": "AdControlerHelper",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "Documentation": {
+        "Summary": "Helps with the Interstitial Ads. The GamesToAd attribute is the number of games \nbetween ads. \nCurrent Games Losed: Current number of lose games. "
+    },
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "a533a709be4d4d5992612dcb7617e761",
+        "Name": "GamesToAd",
+        "FieldType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "bc0e2fa6b7864d5780094409b5a56022",
+        "Name": "CurrentGamesLosed",
+        "FieldType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+        "Array": false,
+        "Visibility": 1,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "72382148a9504f3782c7a81ee18d0fdb", "Name": "AdControlerHelper" },
+        "Properties": {
+            "GamesToAd": 3
+        }
+    }
+}]

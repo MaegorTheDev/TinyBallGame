@@ -1,0 +1,24 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "8e6363f471d044fbb6c924731083f779",
+    "Name": "InitialImageSize",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "Documentation": {
+        "Summary": "Component to store the initial size of certain sprites"
+    },
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "0076a31448504ecab177409b070d0058",
+        "Name": "InitialSize",
+        "FieldType": { "Id": "67325dccf2f047c19c7ef4a045354e67", "Name": "Float32" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "8e6363f471d044fbb6c924731083f779", "Name": "InitialImageSize" }
+    }
+}]

@@ -1,0 +1,24 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "efbb00c5e27a4b1893759158f53c4736",
+    "Name": "Hole",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "Documentation": {
+        "Summary": "Hole Component"
+    },
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "c275877a80d54bda9ebf8096412b7f17",
+        "Name": "Active",
+        "FieldType": { "Id": "2b477f505af74487b7092b5617d88d3f", "Name": "Boolean" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "efbb00c5e27a4b1893759158f53c4736", "Name": "Hole" }
+    }
+}]

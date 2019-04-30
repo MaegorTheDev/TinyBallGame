@@ -1,0 +1,365 @@
+﻿[{
+    "$TypeId": 4,
+    "Id": "6a2d1bfe12f04afaa0a45d427d153da5",
+    "Name": "GameOverScreen",
+    "ExportFlags": 0,
+    "SerializedVersion": 0,
+    "Entities": [
+        { "$TypeId": 9, "Id": "e4f2c48d13ea4baaac34f95f9dbe0421", "Name": "YouLose" },
+        { "$TypeId": 9, "Id": "ade1b40cd7004286afa856f9e569c4b8", "Name": "EnglishTutorials_7" },
+        { "$TypeId": 9, "Id": "883bcd51fe4a4d6895f4a8be48babb29", "Name": "RespawnCoinCheckTransparency" },
+        { "$TypeId": 9, "Id": "7274dc2d805942fab14269e271998b3f", "Name": "RespawnCoinNumberRender" },
+        { "$TypeId": 9, "Id": "4a85a5dae3a14ed0b3e8efefd39d9a41", "Name": "RestartGameButton" },
+        { "$TypeId": 9, "Id": "82295abf21d14ad6b8201ea2c8126a3f", "Name": "RespawnGameButton" }
+    ]
+},
+{
+    "$TypeId": 5,
+    "Id": "e4f2c48d13ea4baaac34f95f9dbe0421",
+    "Name": "YouLose",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0.5,
+                    "y": 23.8
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0.8,
+                    "y": 0.8,
+                    "z": 1.93
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "68441f87a64f0a540bba7bcb8e6d614f", "FileId": 21300008, "Type": 3 }
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "layer": -1784358549
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "ade1b40cd7004286afa856f9e569c4b8",
+    "Name": "EnglishTutorials_7",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0,
+                    "y": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0.91,
+                    "y": 0.91,
+                    "z": 3.277777
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "68441f87a64f0a540bba7bcb8e6d614f", "FileId": 21300000, "Type": 3 }
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "layer": -1784358549
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "883bcd51fe4a4d6895f4a8be48babb29",
+    "Name": "RespawnCoinCheckTransparency",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "68441f87a64f0a540bba7bcb8e6d614f", "FileId": 21300002, "Type": 3 },
+            "color": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -8.228,
+                    "y": -1.354,
+                    "z": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "layer": -1784358549,
+            "order": 6
+        }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 2
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+        "Properties": {
+            "size": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 15,
+                    "y": 10
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "e93527d7e079488fac510bb47d6676e1", "Name": "CoinCheck" }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "7274dc2d805942fab14269e271998b3f",
+    "Name": "RespawnCoinNumberRender",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -8.25,
+                    "y": -1.36,
+                    "z": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0.4,
+                    "y": 0.4,
+                    "z": 2
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "0976708f4e814322ba32028adfe7c57c", "Name": "NumberObject" },
+        "Properties": {
+            "Digits": {
+                "Type": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
+                "Items": [
+                    { "$TypeId": 10, "Guid": "75d27ca4860d8084ca99f76e461d6eaf", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "75d27ca4860d8084ca99f76e461d6eaf", "FileId": 21300002, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "75d27ca4860d8084ca99f76e461d6eaf", "FileId": 21300004, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "75d27ca4860d8084ca99f76e461d6eaf", "FileId": 21300006, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "75d27ca4860d8084ca99f76e461d6eaf", "FileId": 21300008, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "75d27ca4860d8084ca99f76e461d6eaf", "FileId": 21300010, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "75d27ca4860d8084ca99f76e461d6eaf", "FileId": 21300012, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "75d27ca4860d8084ca99f76e461d6eaf", "FileId": 21300014, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "75d27ca4860d8084ca99f76e461d6eaf", "FileId": 21300016, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "75d27ca4860d8084ca99f76e461d6eaf", "FileId": 21300018, "Type": 3 }
+                ]
+            },
+            "Spacing": 3,
+            "Color": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 1
+                }
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "4a85a5dae3a14ed0b3e8efefd39d9a41",
+    "Name": "RestartGameButton",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 5.437,
+                    "y": -1.369,
+                    "z": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0.6779067,
+                    "y": 0.6352345,
+                    "z": 1.494
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+        "Properties": {
+            "box": {
+                "Type": { "Id": "f216da154c4054842adb590807e977ba", "Name": "Rect" },
+                "Properties": {
+                    "x": -9,
+                    "y": -5.5,
+                    "width": 18,
+                    "height": 11
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "ccdb969403b035d4886d491a8c6a8467", "FileId": 21300000, "Type": 3 },
+            "color": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 0.02745098
+                }
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "82295abf21d14ad6b8201ea2c8126a3f",
+    "Name": "RespawnGameButton",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -8.474,
+                    "y": -1.422,
+                    "z": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0.693985,
+                    "y": 0.6510411,
+                    "z": 2
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "ccdb969403b035d4886d491a8c6a8467", "FileId": 21300000, "Type": 3 },
+            "color": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 0.04313726
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+        "Properties": {
+            "box": {
+                "Type": { "Id": "f216da154c4054842adb590807e977ba", "Name": "Rect" },
+                "Properties": {
+                    "x": -9,
+                    "y": -5.5,
+                    "width": 18,
+                    "height": 11
+                }
+            }
+        }
+    }]
+}]

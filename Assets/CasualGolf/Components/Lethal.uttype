@@ -1,0 +1,15 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "2d1d1dbe94dc4f5d92f8f5567a376112",
+    "Name": "Lethal",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "Documentation": {
+        "Summary": "If the ball hits an object with this component, it will finish the game"
+    },
+    "TypeCode": "Component",
+    "DefaultValue": {
+        "Type": { "Id": "2d1d1dbe94dc4f5d92f8f5567a376112", "Name": "Lethal" }
+    }
+}]
